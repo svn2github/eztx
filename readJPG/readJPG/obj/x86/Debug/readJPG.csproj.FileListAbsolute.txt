@@ -1,0 +1,9 @@
+D:\c#\readJPG\readJPG\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\readJPG\readJPG\obj\x86\Debug\readJPG.Form1.resources
+D:\c#\readJPG\readJPG\obj\x86\Debug\readJPG.Properties.Resources.resources
+D:\c#\readJPG\readJPG\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\readJPG\readJPG\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\readJPG\readJPG\bin\Debug\readJPG.exe
+D:\c#\readJPG\readJPG\bin\Debug\readJPG.pdb
+D:\c#\readJPG\readJPG\obj\x86\Debug\readJPG.exe
+D:\c#\readJPG\readJPG\obj\x86\Debug\readJPG.pdb
