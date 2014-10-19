@@ -1,0 +1,9 @@
+D:\c#\rename\rename\bin\Debug\rename.exe
+D:\c#\rename\rename\bin\Debug\rename.pdb
+D:\c#\rename\rename\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\rename\rename\obj\x86\Debug\rename.Form1.resources
+D:\c#\rename\rename\obj\x86\Debug\rename.Properties.Resources.resources
+D:\c#\rename\rename\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\rename\rename\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\rename\rename\obj\x86\Debug\rename.exe
+D:\c#\rename\rename\obj\x86\Debug\rename.pdb

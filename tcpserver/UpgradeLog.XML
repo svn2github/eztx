@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="tcpserver">
+</Property><Property Name="解决方案文件" Value="D:\c#\tcpserver\tcpserver.sln">
+</Property><Property Name="用户选项文件" Value="D:\c#\tcpserver\tcpserver.suo">
+</Property><Property Name="Date" Value="2012年10月19日">
+</Property><Property Name="Time" Value="9:26">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="tcpserver.sln" Description="文件已成功备份为 D:\c#\tcpserver\Backup\tcpserver.sln">
+</Event><Event ErrorLevel="0" Project="" Source="tcpserver.suo" Description="文件已成功备份为 D:\c#\tcpserver\Backup\tcpserver.suo">
+</Event><Event ErrorLevel="0" Project="tcpserver" Source="tcpserver\tcpserver.csproj" Description="项目文件已成功备份为 D:\c#\tcpserver\Backup\tcpserver\tcpserver.csproj">
+</Event><Event ErrorLevel="0" Project="tcpserver" Source="tcpserver\tcpserver.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\tcpserver\tcpserver.cs">
+</Event><Event ErrorLevel="0" Project="tcpserver" Source="tcpserver\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\tcpserver\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="1" Project="tcpserver" Source="tcpserver\tcpserver.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="tcpserver" Source="tcpserver\tcpserver.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="tcpserver" Source="tcpserver\tcpserver.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="tcpclient" Source="tcpclient\tcpclient.csproj" Description="项目文件已成功备份为 D:\c#\tcpserver\Backup\tcpclient\tcpclient.csproj">
+</Event><Event ErrorLevel="0" Project="tcpclient" Source="tcpclient\tcpclient.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\tcpclient\tcpclient.cs">
+</Event><Event ErrorLevel="0" Project="tcpclient" Source="tcpclient\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\tcpclient\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="1" Project="tcpclient" Source="tcpclient\tcpclient.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="tcpclient" Source="tcpclient\tcpclient.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="tcpclient" Source="tcpclient\tcpclient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="udpserver" Source="udpserver\udpserver.csproj" Description="项目文件已成功备份为 D:\c#\tcpserver\Backup\udpserver\udpserver.csproj">
+</Event><Event ErrorLevel="0" Project="udpserver" Source="udpserver\udpserver.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\udpserver\udpserver.cs">
+</Event><Event ErrorLevel="0" Project="udpserver" Source="udpserver\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\udpserver\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="1" Project="udpserver" Source="udpserver\udpserver.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="udpserver" Source="udpserver\udpserver.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="udpserver" Source="udpserver\udpserver.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="udpclient" Source="udpclient\udpclient.csproj" Description="项目文件已成功备份为 D:\c#\tcpserver\Backup\udpclient\udpclient.csproj">
+</Event><Event ErrorLevel="0" Project="udpclient" Source="udpclient\udpclient.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\udpclient\udpclient.cs">
+</Event><Event ErrorLevel="0" Project="udpclient" Source="udpclient\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\tcpserver\Backup\udpclient\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="1" Project="udpclient" Source="udpclient\udpclient.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="udpclient" Source="udpclient\udpclient.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="udpclient" Source="udpclient\udpclient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="tcpserver.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="tcpserver.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="tcpserver" Source="tcpserver\tcpserver.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="tcpclient" Source="tcpclient\tcpclient.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="udpserver" Source="udpserver\udpserver.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="udpclient" Source="udpclient\udpclient.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

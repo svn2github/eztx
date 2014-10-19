@@ -1,0 +1,9 @@
+D:\c#\wintomysql\wintomysql\bin\Debug\wintomysql.exe
+D:\c#\wintomysql\wintomysql\bin\Debug\wintomysql.pdb
+D:\c#\wintomysql\wintomysql\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\wintomysql\wintomysql\obj\x86\Debug\wintomysql.Form1.resources
+D:\c#\wintomysql\wintomysql\obj\x86\Debug\wintomysql.Properties.Resources.resources
+D:\c#\wintomysql\wintomysql\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\wintomysql\wintomysql\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\wintomysql\wintomysql\obj\x86\Debug\wintomysql.exe
+D:\c#\wintomysql\wintomysql\obj\x86\Debug\wintomysql.pdb

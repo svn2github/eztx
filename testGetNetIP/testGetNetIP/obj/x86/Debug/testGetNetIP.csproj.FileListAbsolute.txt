@@ -1,0 +1,9 @@
+D:\c#\testGetNetIP\testGetNetIP\bin\Debug\testGetNetIP.exe
+D:\c#\testGetNetIP\testGetNetIP\bin\Debug\testGetNetIP.pdb
+D:\c#\testGetNetIP\testGetNetIP\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\testGetNetIP\testGetNetIP\obj\x86\Debug\testGetNetIP.Form1.resources
+D:\c#\testGetNetIP\testGetNetIP\obj\x86\Debug\testGetNetIP.Properties.Resources.resources
+D:\c#\testGetNetIP\testGetNetIP\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\testGetNetIP\testGetNetIP\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\testGetNetIP\testGetNetIP\obj\x86\Debug\testGetNetIP.exe
+D:\c#\testGetNetIP\testGetNetIP\obj\x86\Debug\testGetNetIP.pdb

@@ -1,0 +1,5 @@
+F:\wm\tcpserver\tcpclient\obj\Debug\ResolveAssemblyReference.cache
+F:\wm\tcpserver\tcpclient\bin\Debug\tcpclient.exe
+F:\wm\tcpserver\tcpclient\bin\Debug\tcpclient.pdb
+F:\wm\tcpserver\tcpclient\obj\Debug\tcpclient.exe
+F:\wm\tcpserver\tcpclient\obj\Debug\tcpclient.pdb

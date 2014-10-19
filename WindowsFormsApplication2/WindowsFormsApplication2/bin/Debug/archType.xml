@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Archtype>
+  <shangYe Name="商业" Code="shangYe">
+      <Archtypeitem Name="超市" />
+      <Archtypeitem Name="商场" />
+      <Archtypeitem Name="餐饮" />
+      <Archtypeitem Name="精品店" />
+      <Archtypeitem Name="购物街" />
+  </shangYe>
+
+  <jiuDian Name="酒店" Code="jiuDian">
+    
+      <Archtypeitem Name="商务酒店" />
+      <Archtypeitem Name="旅游度假酒店" />
+      <Archtypeitem Name="会议酒店" />
+    
+  </jiuDian>
+
+  <banGong Name="办公" Code="banGong">
+    
+      <Archtypeitem Name="各类办公建筑" />
+      <Archtypeitem Name="研发中心" />
+    
+  </banGong>
+
+  <huiZhan Name="会展" Code="huiZhan">
+    
+      <Archtypeitem Name="会议中心" />
+      <Archtypeitem Name="展览中心" />
+	  <Archtypeitem Name="文学艺术研究院" />
+    
+  </huiZhan>
+
+  <wenTi Name="文体" Code="wenTi">
+    
+      <Archtypeitem Name="文化馆" />
+      <Archtypeitem Name="博物馆" />
+      <Archtypeitem Name="纪念馆" />
+      <Archtypeitem Name="体育场" />
+      <Archtypeitem Name="体育馆" />
+	  <Archtypeitem Name="游泳馆" />
+	  <Archtypeitem Name="艺术馆" />
+	  <Archtypeitem Name="会所" />
+	  <Archtypeitem Name="美术馆" />
+    
+  </wenTi>
+
+  <jiaoTong Name="交通" Code="jiaoTong">
+    
+      <Archtypeitem Name="汽车站" />
+      <Archtypeitem Name="火车站" />
+      <Archtypeitem Name="机场" />
+    
+  </jiaoTong>
+
+  <jiaoYu Name="教育" Code="jiaoYu">
+    
+      <Archtypeitem Name="学校" />
+      <Archtypeitem Name="幼儿园" />
+      <Archtypeitem Name="培训中心" />
+    
+  </jiaoYu>
+
+  <yiLiao Name="医疗" Code="yiLiao">
+    
+      <Archtypeitem Name="医院" />
+      <Archtypeitem Name="疗养院" />
+    
+  </yiLiao>
+
+  <guanYan Name="观演" Code="guanYan">
+    
+      <Archtypeitem Name="剧场"/>
+      <Archtypeitem Name="电影院"/>
+    
+  </guanYan>
+
+  <juZhu Name="居住" Code="juZhu">
+    <gongYu Name="公寓" Code="gongYu">
+		  <Archtypeitem Name="各种类型的公寓" />
+	</gongYu>
+	<puTongZhuZhai Name="普通住宅" Code="puTongZhuZhai">
+		  <Archtypeitem Name="多层" />
+		  <Archtypeitem Name="小高层" />
+		  <Archtypeitem Name="高层住宅" />
+	</puTongZhuZhai>
+	<gaoDuanZhuZhai Name="高端住宅" Code="gaoDuanZhuZhai">
+		  <Archtypeitem Name="豪宅" />
+		  <Archtypeitem Name="独栋别墅" />
+		  <Archtypeitem Name="花园洋房" />
+		  <Archtypeitem Name="双拼别墅" />
+		  <Archtypeitem Name="联排别墅" />
+		  <Archtypeitem Name="叠拼别墅" />
+	</gaoDuanZhuZhai>
+  </juZhu>
+
+  <guiHua Name="规划" Code="guiHua">
+    
+      <Archtypeitem Name="居住区规划" />
+      <Archtypeitem Name="城市设计" />
+    
+  </guiHua>
+
+  <jingGuan Name="景观" Code="jingGuan">
+    
+      <Archtypeitem Name="居住区环境" />
+      <Archtypeitem Name="公园" />
+	  <Archtypeitem Name="绿地"/>
+      <Archtypeitem Name="滨水区域" />
+	  <Archtypeitem Name="广场" />
+	  <Archtypeitem Name="庭院" />
+    
+  </jingGuan>
+
+  <other Name="其他" Code="other">
+    
+      
+    
+  </other>
+</Archtype>

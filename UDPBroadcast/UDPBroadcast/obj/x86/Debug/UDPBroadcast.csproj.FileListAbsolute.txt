@@ -1,0 +1,16 @@
+D:\博客园里的例子\UDPBroadcast\UDPBroadcast\bin\Debug\UDPBroadcast.exe
+D:\博客园里的例子\UDPBroadcast\UDPBroadcast\bin\Debug\UDPBroadcast.pdb
+D:\博客园里的例子\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.UdpBroadcasefrm.resources
+D:\博客园里的例子\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.Properties.Resources.resources
+D:\博客园里的例子\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.csproj.GenerateResource.Cache
+D:\博客园里的例子\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.exe
+D:\博客园里的例子\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.pdb
+D:\c#\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.exe
+D:\c#\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.pdb
+D:\c#\UDPBroadcast\UDPBroadcast\bin\Debug\UDPBroadcast.exe
+D:\c#\UDPBroadcast\UDPBroadcast\bin\Debug\UDPBroadcast.pdb
+D:\c#\UDPBroadcast\UDPBroadcast\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.UdpBroadcasefrm.resources
+D:\c#\UDPBroadcast\UDPBroadcast\obj\x86\Debug\UDPBroadcast.Properties.Resources.resources
+D:\c#\UDPBroadcast\UDPBroadcast\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\UDPBroadcast\UDPBroadcast\obj\x86\Debug\GenerateResource.write.1.tlog

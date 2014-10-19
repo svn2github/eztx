@@ -1,0 +1,5 @@
+D:\c#\threadTest\threadTest\bin\Debug\threadTest.exe
+D:\c#\threadTest\threadTest\bin\Debug\threadTest.pdb
+D:\c#\threadTest\threadTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\threadTest\threadTest\obj\x86\Debug\threadTest.exe
+D:\c#\threadTest\threadTest\obj\x86\Debug\threadTest.pdb

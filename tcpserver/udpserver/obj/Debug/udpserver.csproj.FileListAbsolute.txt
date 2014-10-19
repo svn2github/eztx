@@ -1,0 +1,5 @@
+D:\c#\tcpserver\udpserver\obj\Debug\udpserver.exe
+D:\c#\tcpserver\udpserver\obj\Debug\udpserver.pdb
+D:\c#\tcpserver\udpserver\bin\Debug\udpserver.exe
+D:\c#\tcpserver\udpserver\bin\Debug\udpserver.pdb
+D:\c#\tcpserver\udpserver\obj\Debug\ResolveAssemblyReference.cache

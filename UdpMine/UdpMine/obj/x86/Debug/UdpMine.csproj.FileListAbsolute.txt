@@ -1,0 +1,9 @@
+D:\c#\UdpMine\UdpMine\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\UdpMine\UdpMine\obj\x86\Debug\UdpMine.Form1.resources
+D:\c#\UdpMine\UdpMine\obj\x86\Debug\UdpMine.Properties.Resources.resources
+D:\c#\UdpMine\UdpMine\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\UdpMine\UdpMine\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\UdpMine\UdpMine\bin\Debug\UdpMine.exe
+D:\c#\UdpMine\UdpMine\bin\Debug\UdpMine.pdb
+D:\c#\UdpMine\UdpMine\obj\x86\Debug\UdpMine.exe
+D:\c#\UdpMine\UdpMine\obj\x86\Debug\UdpMine.pdb

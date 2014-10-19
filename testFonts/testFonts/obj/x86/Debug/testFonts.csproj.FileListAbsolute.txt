@@ -1,0 +1,11 @@
+D:\c#\testFonts\testFonts\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\testFonts\testFonts\obj\x86\Debug\testFonts.Form1.resources
+D:\c#\testFonts\testFonts\obj\x86\Debug\testFonts.Properties.Resources.resources
+D:\c#\testFonts\testFonts\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\testFonts\testFonts\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\testFonts\testFonts\bin\Debug\testFonts.exe
+D:\c#\testFonts\testFonts\bin\Debug\testFonts.pdb
+D:\c#\testFonts\testFonts\obj\x86\Debug\testFonts.exe
+D:\c#\testFonts\testFonts\obj\x86\Debug\testFonts.pdb
+D:\c#\testFonts\testFonts\bin\Debug\TabControlEx.dll
+D:\c#\testFonts\testFonts\bin\Debug\TabControlEx.pdb

@@ -1,0 +1,5 @@
+D:\c#\TabControlEx\TabControlEx\bin\Debug\TabControlEx.dll
+D:\c#\TabControlEx\TabControlEx\bin\Debug\TabControlEx.pdb
+D:\c#\TabControlEx\TabControlEx\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\TabControlEx\TabControlEx\obj\Debug\TabControlEx.dll
+D:\c#\TabControlEx\TabControlEx\obj\Debug\TabControlEx.pdb

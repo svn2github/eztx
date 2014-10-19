@@ -1,0 +1,5 @@
+D:\c#\tcpserver\tcpserver\obj\Debug\tcpserver.exe
+D:\c#\tcpserver\tcpserver\obj\Debug\tcpserver.pdb
+D:\c#\tcpserver\tcpserver\bin\Debug\tcpserver.exe
+D:\c#\tcpserver\tcpserver\bin\Debug\tcpserver.pdb
+D:\c#\tcpserver\tcpserver\obj\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+D:\c#\testAddDelKongJian\testAddDelKongJian\bin\Debug\testAddDelKongJian.exe
+D:\c#\testAddDelKongJian\testAddDelKongJian\bin\Debug\testAddDelKongJian.pdb
+D:\c#\testAddDelKongJian\testAddDelKongJian\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\testAddDelKongJian\testAddDelKongJian\obj\x86\Debug\testAddDelKongJian.Form1.resources
+D:\c#\testAddDelKongJian\testAddDelKongJian\obj\x86\Debug\testAddDelKongJian.Properties.Resources.resources
+D:\c#\testAddDelKongJian\testAddDelKongJian\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\testAddDelKongJian\testAddDelKongJian\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\testAddDelKongJian\testAddDelKongJian\obj\x86\Debug\testAddDelKongJian.exe
+D:\c#\testAddDelKongJian\testAddDelKongJian\obj\x86\Debug\testAddDelKongJian.pdb

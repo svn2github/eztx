@@ -1,0 +1,11 @@
+D:\c#\TabControlEx\TabControlExDemo\bin\Debug\TabControlExDemo.exe
+D:\c#\TabControlEx\TabControlExDemo\bin\Debug\TabControlExDemo.pdb
+D:\c#\TabControlEx\TabControlExDemo\bin\Debug\TabControlEx.dll
+D:\c#\TabControlEx\TabControlExDemo\bin\Debug\TabControlEx.pdb
+D:\c#\TabControlEx\TabControlExDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\TabControlEx\TabControlExDemo\obj\Debug\TabControlExDemo.Form1.resources
+D:\c#\TabControlEx\TabControlExDemo\obj\Debug\TabControlExDemo.Properties.Resources.resources
+D:\c#\TabControlEx\TabControlExDemo\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\c#\TabControlEx\TabControlExDemo\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\c#\TabControlEx\TabControlExDemo\obj\Debug\TabControlExDemo.exe
+D:\c#\TabControlEx\TabControlExDemo\obj\Debug\TabControlExDemo.pdb

@@ -1,0 +1,10 @@
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\clock.exe
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\clock.pdb
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\clock.exe
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\clock.pdb
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.tanChuang.resources
+D:\c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources

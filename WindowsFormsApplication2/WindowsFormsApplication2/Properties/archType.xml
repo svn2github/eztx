@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Archtype>
+  <Archtypelist Name="商业" Code="1">
+    
+      <Archtypeitem Name="超市" Code="1_1"/>
+      <Archtypeitem Name="商场" Code="1_2"/>
+      <Archtypeitem Name="餐饮" Code="1_3"/>
+      <Archtypeitem Name="精品店" Code="1_4"/>
+      <Archtypeitem Name="购物街" Code="1_5"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="酒店" Code="2">
+    
+      <Archtypeitem Name="商务酒店" Code="2_1"/>
+      <Archtypeitem Name="旅游度假酒店" Code="2_2"/>
+      <Archtypeitem Name="会议酒店" Code="2_3"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="办公" Code="3">
+    
+      <Archtypeitem Name="各类办公建筑" Code="3_1"/>
+      <Archtypeitem Name="研发中心" Code="3_2"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="会展" Code="4">
+    
+      <Archtypeitem Name="会议中心" Code="4_1"/>
+      <Archtypeitem Name="展览中心" Code="4_2"/>
+	  <Archtypeitem Name="文学艺术研究院" Code="4_3"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="文体" Code="5">
+    
+      <Archtypeitem Name="文化馆" Code="5_1"/>
+      <Archtypeitem Name="博物馆" Code="5_2"/>
+      <Archtypeitem Name="纪念馆" Code="5_3"/>
+      <Archtypeitem Name="体育场" Code="5_4"/>
+      <Archtypeitem Name="体育馆" Code="5_5"/>
+	  <Archtypeitem Name="游泳馆" Code="5_6"/>
+	  <Archtypeitem Name="艺术馆" Code="5_7"/>
+	  <Archtypeitem Name="会所" Code="5_8"/>
+	  <Archtypeitem Name="美术馆" Code="5_9"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="交通" Code="6">
+    
+      <Archtypeitem Name="汽车站" Code="6_1"/>
+      <Archtypeitem Name="火车站" Code="6_2"/>
+      <Archtypeitem Name="机场" Code="6_3"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="教育" Code="7">
+    
+      <Archtypeitem Name="学校" Code="7_1"/>
+      <Archtypeitem Name="幼儿园" Code="7_2"/>
+      <Archtypeitem Name="培训中心" Code="7_3"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="医疗" Code="8">
+    
+      <Archtypeitem Name="医院" Code="8_1"/>
+      <Archtypeitem Name="疗养院" Code="8_2"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="观演" Code="9">
+    
+      <Archtypeitem Name="剧场" Code="9_1"/>
+      <Archtypeitem Name="电影院" Code="9_2"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="居住" Code="10">
+    <Archtypelistson Name="公寓" Code="10_1">
+		  <Archtypeitem Name="各种类型的公寓" Code="10_1_1"/>
+	</Archtypelistson>
+	<Archtypelistson Name="普通住宅" Code="10_2">
+		  <Archtypeitem Name="多层" Code="10_2_1"/>
+		  <Archtypeitem Name="小高层" Code="10_2_2"/>
+		  <Archtypeitem Name="高层住宅" Code="10_2_3"/>
+	</Archtypelistson>
+	<Archtypelistson Name="高端住宅" Code="10_3">
+		  <Archtypeitem Name="豪宅" Code="10_3_1"/>
+		  <Archtypeitem Name="独栋别墅" Code="10_3_2"/>
+		  <Archtypeitem Name="花园洋房" Code="10_3_3"/>
+		  <Archtypeitem Name="双拼别墅" Code="10_3_4"/>
+		  <Archtypeitem Name="联排别墅" Code="10_3_5"/>
+		  <Archtypeitem Name="叠拼别墅" Code="10_3_6"/>
+	</Archtypelistson>
+  </Archtypelist>
+
+  <Archtypelist Name="规划" Code="11">
+    
+      <Archtypeitem Name="居住区规划" Code="11_1"/>
+      <Archtypeitem Name="城市设计" Code="11_2"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="景观" Code="12">
+    
+      <Archtypeitem Name="居住区环境" Code="12_1"/>
+      <Archtypeitem Name="公园" Code="12_2"/>
+	  <Archtypeitem Name="绿地" Code="12_3"/>
+      <Archtypeitem Name="滨水区域" Code="12_4"/>
+	  <Archtypeitem Name="广场" Code="12_5"/>
+	  <Archtypeitem Name="庭院" Code="12_6"/>
+    
+  </Archtypelist>
+
+  <Archtypelist Name="其他" Code="13">
+    
+      
+    
+  </Archtypelist>
+</Archtype>

@@ -1,0 +1,9 @@
+D:\c#\wireless\wireless\bin\Debug\wireless.exe
+D:\c#\wireless\wireless\bin\Debug\wireless.pdb
+D:\c#\wireless\wireless\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\wireless\wireless\obj\x86\Debug\WindowsFormsApplication5.Form1.resources
+D:\c#\wireless\wireless\obj\x86\Debug\wireless.Properties.Resources.resources
+D:\c#\wireless\wireless\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\wireless\wireless\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\wireless\wireless\obj\x86\Debug\wireless.exe
+D:\c#\wireless\wireless\obj\x86\Debug\wireless.pdb

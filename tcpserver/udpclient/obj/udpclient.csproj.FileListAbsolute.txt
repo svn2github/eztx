@@ -1,0 +1,5 @@
+F:\wm\tcpserver\udpclient\bin\Debug\udpclient.exe
+F:\wm\tcpserver\udpclient\bin\Debug\udpclient.pdb
+F:\wm\tcpserver\udpclient\obj\Debug\ResolveAssemblyReference.cache
+F:\wm\tcpserver\udpclient\obj\Debug\udpclient.exe
+F:\wm\tcpserver\udpclient\obj\Debug\udpclient.pdb

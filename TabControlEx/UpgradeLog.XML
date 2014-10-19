@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TabControlEx">
+</Property><Property Name="解决方案文件" Value="D:\c#\TabControlEx\TabControlEx.sln">
+</Property><Property Name="用户选项文件" Value="D:\c#\TabControlEx\TabControlEx.suo">
+</Property><Property Name="Date" Value="2013年2月21日">
+</Property><Property Name="Time" Value="10:50">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TabControlEx.sln" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlEx.sln">
+</Event><Event ErrorLevel="0" Project="" Source="TabControlEx.suo" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlEx.suo">
+</Event><Event ErrorLevel="0" Project="TabControlEx" Source="TabControlEx\TabControlEx.csproj" Description="项目文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlEx\TabControlEx.csproj">
+</Event><Event ErrorLevel="0" Project="TabControlEx" Source="TabControlEx\Events.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlEx\Events.cs">
+</Event><Event ErrorLevel="0" Project="TabControlEx" Source="TabControlEx\NativeMethods.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlEx\NativeMethods.cs">
+</Event><Event ErrorLevel="0" Project="TabControlEx" Source="TabControlEx\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlEx\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TabControlEx" Source="TabControlEx\TabControlEx.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlEx\TabControlEx.cs">
+</Event><Event ErrorLevel="1" Project="TabControlEx" Source="TabControlEx\TabControlEx.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="TabControlEx" Source="TabControlEx\TabControlEx.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="TabControlEx" Source="TabControlEx\TabControlEx.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\TabControlExDemo.csproj" Description="项目文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\TabControlExDemo.csproj">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Form1.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Form1.cs">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Form1.Designer.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Program.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Program.cs">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Properties\Resources.Designer.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Properties\Settings.Designer.cs" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Properties\Settings.settings" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Resources\logo.jpg" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Resources\logo.jpg">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Form1.resx" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Form1.resx">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\Properties\Resources.resx" Description="文件已成功备份为 D:\c#\TabControlEx\Backup\TabControlExDemo\Properties\Resources.resx">
+</Event><Event ErrorLevel="1" Project="TabControlExDemo" Source="TabControlExDemo\TabControlExDemo.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\TabControlExDemo.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="TabControlExDemo" Source="TabControlExDemo\TabControlExDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TabControlEx.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="TabControlEx.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TabControlEx" Source="TabControlEx\TabControlEx.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="TabControlExDemo" Source="TabControlExDemo\TabControlExDemo.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>
