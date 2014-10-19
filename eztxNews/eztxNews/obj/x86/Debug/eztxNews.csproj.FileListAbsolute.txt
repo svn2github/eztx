@@ -1,0 +1,11 @@
+D:\c#\eztxNews\eztxNews\bin\Debug\eztxNews.exe
+D:\c#\eztxNews\eztxNews\bin\Debug\eztxNews.pdb
+D:\c#\eztxNews\eztxNews\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\eztxNews\eztxNews\obj\x86\Debug\eztxNews.Properties.Resources.resources
+D:\c#\eztxNews\eztxNews\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\eztxNews\eztxNews\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\eztxNews\eztxNews\obj\x86\Debug\eztxNews.exe
+D:\c#\eztxNews\eztxNews\obj\x86\Debug\eztxNews.pdb
+D:\c#\eztxNews\eztxNews\bin\Debug\HtmlAgilityPack.dll
+D:\c#\eztxNews\eztxNews\bin\Debug\HtmlAgilityPack.xml
+D:\c#\eztxNews\eztxNews\obj\x86\Debug\eztxNews.Form1.resources

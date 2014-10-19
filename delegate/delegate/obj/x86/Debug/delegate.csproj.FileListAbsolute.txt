@@ -1,0 +1,5 @@
+D:\c#\delegate\delegate\bin\Debug\@delegate.exe
+D:\c#\delegate\delegate\bin\Debug\@delegate.pdb
+D:\c#\delegate\delegate\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\delegate\delegate\obj\x86\Debug\@delegate.exe
+D:\c#\delegate\delegate\obj\x86\Debug\@delegate.pdb

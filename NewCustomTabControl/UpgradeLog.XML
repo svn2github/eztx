@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CustomTabControl">
+</Property><Property Name="解决方案文件" Value="D:\c#\NewCustomTabControl\CustomTabControl.sln">
+</Property><Property Name="Date" Value="2013年2月22日">
+</Property><Property Name="Time" Value="14:35">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CustomTabControl.sln" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl.sln">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\CSCustomTabControlDemo.csproj" Description="项目文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CSCustomTabControlDemo\CSCustomTabControlDemo.csproj">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\MainForm.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CSCustomTabControlDemo\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\MainForm.Designer.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CSCustomTabControlDemo\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\Program.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CSCustomTabControlDemo\Program.cs">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CSCustomTabControlDemo\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\MainForm.resx" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CSCustomTabControlDemo\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\CSCustomTabControlDemo.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\CSCustomTabControlDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\CustomTabControl.csproj" Description="项目文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\CustomTabControl.csproj">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\CustomTabControl.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\CustomTabControl.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\NativeMethods.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\NativeMethods.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyle.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyle.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleVS2010Provider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleVS2010Provider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProvider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProvider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleAngledProvider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleAngledProvider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleChromeProvider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleChromeProvider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleDefaultProvider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleDefaultProvider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleIE8Provider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleIE8Provider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleNoneProvider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleNoneProvider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleRoundedProvider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleRoundedProvider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\TabStyleProviders\TabStyleVisualStudioProvider.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\TabStyleProviders\TabStyleVisualStudioProvider.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\TabControl\ThemedColors.cs" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\TabControl\ThemedColors.cs">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\JacksonSoft.snk" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\CustomTabControl\JacksonSoft.snk">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\CustomTabControl.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CustomTabControl" Source="CustomTabControl\CustomTabControl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\VBCustomTabControl.vbproj" Description="项目文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\VBCustomTabControl.vbproj">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\Properties\AssemblyInfo.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\Properties\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\CustomTabControl.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\CustomTabControl.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\NativeMethods.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\NativeMethods.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyle.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyle.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleVS2010Provider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleVS2010Provider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProvider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProvider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleAngledProvider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleAngledProvider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleChromeProvider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleChromeProvider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleDefaultProvider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleDefaultProvider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleIE8Provider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleIE8Provider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleNoneProvider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleNoneProvider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleRoundedProvider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleRoundedProvider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\TabStyleProviders\TabStyleVisualStudioProvider.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\TabStyleProviders\TabStyleVisualStudioProvider.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\TabControl\ThemedColors.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\TabControl\ThemedColors.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\JacksonSoft.snk" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControl\JacksonSoft.snk">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\VBCustomTabControl.vbproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="VBCustomTabControl" Source="VBCustomTabControl\VBCustomTabControl.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\VBCustomTabControlDemo.vbproj" Description="项目文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControlDemo\VBCustomTabControlDemo.vbproj">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\MainForm.Designer.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControlDemo\MainForm.Designer.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\MainForm.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControlDemo\MainForm.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\Program.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControlDemo\Program.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\Properties\AssemblyInfo.vb" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControlDemo\Properties\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\MainForm.resx" Description="文件已成功备份为 D:\c#\NewCustomTabControl\Backup\VBCustomTabControlDemo\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\VBCustomTabControlDemo.vbproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\VBCustomTabControlDemo.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CustomTabControl.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="CustomTabControl.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CSCustomTabControlDemo" Source="CSCustomTabControlDemo\CSCustomTabControlDemo.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CustomTabControl" Source="CustomTabControl\CustomTabControl.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControl" Source="VBCustomTabControl\VBCustomTabControl.vbproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="VBCustomTabControlDemo" Source="VBCustomTabControlDemo\VBCustomTabControlDemo.vbproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

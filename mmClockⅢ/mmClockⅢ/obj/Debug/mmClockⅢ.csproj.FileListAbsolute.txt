@@ -1,0 +1,12 @@
+D:\c#\mmClockⅢ\mmClockⅢ\bin\Debug\mmClockⅢ.exe.config
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\mmClockⅢ.exe
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\mmClockⅢ.pdb
+D:\c#\mmClockⅢ\mmClockⅢ\bin\Debug\mmClockⅢ.exe
+D:\c#\mmClockⅢ\mmClockⅢ\bin\Debug\mmClockⅢ.pdb
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.frmMain.resources
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.frmMessage.resources
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.Properties.Resources.resources
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.frmSetting.resources
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\GenerateResource.read.1.tlog
+D:\c#\mmClockⅢ\mmClockⅢ\obj\Debug\GenerateResource.write.1.tlog

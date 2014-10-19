@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breadthframework>
+	<settings name="system">
+		<set name="version" value="1.0.0" />
+		<set name="webroot" value="/Rayzen2_WebProject/" />
+		<set name="domain" value="http://localhost:8080"/>
+		<set name="imageServer" value="http://localhost" /><!-- 图片服务器地址 -->
+		<set name="ErrorImageUrl" value="/tu.gif" /><!-- 相对于vfs的根目录 -->
+		<set name="messageMapping" value="com.rayzen.MessageCodeMapping" />
+	</settings>
+	<settings name="database">
+		<set name="driver" value="com.mysql.jdbc.Driver" />
+		<!-- 
+		<set name="url" value="jdbc:mysql://192.168.1.22:3306/rayzen?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<set name="username" value="root" />
+		<set name="password" value="111111" />
+		 -->
+		<set name="url" value="jdbc:mysql://192.168.1.22:3306/rayzen?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<set name="username" value="root" />
+		<set name="password" value="111111" />
+	</settings>
+	<settings name="vfs">
+			<set name="root" value="root,sftpServer">
+				<parameter name="MountPoint" value="/" />
+				<parameter name="ioprovider" value="com.breadth.vfs.LocalDiskFile" />
+				<parameter name="path" value="/c:/vfs/" />			
+			</set>
+			<set name="sftpServer">
+				<parameter name="MountPoint" value="/staticFile" />
+				<parameter name="ioprovider" value="com.breadth.vfs.LocalDiskFile" />
+				<parameter name="path" value="/E:/tomcat5028/webapps/asdf/aa/" />
+			</set>
+		</settings>
+	<settings name="log">
+		<set name="store" value="com.breadth.SimpleInject.DBLogStore" />
+	</settings>
+	<settings name="template">
+		<set name="store"
+			value="com.breadth.template.DefaultFileTemplateStore" />
+		<set name="spacechar" value="&amp;nbsp;" />
+	</settings>
+	<settings name="search">
+		<set name="keywordsProvider" value="com.breadth.search.DBKeywordsProvider" />
+		<set name="content" value="searchcontent"/>
+		<set name="cacheInitSize" value="300" />
+	</settings>
+	
+</breadthframework>

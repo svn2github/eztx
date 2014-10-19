@@ -1,0 +1,4 @@
+D:\c#\EZservercfg\EZservercfg\bin\Debug\EZservercfg.exe
+D:\c#\EZservercfg\EZservercfg\bin\Debug\EZservercfg.pdb
+D:\c#\EZservercfg\EZservercfg\obj\x86\Debug\EZservercfg.exe
+D:\c#\EZservercfg\EZservercfg\obj\x86\Debug\EZservercfg.pdb

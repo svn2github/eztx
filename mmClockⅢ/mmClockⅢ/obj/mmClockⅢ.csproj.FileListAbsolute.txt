@@ -1,0 +1,11 @@
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\bin\Debug\mmClockⅢ.exe
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\bin\Debug\mmClockⅢ.pdb
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\bin\Debug\PublicManagerFileClass.dll
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\ResolveAssemblyReference.cache
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.Properties.Resources.resources
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\mmClockⅢ.csproj.GenerateResource.Cache
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\mmClockⅢ.exe
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\mmClockⅢ.pdb
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.frmMain.resources
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.frmMessage.resources
+F:\个人\C# MyProject\mmClockⅢ\mmClockⅢ\obj\Debug\mmClock.frmSetting.resources

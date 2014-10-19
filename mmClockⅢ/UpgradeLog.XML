@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="mmClockⅢ">
+</Property><Property Name="解决方案文件" Value="D:\c#\mmClockⅢ\mmClockⅢ.sln">
+</Property><Property Name="用户选项文件" Value="D:\c#\mmClockⅢ\mmClockⅢ.suo">
+</Property><Property Name="Date" Value="2012年8月3日">
+</Property><Property Name="Time" Value="16:28">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="mmClockⅢ.sln" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ.sln">
+</Event><Event ErrorLevel="0" Project="" Source="mmClockⅢ.suo" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ.suo">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\mmClockⅢ.csproj" Description="项目文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\mmClockⅢ.csproj">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\mmClockField.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\mmClockField.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\mmClockModels.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\mmClockModels.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmMain.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmMain.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmMain.designer.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmMain.designer.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\mmClockManager.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\mmClockManager.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmMessage.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmMessage.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmMessage.designer.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmMessage.designer.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Program.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Program.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Properties\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Properties\Resources.Designer.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Properties\Settings.Designer.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmSetting.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmSetting.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmSetting.designer.cs" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmSetting.designer.cs">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Properties\Settings.settings" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Resources\001_34.gif" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Resources\001_34.gif">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Resources\001_40.gif" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Resources\001_40.gif">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Resources\001_29.gif" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Resources\001_29.gif">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\23416.ico" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\23416.ico">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmMain.resx" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmMessage.resx" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmMessage.resx">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\Properties\Resources.resx" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\frmSetting.resx" Description="文件已成功备份为 D:\c#\mmClockⅢ\Backup\mmClockⅢ\frmSetting.resx">
+</Event><Event ErrorLevel="1" Project="mmClockⅢ" Source="mmClockⅢ\mmClockⅢ.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\mmClockⅢ.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="mmClockⅢ" Source="mmClockⅢ\mmClockⅢ.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="mmClockⅢ.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="mmClockⅢ.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="mmClockⅢ" Source="mmClockⅢ\mmClockⅢ.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

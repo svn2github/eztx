@@ -1,0 +1,15 @@
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControl\bin\Debug\FlatTabControl.dll
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControl\bin\Debug\FlatTabControl.pdb
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControl\obj\Debug\FlatTabControl.FlatTabControl.resources
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControl\obj\Debug\FlatTabControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControl\obj\Debug\FlatTabControl.dll
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControl\obj\Debug\FlatTabControl.pdb
+D:\c#\FlatTabControl_src\FlatTabControl\bin\Debug\FlatTabControl.dll
+D:\c#\FlatTabControl_src\FlatTabControl\bin\Debug\FlatTabControl.pdb
+D:\c#\FlatTabControl_src\FlatTabControl\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\FlatTabControl_src\FlatTabControl\obj\Debug\FlatTabControl.FlatTabControl.resources
+D:\c#\FlatTabControl_src\FlatTabControl\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\c#\FlatTabControl_src\FlatTabControl\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\c#\FlatTabControl_src\FlatTabControl\obj\Debug\FlatTabControl.dll
+D:\c#\FlatTabControl_src\FlatTabControl\obj\Debug\FlatTabControl.pdb

@@ -1,0 +1,36 @@
+Architect
+Location
+Constructor
+Engineer
+Lighting
+Landscape
+Project Area
+Project Year
+Photographs
+Architects
+Project Team
+Contractor
+Site Area
+Outdoor Area
+Construction year
+Client
+Constructed Area
+Type
+Builder
+Promotor
+Structures
+Services
+Lighting Consultant
+Façade Consultant
+Landscape Consultant
+Urban Planning Consultant
+Acoustics Consultant
+Digital Images
+Interior Models
+Competition Year
+Associate Architects
+Owner/Client
+Status
+Building area
+Landscape Architects
+References

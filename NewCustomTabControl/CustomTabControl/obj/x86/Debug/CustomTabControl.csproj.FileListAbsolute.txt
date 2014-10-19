@@ -1,0 +1,5 @@
+D:\c#\NewCustomTabControl\CustomTabControl\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\NewCustomTabControl\CustomTabControl\bin\Debug\MEZboy.CustomTabControl.dll
+D:\c#\NewCustomTabControl\CustomTabControl\bin\Debug\MEZboy.CustomTabControl.pdb
+D:\c#\NewCustomTabControl\CustomTabControl\obj\x86\Debug\MEZboy.CustomTabControl.dll
+D:\c#\NewCustomTabControl\CustomTabControl\obj\x86\Debug\MEZboy.CustomTabControl.pdb

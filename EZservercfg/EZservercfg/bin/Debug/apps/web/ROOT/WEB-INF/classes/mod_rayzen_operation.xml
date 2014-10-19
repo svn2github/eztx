@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breadthframework>
+	<settings name="operation">
+<!-- doc -->		
+	<set name="AddDocOperation" value="com.rayzen.operation.doc.AddDocOperation" />
+	<set name="SelectDocOperation" value="com.rayzen.operation.doc.SelectDocOperation" />
+	<set name="ModifyDocOperation" value="com.rayzen.operation.doc.ModifyDocOperation" />
+	<set name="DelDocOperation" value="com.rayzen.operation.doc.DelDocOperation" />
+	<set name="ModifyDocProjectnameOperation" value="com.rayzen.operation.doc.ModifyDocProjectnameOperation" />
+	<set name="SelectAllDocOperation" value="com.rayzen.operation.doc.SelectAllDocOperation" />
+	<set name="DelDocByProjectIdOperation" value="com.rayzen.operation.doc.DelDocByProjectIdOperation" />
+<!--favorites -->
+	<set name="AddFavoritesOperation" value="com.rayzen.operation.favorites.AddFavoritesOperation" />
+	<set name="SelectFavoritesOperation" value="com.rayzen.operation.favorites.SelectFavoritesOperation" />
+	<set name="ModifyFavoritesOperation" value="com.rayzen.operation.favorites.ModifyFavoritesOperation" />
+	<set name="DelFavoritesOperation" value="com.rayzen.operation.favorites.DelFavoritesOperation" />
+	<set name="SelectAllFavoritesOperation" value="com.rayzen.operation.favorites.SelectAllFavoritesOperation" />
+	<set name="SelectFavoritesByFolderidOperation" value="com.rayzen.operation.favorites.SelectFavoritesByFolderidOperation" />
+	<set name="DelFavoritesByFolderIdOperation" value="com.rayzen.operation.favorites.DelFavoritesByFolderIdOperation" />
+<!-- folder -->
+	<set name="AddFolderOperation" value="com.rayzen.operation.folder.AddFolderOperation" />
+	<set name="SelectFolderOperation" value="com.rayzen.operation.folder.SelectFolderOperation" />
+	<set name="ModifyFolderNameOperation" value="com.rayzen.operation.folder.ModifyFolderNameOperation" />
+	<set name="DelFolderOperation" value="com.rayzen.operation.folder.DelFolderOperation" />
+	<set name="SelectAllFolderOperation" value="com.rayzen.operation.folder.SelectAllFolderOperation" />
+	<set name="ModifyFolderCoverOperation" value="com.rayzen.operation.folder.ModifyFolderCoverOperation" />
+	<set name="CooperateToDelFolderOperation" value="com.rayzen.operation.folder.CooperateToDelFolderOperation" />
+<!--project -->
+	<set name="AddProjectOperation" value="com.rayzen.operation.project.AddProjectOperation" />
+	<set name="SelectProjectOperation" value="com.rayzen.operation.project.SelectProjectOperation" />
+	<set name="ModifyProjectOperation" value="com.rayzen.operation.project.ModifyProjectOperation" />
+	<set name="DelProjectOperation" value="com.rayzen.operation.project.DelProjectOperation" />
+	<set name="ModifyProjectnameOperation" value="com.rayzen.operation.project.ModifyProjectnameOperation" />
+	<set name="CooperateToModifyProjectOperation" value="com.rayzen.operation.project.CooperateToModifyProjectOperation" />
+	<set name="SelectAllProjectOperation" value="com.rayzen.operation.project.SelectAllProjectOperation" />
+	<set name="CooperateToDelProjectOperation" value="com.rayzen.operation.project.CooperateToDelProjectOperation" />
+<!--message-->
+	<set name="AddMessageOperation" value="com.rayzen.operation.message.AddMessageOperation" />
+	<set name="SelectMessageOperation" value="com.rayzen.operation.message.SelectMessageOperation" />
+	<set name="ModifyMessageOperation" value="com.rayzen.operation.message.ModifyMessageOperation" />
+	<set name="DelMessageOperation" value="com.rayzen.operation.message.DelMessageOperation" />
+	<set name="SelectAllMessageOperation" value="com.rayzen.operation.message.SelectAllMessageOperation" />
+	<set name="SelectMessageByToIdOperation" value="com.rayzen.operation.message.SelectMessageByToIdOperation" />
+	<set name="SelectMessageByFromIdOperation" value="com.rayzen.operation.message.SelectMessageByFromIdOperation" />
+<!-- Sort -->
+	<set name="AddSortOperation" value="com.rayzen.operation.sort.AddSortOperation" />
+	<set name="SelectSortOperation" value="com.rayzen.operation.sort.SelectSortOperation" />
+	<set name="ModifySortOperation" value="com.rayzen.operation.sort.ModifySortOperation" />
+	<set name="DelSortOperation" value="com.rayzen.operation.sort.DelSortOperation" />
+	<set name="SelectAllSortOperation" value="com.rayzen.operation.sort.SelectAllSortOperation" />
+<!--searchindex -->
+	<set name="UpdateFrequencyOperation" value="com.rayzen.operation.searchindex.UpdateFrequencyOperation" />
+<!--share-->
+	<set name="AddShareOperation" value="com.rayzen.operation.share.AddShareOperation" />
+	<set name="SelectShareOperation" value="com.rayzen.operation.share.SelectShareOperation" />
+	<set name="ModifyShareOperation" value="com.rayzen.operation.share.ModifyShareOperation" />
+	<set name="DelShareOperation" value="com.rayzen.operation.share.DelShareOperation" />
+	
+	<set name="SelectAllShareOperation" value="com.rayzen.operation.share.SelectAllShareOperation" />
+<!-- searchrecord -->
+	
+<set name="AddSearchrecordOperation" value="com.rayzen.operation.searchrecord.AddSearchrecordOperation" />
+<!-- synonyms -->
+<set name="AddSynonymsOperation" value="com.rayzen.operation.synonyms.AddSynonymsOperation" />
+<set name="SelectSynonymsOperation" value="com.rayzen.operation.synonyms.SelectSynonymsOperation" />
+<set name="ModifySynonymsOperation" value="com.rayzen.operation.synonyms.ModifySynonymsOperation" />
+<set name="DelSynonymsOperation" value="com.rayzen.operation.synonyms.DelSynonymsOperation" />
+<set name="SelectAllSynonymsOperation" value="com.rayzen.operation.synonyms.SelectAllSynonymsOperation" />
+<!--outbox -->
+
+<set name="AddOutBoxOperation" value="com.rayzen.operation.outbox.AddOutBoxOperation" />
+<set name="SelectAllOutBoxOperation" value="com.rayzen.operation.outbox.SelectAllOutBoxOperation" />
+<set name="SelectSingleOutBoxOperation" value="com.rayzen.operation.outbox.SelectSingleOutBoxOperation" />
+<set name="DelOutBoxOperation" value="com.rayzen.operation.outbox.DelOutBoxOperation" />
+<set name="CooperateToAddOutBoxOperation" value="com.rayzen.operation.outbox.CooperateToAddOutBoxOperation" />
+<!-- inbox -->
+
+
+<set name="AddInBoxOperation" value="com.rayzen.operation.inbox.AddInBoxOperation" />
+<set name="SelectAllInBoxOperation" value="com.rayzen.operation.inbox.SelectAllInBoxOperation" />
+<set name="SelectSingleInBoxOperation" value="com.rayzen.operation.inbox.SelectSingleInBoxOperation" />
+
+<set name="DelInBoxOperation" value="com.rayzen.operation.inbox.DelInBoxOperation" />
+
+	</settings>
+</breadthframework>

@@ -1,0 +1,9 @@
+D:\c#\AULWriter\obj\Debug\AULWriter.exe
+D:\c#\AULWriter\obj\Debug\AULWriter.pdb
+D:\c#\AULWriter\bin\Debug\AULWriter.exe
+D:\c#\AULWriter\bin\Debug\AULWriter.pdb
+D:\c#\AULWriter\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\AULWriter\obj\Debug\AULWriter.frmAULWriter.resources
+D:\c#\AULWriter\obj\Debug\AULWriter.Properties.Resources.resources
+D:\c#\AULWriter\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\c#\AULWriter\obj\Debug\GenerateResource-ResGen.write.1.tlog

@@ -1,0 +1,16 @@
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\bin\Debug\Server.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\bin\Debug\Server.exe
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\bin\Debug\Server.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\obj\Debug\Server.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\obj\Debug\Server.exe
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\obj\Debug\Server.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\Server\Server\obj\Debug\Server.ServerForm.resources
+C:\Users\Administrator\Desktop\IM\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Administrator\Desktop\IM\Server\Server\obj\Debug\Server.exe
+C:\Users\Administrator\Desktop\IM\Server\Server\obj\Debug\Server.pdb
+C:\Users\Administrator\Desktop\IM\Server\Server\bin\Debug\Server.exe
+C:\Users\Administrator\Desktop\IM\Server\Server\bin\Debug\Server.pdb
+C:\Users\Administrator\Desktop\IM\Server\Server\obj\Debug\Server.ServerForm.resources
+C:\Users\Administrator\Desktop\IM\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Administrator\Desktop\IM\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache

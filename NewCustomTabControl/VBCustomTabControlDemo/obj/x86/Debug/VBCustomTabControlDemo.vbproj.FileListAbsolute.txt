@@ -1,0 +1,9 @@
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\bin\Debug\VBCustomTabControlDemo.exe
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\bin\Debug\VBCustomTabControlDemo.pdb
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\bin\Debug\Jacksonsoft.CustomTabControl.dll
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\bin\Debug\Jacksonsoft.CustomTabControl.pdb
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\obj\x86\Debug\VBCustomTabControlDemo.MainForm.resources
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\obj\x86\Debug\VBCustomTabControlDemo.exe
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\obj\x86\Debug\VBCustomTabControlDemo.pdb
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\obj\x86\Debug\VBCustomTabControlDemo.vbprojResolveAssemblyReference.cache
+D:\c#\NewCustomTabControl\VBCustomTabControlDemo\obj\x86\Debug\VBCustomTabControlDemo.vbproj.GenerateResource.Cache

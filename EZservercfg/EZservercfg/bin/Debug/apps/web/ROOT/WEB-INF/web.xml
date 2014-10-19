@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<servlet>
+		<servlet-name>btis</servlet-name>
+		<servlet-class>
+			com.breadth.BreadthToolsInitServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ws</servlet-name>
+		<servlet-class>
+			com.breadth.ControlCenter.webserver.WebServerServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ws</servlet-name>
+		<url-pattern>*.ws</url-pattern>
+	</servlet-mapping>
+</web-app>
+

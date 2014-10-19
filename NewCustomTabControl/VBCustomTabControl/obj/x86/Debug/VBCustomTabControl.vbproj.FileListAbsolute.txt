@@ -1,0 +1,4 @@
+D:\c#\NewCustomTabControl\VBCustomTabControl\bin\Debug\Jacksonsoft.CustomTabControl.dll
+D:\c#\NewCustomTabControl\VBCustomTabControl\bin\Debug\Jacksonsoft.CustomTabControl.pdb
+D:\c#\NewCustomTabControl\VBCustomTabControl\obj\x86\Debug\Jacksonsoft.CustomTabControl.dll
+D:\c#\NewCustomTabControl\VBCustomTabControl\obj\x86\Debug\Jacksonsoft.CustomTabControl.pdb

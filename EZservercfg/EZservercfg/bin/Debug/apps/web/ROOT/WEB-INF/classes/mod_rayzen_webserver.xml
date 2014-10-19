@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breadthframework>
+	<settings name="webservice">
+ <!-- folder -->
+		<set name="addFolder" value="com.rayzen.webserver.folder.AddFolderWebserver" />
+		<set name="modifyFolderName" value="com.rayzen.webserver.folder.CooperationToModifyFolderNameWebserver" />		
+		<set name="modifyFolderCover" value="com.rayzen.webserver.folder.ModifyFolderCoverWebserver" />
+		<set name="delFolder" value="com.rayzen.webserver.folder.CooperateToDelFolderWebserver" />
+		<set name="selectAllFolder" value="com.rayzen.webserver.folder.SelectAllFolderWebserver" />
+		<set name="selectSharedFolder" value="com.rayzen.webserver.folder.SelectSharedFolderWebserver" />
+		
+<!-- doc -->
+		<set name="addDoc" value="com.rayzen.webserver.doc.AddDocWebserver" />
+		<set name="modifyDoc" value="com.rayzen.webserver.doc.ModifyDocWebserver" />
+		<set name="delDoc" value="com.rayzen.webserver.doc.DelDocWebserver" />
+		<set name="modifyDoc_Searchcontent" value="com.rayzen.webserver.doc.ModifyDoc_SearchcontentWebserver" />
+<!-- doc_log -->
+		<set name="addDoc_log" value="com.rayzen.webserver.doc_log.AddDoc_logWebserver" />
+<!-- favorites -->
+		<set name="addFavorites" value="com.rayzen.webserver.favorites.AddFavoritesWebserver" />
+		<set name="cooperationToAddFavorites" value="com.rayzen.webserver.favorites.CooperationToAddFavoritesWebserver" />
+		<set name="modifyFavorites" value="com.rayzen.webserver.favorites.ModifyFavoritesWebserver" />
+		<set name="modifyFavoritesName" value="com.rayzen.webserver.favorites.ModifyFavoritesNameWebserver" />
+		<set name="delFavorites" value="com.rayzen.webserver.favorites.DelFavoritesWebserver" />
+		<set name="selectAllFavorites" value="com.rayzen.webserver.favorites.SelectAllFavoritesWebserver" />
+		<set name="selectFavoritesByFolderid" value="com.rayzen.webserver.favorites.SelectFavoritesByFolderidWebserver" />
+		<set name="selectSharedFavorites" value="com.rayzen.webserver.favorites.SelectSharedFavoritesWebserver" />
+		
+<!-- inbox -->
+		<set name="addInBox" value="com.rayzen.webserver.inbox.AddInBoxWebserver" />
+		<set name="delInBox" value="com.rayzen.webserver.inbox.DelInBoxWebserver" />
+		<set name="selectSingleInBox" value="com.rayzen.webserver.inbox.SelectSingleInBoxWebserver" />
+		<set name="selectAllInBox" value="com.rayzen.webserver.inbox.SelectAllInBoxWebserver" />
+<!-- outbox -->
+		<set name="addOutBox" value="com.rayzen.webserver.outbox.AddOutBoxWebserver" />
+		<set name="delOutBox" value="com.rayzen.webserver.outbox.DelOutBoxWebserver" />
+		
+		<set name="selectAllOutBox" value="com.rayzen.webserver.outbox.SelectAllOutBoxWebserver" />
+		<set name="selectSingleOutBox" value="com.rayzen.webserver.outbox.SelectSingleOutBoxWebserver" />
+<!-- project -->
+		<set name="addProject" value="com.rayzen.webserver.project.AddProjectWebserver" />
+		<set name="modifyProject" value="com.rayzen.webserver.project.CooperateToModifyProjectWebserver" />
+		<set name="delProject" value="com.rayzen.webserver.project.DelProjectWebserver" />
+		<set name="cooperateToDelProject" value="com.rayzen.webserver.project.CooperateToDelProjectWebserver" />
+<!-- searchindex -->
+		<set name="updateFrequency" value="com.rayzen.webserver.searchindex.UpdateFrequencyWebserver" />
+<!-- searchrecord -->
+
+		<set name="addSearchrecord" value="com.rayzen.webserver.searchrecord.AddSearchrecordWebserver" />
+<!-- share -->
+		
+		<set name="addShare" value="com.rayzen.webserver.share.AddShareWebserver" />
+		<set name="modifyShare" value="com.rayzen.webserver.share.ModifyShareWebserver" />
+		<set name="delShare" value="com.rayzen.webserver.share.DelShareWebserver" />
+<!-- sort -->
+		<set name="addSort" value="com.rayzen.webserver.sort.AddSortWebserver" />
+		<set name="modifySort" value="com.rayzen.webserver.sort.ModifySortWebserver" />
+		<set name="delSort" value="com.rayzen.webserver.sort.DelSortWebserver" />
+		<set name="selectUserSort" value="com.rayzen.webserver.sort.SelectUserSortWebserver" />
+		<set name="selectSystem" value="com.rayzen.webserver.sort.SelectSystemSortWebserver" />
+		
+<!-- synonyms -->
+		<set name="addSynonyms" value="com.rayzen.webserver.synonyms.AddSynonymsWebserver" />
+		<set name="modifySynonyms" value="com.rayzen.webserver.synonyms.ModifySynonymsWebserver" />
+		<set name="delSynonyms" value="com.rayzen.webserver.synonyms.DelSynonymsWebserver" />
+<!-- outshare -->
+		<set name="addOutShare" value="com.rayzen.webserver.outshare.CooperateToAddOutShareWebserver" />
+		<set name="cancelSharedFolder" value="com.rayzen.webserver.outshare.CancelSharedFolderWebserver" />
+		<set name="modifySharedFolder" value="com.rayzen.webserver.outshare.ModifySharedFolderWebserver" />
+		
+		<set name="selectAllOutShare" value="com.rayzen.webserver.outshare.SelectAllOutShareWebserver" />
+		<set name="selectSingleOutShare" value="com.rayzen.webserver.outshare.SelectSingleOutShareWebserver" />
+<!-- inshare -->
+		<set name="delInShare" value="com.rayzen.webserver.inshare.DelInShareWebserver" />
+		<set name="selectSingleInShare" value="com.rayzen.webserver.inshare.SelectSingleInShareWebserver" />
+		<set name="modifySharedFolderName" value="com.rayzen.webserver.inshare.ModifySharedFolderNameWebserver" />
+		
+<!-- user -->
+		<set name="userValidate" value="com.rayzen.webserver.user.UserValidateWebserver" />
+		<set name="selectUserList" value="com.rayzen.webserver.user.SelectUserListWebserver" />
+		<set name="selectUserAuthorityList" value="com.rayzen.webserver.user.SelectUserAuthorityListWebserver" />
+		<set name="modifyUserPassword" value="com.rayzen.webserver.user.ModifyUserPasswordWebserver" />
+		<set name="modifyUserInfo" value="com.rayzen.webserver.user.ModifyUserInfoWebserver" />
+		<set name="selectUser" value="com.rayzen.webserver.user.SelectUserByUseridWebserver" />
+		
+<!-- search -->
+		<set name="addStaticfile_list" value="com.rayzen.webserver.search.AddStaticfile_listWebserver" />
+		<set name="addStaticfile_listWithSort" value="com.rayzen.webserver.search.AddStaticfile_listWithSortWebserver" />
+		<set name="updateStaticfile" value="com.rayzen.webserver.search.UpdateStaticfileWebserver" />
+		
+<!-- feedback -->
+		<set name="addFeedBack" value="com.rayzen.webserver.feedback.AddFeedBackWebserver" />
+<!-- keywords -->
+		<set name="addKeywords" value="com.rayzen.webserver.keywords.AddKeywordsWebserver" />
+	</settings>
+</breadthframework>

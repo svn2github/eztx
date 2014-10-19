@@ -1,0 +1,9 @@
+D:\c#\bianli2\bianli2\bin\Release\bianli2.exe
+D:\c#\bianli2\bianli2\bin\Release\bianli2.pdb
+D:\c#\bianli2\bianli2\obj\x86\Release\ResolveAssemblyReference.cache
+D:\c#\bianli2\bianli2\obj\x86\Release\bianli2.Form1.resources
+D:\c#\bianli2\bianli2\obj\x86\Release\bianli2.Properties.Resources.resources
+D:\c#\bianli2\bianli2\obj\x86\Release\GenerateResource.read.1.tlog
+D:\c#\bianli2\bianli2\obj\x86\Release\GenerateResource.write.1.tlog
+D:\c#\bianli2\bianli2\obj\x86\Release\bianli2.exe
+D:\c#\bianli2\bianli2\obj\x86\Release\bianli2.pdb

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FlatTabControl">
+</Property><Property Name="解决方案文件" Value="D:\c#\FlatTabControl_src\FlatTabControl.sln">
+</Property><Property Name="Date" Value="2013年2月22日">
+</Property><Property Name="Time" Value="16:07">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="FlatTabControl.sln" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControl.sln">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.csproj" Description="项目文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControl\FlatTabControl.csproj">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.csproj.user" Description="项目用户文件成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControl\FlatTabControl.csproj.user">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControl\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.cs" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControl\FlatTabControl.cs">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\Win32.cs" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControl\Win32.cs">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.resx" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControl\FlatTabControl.resx">
+</Event><Event ErrorLevel="1" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\FlatTabControlTest.csproj" Description="项目文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControlTest\FlatTabControlTest.csproj">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\FlatTabControlTest.csproj.user" Description="项目用户文件成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControlTest\FlatTabControlTest.csproj.user">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControlTest\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\Form1.cs" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControlTest\Form1.cs">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\App.ico" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControlTest\App.ico">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\Form1.resx" Description="文件已成功备份为 D:\c#\FlatTabControl_src\Backup\FlatTabControlTest\Form1.resx">
+</Event><Event ErrorLevel="1" Project="FlatTabControlTest" Source="FlatTabControlTest\FlatTabControlTest.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\FlatTabControlTest.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FlatTabControlTest" Source="FlatTabControlTest\FlatTabControlTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FlatTabControl.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="FlatTabControl.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlatTabControl" Source="FlatTabControl\FlatTabControl.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FlatTabControlTest" Source="FlatTabControlTest\FlatTabControlTest.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

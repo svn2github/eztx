@@ -1,0 +1,1992 @@
+121010 15:53:54 [Note] Plugin 'FEDERATED' is disabled.
+121010 15:53:54  InnoDB: Initializing buffer pool, size = 8.0M
+121010 15:53:54  InnoDB: Completed initialization of buffer pool
+InnoDB: The first specified data file .\ibdata1 did not exist:
+InnoDB: a new database to be created!
+121010 15:53:54  InnoDB: Setting file .\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+121010 15:53:54  InnoDB: Log file .\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile0 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+121010 15:53:55  InnoDB: Log file .\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile1 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+121010 15:53:56  InnoDB: Started; log sequence number 0 0
+121010 15:53:56 [Note] Event Scheduler: Loaded 0 events
+121010 15:53:56 [Note] E:\setup\mysql-5.1.55-win32\bin\mysqld.exe: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 15:59:15 [Note] Plugin 'FEDERATED' is disabled.
+121010 15:59:16  InnoDB: Error: unable to create temporary file; errno: 2
+121010 15:59:16 [ERROR] Plugin 'InnoDB' init function returned error.
+121010 15:59:16 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+121010 15:59:16 [ERROR] mysqld: unknown variable 'defaults-file=E:\setup\my.ini'
+121010 15:59:16 [ERROR] Aborting
+
+121010 15:59:16 [Note] mysqld: Shutdown complete
+
+121010 16:00:06 [Note] Plugin 'FEDERATED' is disabled.
+121010 16:00:07  InnoDB: Error: unable to create temporary file; errno: 2
+121010 16:00:07 [ERROR] Plugin 'InnoDB' init function returned error.
+121010 16:00:07 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+121010 16:00:07 [ERROR] mysqld: unknown variable 'defaults-file=E:\setup\my.ini'
+121010 16:00:07 [ERROR] Aborting
+
+121010 16:00:07 [Note] mysqld: Shutdown complete
+
+121010 16:08:02 [Note] Plugin 'FEDERATED' is disabled.
+121010 16:08:02  InnoDB: Initializing buffer pool, size = 8.0M
+121010 16:08:02  InnoDB: Completed initialization of buffer pool
+121010 16:08:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:08:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:08:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:08:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:08:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:08:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:09:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:09:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:09:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:09:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:09:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:09:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:10:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:10:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:10:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:10:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:10:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:10:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:11:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:11:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:11:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:11:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:11:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:11:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:12:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:12:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:12:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:12:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:12:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:12:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:13:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:13:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:13:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:13:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:13:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:13:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:14:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:14:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:14:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:14:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:14:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:14:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:15:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:15:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:15:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:15:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:15:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:15:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:16:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:16:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:16:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:16:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:16:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:16:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:17:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:17:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:17:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:17:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:17:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:17:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:18:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:18:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:18:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:18:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:18:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:18:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:19:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:19:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:19:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:19:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:19:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:19:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:20:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:20:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:20:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:20:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:20:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:20:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:21:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:21:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:21:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:21:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:21:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:21:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:22:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:22:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:22:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:22:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:22:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:22:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:23:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:23:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:23:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:23:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:23:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:23:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:24:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:24:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:24:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:24:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:24:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:24:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:25:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:25:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:25:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:25:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:25:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:25:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:26:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:26:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:26:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:26:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:26:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:26:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:27:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:27:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:27:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:27:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:27:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:27:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:28:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:28:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:28:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:28:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:28:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:28:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:29:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:29:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:29:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:29:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:29:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:29:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:30:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:30:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:30:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:30:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:30:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:30:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:31:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:31:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:31:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:31:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:31:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:31:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:32:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:32:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:32:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:32:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:32:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:32:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:29 [Note] Plugin 'FEDERATED' is disabled.
+121010 16:33:29  InnoDB: Initializing buffer pool, size = 8.0M
+121010 16:33:29  InnoDB: Completed initialization of buffer pool
+121010 16:33:29  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:39  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:49  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:33:59  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:34:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:34:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:34:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:34:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:34:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:34:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:35:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:35:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:35:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:35:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:35:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:35:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:36:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:36:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:36:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:36:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:36:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:36:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:37:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:37:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:37:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:37:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:37:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:37:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:38:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:38:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:38:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:38:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:38:42  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:38:52  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:39:02  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:39:12  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:39:22  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121010 16:39:32  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+121010 16:39:42  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+121010 16:39:44  InnoDB: Started; log sequence number 0 44233
+121010 16:39:44 [Note] Event Scheduler: Loaded 0 events
+121010 16:39:44 [Note] E:\setup\mysql-5.1.55-win32\bin\mysqld: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 16:39:54 [Note] E:\setup\mysql-5.1.55-win32\bin\mysqld: Normal shutdown
+
+121010 16:39:54 [Note] Event Scheduler: Purging the queue. 0 events
+121010 16:39:54  InnoDB: Starting shutdown...
+121010 16:40:00  InnoDB: Shutdown completed; log sequence number 0 44233
+121010 16:40:00 [Note] E:\setup\mysql-5.1.55-win32\bin\mysqld: Shutdown complete
+
+121010 16:44:03 [Note] Plugin 'FEDERATED' is disabled.
+121010 16:44:03  InnoDB: Initializing buffer pool, size = 8.0M
+121010 16:44:03  InnoDB: Completed initialization of buffer pool
+121010 16:44:04  InnoDB: Started; log sequence number 0 44233
+121010 16:44:04 [Note] Event Scheduler: Loaded 0 events
+121010 16:44:04 [Note] E:\setup\mysql-5.1.55-win32\bin\mysqld: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 16:44:46 [Note] E:\setup\mysql-5.1.55-win32\bin\mysqld: Normal shutdown
+
+121010 16:44:46 [Note] Event Scheduler: Purging the queue. 0 events
+121010 16:44:46  InnoDB: Starting shutdown...
+121010 16:44:49  InnoDB: Shutdown completed; log sequence number 0 44233
+121010 16:44:49 [Note] E:\setup\mysql-5.1.55-win32\bin\mysqld: Shutdown complete
+
+121010 16:46:19 [Note] Plugin 'FEDERATED' is disabled.
+121010 16:46:19  InnoDB: Initializing buffer pool, size = 8.0M
+121010 16:46:19  InnoDB: Completed initialization of buffer pool
+121010 16:46:19  InnoDB: Started; log sequence number 0 44233
+121010 16:46:19 [Note] Event Scheduler: Loaded 0 events
+121010 16:46:19 [Note] E:\setup\mysql5\bin\mysqld: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 16:46:29 [Note] E:\setup\mysql5\bin\mysqld: Normal shutdown
+
+121010 16:46:29 [Note] Event Scheduler: Purging the queue. 0 events
+121010 16:46:29  InnoDB: Starting shutdown...
+121010 16:46:30  InnoDB: Shutdown completed; log sequence number 0 44233
+121010 16:46:30 [Note] E:\setup\mysql5\bin\mysqld: Shutdown complete
+
+121010 16:46:38 [Note] Plugin 'FEDERATED' is disabled.
+121010 16:46:38  InnoDB: Initializing buffer pool, size = 8.0M
+121010 16:46:38  InnoDB: Completed initialization of buffer pool
+121010 16:46:39  InnoDB: Started; log sequence number 0 44233
+121010 16:46:39 [Note] Event Scheduler: Loaded 0 events
+121010 16:46:39 [Note] E:\setup\mysql5\bin\mysqld: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 16:58:30 [Note] E:\setup\mysql5\bin\mysqld: Normal shutdown
+
+121010 16:58:30 [Note] Event Scheduler: Purging the queue. 0 events
+121010 16:58:32 [Warning] E:\setup\mysql5\bin\mysqld: Forcing close of thread 48  user: 'root'
+
+121010 16:58:32 [Warning] E:\setup\mysql5\bin\mysqld: Forcing close of thread 46  user: 'root'
+
+121010 16:58:32 [Warning] E:\setup\mysql5\bin\mysqld: Forcing close of thread 45  user: 'root'
+
+121010 16:58:32  InnoDB: Starting shutdown...
+121010 16:58:34  InnoDB: Shutdown completed; log sequence number 0 44233
+121010 16:58:34 [Note] E:\setup\mysql5\bin\mysqld: Shutdown complete
+
+121010 16:59:49 [Note] Plugin 'FEDERATED' is disabled.
+121010 16:59:49  InnoDB: Initializing buffer pool, size = 8.0M
+121010 16:59:49  InnoDB: Completed initialization of buffer pool
+121010 16:59:50  InnoDB: Started; log sequence number 0 44233
+121010 16:59:50 [Note] Event Scheduler: Loaded 0 events
+121010 16:59:50 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 17:07:11 [Note] mysql: Normal shutdown
+
+121010 17:07:11 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:07:11  InnoDB: Starting shutdown...
+121010 17:07:15  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:07:15 [Note] mysql: Shutdown complete
+
+121010 17:09:12 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:09:12  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:09:12  InnoDB: Completed initialization of buffer pool
+121010 17:09:13  InnoDB: Started; log sequence number 0 44243
+121010 17:09:13 [Note] Event Scheduler: Loaded 0 events
+121010 17:09:13 [Note] E:\setup\mysql5\bin\mysqld: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 17:09:43 [Note] E:\setup\mysql5\bin\mysqld: Normal shutdown
+
+121010 17:09:43 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:09:43  InnoDB: Starting shutdown...
+121010 17:09:48  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:09:48 [Note] E:\setup\mysql5\bin\mysqld: Shutdown complete
+
+121010 17:16:04 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:16:04  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:16:04  InnoDB: Completed initialization of buffer pool
+121010 17:16:04  InnoDB: Started; log sequence number 0 44243
+121010 17:16:04 [Note] Event Scheduler: Loaded 0 events
+121010 17:16:04 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 17:16:22 [Note] mysql: Normal shutdown
+
+121010 17:16:22 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:16:22  InnoDB: Starting shutdown...
+121010 17:16:24  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:16:24 [Note] mysql: Shutdown complete
+
+121010 17:16:42 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:16:43  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:16:43  InnoDB: Completed initialization of buffer pool
+121010 17:16:43  InnoDB: Started; log sequence number 0 44243
+121010 17:16:43 [Note] Event Scheduler: Loaded 0 events
+121010 17:16:43 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 17:16:58 [Note] mysql: Normal shutdown
+
+121010 17:16:58 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:16:58  InnoDB: Starting shutdown...
+121010 17:16:58  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:16:58 [Note] mysql: Shutdown complete
+
+121010 17:17:43 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:17:43  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:17:43  InnoDB: Completed initialization of buffer pool
+121010 17:17:44  InnoDB: Started; log sequence number 0 44243
+121010 17:17:44 [Note] Event Scheduler: Loaded 0 events
+121010 17:17:44 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 17:18:14 [Note] mysql: Normal shutdown
+
+121010 17:18:14 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:18:14  InnoDB: Starting shutdown...
+121010 17:18:19  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:18:19 [Note] mysql: Shutdown complete
+
+121010 17:18:24 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:18:24  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:18:24  InnoDB: Completed initialization of buffer pool
+121010 17:18:24  InnoDB: Started; log sequence number 0 44243
+121010 17:18:24 [Note] Event Scheduler: Loaded 0 events
+121010 17:18:24 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 17:18:55 [Note] mysql: Normal shutdown
+
+121010 17:18:55 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:18:55  InnoDB: Starting shutdown...
+121010 17:18:59  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:18:59 [Note] mysql: Shutdown complete
+
+121010 17:19:03 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:19:03  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:19:03  InnoDB: Completed initialization of buffer pool
+121010 17:19:03  InnoDB: Started; log sequence number 0 44243
+121010 17:19:03 [Note] Event Scheduler: Loaded 0 events
+121010 17:19:03 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121010 17:21:58 [Note] mysql: Normal shutdown
+
+121010 17:21:58 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:21:58  InnoDB: Starting shutdown...
+121010 17:22:03  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:22:03 [Note] mysql: Shutdown complete
+
+121010 17:25:38 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:25:39  InnoDB: Initializing buffer pool, size = 2.0G
+121010 17:25:39  InnoDB: Error: cannot allocate 2147500032 bytes of
+InnoDB: memory with malloc! Total allocated memory
+InnoDB: by InnoDB 23653196 bytes. Operating system errno: 8
+InnoDB: Check if you should increase the swap file or
+InnoDB: ulimits of your operating system.
+InnoDB: On FreeBSD check you have compiled the OS with
+InnoDB: a big enough maximum process size.
+InnoDB: Note that in most 32-bit computers the process
+InnoDB: memory space is limited to 2 GB or 4 GB.
+InnoDB: We keep retrying the allocation for 60 seconds...
+121010 17:26:39InnoDB: Fatal error: cannot allocate the memory for the buffer pool
+121010 17:26:39 [ERROR] Plugin 'InnoDB' init function returned error.
+121010 17:26:39 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+121010 17:26:39 [Note] Event Scheduler: Loaded 0 events
+121010 17:26:39 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121010 17:26:44 [Note] mysql: Normal shutdown
+
+121010 17:26:44 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:26:44 [Note] mysql: Shutdown complete
+
+121010 17:26:50 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:26:50  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:26:50  InnoDB: Completed initialization of buffer pool
+121010 17:26:50  InnoDB: Started; log sequence number 0 44243
+121010 17:26:50 [Note] Event Scheduler: Loaded 0 events
+121010 17:26:50 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121010 17:36:43 [Note] mysql: Normal shutdown
+
+121010 17:36:43 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:36:45 [Warning] mysql: Forcing close of thread 2  user: 'root'
+
+121010 17:36:45 [Warning] mysql: Forcing close of thread 1  user: 'root'
+
+121010 17:36:45  InnoDB: Starting shutdown...
+121010 17:36:46  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:36:46 [Note] mysql: Shutdown complete
+
+121010 17:36:50 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:36:51  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:36:51  InnoDB: Completed initialization of buffer pool
+121010 17:36:51  InnoDB: Started; log sequence number 0 44243
+121010 17:36:51 [Note] Event Scheduler: Loaded 0 events
+121010 17:36:51 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121010 17:40:14 [Note] mysql: Normal shutdown
+
+121010 17:40:14 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:40:14  InnoDB: Starting shutdown...
+121010 17:40:16  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:40:16 [Note] mysql: Shutdown complete
+
+121010 17:40:19 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:40:19  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:40:19  InnoDB: Completed initialization of buffer pool
+121010 17:40:19  InnoDB: Started; log sequence number 0 44243
+121010 17:40:19 [Note] Event Scheduler: Loaded 0 events
+121010 17:40:19 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121010 17:40:39 [Note] mysql: Normal shutdown
+
+121010 17:40:39 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:40:39  InnoDB: Starting shutdown...
+121010 17:40:40  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:40:40 [Note] mysql: Shutdown complete
+
+121010 17:43:55 [Note] Plugin 'FEDERATED' is disabled.
+121010 17:43:55  InnoDB: Initializing buffer pool, size = 8.0M
+121010 17:43:55  InnoDB: Completed initialization of buffer pool
+121010 17:43:55  InnoDB: Started; log sequence number 0 44243
+121010 17:43:55 [Note] Event Scheduler: Loaded 0 events
+121010 17:43:55 [Note] mysql: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121010 17:48:20 [Note] mysql: Normal shutdown
+
+121010 17:48:20 [Note] Event Scheduler: Purging the queue. 0 events
+121010 17:48:20  InnoDB: Starting shutdown...
+121010 17:48:21  InnoDB: Shutdown completed; log sequence number 0 44243
+121010 17:48:21 [Note] mysql: Shutdown complete
+
+121011  9:03:26 [Note] Plugin 'FEDERATED' is disabled.
+121011  9:03:26  InnoDB: Initializing buffer pool, size = 8.0M
+121011  9:03:26  InnoDB: Completed initialization of buffer pool
+121011  9:03:26  InnoDB: Started; log sequence number 0 44243
+121011  9:03:27 [Note] Event Scheduler: Loaded 0 events
+121011  9:03:27 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011  9:03:56 [Note] mysql: Normal shutdown
+
+121011  9:03:56 [Note] Event Scheduler: Purging the queue. 0 events
+121011  9:03:56  InnoDB: Starting shutdown...
+121011  9:03:57  InnoDB: Shutdown completed; log sequence number 0 44243
+121011  9:03:57 [Note] mysql: Shutdown complete
+
+121011  9:10:55 [Note] Plugin 'FEDERATED' is disabled.
+121011  9:10:55  InnoDB: Initializing buffer pool, size = 8.0M
+121011  9:10:55  InnoDB: Completed initialization of buffer pool
+121011  9:10:55  InnoDB: Started; log sequence number 0 44243
+121011  9:10:55 [Note] Event Scheduler: Loaded 0 events
+121011  9:10:55 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011  9:13:02 [Note] mysql: Normal shutdown
+
+121011  9:13:02 [Note] Event Scheduler: Purging the queue. 0 events
+121011  9:13:02  InnoDB: Starting shutdown...
+121011  9:13:06  InnoDB: Shutdown completed; log sequence number 0 44243
+121011  9:13:06 [Note] mysql: Shutdown complete
+
+121011  9:13:16 [Note] Plugin 'FEDERATED' is disabled.
+121011  9:13:16  InnoDB: Initializing buffer pool, size = 8.0M
+121011  9:13:16  InnoDB: Completed initialization of buffer pool
+121011  9:13:16  InnoDB: Started; log sequence number 0 44243
+121011  9:13:17 [Note] Event Scheduler: Loaded 0 events
+121011  9:13:17 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011  9:18:05 [Note] mysql: Normal shutdown
+
+121011  9:18:05 [Note] Event Scheduler: Purging the queue. 0 events
+121011  9:18:05  InnoDB: Starting shutdown...
+121011  9:18:07  InnoDB: Shutdown completed; log sequence number 0 44243
+121011  9:18:07 [Note] mysql: Shutdown complete
+
+121011  9:32:27 [Note] Plugin 'FEDERATED' is disabled.
+121011  9:32:27  InnoDB: Initializing buffer pool, size = 8.0M
+121011  9:32:27  InnoDB: Completed initialization of buffer pool
+121011  9:32:27  InnoDB: Started; log sequence number 0 44243
+121011  9:32:27 [Note] Event Scheduler: Loaded 0 events
+121011  9:32:27 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011  9:34:09 [Note] mysql: Normal shutdown
+
+121011  9:34:09 [Note] Event Scheduler: Purging the queue. 0 events
+121011  9:34:09  InnoDB: Starting shutdown...
+121011  9:34:12  InnoDB: Shutdown completed; log sequence number 0 44253
+121011  9:34:12 [Note] mysql: Shutdown complete
+
+121011  9:43:03 [Note] Plugin 'FEDERATED' is disabled.
+121011  9:43:03  InnoDB: Initializing buffer pool, size = 8.0M
+121011  9:43:03  InnoDB: Completed initialization of buffer pool
+121011  9:43:04  InnoDB: Started; log sequence number 0 44253
+121011  9:43:04 [Note] Event Scheduler: Loaded 0 events
+121011  9:43:04 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011  9:47:47 [Note] mysql: Normal shutdown
+
+121011  9:47:47 [Note] Event Scheduler: Purging the queue. 0 events
+121011  9:47:47  InnoDB: Starting shutdown...
+121011  9:47:49  InnoDB: Shutdown completed; log sequence number 0 44253
+121011  9:47:49 [Note] mysql: Shutdown complete
+
+121011 10:11:26 [Note] Plugin 'FEDERATED' is disabled.
+121011 10:11:26  InnoDB: Initializing buffer pool, size = 8.0M
+121011 10:11:26  InnoDB: Completed initialization of buffer pool
+121011 10:11:26  InnoDB: Started; log sequence number 0 44253
+121011 10:11:27 [Note] Event Scheduler: Loaded 0 events
+121011 10:11:27 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 10:11:31 [Note] mysql: Normal shutdown
+
+121011 10:11:31 [Note] Event Scheduler: Purging the queue. 0 events
+121011 10:11:31  InnoDB: Starting shutdown...
+121011 10:11:32  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 10:11:32 [Note] mysql: Shutdown complete
+
+121011 10:27:12 [Note] Plugin 'FEDERATED' is disabled.
+121011 10:27:12  InnoDB: Initializing buffer pool, size = 8.0M
+121011 10:27:12  InnoDB: Completed initialization of buffer pool
+121011 10:27:12  InnoDB: Started; log sequence number 0 44253
+121011 10:27:12 [Note] Event Scheduler: Loaded 0 events
+121011 10:27:12 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 10:33:29 [Note] mysql: Normal shutdown
+
+121011 10:33:29 [Note] Event Scheduler: Purging the queue. 0 events
+121011 10:33:29  InnoDB: Starting shutdown...
+121011 10:33:32  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 10:33:32 [Note] mysql: Shutdown complete
+
+121011 10:42:13 [Note] Plugin 'FEDERATED' is disabled.
+121011 10:42:13  InnoDB: Initializing buffer pool, size = 8.0M
+121011 10:42:13  InnoDB: Completed initialization of buffer pool
+121011 10:42:14  InnoDB: Started; log sequence number 0 44253
+121011 10:42:14 [Note] Event Scheduler: Loaded 0 events
+121011 10:42:14 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 10:42:42 [Note] mysql: Normal shutdown
+
+121011 10:42:42 [Note] Event Scheduler: Purging the queue. 0 events
+121011 10:42:42  InnoDB: Starting shutdown...
+121011 10:42:44  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 10:42:44 [Note] mysql: Shutdown complete
+
+121011 10:43:14 [Note] Plugin 'FEDERATED' is disabled.
+121011 10:43:14  InnoDB: Initializing buffer pool, size = 8.0M
+121011 10:43:14  InnoDB: Completed initialization of buffer pool
+121011 10:43:14  InnoDB: Started; log sequence number 0 44253
+121011 10:43:14 [Note] Event Scheduler: Loaded 0 events
+121011 10:43:14 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 10:47:04 [Note] mysql: Normal shutdown
+
+121011 10:47:04 [Note] Event Scheduler: Purging the queue. 0 events
+121011 10:47:04  InnoDB: Starting shutdown...
+121011 10:47:09  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 10:47:09 [Note] mysql: Shutdown complete
+
+121011 10:47:22 [Note] Plugin 'FEDERATED' is disabled.
+121011 10:47:22  InnoDB: Initializing buffer pool, size = 8.0M
+121011 10:47:22  InnoDB: Completed initialization of buffer pool
+121011 10:47:23  InnoDB: Started; log sequence number 0 44253
+121011 10:47:23 [Note] Event Scheduler: Loaded 0 events
+121011 10:47:23 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 10:49:50 [Note] mysql: Normal shutdown
+
+121011 10:49:50 [Note] Event Scheduler: Purging the queue. 0 events
+121011 10:49:50  InnoDB: Starting shutdown...
+121011 10:49:53  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 10:49:53 [Note] mysql: Shutdown complete
+
+121011 10:50:02 [Note] Plugin 'FEDERATED' is disabled.
+121011 10:50:02  InnoDB: Initializing buffer pool, size = 8.0M
+121011 10:50:02  InnoDB: Completed initialization of buffer pool
+121011 10:50:02  InnoDB: Started; log sequence number 0 44253
+121011 10:50:02 [Note] Event Scheduler: Loaded 0 events
+121011 10:50:02 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 10:54:33 [Note] mysql: Normal shutdown
+
+121011 10:54:33 [Note] Event Scheduler: Purging the queue. 0 events
+121011 10:54:33  InnoDB: Starting shutdown...
+121011 10:54:37  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 10:54:37 [Note] mysql: Shutdown complete
+
+121011 10:54:42 [Note] Plugin 'FEDERATED' is disabled.
+121011 10:54:43  InnoDB: Initializing buffer pool, size = 8.0M
+121011 10:54:43  InnoDB: Completed initialization of buffer pool
+121011 10:54:43  InnoDB: Started; log sequence number 0 44253
+121011 10:54:43 [Note] Event Scheduler: Loaded 0 events
+121011 10:54:43 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 10:55:30 [Note] mysql: Normal shutdown
+
+121011 10:55:30 [Note] Event Scheduler: Purging the queue. 0 events
+121011 10:55:30  InnoDB: Starting shutdown...
+121011 10:55:33  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 10:55:33 [Note] mysql: Shutdown complete
+
+121011 11:15:49 [Note] Plugin 'FEDERATED' is disabled.
+121011 11:15:49  InnoDB: Initializing buffer pool, size = 8.0M
+121011 11:15:49  InnoDB: Completed initialization of buffer pool
+121011 11:15:49  InnoDB: Started; log sequence number 0 44253
+121011 11:15:49 [Note] Event Scheduler: Loaded 0 events
+121011 11:15:49 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 13:02:43 [Note] mysql: Normal shutdown
+
+121011 13:02:43 [Note] Event Scheduler: Purging the queue. 0 events
+121011 13:02:43  InnoDB: Starting shutdown...
+121011 13:02:46  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 13:02:46 [Note] mysql: Shutdown complete
+
+121011 13:02:49 [Note] Plugin 'FEDERATED' is disabled.
+121011 13:02:50  InnoDB: Initializing buffer pool, size = 8.0M
+121011 13:02:50  InnoDB: Completed initialization of buffer pool
+121011 13:02:50  InnoDB: Started; log sequence number 0 44253
+121011 13:02:50 [Note] Event Scheduler: Loaded 0 events
+121011 13:02:50 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 13:03:03 [Note] mysql: Normal shutdown
+
+121011 13:03:03 [Note] Event Scheduler: Purging the queue. 0 events
+121011 13:03:03  InnoDB: Starting shutdown...
+121011 13:03:05  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 13:03:05 [Note] mysql: Shutdown complete
+
+121011 13:06:04 [Note] Plugin 'FEDERATED' is disabled.
+121011 13:06:05  InnoDB: Initializing buffer pool, size = 8.0M
+121011 13:06:05  InnoDB: Completed initialization of buffer pool
+121011 13:06:05  InnoDB: Started; log sequence number 0 44253
+121011 13:06:05 [Note] Event Scheduler: Loaded 0 events
+121011 13:06:05 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 13:06:28 [Note] mysql: Normal shutdown
+
+121011 13:06:28 [Note] Event Scheduler: Purging the queue. 0 events
+121011 13:06:28  InnoDB: Starting shutdown...
+121011 13:06:30  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 13:06:30 [Note] mysql: Shutdown complete
+
+121011 13:07:36 [Note] Plugin 'FEDERATED' is disabled.
+121011 13:07:36  InnoDB: Initializing buffer pool, size = 8.0M
+121011 13:07:36  InnoDB: Completed initialization of buffer pool
+121011 13:07:37  InnoDB: Started; log sequence number 0 44253
+121011 13:07:37 [Note] Event Scheduler: Loaded 0 events
+121011 13:07:37 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 13:07:51 [Note] mysql: Normal shutdown
+
+121011 13:07:51 [Note] Event Scheduler: Purging the queue. 0 events
+121011 13:07:51  InnoDB: Starting shutdown...
+121011 13:07:52  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 13:07:52 [Note] mysql: Shutdown complete
+
+121011 13:46:13 [Note] Plugin 'FEDERATED' is disabled.
+121011 13:46:13  InnoDB: Initializing buffer pool, size = 8.0M
+121011 13:46:13  InnoDB: Completed initialization of buffer pool
+121011 13:46:14  InnoDB: Started; log sequence number 0 44253
+121011 13:46:14 [Note] Event Scheduler: Loaded 0 events
+121011 13:46:14 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 13:48:08 [Note] mysql: Normal shutdown
+
+121011 13:48:08 [Note] Event Scheduler: Purging the queue. 0 events
+121011 13:48:08  InnoDB: Starting shutdown...
+121011 13:48:09  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 13:48:09 [Note] mysql: Shutdown complete
+
+121011 13:50:01 [Note] Plugin 'FEDERATED' is disabled.
+121011 13:50:01  InnoDB: Initializing buffer pool, size = 8.0M
+121011 13:50:01  InnoDB: Completed initialization of buffer pool
+121011 13:50:01  InnoDB: Started; log sequence number 0 44253
+121011 13:50:01 [Note] Event Scheduler: Loaded 0 events
+121011 13:50:01 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:04:31 [Note] mysql: Normal shutdown
+
+121011 14:04:31 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:04:31  InnoDB: Starting shutdown...
+121011 14:04:32  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:04:32 [Note] mysql: Shutdown complete
+
+121011 14:04:36 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:04:36  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:04:36  InnoDB: Completed initialization of buffer pool
+121011 14:04:36  InnoDB: Started; log sequence number 0 44253
+121011 14:04:36 [Note] Event Scheduler: Loaded 0 events
+121011 14:04:36 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:05:35 [Note] mysql: Normal shutdown
+
+121011 14:05:35 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:05:35  InnoDB: Starting shutdown...
+121011 14:05:37  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:05:37 [Note] mysql: Shutdown complete
+
+121011 14:05:51 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:05:51  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:05:51  InnoDB: Completed initialization of buffer pool
+121011 14:05:51  InnoDB: Started; log sequence number 0 44253
+121011 14:05:51 [Note] Event Scheduler: Loaded 0 events
+121011 14:05:51 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:06:53 [Note] mysql: Normal shutdown
+
+121011 14:06:53 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:06:53  InnoDB: Starting shutdown...
+121011 14:06:56  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:06:56 [Note] mysql: Shutdown complete
+
+121011 14:07:10 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:07:10  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:07:10  InnoDB: Completed initialization of buffer pool
+121011 14:07:11  InnoDB: Started; log sequence number 0 44253
+121011 14:07:11 [Note] Event Scheduler: Loaded 0 events
+121011 14:07:11 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:07:21 [Note] mysql: Normal shutdown
+
+121011 14:07:21 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:07:21  InnoDB: Starting shutdown...
+121011 14:07:26  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:07:26 [Note] mysql: Shutdown complete
+
+121011 14:07:57 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:07:57  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:07:57  InnoDB: Completed initialization of buffer pool
+121011 14:07:57  InnoDB: Started; log sequence number 0 44253
+121011 14:07:57 [Note] Event Scheduler: Loaded 0 events
+121011 14:07:57 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:08:09 [Note] mysql: Normal shutdown
+
+121011 14:08:09 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:08:09  InnoDB: Starting shutdown...
+121011 14:08:13  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:08:13 [Note] mysql: Shutdown complete
+
+121011 14:24:01 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:24:01  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:24:01  InnoDB: Completed initialization of buffer pool
+121011 14:24:02  InnoDB: Started; log sequence number 0 44253
+121011 14:24:02 [Note] Event Scheduler: Loaded 0 events
+121011 14:24:02 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:24:34 [Note] mysql: Normal shutdown
+
+121011 14:24:34 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:24:34  InnoDB: Starting shutdown...
+121011 14:24:37  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:24:37 [Note] mysql: Shutdown complete
+
+121011 14:25:00 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:25:00  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:25:00  InnoDB: Completed initialization of buffer pool
+121011 14:25:00  InnoDB: Started; log sequence number 0 44253
+121011 14:25:00 [Note] Event Scheduler: Loaded 0 events
+121011 14:25:00 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:26:22 [Note] mysql: Normal shutdown
+
+121011 14:26:22 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:26:22  InnoDB: Starting shutdown...
+121011 14:26:26  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:26:26 [Note] mysql: Shutdown complete
+
+121011 14:31:22 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:31:22  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:31:22  InnoDB: Completed initialization of buffer pool
+121011 14:31:22  InnoDB: Started; log sequence number 0 44253
+121011 14:31:22 [Note] Event Scheduler: Loaded 0 events
+121011 14:31:22 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:31:52 [Note] mysql: Normal shutdown
+
+121011 14:31:52 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:31:52  InnoDB: Starting shutdown...
+121011 14:31:52  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:31:52 [Note] mysql: Shutdown complete
+
+121011 14:32:22 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:32:23  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:32:23  InnoDB: Completed initialization of buffer pool
+121011 14:32:23  InnoDB: Started; log sequence number 0 44253
+121011 14:32:23 [Note] Event Scheduler: Loaded 0 events
+121011 14:32:23 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:32:54 [Note] mysql: Normal shutdown
+
+121011 14:32:54 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:32:54  InnoDB: Starting shutdown...
+121011 14:32:58  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:32:58 [Note] mysql: Shutdown complete
+
+121011 14:47:41 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:47:41  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:47:41  InnoDB: Completed initialization of buffer pool
+121011 14:47:41  InnoDB: Started; log sequence number 0 44253
+121011 14:47:42 [Note] Event Scheduler: Loaded 0 events
+121011 14:47:42 [Note] MEZ_MySQL5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:48:08 [Note] MEZ_MySQL5: Normal shutdown
+
+121011 14:48:08 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:48:08  InnoDB: Starting shutdown...
+121011 14:48:12  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:48:12 [Note] MEZ_MySQL5: Shutdown complete
+
+121011 14:48:44 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:48:45  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:48:45  InnoDB: Completed initialization of buffer pool
+121011 14:48:45  InnoDB: Started; log sequence number 0 44253
+121011 14:48:45 [Note] Event Scheduler: Loaded 0 events
+121011 14:48:45 [Note] MeZvvMySQL5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:49:48 [Note] MeZvvMySQL5: Normal shutdown
+
+121011 14:49:48 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:49:48  InnoDB: Starting shutdown...
+121011 14:49:50  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:49:50 [Note] MeZvvMySQL5: Shutdown complete
+
+121011 14:52:20 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:52:20  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:52:20  InnoDB: Completed initialization of buffer pool
+121011 14:52:20  InnoDB: Started; log sequence number 0 44253
+121011 14:52:20 [Note] Event Scheduler: Loaded 0 events
+121011 14:52:20 [Note] MEZmysql5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:52:41 [Note] MEZmysql5: Normal shutdown
+
+121011 14:52:41 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:52:41  InnoDB: Starting shutdown...
+121011 14:52:45  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:52:45 [Note] MEZmysql5: Shutdown complete
+
+121011 14:54:50 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:54:50  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:54:50  InnoDB: Completed initialization of buffer pool
+121011 14:54:51  InnoDB: Started; log sequence number 0 44253
+121011 14:54:51 [Note] Event Scheduler: Loaded 0 events
+121011 14:54:51 [Note] MEZmysql5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 14:55:30 [Note] Plugin 'FEDERATED' is disabled.
+121011 14:55:30  InnoDB: Initializing buffer pool, size = 8.0M
+121011 14:55:30  InnoDB: Completed initialization of buffer pool
+121011 14:55:30  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121011 14:55:40  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121011 14:55:50  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121011 14:56:00  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121011 14:56:10  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121011 14:56:20  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121011 14:56:27 [Note] MEZmysql5: Normal shutdown
+
+121011 14:56:27 [Note] Event Scheduler: Purging the queue. 0 events
+121011 14:56:27  InnoDB: Starting shutdown...
+121011 14:56:30  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+121011 14:56:31  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 14:56:31 [Note] MEZmysql5: Shutdown complete
+
+121011 14:56:40  InnoDB: Started; log sequence number 0 44253
+121011 14:56:40 [Note] Event Scheduler: Loaded 0 events
+121011 14:56:40 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 15:03:49 [Note] mysql: Normal shutdown
+
+121011 15:03:49 [Note] Event Scheduler: Purging the queue. 0 events
+121011 15:03:49  InnoDB: Starting shutdown...
+121011 15:03:50  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 15:03:50 [Note] mysql: Shutdown complete
+
+121011 15:21:47 [Note] Plugin 'FEDERATED' is disabled.
+121011 15:21:47  InnoDB: Initializing buffer pool, size = 8.0M
+121011 15:21:47  InnoDB: Completed initialization of buffer pool
+121011 15:21:48  InnoDB: Started; log sequence number 0 44253
+121011 15:21:48 [Note] Event Scheduler: Loaded 0 events
+121011 15:21:48 [Note] mysql: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 15:22:46 [Note] mysql: Normal shutdown
+
+121011 15:22:46 [Note] Event Scheduler: Purging the queue. 0 events
+121011 15:22:46  InnoDB: Starting shutdown...
+121011 15:22:48  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 15:22:48 [Note] mysql: Shutdown complete
+
+121011 15:35:47 [Note] Plugin 'FEDERATED' is disabled.
+121011 15:35:47  InnoDB: Initializing buffer pool, size = 8.0M
+121011 15:35:47  InnoDB: Completed initialization of buffer pool
+121011 15:35:47  InnoDB: Started; log sequence number 0 44253
+121011 15:35:47 [Note] Event Scheduler: Loaded 0 events
+121011 15:35:47 [Note] MEZmysql5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 15:36:22 [Note] MEZmysql5: Normal shutdown
+
+121011 15:36:22 [Note] Event Scheduler: Purging the queue. 0 events
+121011 15:36:22  InnoDB: Starting shutdown...
+121011 15:36:27  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 15:36:27 [Note] MEZmysql5: Shutdown complete
+
+121011 15:38:13 [Note] Plugin 'FEDERATED' is disabled.
+121011 15:38:13  InnoDB: Initializing buffer pool, size = 8.0M
+121011 15:38:13  InnoDB: Completed initialization of buffer pool
+121011 15:38:13  InnoDB: Started; log sequence number 0 44253
+121011 15:38:13 [Note] Event Scheduler: Loaded 0 events
+121011 15:38:13 [Note] MEZmysql5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121011 15:38:30 [Note] MEZmysql5: Normal shutdown
+
+121011 15:38:30 [Note] Event Scheduler: Purging the queue. 0 events
+121011 15:38:30  InnoDB: Starting shutdown...
+121011 15:38:34  InnoDB: Shutdown completed; log sequence number 0 44253
+121011 15:38:34 [Note] MEZmysql5: Shutdown complete
+
+121012  9:32:31 [Note] Plugin 'FEDERATED' is disabled.
+121012  9:32:32  InnoDB: Initializing buffer pool, size = 8.0M
+121012  9:32:32  InnoDB: Completed initialization of buffer pool
+121012  9:32:32  InnoDB: Started; log sequence number 0 44253
+121012  9:32:32 [Note] Event Scheduler: Loaded 0 events
+121012  9:32:32 [Note] EZmysql5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121012  9:34:25 [Note] EZmysql5: Normal shutdown
+
+121012  9:34:25 [Note] Event Scheduler: Purging the queue. 0 events
+121012  9:34:25  InnoDB: Starting shutdown...
+121012  9:34:27  InnoDB: Shutdown completed; log sequence number 0 44253
+121012  9:34:27 [Note] EZmysql5: Shutdown complete
+
+121012 11:02:24 [Note] Plugin 'FEDERATED' is disabled.
+121012 11:02:25  InnoDB: Initializing buffer pool, size = 8.0M
+121012 11:02:25  InnoDB: Completed initialization of buffer pool
+121012 11:02:25  InnoDB: Started; log sequence number 0 44253
+121012 11:02:26 [Note] Event Scheduler: Loaded 0 events
+121012 11:02:26 [Note] EZmysql5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121012 11:08:48 [Note] EZmysql5: Normal shutdown
+
+121012 11:08:48 [Note] Event Scheduler: Purging the queue. 0 events
+121012 11:08:48  InnoDB: Starting shutdown...
+121012 11:08:51  InnoDB: Shutdown completed; log sequence number 0 44253
+121012 11:08:51 [Note] EZmysql5: Shutdown complete
+
+121012 11:09:39 [Note] Plugin 'FEDERATED' is disabled.
+121012 11:09:39  InnoDB: Initializing buffer pool, size = 8.0M
+121012 11:09:39  InnoDB: Completed initialization of buffer pool
+121012 11:09:39  InnoDB: Started; log sequence number 0 44253
+121012 11:09:39 [Note] Event Scheduler: Loaded 0 events
+121012 11:09:39 [Note] EZmysql5: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121012 11:09:51 [Note] EZmysql5: Normal shutdown
+
+121012 11:09:51 [Note] Event Scheduler: Purging the queue. 0 events
+121012 11:09:51  InnoDB: Starting shutdown...
+121012 11:09:54  InnoDB: Shutdown completed; log sequence number 0 44253
+121012 11:09:54 [Note] EZmysql5: Shutdown complete
+
+121026 15:32:33 [Note] Plugin 'FEDERATED' is disabled.
+121026 15:32:33  InnoDB: Initializing buffer pool, size = 8.0M
+121026 15:32:33  InnoDB: Completed initialization of buffer pool
+121026 15:32:34  InnoDB: Started; log sequence number 0 44253
+121026 15:32:34 [Note] Event Scheduler: Loaded 0 events
+121026 15:32:34 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121026 15:33:00 [Note] RayzenWebserverDB: Normal shutdown
+
+121026 15:33:00 [Note] Event Scheduler: Purging the queue. 0 events
+121026 15:33:00  InnoDB: Starting shutdown...
+121026 15:33:04  InnoDB: Shutdown completed; log sequence number 0 44253
+121026 15:33:04 [Note] RayzenWebserverDB: Shutdown complete
+
+121026 15:35:38 [Note] Plugin 'FEDERATED' is disabled.
+121026 15:35:39  InnoDB: Initializing buffer pool, size = 8.0M
+121026 15:35:39  InnoDB: Completed initialization of buffer pool
+121026 15:35:39  InnoDB: Started; log sequence number 0 44253
+121026 15:35:39 [Note] Event Scheduler: Loaded 0 events
+121026 15:35:39 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121026 15:36:35 [Note] RayzenWebserverDB: Normal shutdown
+
+121026 15:36:35 [Note] Event Scheduler: Purging the queue. 0 events
+121026 15:36:35  InnoDB: Starting shutdown...
+121026 15:36:39  InnoDB: Shutdown completed; log sequence number 0 44253
+121026 15:36:39 [Note] RayzenWebserverDB: Shutdown complete
+
+121029 14:29:51 [Note] Plugin 'FEDERATED' is disabled.
+121029 14:29:52  InnoDB: Initializing buffer pool, size = 8.0M
+121029 14:29:52  InnoDB: Completed initialization of buffer pool
+121029 14:29:52  InnoDB: Started; log sequence number 0 44253
+121029 14:29:53 [Note] Event Scheduler: Loaded 0 events
+121029 14:29:53 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121029 14:30:17 [Note] RayzenWebserverDB: Normal shutdown
+
+121029 14:30:17 [Note] Event Scheduler: Purging the queue. 0 events
+121029 14:30:17  InnoDB: Starting shutdown...
+121029 14:30:17  InnoDB: Shutdown completed; log sequence number 0 44253
+121029 14:30:17 [Note] RayzenWebserverDB: Shutdown complete
+
+121031 10:23:18 [Note] Plugin 'FEDERATED' is disabled.
+121031 10:23:19  InnoDB: Initializing buffer pool, size = 8.0M
+121031 10:23:19  InnoDB: Completed initialization of buffer pool
+121031 10:23:19  InnoDB: Started; log sequence number 0 44253
+121031 10:23:19 [Note] Event Scheduler: Loaded 0 events
+121031 10:23:19 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121031 10:23:41 [Note] RayzenWebserverDB: Normal shutdown
+
+121031 10:23:41 [Note] Event Scheduler: Purging the queue. 0 events
+121031 10:23:41  InnoDB: Starting shutdown...
+121031 10:23:44  InnoDB: Shutdown completed; log sequence number 0 44253
+121031 10:23:44 [Note] RayzenWebserverDB: Shutdown complete
+
+121031 10:23:46 [Note] Plugin 'FEDERATED' is disabled.
+121031 10:23:46  InnoDB: Initializing buffer pool, size = 8.0M
+121031 10:23:46  InnoDB: Completed initialization of buffer pool
+121031 10:23:46  InnoDB: Started; log sequence number 0 44253
+121031 10:23:46 [Note] Event Scheduler: Loaded 0 events
+121031 10:23:46 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121031 10:24:00 [Note] RayzenWebserverDB: Normal shutdown
+
+121031 10:24:00 [Note] Event Scheduler: Purging the queue. 0 events
+121031 10:24:01  InnoDB: Starting shutdown...
+121031 10:24:01  InnoDB: Shutdown completed; log sequence number 0 44253
+121031 10:24:01 [Note] RayzenWebserverDB: Shutdown complete
+
+121031 10:25:22 [Note] Plugin 'FEDERATED' is disabled.
+121031 10:25:22  InnoDB: Initializing buffer pool, size = 8.0M
+121031 10:25:22  InnoDB: Completed initialization of buffer pool
+121031 10:25:22  InnoDB: Started; log sequence number 0 44253
+121031 10:25:22 [Note] Event Scheduler: Loaded 0 events
+121031 10:25:22 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121031 10:25:40 [Note] RayzenWebserverDB: Normal shutdown
+
+121031 10:25:40 [Note] Event Scheduler: Purging the queue. 0 events
+121031 10:25:40  InnoDB: Starting shutdown...
+121031 10:25:42  InnoDB: Shutdown completed; log sequence number 0 44253
+121031 10:25:42 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 16:59:24 [Note] Plugin 'FEDERATED' is disabled.
+121101 16:59:24  InnoDB: Initializing buffer pool, size = 8.0M
+121101 16:59:24  InnoDB: Completed initialization of buffer pool
+121101 16:59:25  InnoDB: Started; log sequence number 0 44253
+121101 16:59:25 [Note] Event Scheduler: Loaded 0 events
+121101 16:59:25 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 16:59:40 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 16:59:40 [Note] Event Scheduler: Purging the queue. 0 events
+121101 16:59:40  InnoDB: Starting shutdown...
+121101 16:59:45  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 16:59:45 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 16:59:50 [Note] Plugin 'FEDERATED' is disabled.
+121101 16:59:50  InnoDB: Initializing buffer pool, size = 8.0M
+121101 16:59:50  InnoDB: Completed initialization of buffer pool
+121101 16:59:50  InnoDB: Started; log sequence number 0 44253
+121101 16:59:51 [Note] Event Scheduler: Loaded 0 events
+121101 16:59:51 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 17:00:25 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 17:00:25 [Note] Event Scheduler: Purging the queue. 0 events
+121101 17:00:25  InnoDB: Starting shutdown...
+121101 17:00:26  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 17:00:26 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 17:00:35 [Note] Plugin 'FEDERATED' is disabled.
+121101 17:00:35  InnoDB: Initializing buffer pool, size = 8.0M
+121101 17:00:35  InnoDB: Completed initialization of buffer pool
+121101 17:00:35  InnoDB: Started; log sequence number 0 44253
+121101 17:00:35 [Note] Event Scheduler: Loaded 0 events
+121101 17:00:35 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 17:00:45 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 17:00:45 [Note] Event Scheduler: Purging the queue. 0 events
+121101 17:00:45  InnoDB: Starting shutdown...
+121101 17:00:50  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 17:00:50 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 17:05:38 [Note] Plugin 'FEDERATED' is disabled.
+121101 17:05:39  InnoDB: Initializing buffer pool, size = 8.0M
+121101 17:05:39  InnoDB: Completed initialization of buffer pool
+121101 17:05:39  InnoDB: Started; log sequence number 0 44253
+121101 17:05:39 [Note] Event Scheduler: Loaded 0 events
+121101 17:05:39 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 17:09:15 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 17:09:15 [Note] Event Scheduler: Purging the queue. 0 events
+121101 17:09:15  InnoDB: Starting shutdown...
+121101 17:09:19  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 17:09:19 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 17:09:21 [Note] Plugin 'FEDERATED' is disabled.
+121101 17:09:21  InnoDB: Initializing buffer pool, size = 8.0M
+121101 17:09:21  InnoDB: Completed initialization of buffer pool
+121101 17:09:21  InnoDB: Started; log sequence number 0 44253
+121101 17:09:21 [Note] Event Scheduler: Loaded 0 events
+121101 17:09:21 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 17:09:30 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 17:09:30 [Note] Event Scheduler: Purging the queue. 0 events
+121101 17:09:30  InnoDB: Starting shutdown...
+121101 17:09:32  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 17:09:32 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 17:09:35 [Note] Plugin 'FEDERATED' is disabled.
+121101 17:09:36  InnoDB: Initializing buffer pool, size = 8.0M
+121101 17:09:36  InnoDB: Completed initialization of buffer pool
+121101 17:09:36  InnoDB: Started; log sequence number 0 44253
+121101 17:09:36 [Note] Event Scheduler: Loaded 0 events
+121101 17:09:36 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 17:09:50 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 17:09:50 [Note] Event Scheduler: Purging the queue. 0 events
+121101 17:09:50  InnoDB: Starting shutdown...
+121101 17:09:51  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 17:09:51 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 17:12:03 [Note] Plugin 'FEDERATED' is disabled.
+121101 17:12:03  InnoDB: Initializing buffer pool, size = 8.0M
+121101 17:12:03  InnoDB: Completed initialization of buffer pool
+121101 17:12:03  InnoDB: Started; log sequence number 0 44253
+121101 17:12:03 [Note] Event Scheduler: Loaded 0 events
+121101 17:12:03 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 17:12:23 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 17:12:23 [Note] Event Scheduler: Purging the queue. 0 events
+121101 17:12:23  InnoDB: Starting shutdown...
+121101 17:12:24  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 17:12:24 [Note] RayzenWebserverDB: Shutdown complete
+
+121101 17:12:26 [Note] Plugin 'FEDERATED' is disabled.
+121101 17:12:26  InnoDB: Initializing buffer pool, size = 8.0M
+121101 17:12:26  InnoDB: Completed initialization of buffer pool
+121101 17:12:26  InnoDB: Started; log sequence number 0 44253
+121101 17:12:26 [Note] Event Scheduler: Loaded 0 events
+121101 17:12:26 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121101 17:12:34 [Note] RayzenWebserverDB: Normal shutdown
+
+121101 17:12:34 [Note] Event Scheduler: Purging the queue. 0 events
+121101 17:12:34  InnoDB: Starting shutdown...
+121101 17:12:36  InnoDB: Shutdown completed; log sequence number 0 44253
+121101 17:12:36 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 13:28:42 [Note] Plugin 'FEDERATED' is disabled.
+121102 13:28:42  InnoDB: Initializing buffer pool, size = 8.0M
+121102 13:28:42  InnoDB: Completed initialization of buffer pool
+121102 13:28:43  InnoDB: Started; log sequence number 0 44253
+121102 13:28:43 [Note] Event Scheduler: Loaded 0 events
+121102 13:28:43 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121102 13:29:17 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 13:29:17 [Note] Event Scheduler: Purging the queue. 0 events
+121102 13:29:17  InnoDB: Starting shutdown...
+121102 13:29:18  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 13:29:18 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 13:29:20 [Note] Plugin 'FEDERATED' is disabled.
+121102 13:29:20  InnoDB: Initializing buffer pool, size = 8.0M
+121102 13:29:20  InnoDB: Completed initialization of buffer pool
+121102 13:29:20  InnoDB: Started; log sequence number 0 44253
+121102 13:29:20 [Note] Event Scheduler: Loaded 0 events
+121102 13:29:20 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community-log'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121102 13:29:51 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 13:29:51 [Note] Event Scheduler: Purging the queue. 0 events
+121102 13:29:51  InnoDB: Starting shutdown...
+121102 13:29:55  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 13:29:55 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 13:31:03 [Note] Plugin 'FEDERATED' is disabled.
+121102 13:31:03  InnoDB: Initializing buffer pool, size = 8.0M
+121102 13:31:03  InnoDB: Completed initialization of buffer pool
+121102 13:31:03  InnoDB: Started; log sequence number 0 44253
+121102 13:31:03 [Note] Event Scheduler: Loaded 0 events
+121102 13:31:03 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121102 13:31:11 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 13:31:11 [Note] Event Scheduler: Purging the queue. 0 events
+121102 13:31:11  InnoDB: Starting shutdown...
+121102 13:31:14  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 13:31:14 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 13:32:27 [Note] Plugin 'FEDERATED' is disabled.
+121102 13:32:27  InnoDB: Initializing buffer pool, size = 8.0M
+121102 13:32:27  InnoDB: Completed initialization of buffer pool
+121102 13:32:27  InnoDB: Started; log sequence number 0 44253
+121102 13:32:27 [Note] Event Scheduler: Loaded 0 events
+121102 13:32:27 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121102 13:32:36 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 13:32:36 [Note] Event Scheduler: Purging the queue. 0 events
+121102 13:32:36  InnoDB: Starting shutdown...
+121102 13:32:38  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 13:32:38 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 13:32:38 [Note] Plugin 'FEDERATED' is disabled.
+121102 13:32:38  InnoDB: Initializing buffer pool, size = 8.0M
+121102 13:32:38  InnoDB: Completed initialization of buffer pool
+121102 13:32:39  InnoDB: Started; log sequence number 0 44253
+121102 13:32:39 [Note] Event Scheduler: Loaded 0 events
+121102 13:32:39 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121102 13:33:04 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 13:33:04 [Note] Event Scheduler: Purging the queue. 0 events
+121102 13:33:04  InnoDB: Starting shutdown...
+121102 13:33:09  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 13:33:09 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 13:33:37 [Note] Plugin 'FEDERATED' is disabled.
+121102 13:33:38  InnoDB: Initializing buffer pool, size = 8.0M
+121102 13:33:38  InnoDB: Completed initialization of buffer pool
+121102 13:33:38  InnoDB: Started; log sequence number 0 44253
+121102 13:33:38 [Note] Event Scheduler: Loaded 0 events
+121102 13:33:38 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121102 13:33:57 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 13:33:57 [Note] Event Scheduler: Purging the queue. 0 events
+121102 13:33:57  InnoDB: Starting shutdown...
+121102 13:33:58  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 13:33:58 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 13:54:08 [Note] Plugin 'FEDERATED' is disabled.
+121102 13:54:09  InnoDB: Initializing buffer pool, size = 8.0M
+121102 13:54:09  InnoDB: Completed initialization of buffer pool
+121102 13:54:09  InnoDB: Started; log sequence number 0 44253
+121102 13:54:09 [Note] Event Scheduler: Loaded 0 events
+121102 13:54:09 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+121102 13:54:14 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 13:54:14 [Note] Event Scheduler: Purging the queue. 0 events
+121102 13:54:14  InnoDB: Starting shutdown...
+121102 13:54:19  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 13:54:19 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 14:02:22 [Note] Plugin 'FEDERATED' is disabled.
+121102 14:02:22  InnoDB: Initializing buffer pool, size = 8.0M
+121102 14:02:22  InnoDB: Completed initialization of buffer pool
+121102 14:02:23  InnoDB: Started; log sequence number 0 44253
+121102 14:02:23 [Note] Event Scheduler: Loaded 0 events
+121102 14:02:23 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121102 14:02:37 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 14:02:37 [Note] Event Scheduler: Purging the queue. 0 events
+121102 14:02:37  InnoDB: Starting shutdown...
+121102 14:02:38  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 14:02:38 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 14:02:43 [Note] Plugin 'FEDERATED' is disabled.
+121102 14:02:43  InnoDB: Initializing buffer pool, size = 8.0M
+121102 14:02:43  InnoDB: Completed initialization of buffer pool
+121102 14:02:43  InnoDB: Started; log sequence number 0 44253
+121102 14:02:43 [Note] Event Scheduler: Loaded 0 events
+121102 14:02:43 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121102 14:02:50 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 14:02:50 [Note] Event Scheduler: Purging the queue. 0 events
+121102 14:02:50  InnoDB: Starting shutdown...
+121102 14:02:54  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 14:02:54 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 15:27:14 [Note] Plugin 'FEDERATED' is disabled.
+121102 15:27:14  InnoDB: Initializing buffer pool, size = 8.0M
+121102 15:27:14  InnoDB: Completed initialization of buffer pool
+121102 15:27:14  InnoDB: Started; log sequence number 0 44253
+121102 15:27:14 [Note] Event Scheduler: Loaded 0 events
+121102 15:27:14 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121102 15:27:23 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 15:27:23 [Note] Event Scheduler: Purging the queue. 0 events
+121102 15:27:23  InnoDB: Starting shutdown...
+121102 15:27:24  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 15:27:24 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 15:30:20 [Note] Plugin 'FEDERATED' is disabled.
+121102 15:30:20  InnoDB: Initializing buffer pool, size = 8.0M
+121102 15:30:20  InnoDB: Completed initialization of buffer pool
+121102 15:30:21  InnoDB: Started; log sequence number 0 44253
+121102 15:30:21 [Note] Event Scheduler: Loaded 0 events
+121102 15:30:21 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121102 15:30:52 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 15:30:52 [Note] Event Scheduler: Purging the queue. 0 events
+121102 15:30:52  InnoDB: Starting shutdown...
+121102 15:30:56  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 15:30:56 [Note] RayzenWebserverDB: Shutdown complete
+
+121102 15:49:48 [Note] Plugin 'FEDERATED' is disabled.
+121102 15:49:48  InnoDB: Initializing buffer pool, size = 8.0M
+121102 15:49:48  InnoDB: Completed initialization of buffer pool
+121102 15:49:48  InnoDB: Started; log sequence number 0 44253
+121102 15:49:49 [Note] Event Scheduler: Loaded 0 events
+121102 15:49:49 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121102 15:50:11 [Note] RayzenWebserverDB: Normal shutdown
+
+121102 15:50:11 [Note] Event Scheduler: Purging the queue. 0 events
+121102 15:50:11  InnoDB: Starting shutdown...
+121102 15:50:14  InnoDB: Shutdown completed; log sequence number 0 44253
+121102 15:50:14 [Note] RayzenWebserverDB: Shutdown complete
+
+121105 11:01:47 [Note] Plugin 'FEDERATED' is disabled.
+121105 11:01:47  InnoDB: Initializing buffer pool, size = 8.0M
+121105 11:01:47  InnoDB: Completed initialization of buffer pool
+121105 11:01:47  InnoDB: Started; log sequence number 0 44253
+121105 11:01:47 [Note] Event Scheduler: Loaded 0 events
+121105 11:01:47 [Note] RayzenWebserverDB: ready for connections.
+Version: '5.1.55-community'  socket: ''  port: 3310  MySQL Community Server (GPL)
+121105 11:03:01 [Note] RayzenWebserverDB: Normal shutdown
+
+121105 11:03:01 [Note] Event Scheduler: Purging the queue. 0 events
+121105 11:03:01  InnoDB: Starting shutdown...
+121105 11:03:02  InnoDB: Shutdown completed; log sequence number 0 44253
+121105 11:03:02 [Note] RayzenWebserverDB: Shutdown complete
+

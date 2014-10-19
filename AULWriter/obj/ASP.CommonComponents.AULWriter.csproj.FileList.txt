@@ -1,0 +1,10 @@
+bin\Release\ASP.CommonComponents.AULWriter.exe
+bin\Release\ASP.CommonComponents.AULWriter.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\ASP.CommonComponents.AULWriter.Properties.Resources.resources
+obj\Release\ASP.CommonComponents.AULWriter.csproj.GenerateResource.Cache
+obj\Release\ASP.CommonComponents.AULWriter.frmAULWriter.resources
+..\..\Bin\AULWriter.exe
+..\..\Bin\AULWriter.pdb
+obj\Release\AULWriter.exe
+obj\Release\AULWriter.pdb

@@ -1,0 +1,8 @@
+D:\c#\XPTabControls\XPTabControlCS\bin\Debug\XPTabControl.dll
+D:\c#\XPTabControls\XPTabControlCS\bin\Debug\XPTabControl.pdb
+D:\c#\XPTabControls\XPTabControlCS\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\XPTabControls\XPTabControlCS\obj\Debug\VSControls.XPTabControl.resources
+D:\c#\XPTabControls\XPTabControlCS\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\c#\XPTabControls\XPTabControlCS\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\c#\XPTabControls\XPTabControlCS\obj\Debug\XPTabControl.dll
+D:\c#\XPTabControls\XPTabControlCS\obj\Debug\XPTabControl.pdb

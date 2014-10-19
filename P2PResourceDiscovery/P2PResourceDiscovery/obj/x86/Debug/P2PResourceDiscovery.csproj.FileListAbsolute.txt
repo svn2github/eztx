@@ -1,0 +1,7 @@
+D:\博客园里的例子\P2PResourceDiscovery\P2PResourceDiscovery\bin\Debug\P2PResourceDiscovery.exe
+D:\博客园里的例子\P2PResourceDiscovery\P2PResourceDiscovery\bin\Debug\P2PResourceDiscovery.pdb
+D:\博客园里的例子\P2PResourceDiscovery\P2PResourceDiscovery\obj\x86\Debug\P2PResourceDiscovery.frmP2PresourceDis.resources
+D:\博客园里的例子\P2PResourceDiscovery\P2PResourceDiscovery\obj\x86\Debug\P2PResourceDiscovery.Properties.Resources.resources
+D:\博客园里的例子\P2PResourceDiscovery\P2PResourceDiscovery\obj\x86\Debug\P2PResourceDiscovery.csproj.GenerateResource.Cache
+D:\博客园里的例子\P2PResourceDiscovery\P2PResourceDiscovery\obj\x86\Debug\P2PResourceDiscovery.exe
+D:\博客园里的例子\P2PResourceDiscovery\P2PResourceDiscovery\obj\x86\Debug\P2PResourceDiscovery.pdb

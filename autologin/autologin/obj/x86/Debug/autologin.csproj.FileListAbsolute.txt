@@ -1,0 +1,9 @@
+D:\c#\autologin\autologin\bin\Debug\autologin.exe
+D:\c#\autologin\autologin\bin\Debug\autologin.pdb
+D:\c#\autologin\autologin\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\autologin\autologin\obj\x86\Debug\autologin.Form1.resources
+D:\c#\autologin\autologin\obj\x86\Debug\autologin.Properties.Resources.resources
+D:\c#\autologin\autologin\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\autologin\autologin\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\autologin\autologin\obj\x86\Debug\autologin.exe
+D:\c#\autologin\autologin\obj\x86\Debug\autologin.pdb

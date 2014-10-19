@@ -1,0 +1,5 @@
+D:\c#\writeSth\writeSth\bin\Debug\writeSth.exe
+D:\c#\writeSth\writeSth\bin\Debug\writeSth.pdb
+D:\c#\writeSth\writeSth\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\writeSth\writeSth\obj\x86\Debug\writeSth.exe
+D:\c#\writeSth\writeSth\obj\x86\Debug\writeSth.pdb

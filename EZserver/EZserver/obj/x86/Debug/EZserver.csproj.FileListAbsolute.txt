@@ -1,0 +1,8 @@
+D:\c#\EZserver\EZserver\bin\Debug\EZserver.exe
+D:\c#\EZserver\EZserver\bin\Debug\EZserver.pdb
+D:\c#\EZserver\EZserver\obj\x86\Debug\EZserver.Form1.resources
+D:\c#\EZserver\EZserver\obj\x86\Debug\EZserver.Properties.Resources.resources
+D:\c#\EZserver\EZserver\obj\x86\Debug\EZserver.exe
+D:\c#\EZserver\EZserver\obj\x86\Debug\EZserver.pdb
+D:\c#\EZserver\EZserver\obj\x86\Debug\EZserver.AskYou.resources
+D:\c#\EZserver\EZserver\obj\x86\Debug\EZserver.csproj.GenerateResource.Cache

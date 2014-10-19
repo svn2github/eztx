@@ -1,0 +1,10 @@
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\bin\Debug\CSCustomTabControlDemo.exe
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\bin\Debug\CSCustomTabControlDemo.pdb
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.MainForm.resources
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.exe
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.pdb
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\bin\Debug\MEZboy.CustomTabControl.dll
+D:\c#\NewCustomTabControl\CSCustomTabControlDemo\bin\Debug\MEZboy.CustomTabControl.pdb

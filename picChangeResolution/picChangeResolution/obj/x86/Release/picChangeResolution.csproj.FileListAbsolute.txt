@@ -1,0 +1,9 @@
+D:\c#\picChangeResolution\picChangeResolution\bin\Release\picChangeResolution.exe
+D:\c#\picChangeResolution\picChangeResolution\bin\Release\picChangeResolution.pdb
+D:\c#\picChangeResolution\picChangeResolution\obj\x86\Release\ResolveAssemblyReference.cache
+D:\c#\picChangeResolution\picChangeResolution\obj\x86\Release\picChangeResolution.Form1.resources
+D:\c#\picChangeResolution\picChangeResolution\obj\x86\Release\picChangeResolution.Properties.Resources.resources
+D:\c#\picChangeResolution\picChangeResolution\obj\x86\Release\GenerateResource.read.1.tlog
+D:\c#\picChangeResolution\picChangeResolution\obj\x86\Release\GenerateResource.write.1.tlog
+D:\c#\picChangeResolution\picChangeResolution\obj\x86\Release\picChangeResolution.exe
+D:\c#\picChangeResolution\picChangeResolution\obj\x86\Release\picChangeResolution.pdb

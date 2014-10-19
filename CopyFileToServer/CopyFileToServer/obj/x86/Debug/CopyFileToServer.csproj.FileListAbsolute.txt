@@ -1,0 +1,9 @@
+D:\c#\CopyFileToServer\CopyFileToServer\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\CopyFileToServer\CopyFileToServer\obj\x86\Debug\CopyFileToServer.Properties.Resources.resources
+D:\c#\CopyFileToServer\CopyFileToServer\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\CopyFileToServer\CopyFileToServer\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\CopyFileToServer\CopyFileToServer\bin\Debug\CopyFileToServer.exe
+D:\c#\CopyFileToServer\CopyFileToServer\bin\Debug\CopyFileToServer.pdb
+D:\c#\CopyFileToServer\CopyFileToServer\obj\x86\Debug\CopyFileToServer.exe
+D:\c#\CopyFileToServer\CopyFileToServer\obj\x86\Debug\CopyFileToServer.pdb
+D:\c#\CopyFileToServer\CopyFileToServer\obj\x86\Debug\CopyFileToServer.Form1.resources

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AutoUpdate">
+</Property><Property Name="解决方案文件" Value="D:\c#\AutoUpdate\AutoUpdate.sln">
+</Property><Property Name="用户选项文件" Value="D:\c#\AutoUpdate\AutoUpdate.suo">
+</Property><Property Name="Date" Value="2012年9月27日">
+</Property><Property Name="Time" Value="9:54">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="AutoUpdate.sln" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\AutoUpdate.sln">
+</Event><Event ErrorLevel="0" Project="" Source="AutoUpdate.suo" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\AutoUpdate.suo">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="AutoUpdate.csproj" Description="项目文件已成功备份为 D:\c#\AutoUpdate\Backup\AutoUpdate.csproj">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="AutoUpdate.csproj.user" Description="项目用户文件成功备份为 D:\c#\AutoUpdate\Backup\AutoUpdate.csproj.user">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="AppUpdater.cs" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\AppUpdater.cs">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="AssemblyInfo.cs" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="FrmUpdate.cs" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\FrmUpdate.cs">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="IniFiles.cs" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\IniFiles.cs">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="XmlFiles.cs" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\XmlFiles.cs">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="App.ico" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="FrmUpdate.resx" Description="文件已成功备份为 D:\c#\AutoUpdate\Backup\FrmUpdate.resx">
+</Event><Event ErrorLevel="1" Project="AutoUpdate" Source="AutoUpdate.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="AutoUpdate.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="AutoUpdate" Source="AutoUpdate.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AutoUpdate.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="AutoUpdate.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AutoUpdate" Source="AutoUpdate.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

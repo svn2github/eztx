@@ -1,0 +1,7 @@
+D:\c#\AutoUpdate\obj\Debug\AutoUpdate.exe
+D:\c#\AutoUpdate\obj\Debug\AutoUpdate.pdb
+D:\c#\AutoUpdate\bin\Debug\AutoUpdate.exe
+D:\c#\AutoUpdate\bin\Debug\AutoUpdate.pdb
+D:\c#\AutoUpdate\obj\Debug\AutoUpdate.FrmUpdate.resources
+D:\c#\AutoUpdate\bin\Debug\AutoUpdate.exe.config
+D:\c#\AutoUpdate\obj\Debug\AutoUpdate.csproj.GenerateResource.Cache

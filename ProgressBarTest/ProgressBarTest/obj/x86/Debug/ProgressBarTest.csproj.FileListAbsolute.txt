@@ -1,0 +1,9 @@
+D:\c#\ProgressBarTest\ProgressBarTest\bin\Debug\ProgressBarTest.exe
+D:\c#\ProgressBarTest\ProgressBarTest\bin\Debug\ProgressBarTest.pdb
+D:\c#\ProgressBarTest\ProgressBarTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\ProgressBarTest\ProgressBarTest\obj\x86\Debug\ProgressBarTest.Form1.resources
+D:\c#\ProgressBarTest\ProgressBarTest\obj\x86\Debug\ProgressBarTest.Properties.Resources.resources
+D:\c#\ProgressBarTest\ProgressBarTest\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\ProgressBarTest\ProgressBarTest\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\ProgressBarTest\ProgressBarTest\obj\x86\Debug\ProgressBarTest.exe
+D:\c#\ProgressBarTest\ProgressBarTest\obj\x86\Debug\ProgressBarTest.pdb

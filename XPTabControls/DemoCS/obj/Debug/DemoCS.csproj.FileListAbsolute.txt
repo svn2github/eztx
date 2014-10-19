@@ -1,0 +1,11 @@
+D:\c#\XPTabControls\DemoCS\bin\Debug\DemoCS.exe
+D:\c#\XPTabControls\DemoCS\bin\Debug\DemoCS.pdb
+D:\c#\XPTabControls\DemoCS\bin\Debug\XPTabControl.dll
+D:\c#\XPTabControls\DemoCS\bin\Debug\XPTabControl.pdb
+D:\c#\XPTabControls\DemoCS\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\XPTabControls\DemoCS\obj\Debug\DemoCS.DemoForm.resources
+D:\c#\XPTabControls\DemoCS\obj\Debug\DemoCS.Properties.Resources.resources
+D:\c#\XPTabControls\DemoCS\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\c#\XPTabControls\DemoCS\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\c#\XPTabControls\DemoCS\obj\Debug\DemoCS.exe
+D:\c#\XPTabControls\DemoCS\obj\Debug\DemoCS.pdb

@@ -1,0 +1,9 @@
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\bin\Debug\PicToByteAndByteToPic.exe
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\bin\Debug\PicToByteAndByteToPic.pdb
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\obj\x86\Debug\PicToByteAndByteToPic.Form1.resources
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\obj\x86\Debug\PicToByteAndByteToPic.Properties.Resources.resources
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\obj\x86\Debug\PicToByteAndByteToPic.exe
+D:\c#\PicToByteAndByteToPic\PicToByteAndByteToPic\obj\x86\Debug\PicToByteAndByteToPic.pdb

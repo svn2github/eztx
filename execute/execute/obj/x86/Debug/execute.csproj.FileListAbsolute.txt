@@ -1,0 +1,17 @@
+D:\c#\execute\execute\obj\x86\Debug\execute.Properties.Resources.resources
+D:\c#\execute\execute\bin\Debug\MySql.Data.dll
+D:\c#\execute\execute\bin\Debug\数字游戏.exe
+D:\c#\execute\execute\bin\Debug\数字游戏.pdb
+D:\c#\execute\execute\obj\x86\Debug\数字游戏.exe
+D:\c#\execute\execute\obj\x86\Debug\数字游戏.pdb
+F:\Work\Home_Office\c#\execute\execute\obj\x86\Debug\数字游戏.exe
+F:\Work\Home_Office\c#\execute\execute\obj\x86\Debug\数字游戏.pdb
+F:\Work\Home_Office\c#\execute\execute\bin\Debug\MySql.Data.dll
+F:\Work\Home_Office\c#\execute\execute\bin\Debug\数字游戏.exe
+F:\Work\Home_Office\c#\execute\execute\bin\Debug\数字游戏.pdb
+F:\Work\Home_Office\c#\execute\execute\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Work\Home_Office\c#\execute\execute\obj\x86\Debug\execute.Properties.Resources.resources
+F:\Work\Home_Office\c#\execute\execute\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Work\Home_Office\c#\execute\execute\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\execute\execute\obj\x86\Debug\execute.csprojResolveAssemblyReference.cache
+D:\c#\execute\execute\obj\x86\Debug\execute.csproj.GenerateResource.Cache

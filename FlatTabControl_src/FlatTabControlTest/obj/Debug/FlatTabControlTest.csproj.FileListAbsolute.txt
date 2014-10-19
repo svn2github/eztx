@@ -1,0 +1,19 @@
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\bin\Debug\TabControlTest.exe
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\bin\Debug\TabControlTest.pdb
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\bin\Debug\FlatTabControl.dll
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\bin\Debug\FlatTabControl.pdb
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\obj\Debug\TabControlTest.Form1.resources
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\obj\Debug\FlatTabControlTest.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\obj\Debug\TabControlTest.exe
+C:\Documents and Settings\Administrator\桌面\FlatTabControl_src\FlatTabControlTest\obj\Debug\TabControlTest.pdb
+D:\c#\FlatTabControl_src\FlatTabControlTest\bin\Debug\TabControlTest.exe
+D:\c#\FlatTabControl_src\FlatTabControlTest\bin\Debug\TabControlTest.pdb
+D:\c#\FlatTabControl_src\FlatTabControlTest\bin\Debug\FlatTabControl.dll
+D:\c#\FlatTabControl_src\FlatTabControlTest\bin\Debug\FlatTabControl.pdb
+D:\c#\FlatTabControl_src\FlatTabControlTest\obj\Debug\ResolveAssemblyReference.cache
+D:\c#\FlatTabControl_src\FlatTabControlTest\obj\Debug\TabControlTest.Form1.resources
+D:\c#\FlatTabControl_src\FlatTabControlTest\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\c#\FlatTabControl_src\FlatTabControlTest\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\c#\FlatTabControl_src\FlatTabControlTest\obj\Debug\TabControlTest.exe
+D:\c#\FlatTabControl_src\FlatTabControlTest\obj\Debug\TabControlTest.pdb

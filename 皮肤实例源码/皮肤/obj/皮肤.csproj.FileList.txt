@@ -1,0 +1,8 @@
+bin\Debug\皮肤.exe
+bin\Debug\皮肤.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\皮肤.Form1.resources
+obj\Debug\皮肤.Properties.Resources.resources
+obj\Debug\皮肤.csproj.GenerateResource.Cache
+obj\Debug\皮肤.exe
+obj\Debug\皮肤.pdb

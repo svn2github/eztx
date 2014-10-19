@@ -1,0 +1,10 @@
+D:\c#\eztx12306\eztx12306\bin\Debug\eztx12306.exe
+D:\c#\eztx12306\eztx12306\bin\Debug\eztx12306.pdb
+D:\c#\eztx12306\eztx12306\bin\Debug\HtmlAgilityPack.xml
+D:\c#\eztx12306\eztx12306\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\eztx12306\eztx12306\obj\x86\Debug\eztx12306.Form1.resources
+D:\c#\eztx12306\eztx12306\obj\x86\Debug\eztx12306.Properties.Resources.resources
+D:\c#\eztx12306\eztx12306\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\eztx12306\eztx12306\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\eztx12306\eztx12306\obj\x86\Debug\eztx12306.exe
+D:\c#\eztx12306\eztx12306\obj\x86\Debug\eztx12306.pdb
