@@ -1,0 +1,12 @@
+D:\c#\3d\3d\bin\Debug\3d.exe
+D:\c#\3d\3d\bin\Debug\3d.pdb
+D:\c#\3d\3d\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\3d\3d\obj\x86\Debug\_3d.Form1.resources
+D:\c#\3d\3d\obj\x86\Debug\_3d.Properties.Resources.resources
+D:\c#\3d\3d\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\3d\3d\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\3d\3d\obj\x86\Debug\3d.exe
+D:\c#\3d\3d\obj\x86\Debug\3d.pdb
+D:\c#\3d\3d\obj\x86\Debug\_3d.Form2.resources
+D:\c#\3d\3d\obj\x86\Debug\_3d.Login.resources
+D:\c#\3d\3d\bin\Debug\MySql.Data.dll
