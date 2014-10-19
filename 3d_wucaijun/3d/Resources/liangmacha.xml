@@ -1,0 +1,118 @@
+<?xml   version="1.0"   encoding="utf-8"?>       
+<liangMaCha createuser="false">   
+	<numbers id="lmcCbx_001">
+		001,011,112,122,233,223,334,344,455,445,556,566,667,677,778,788,889,899
+	</numbers> 
+
+	<numbers id="lmcCbx_022">
+		002,022,113,133,224,244,335,355,446,466,557,577,668,688,779,799
+	</numbers>
+	
+	<numbers id="lmcCbx_112">
+		012,123,234,345,456,567,678,789
+	</numbers>
+	
+	<numbers id="lmcCbx_033">
+		003,033,114,144,225,255,336,366,447,477,558,588,669,699
+	</numbers>
+	
+	<numbers id="lmcCbx_123">
+		013,023,124,134,235,245,346,356,457,467,568,578,679,689
+	</numbers> 
+	
+	<numbers id="lmcCbx_004">
+		004,044,115,155,226,266,337,377,448,488,559,599
+	</numbers>  
+	
+	<numbers id="lmcCbx_134">
+		014,125,145,034,236,256,347,367,458,478,569,589
+	</numbers>  
+	
+	<numbers id="lmcCbx_224">
+		024,135,246,357,468,579
+	</numbers>  
+	
+	<numbers id="lmcCbx_055">
+		055,005,388,338,166,116,449,499,277,227
+	</numbers> 
+	
+	<numbers id="lmcCbx_145">
+		015,378,267,459,156,348,045,237,126,489
+	</numbers>
+	
+	<numbers id="lmcCbx_235">
+		136,257,025,146,469,358,479,247,368,035
+	</numbers>
+	
+	<numbers id="lmcCbx_066">
+		006,066,288,228,117,177,399,339
+	</numbers>
+	
+	<numbers id="lmcCbx_156">
+		016,056,167,278,389,127,238,349
+	</numbers>
+	
+	<numbers id="lmcCbx_246">
+		046,157,268,379,137,248,359,026
+	</numbers> 
+	
+	<numbers id="lmcCbx_336">
+		036,147,258,369
+	</numbers> 
+	
+	<numbers id="lmcCbx_077">
+		007,077,118,188,118,229,299
+	</numbers>  
+	
+	<numbers id="lmcCbx_167">
+		017,128,178,239,289,067
+	</numbers> 
+	
+	<numbers id="lmcCbx_257">
+		027,057,279,168,249,138
+	</numbers>
+	
+	<numbers id="lmcCbx_347">
+		037,047,158,259,148,269
+	</numbers>
+	
+	<numbers id="lmcCbx_088">
+		008,088,119,199
+	</numbers>
+	
+	<numbers id="lmcCbx_178">
+		018,078,129,189
+	</numbers>
+	
+	<numbers id="lmcCbx_268">
+		028,068,139,179
+	</numbers>
+	
+	<numbers id="lmcCbx_358">
+		038,058,149,169
+	</numbers>
+	
+	<numbers id="lmcCbx_448">
+		159,048
+	</numbers>
+	
+	<numbers id="lmcCbx_099">
+		009,099
+	</numbers>
+	
+	<numbers id="lmcCbx_189">
+		019,089
+	</numbers>
+	
+	<numbers id="lmcCbx_279">
+		029,079
+	</numbers>
+	
+	<numbers id="lmcCbx_369">
+		039,069
+	</numbers>
+	
+	<numbers id="lmcCbx_459">
+		059,049
+	</numbers>
+</liangMaCha>  

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="3d.exe" publicKeyToken="49cab859dbbd9f88" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="eztx.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="3d" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="3d.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+            如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换 
+            requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 节点将会禁用文件和注册表虚拟化。
+            如果要利用文件和注册表虚拟化实现向后 
+            兼容性，则删除 requestedExecutionLevel 节点。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3d.exe" size="1549312">
+      <assemblyIdentity name="3d" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>vmnrwPqG6tSFlmtxsUpU8ULelUs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="135168">
+      <assemblyIdentity name="MySql.Data" version="1.0.3.31712" publicKeyToken="C5687FC88969C44D" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>0/fk7aNdBsAU2qJQ1/AGUjBU7hY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DB_backup\msg.sql" size="170">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Hx2z2G7AlMt4YDanPE3aopSolcg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DB_backup\user_login.sql" size="4394">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Xy3/BTrkcfcqhti3cAdFbAzhYzg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="eztx.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bvHWOQlHeYr/jD+eW1hwi8mvxrI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MySql.Data.dll" size="135168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0/fk7aNdBsAU2qJQ1/AGUjBU7hY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 此应用程序设计使用的所有 Windows 版本的列表。Windows 将会自动选择最兼容的环境。-->
+      <!-- 如果应用程序设计使用 Windows 7，请取消注释以下 supportedOS 节点-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=SXSACSNLDMJYHW1\Administrator" issuerKeyHash="67c72bb1c4cb84eaa7edbf8c4fd968161ff80a46" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>7wSay8qtt46AOYzhN1hikU4R7tM=</DigestValue></Reference></SignedInfo><SignatureValue>P2GDvb6BGZmU0ea+gzzMShiU09GEmgXCgZgei+NG69qYofWkoN5zABd1dsDHtK1tL8ekJL3mZSrZ54p+iBLNbKHRwVhY30EHoEb0+G47kiO30RleGxyL/5SkIqaL2Je7vMzfk+eOmeVMV+XOpw3dTXXYz/rOtrh8dEfb5k4fFwQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2jt8fwtU74FG2b8m6mbUH9G6GtRf1XYi3bPANJSOF1Nsni5Rupe82bqJsonAdnDudMdkdwHkQLZlKdoJHjq0fN53Jb6Hj3kwxeu8k/b/VrAevKgBZiViuCIBAvHYtxYV3XP2zmXoP/GnVcDVCZ6c8NQxo/1fSlc+DL+dDbg1YyE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d3ee114e91625837e18c39808eb7adcacb9a04ef" Description="" Url=""><as:assemblyIdentity version="1.0.0.0" name="3d.exe" publicKeyToken="49cab859dbbd9f88" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SXSACSNLDMJYHW1\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>c1NmlEDHBPw4x68XBT3YI7lZhG0=</DigestValue></Reference></SignedInfo><SignatureValue>TmUFVCDD3kIBKrUFLRq7MYiC6zEEGcSYxZM3pDkCb4qWWH+bhQ7UM8+WdFTzpI/NTax31S0fCR/BR0SKmlsyhR4R4u0SDHnSde+5lEFTcTaD6VWVBB/P/OjHFF4c8aqwM6uP9y3QrbbpZNSW2B4hNr4t1ZxMXySvc5bWh9VoiaA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2jt8fwtU74FG2b8m6mbUH9G6GtRf1XYi3bPANJSOF1Nsni5Rupe82bqJsonAdnDudMdkdwHkQLZlKdoJHjq0fN53Jb6Hj3kwxeu8k/b/VrAevKgBZiViuCIBAvHYtxYV3XP2zmXoP/GnVcDVCZ6c8NQxo/1fSlc+DL+dDbg1YyE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICBTCCAXKgAwIBAgIQULoxuAW3sLpODX6AxmrHGzAJBgUrDgMCHQUAMEUxQzBBBgNVBAMeOgBTAFgAUwBBAEMAUwBOAEwARABNAEoAWQBIAFcAMQBcAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIwHhcNMTIwOTI4MDUzMTI5WhcNMTMwOTI4MTEzMTI5WjBFMUMwQQYDVQQDHjoAUwBYAFMAQQBDAFMATgBMAEQATQBKAFkASABXADEAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDaO3x/C1TvgUbZvybqZtQf0boa1F/VdiLds8A0lI4XU2yeLlG6l7zZuomyicB2cO50x2R3AeRAtmUp2gkeOrR83nclvoePeTDF67yT9v9WsB68qAFmJWK4IgEC8di3FhXdc/bOZeg/8adVwNUJnpzw1DGj/V9KVz4Mv50NuDVjIQIDAQABMAkGBSsOAwIdBQADgYEACOfTe33gBHmNjLKTIp+EtCh2wqPGAPNNeA/cuGryXoR2Uamq0Um/HGobSx5og6OTKYEObRI5UVhCjj7/AbIZH1lxsd2/fqE08WoHSoYyHumFKizHWDCnTbvKWZ6J/bhuNUdiqBEEUqfoT1BNr7X1VaJewKm3Lx8wKmAgJBJJml4=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

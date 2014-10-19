@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B988BE7D-D8B8-4B62-9697-40D6BB698C02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_3d</RootNamespace>
+    <AssemblyName>3d_wucaijun</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>eztx.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6069A89F911235487F846A370E5C541E7A040E33</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>3d_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="MEZboy.CustomTabControl, Version=1.0.1.7, Culture=neutral, PublicKeyToken=53c237210c7e462d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MEZboy.CustomTabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminControlPanels\AdminCtrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanels\AdminCtrl.Designer.cs">
+      <DependentUpon>AdminCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ClearMemory.cs" />
+    <Compile Include="Function\LinkMyMDB.cs" />
+    <Compile Include="Function\LinkMySql.cs" />
+    <Compile Include="Function\Tools.cs" />
+    <Compile Include="Others\AboutSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\AboutSoft.Designer.cs">
+      <DependentUpon>AboutSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\AnswerWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\AnswerWebBrowser.Designer.cs">
+      <DependentUpon>AnswerWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CusCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CusCheckBox.Designer.cs">
+      <DependentUpon>CusCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShiShiCai\page_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiShiCai\page_2.Designer.cs">
+      <DependentUpon>page_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShiShiCai\page_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiShiCai\page_3.Designer.cs">
+      <DependentUpon>page_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\getIP.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Function\MachineCode.cs" />
+    <Compile Include="ShiShiCai\page_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiShiCai\page_1.Designer.cs">
+      <DependentUpon>page_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputForm.Designer.cs">
+      <DependentUpon>OutputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\MD5.cs" />
+    <Compile Include="ModifyInfoByAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyInfoByAdmin.Designer.cs">
+      <DependentUpon>ModifyInfoByAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPass.Designer.cs">
+      <DependentUpon>ModifyPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regist.Designer.cs">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyInfo.Designer.cs">
+      <DependentUpon>ModifyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControlPanels\AdminCtrlProvince.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanels\AdminCtrlProvince.Designer.cs">
+      <DependentUpon>AdminCtrlProvince.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControlPanels\AdminCtrlCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanels\AdminCtrlCity.Designer.cs">
+      <DependentUpon>AdminCtrlCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControlPanels\AdminCtrlArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanels\AdminCtrlArea.Designer.cs">
+      <DependentUpon>AdminCtrlArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputFormZuXuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputFormZuXuan.Designer.cs">
+      <DependentUpon>OutputFormZuXuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zst.Designer.cs">
+      <DependentUpon>zst.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminControlPanels\AdminCtrl.resx">
+      <DependentUpon>AdminCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\AboutSoft.resx">
+      <DependentUpon>AboutSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\AnswerWebBrowser.resx">
+      <DependentUpon>AnswerWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiShiCai\page_1.resx">
+      <DependentUpon>page_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputForm.resx">
+      <DependentUpon>OutputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiShiCai\page_2.resx">
+      <DependentUpon>page_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiShiCai\page_3.resx">
+      <DependentUpon>page_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInfoByAdmin.resx">
+      <DependentUpon>ModifyInfoByAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyPass.resx">
+      <DependentUpon>ModifyPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regist.resx">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInfo.resx">
+      <DependentUpon>ModifyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControlPanels\AdminCtrlProvince.resx">
+      <DependentUpon>AdminCtrlProvince.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControlPanels\AdminCtrlCity.resx">
+      <DependentUpon>AdminCtrlCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControlPanels\AdminCtrlArea.resx">
+      <DependentUpon>AdminCtrlArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputFormZuXuan.resx">
+      <DependentUpon>OutputFormZuXuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zst.resx">
+      <DependentUpon>zst.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB_backup\msg.sql" />
+    <Content Include="DB_backup\user_login.sql" />
+    <Content Include="eztx.ico" />
+    <Content Include="HtmlAgilityPack.dll" />
+    <Content Include="MySql.Data.dll" />
+    <None Include="Resources\liangmacha.xml" />
+    <None Include="Resources\11xuan5.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
