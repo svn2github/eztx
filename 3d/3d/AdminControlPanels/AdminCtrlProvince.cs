@@ -155,14 +155,12 @@ namespace _3d
             string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_phone as '手机/电话',user_qq as 'QQ/MSN',"+
                 "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线'";
 
-            DataSet ds = lms.conn("select " + displaySqlSelect + " from "+Global.sqlUserTable+" " + where + "");
-            DataTable tb = ds.Tables[0];
+            DataTable tb = lms.conn("select " + displaySqlSelect + " from " + Global.sqlUserTable + " " + where + "");
 
-            dataGridView1.DataSource = ds;
-            dataGridView1.DataMember = ds.Tables[0].TableName;
+            dataGridView1.DataSource = tb;
+            dataGridView1.DataMember = tb.TableName;
 
-            DataSet countUser = lms.conn("select count(user_id) as 总计 from "+Global.sqlUserTable+" " + where + "");
-            DataTable cu = countUser.Tables[0];
+            DataTable cu = lms.conn("select count(user_id) as 总计 from "+Global.sqlUserTable+" " + where + "");
             DataRow dr = cu.Rows[0];
             this.sumUserLabel.Text = "共有 " + dr[0].ToString() + " 位用户";
         }
@@ -263,7 +261,7 @@ namespace _3d
             {
                 try
                 {
-                    DataSet ds = lms.conn("delete from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
+                    lms.conn("delete from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
 
                     MessageBox.Show("删除成功！", "提示");
 

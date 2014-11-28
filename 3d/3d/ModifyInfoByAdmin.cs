@@ -24,8 +24,7 @@ namespace _3d
 
         private void ModifyInfoByAdmin_Load(object sender, EventArgs e)
         {
-            DataSet ds1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + un + "'");
-            DataTable dt1 = ds1.Tables[0];
+            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + un + "'");
             DataRow dr1 = dt1.Rows[0];
             string user_realname = dr1["user_realname"].ToString();
             if (user_realname == null || user_realname.Equals(""))

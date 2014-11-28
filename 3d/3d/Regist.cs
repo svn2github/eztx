@@ -290,8 +290,7 @@ namespace _3d
 
             try
             {
-                DataSet dsMCode = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
-                DataTable dtMCode = dsMCode.Tables[0];
+                DataTable dtMCode = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
 
                 if (dtMCode.Rows.Count == 0)
                 {

@@ -436,8 +436,7 @@ namespace _3d
         {
             try
             {
-                DataSet ds = lms.conn("select allowlogin,`online`,isdel from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
-                DataTable tb = ds.Tables[0];
+                DataTable tb = lms.conn("select allowlogin,`online`,isdel from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
                 if (tb != null && tb.Rows.Count > 0)
                 {
                     DataRow dr = tb.Rows[0];

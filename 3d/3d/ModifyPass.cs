@@ -42,8 +42,7 @@ namespace _3d
         private Boolean userPassVali()
         {
             bool tf = false;
-            DataSet ds1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
-            DataTable dt1 = ds1.Tables[0];
+            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
             DataRow dr1=dt1.Rows[0];
             string oldPass=textBox2.Text;
             string newPass = textBox3.Text;
@@ -55,7 +54,7 @@ namespace _3d
                 label5.Text = "";
                 if (label5.Text.Equals("") && label6.Text.Equals("") && label7.Text.Equals(""))
                 {
-                    DataSet dsNewPass = lms.conn("update "+Global.sqlUserTable+" set user_pass='" + newPass + "' where user_name='" + Global.user_name + "'");
+                    lms.conn("update "+Global.sqlUserTable+" set user_pass='" + newPass + "' where user_name='" + Global.user_name + "'");
                     tf = true;
                 }
             }

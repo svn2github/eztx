@@ -241,8 +241,7 @@ namespace _3d
             }
             user_pass = md5.Encrypt(user_pass);
 
-            DataSet ds1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "' and isdel='1'");
-            DataTable dt1 = ds1.Tables[0];
+            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "' and isdel='1'");
 
             if (dt1 == null || dt1.Rows.Count == 0)//如果没有返回来数据，证明用户名错了
             {
@@ -308,8 +307,7 @@ namespace _3d
                 machinecode = machinecode.Insert(i, "-");
             }
 
-            DataSet ds1 = lms.conn("select * from "+Global.sqlUserTable+" where machinecode='" + machinecode + "'and registtime=(select min(registtime) from "+Global.sqlUserTable+" where machinecode='" + machinecode + "') and isdel='1'");
-            DataTable dt1 = ds1.Tables[0];
+            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where machinecode='" + machinecode + "'and registtime=(select min(registtime) from "+Global.sqlUserTable+" where machinecode='" + machinecode + "') and isdel='1'");
 
             if (dt1 != null && dt1.Rows.Count > 0)
             {
@@ -527,8 +525,7 @@ namespace _3d
         {
             try
             {
-                DataSet ds1 = lms.conn("select * from msg");
-                DataTable dt1 = ds1.Tables[0];
+                DataTable dt1 = lms.conn("select * from msg");
                 DataRow dr1 = dt1.Rows[0];
                 setLabel5Text(dr1["msg_login"].ToString());
                 Global.main_msg = dr1["msg_main"].ToString();
@@ -742,8 +739,7 @@ namespace _3d
                 return false;
             }
 
-            DataSet ds1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "' and isdel='1'");
-            DataTable dt1 = ds1.Tables[0];
+            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "' and isdel='1'");
 
             if (dt1 == null || dt1.Rows.Count == 0)
             {

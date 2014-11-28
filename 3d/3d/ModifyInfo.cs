@@ -189,8 +189,7 @@ namespace _3d
         {
             this.textBox1.Text = Global.user_name;
 
-            DataSet ds1 = lms.conn("select user_realname,user_id,user_phone,user_qq,user_province from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
-            DataTable dt1 = ds1.Tables[0];
+            DataTable dt1 = lms.conn("select user_realname,user_id,user_phone,user_qq,user_province from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
             DataRow dr1 = dt1.Rows[0];
             string user_realname = dr1["user_realname"].ToString();
             if (user_realname == null || user_realname.Equals(""))

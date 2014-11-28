@@ -34,8 +34,7 @@ namespace _3d
         private void bindQuYuCbx()
         {
             qyCbx.DataSource = null;
-            DataSet ds = lms.conn("select user_name from "+Global.sqlUserTable+" where user_vali='5' and isdel='1'");
-            DataTable tb = ds.Tables[0];
+            DataTable tb = lms.conn("select user_name from "+Global.sqlUserTable+" where user_vali='5' and isdel='1'");
             qyCbx.DataSource = tb;
             qyCbx.DisplayMember = "user_name";
         }
@@ -109,8 +108,7 @@ namespace _3d
             {
                 onlineCbx.Visible = true;
                 onlineCbx.DataSource = null;
-                DataSet ds = lms.conn("select user_province from "+Global.sqlUserTable+" group by user_province");
-                DataTable tb = ds.Tables[0];
+                DataTable tb = lms.conn("select user_province from "+Global.sqlUserTable+" group by user_province");
                 onlineCbx.DataSource = tb;
                 onlineCbx.DisplayMember = "user_province";
             }
@@ -126,8 +124,7 @@ namespace _3d
             {
                 onlineCbx.Visible = true;
                 onlineCbx.DataSource = null;
-                DataSet ds = lms.conn("select user_name from "+Global.sqlUserTable+" where user_vali='5' and isdel='1'");
-                DataTable tb = ds.Tables[0];
+                DataTable tb = lms.conn("select user_name from "+Global.sqlUserTable+" where user_vali='5' and isdel='1'");
                 onlineCbx.DataSource = tb;
                 onlineCbx.DisplayMember = "user_name";
             }
@@ -292,14 +289,12 @@ namespace _3d
             "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',machinecode as '机器码',lastloginplace as '上次登录地点',lastlogintime as '上次登录时间',"+
             "registplace as '注册地点',registtime as '注册时间',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_name as '区域领导'";
 
-            DataSet ds = lms.conn("select " + displaySqlSelect + " from "+Global.sqlUserTable+" " + where + "");
-            DataTable tb = ds.Tables[0];
+            DataTable tb = lms.conn("select " + displaySqlSelect + " from "+Global.sqlUserTable+" " + where + "");
 
-            dataGridView1.DataSource = ds;
-            dataGridView1.DataMember = ds.Tables[0].TableName;
+            dataGridView1.DataSource = tb;
+            dataGridView1.DataMember = tb.TableName;
 
-            DataSet countUser = lms.conn("select count(user_id) as 总计 from "+Global.sqlUserTable+" " + where + "");
-            DataTable cu = countUser.Tables[0];
+            DataTable cu = lms.conn("select count(user_id) as 总计 from "+Global.sqlUserTable+" " + where + "");
             DataRow dr = cu.Rows[0];
             this.sumUserLabel.Text = "共有 " + dr[0].ToString() + " 位用户";
         }
@@ -462,7 +457,7 @@ namespace _3d
             {
                 try
                 {
-                    DataSet ds = lms.conn("update "+Global.sqlUserTable+" set isdel='-1' where user_name='" + user_name + "'");
+                    lms.conn("update "+Global.sqlUserTable+" set isdel='-1' where user_name='" + user_name + "'");
 
                     MessageBox.Show("删除成功！", "提示");
 
@@ -625,8 +620,7 @@ namespace _3d
 
             try
             {
-                DataSet dsMCode = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
-                DataTable dtMCode = dsMCode.Tables[0];
+                DataTable dtMCode = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
                 if (dtMCode.Rows.Count == 0)
                 {
                     try
@@ -781,8 +775,7 @@ namespace _3d
 
         private void getGg()
         {
-            DataSet ds = lms.conn("select * from msg");
-            DataTable dt = ds.Tables[0];
+            DataTable dt = lms.conn("select * from msg");
             if (dt.Rows.Count > 0)
             {
                 DataRow dr = dt.Rows[0];
@@ -826,7 +819,7 @@ namespace _3d
             string msg_main = this.textBox11.Text;
             try
             {
-                DataSet ds = lms.conn("update msg set msg_login='" + msg_login + "',msg_main='" + msg_main + "'");
+                lms.conn("update msg set msg_login='" + msg_login + "',msg_main='" + msg_main + "'");
                 MessageBox.Show("修改成功", "温馨提示");
             }
             catch
