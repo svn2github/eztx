@@ -14,8 +14,17 @@ namespace _3d
         //allowlogin为是否允许登录
         //splitRegex为每组数字之间的分隔符
         //main_msg为main页面上方滚动条文字
-        //loginType为登录方式，等于1时是通过用户名密码登录，等于2为通过机器码登录
+        //loginType为登录方式，等于1是通过用户名密码登录，等于2为通过机器码登录
         public static string user_name, user_realname, user_province, user_vali, allowlogin, main_msg, splitRegex, loginType;
-        public static string sqlUserTable = "user_eztx";//表名，通用表名
+
+        public static string soft_server_url = "http://eztx.eztx.cn/other_soft";
+        public static string version = string.Empty;//软件版本
+        public static string sqlAddress = string.Empty;//数据库地址
+        public static string sqlPort = string.Empty;//数据库端口
+        public static string sqlUsername = string.Empty;//数据库用户名
+        public static string sqlPwd = string.Empty;//数据库密码
+        public static string sqlDB = string.Empty;//数据库所用库
+        public static string sqlCharset = string.Empty;//数据库所用库
+        public static string sqlUserTable = string.Empty;//表名，通用表名
     }
 }

@@ -66,7 +66,7 @@ namespace _3d
                 uv = "尊贵的区域代理：";
             if (un == null || un.Equals(""))
                 un = "您";
-            setFormText("恩泽天下 - 辅助运算软件 - 欢迎" + uv + un + "，系统现在时间：" + DateTime.Now.ToString("yyyy年MM月dd日 HH时mm分ss秒"));
+            setFormText("恩泽天下 - 辅助运算软件 - 欢迎" + uv + un + "，当前版本：" + Global.version + "，系统时间：" + DateTime.Now.ToString("yyyy年MM月dd日 HH时mm分ss秒"));
         }
 
         private delegate void WriteFormTextDelegate(string args);

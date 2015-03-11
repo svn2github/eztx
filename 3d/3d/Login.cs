@@ -307,7 +307,7 @@ namespace _3d
                 machinecode = machinecode.Insert(i, "-");
             }
 
-            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where machinecode='" + machinecode + "'and registtime=(select min(registtime) from "+Global.sqlUserTable+" where machinecode='" + machinecode + "') and isdel='1'");
+            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where machinecode='" + machinecode + "' and registtime=(select min(registtime) from "+Global.sqlUserTable+" where machinecode='" + machinecode + "') and isdel='1'");
 
             if (dt1 != null && dt1.Rows.Count > 0)
             {

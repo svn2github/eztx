@@ -11,6 +11,7 @@ using System.IO;
 using System.Net;
 using System.Diagnostics;
 using System.Threading;
+using _3d.Function;
 
 namespace _3d.Others
 {
@@ -36,7 +37,7 @@ namespace _3d.Others
 
         private void loadUpadateHistory()
         {
-            string url = "http://eztx.cn/soft/version.txt?t=" + DateTime.Now.Ticks;//用随机数防止IE缓存
+            string url = "" + Global.soft_server_url + "\\version.txt?t=" + DateTime.Now.Ticks;//用随机数防止IE缓存
             this.webBrowser1.Navigate(new System.Uri(url, System.UriKind.Absolute));
         }
 
@@ -47,13 +48,10 @@ namespace _3d.Others
             doc.Load(exePath + "\\UpdateList.xml");
             XmlNode xn = doc.SelectSingleNode("//Files/File");
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://eztx.cn/soft/UpdateList.xml");
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            Stream recStream = response.GetResponseStream();
-            StreamReader sr = new StreamReader(recStream, UTF8Encoding.UTF8);
-            String content = sr.ReadToEnd();
+            WebConnect wc = new WebConnect();
+            string pageXML = wc.getOnlineXML(Global.soft_server_url + "\\UpdateList.xml");
             XmlDocument doc2 = new XmlDocument();
-            doc2.LoadXml(content);
+            doc2.LoadXml(pageXML);
             XmlNode xn2 = doc2.SelectSingleNode("//Files/File");
 
             string localVersion = xn.Attributes["Ver"].InnerText;

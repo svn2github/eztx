@@ -18,8 +18,13 @@ namespace _3d
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
+
+            // 读取数据库配置 start
+            LinkMySql lms = new LinkMySql();
+            lms.getSQLcfg("" + Global.soft_server_url + "\\MySQLConfig.xml");
+            // 读取数据库配置 end
+
             Global.user_name = "";
-            
             Login l = new Login();
             if (l.ShowDialog() == DialogResult.OK)//如果等于ok，就证明通过验证，则打开main窗口
             {
@@ -46,9 +51,7 @@ namespace _3d
 
         //关闭程序时写注册表离线
         static void quitWriteSql()
-        {            
-            /*
-             * 过去的方法
+        {
             LinkMySql lms = new LinkMySql();
             try
             {
@@ -66,13 +69,13 @@ namespace _3d
                 {
                     Application.Run(new main());
                 }
-            }*/
+            }
 
             //try
             //{
-                WebConnect wc = new WebConnect();
-                string result = wc.sendStringMessage("http://eztx.cn/eztx/eztx_offline.php?username=" + Global.user_name + "");
-                Application.Exit();
+                //WebConnect wc = new WebConnect();
+               // string result = wc.sendStringMessage("http://eztx.cn/eztx/eztx_offline.php?username=" + Global.user_name + "");
+               // Application.Exit();
             //}
             //catch
             //{
