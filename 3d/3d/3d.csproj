@@ -99,6 +99,7 @@
     <Compile Include="Function\ClearMemory.cs" />
     <Compile Include="Function\LinkMySql.cs" />
     <Compile Include="Function\WebConnect.cs" />
+    <Compile Include="Function\ServerVersion.cs" />
     <Compile Include="Others\AboutSoft.cs">
       <SubType>Form</SubType>
     </Compile>

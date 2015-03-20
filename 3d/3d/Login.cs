@@ -54,10 +54,36 @@ namespace _3d
         public Login()
         {
             InitializeComponent();
+
+            findUpdate();
+
             tLabelMove = new System.Timers.Timer();
             tLabelMove.Interval = 100;
             tLabelMove.Elapsed += new System.Timers.ElapsedEventHandler(time1_Tick);
             tLabelMove.Enabled = true;
+        }
+
+        /// <summary>
+        /// 查找软件是否有更新
+        /// </summary>
+        private void findUpdate()
+        {
+            ServerVersion sv = new ServerVersion();
+            string localVersion = Global.version;
+            string serverVersion = sv.GetServerVersion();
+
+            int verCha = Convert.ToInt32(serverVersion.Replace(".", "")) - Convert.ToInt32(localVersion.Replace(".", ""));
+
+            if (verCha > 0)
+            {
+                MessageBoxButtons messButton = MessageBoxButtons.OKCancel;
+                DialogResult dr = MessageBox.Show("软件有更新，需要更新吗?", "软件更新", messButton);
+
+                if (dr == DialogResult.OK)//如果点击“确定”按钮
+                {
+                    openUpdateExe();
+                }
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -103,7 +129,7 @@ namespace _3d
                 DataTable data = new DataTable();
                 data.Columns.Add("user_name");//要保存表里面的列
                 data.Columns.Add("user_pass");//要保存表里面的列
-                
+
                 foreach (XmlNode item in nodelist)
                 {
                     DataRow row = data.NewRow();
@@ -162,36 +188,39 @@ namespace _3d
         private void loginStart()
         {
             setLoginResult("正在登录中...请稍后");
-                        
+
             string user_name = textBox1.Text.Trim();//textBox1.Text.Trim();
             string user_pass = textBox2.Text.Trim();
 
-           // try
+            // try
             //{
-                if (loginValidate(user_name, user_pass) == true)
-                {
-                    lms.conn("UPDATE "+Global.sqlUserTable+" SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "' where user_name='" + user_name + "'");
-                    
-                    writeToUserXML(user_name,user_pass);//写入到用户配置文件
+            if (loginValidate(user_name, user_pass) == true)
+            {
+                lms.conn("UPDATE " + Global.sqlUserTable +
+                    " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
+                    " where user_name='" + user_name + "'");
 
-                    while (Global.main_msg.Length > 0)//确保main界面上方滚动条的文字已经读入
-                    {
-                        loginToMain();
-                        break;
-                    }
+                writeToUserXML(user_name, user_pass);//写入到用户配置文件
+
+                while (Global.main_msg.Length > 0)//确保main界面上方滚动条的文字已经读入
+                {
+                    loginToMain();
+                    break;
                 }
+            }
 
             //}
             //catch
             //{
             //    MessageBox.Show("登录失败，请检查网络连接或者稍后重试，如果还不可以请联系管理员。", "友情提示");
-           // }
+            // }
         }
 
         /// <summary>
         /// 写入到用户配置文件
         /// </summary>
-        private void writeToUserXML(string uName,string uPass) {
+        private void writeToUserXML(string uName, string uPass)
+        {
 
             if (savePass.Checked == false)
             {
@@ -201,7 +230,7 @@ namespace _3d
             string url = Application.StartupPath;
             XmlDocument doc = new XmlDocument();
             doc.Load(url + "\\UserProfile.xml");
-            XmlNodeList xnList = doc.SelectNodes("//user[@user_name='"+uName+"']");
+            XmlNodeList xnList = doc.SelectNodes("//user[@user_name='" + uName + "']");
             //MessageBox.Show(xnList.Count.ToString());//.Attributes["user_name"].Value
             if (xnList.Count > 0)
             {
@@ -241,7 +270,7 @@ namespace _3d
             }
             user_pass = md5.Encrypt(user_pass);
 
-            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "' and isdel='1'");
+            DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "' and isdel='1'");
 
             if (dt1 == null || dt1.Rows.Count == 0)//如果没有返回来数据，证明用户名错了
             {
@@ -307,7 +336,7 @@ namespace _3d
                 machinecode = machinecode.Insert(i, "-");
             }
 
-            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where machinecode='" + machinecode + "' and registtime=(select min(registtime) from "+Global.sqlUserTable+" where machinecode='" + machinecode + "') and isdel='1'");
+            DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where machinecode='" + machinecode + "' and registtime=(select min(registtime) from " + Global.sqlUserTable + " where machinecode='" + machinecode + "') and isdel='1'");
 
             if (dt1 != null && dt1.Rows.Count > 0)
             {
@@ -321,7 +350,9 @@ namespace _3d
 
                 if (dr1["allowlogin"].ToString().Equals("1"))
                 {
-                    string mysql = "UPDATE "+Global.sqlUserTable+" SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "' where user_name='" + Global.user_name + "'";
+                    string mysql = "UPDATE " + Global.sqlUserTable +
+                        " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
+                        " where user_name='" + Global.user_name + "'";
                     lms.conn(mysql);
                     clearUserProfile();
 
@@ -605,7 +636,7 @@ namespace _3d
         }
 
         #region 验证成功以后用来打开main界面  委托
-        private void loginToMain() 
+        private void loginToMain()
         {
             //setLoginToMain();
             this.DialogResult = DialogResult.OK;
@@ -699,18 +730,18 @@ namespace _3d
 
             //try
             //{
-                if (lValidate(user_name, user_pass) == true)
-                {
-                    lms.conn("UPDATE "+Global.sqlUserTable+" SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "' where user_name='" + user_name + "'");
-                    
-                    writeToUserXML(user_name, user_pass);//写入到用户配置文件
+            if (lValidate(user_name, user_pass) == true)
+            {
+                lms.conn("UPDATE " + Global.sqlUserTable + " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "' where user_name='" + user_name + "'");
 
-                    while (Global.main_msg.Length > 0)//确保main界面上方滚动条的文字已经读入
-                    {
-                        loginToMain();
-                        break;
-                    }
+                writeToUserXML(user_name, user_pass);//写入到用户配置文件
+
+                while (Global.main_msg.Length > 0)//确保main界面上方滚动条的文字已经读入
+                {
+                    loginToMain();
+                    break;
                 }
+            }
 
             //}
             //catch
@@ -739,7 +770,7 @@ namespace _3d
                 return false;
             }
 
-            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "' and isdel='1'");
+            DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "' and isdel='1'");
 
             if (dt1 == null || dt1.Rows.Count == 0)
             {

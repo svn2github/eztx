@@ -15,6 +15,7 @@ namespace _3d
     {
         Timer tLabelMove = null;
         Timer marqueeLabelMove = null;
+        Timer setUsersOffline = new Timer();
         private Form1 f1 = new Form1();
         private Form3 f3 = new Form3();
         private Form4 f4 = new Form4();
@@ -148,6 +149,8 @@ namespace _3d
         {
             InitializeComponent();
 
+            l.Close();
+
             //设置时时彩及十一选五页面最上方的滚动文字
             tLabelMove = new Timer();
             tLabelMove.Interval = 100;
@@ -164,16 +167,21 @@ namespace _3d
             t.Enabled = true;//是否执行System.Timers.Timer.Elapsed事件；
 
             //启用内存回收
-            timer3.Enabled = true;
             timer3.Interval = 5000;
-            l.Close();
+            timer3.Enabled = true;
 
             //将tabpage隐藏
             customTabControl1.TabPages[1].Parent = null;
 
             //启动下线机制
-            this.offlineUserTimer.Interval = 1800000;//30分钟 1800000
+            //如30分钟 30 * 60 *1000=1800000
+            this.offlineUserTimer.Interval = 10 * 60 * 1000;
             this.offlineUserTimer.Enabled = true;
+
+            //***刷新全员列表，谁离线过久就下线 30分钟一次
+            setUsersOffline.Tick += new EventHandler(setUsersOffline_Tick);
+            this.setUsersOffline.Interval = 30 * 10 * 1000;
+            this.setUsersOffline.Enabled = true;
         }
 
         //时时彩“生成”按钮点击
@@ -424,7 +432,8 @@ namespace _3d
             {
                 System.Diagnostics.Process.Start(startProgram, url);
             }
-            catch {
+            catch
+            {
                 Clipboard.SetText(url);
                 MessageBox.Show("打开网址失败，可能是您的IE浏览器存在问题，现已将网址复制，您可以直接打开浏览器粘贴进行浏览。");
             }
@@ -463,9 +472,50 @@ namespace _3d
                         this.Close();
                     }
                 }
+                refreshMyOnlineTime_Tick();
             }
-            catch { 
-            
+            catch
+            {
+
+            }
+        }
+
+        private void refreshMyOnlineTime_Tick() {
+            lms.conn("update " + Global.sqlUserTable + " set onlinetime=now() where user_name='" + Global.user_name + "' ");
+        }
+
+        //启动全员下线机制
+        private void setUsersOffline_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable tb = lms.conn("select user_name,`onlinetime` from " + Global.sqlUserTable + " where `online`!='0' and isdel!='-1' and allowlogin!='0' and user_name!='" + Global.user_name + "'");
+                if (tb != null && tb.Rows.Count > 0)
+                {
+                    foreach (DataRow dr in tb.Rows)
+                    {
+                        string user_name = dr["user_name"].ToString();
+                        string onlinetime = dr["onlinetime"].ToString();
+                        if (string.IsNullOrEmpty(onlinetime))
+                        {
+                            continue;
+                        }
+
+                        TimeSpan ts1 = new TimeSpan(Convert.ToDateTime(onlinetime).Ticks);//服务器最后更新时间
+                        TimeSpan ts2 = new TimeSpan(DateTime.Now.Ticks);//现在时间
+                        TimeSpan ts = ts1.Subtract(ts2).Duration();//绝对值
+                        double diffHours = ts.TotalMinutes;
+                        //如果相差时间超过60分钟，那么就把该用户下线
+                        if (diffHours >= 60)
+                        {
+                            lms.conn("update " + Global.sqlUserTable + " set `online`='0' where user_name='" + user_name + "' ");
+                        }
+                    }
+                }
+            }
+            catch
+            {
+
             }
         }
 
@@ -485,9 +535,10 @@ namespace _3d
                 string result = wc.sendStringMessage("http://eztx.cn/eztx/eztx_offline.php?username=" + Global.user_name + "");
                 Application.Exit();
             }
-            catch {
+            catch
+            {
                 MessageBox.Show("程序关闭时遇到问题，如果无法再次登录软件，请联系售后", "温馨提示");
             }
         }
-     }
+    }
 }

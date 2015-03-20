@@ -54,10 +54,10 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.ComboBox();
+            this.savePass = new _3d.CusCheckBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.用户名登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePass = new _3d.CusCheckBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -207,7 +207,7 @@
             // 
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
             this.ToolStripMenuItem.Size = new System.Drawing.Size(162, 24);
-            this.ToolStripMenuItem.Text = "详情";
+            this.ToolStripMenuItem.Text = "更新";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // 清空登录信息ToolStripMenuItem
@@ -330,6 +330,20 @@
             this.textBox1.SelectedIndexChanged += new System.EventHandler(this.textBox1_SelectedIndexChanged);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
+            // savePass
+            // 
+            this.savePass.AutoSize = true;
+            this.savePass.BackColor = System.Drawing.Color.Transparent;
+            this.savePass.checkBgColor = System.Drawing.Color.Empty;
+            this.savePass.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.savePass.Location = new System.Drawing.Point(355, 237);
+            this.savePass.Name = "savePass";
+            this.savePass.Size = new System.Drawing.Size(72, 16);
+            this.savePass.TabIndex = 10;
+            this.savePass.Text = "记住密码";
+            this.toolTip1.SetToolTip(this.savePass, "免去您每次输入用户名密码带来的不便");
+            this.savePass.UseVisualStyleBackColor = false;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
@@ -354,20 +368,6 @@
             this.用户名登录ToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.用户名登录ToolStripMenuItem.Text = "用户名登录";
             this.用户名登录ToolStripMenuItem.Click += new System.EventHandler(this.用户名登录ToolStripMenuItem_Click);
-            // 
-            // savePass
-            // 
-            this.savePass.AutoSize = true;
-            this.savePass.BackColor = System.Drawing.Color.Transparent;
-            this.savePass.checkBgColor = System.Drawing.Color.Empty;
-            this.savePass.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.savePass.Location = new System.Drawing.Point(355, 237);
-            this.savePass.Name = "savePass";
-            this.savePass.Size = new System.Drawing.Size(72, 16);
-            this.savePass.TabIndex = 10;
-            this.savePass.Text = "记住密码";
-            this.toolTip1.SetToolTip(this.savePass, "免去您每次输入用户名密码带来的不便");
-            this.savePass.UseVisualStyleBackColor = false;
             // 
             // Login
             // 

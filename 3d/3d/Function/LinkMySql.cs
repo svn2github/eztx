@@ -47,7 +47,7 @@ namespace _3d.Function
             Global.sqlCharset = charsetNode.InnerText;
             Global.sqlUserTable = use_tableNode.InnerText;
 
-            //读取软件版本
+            //读取当前软件版本
             string localXmlFile = Application.StartupPath + "\\UpdateList.xml";
             xml = new XmlDocument();
             xml.Load(localXmlFile);

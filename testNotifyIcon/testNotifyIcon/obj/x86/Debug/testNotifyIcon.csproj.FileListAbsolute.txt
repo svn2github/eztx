@@ -1,0 +1,18 @@
+D:\c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.Form1.resources
+D:\c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.Properties.Resources.resources
+D:\c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.csproj.GenerateResource.Cache
+D:\c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.csprojResolveAssemblyReference.cache
+D:\c#\testNotifyIcon\testNotifyIcon\bin\Debug\ATTIC Etimesheet.exe
+D:\c#\testNotifyIcon\testNotifyIcon\bin\Debug\ATTIC Etimesheet.pdb
+D:\c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\ATTIC Etimesheet.exe
+D:\c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\ATTIC Etimesheet.pdb
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\obj\x86\Debug\ATTIC Etimesheet.exe
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\obj\x86\Debug\ATTIC Etimesheet.pdb
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\bin\Debug\ATTIC Etimesheet.exe
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\bin\Debug\ATTIC Etimesheet.pdb
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.Form1.resources
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.Properties.Resources.resources
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.Empty.resources
+\\172.18.117.7\e\创作间 timesheet\testNotifyIcon\testNotifyIcon\obj\x86\Debug\testNotifyIcon.csproj.GenerateResource.Cache
+D:\svn_c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\ATTIC Etimesheet.exe
+D:\svn_c#\testNotifyIcon\testNotifyIcon\obj\x86\Debug\ATTIC Etimesheet.pdb

@@ -144,7 +144,8 @@ namespace _3d
         {
             //设定给datagridview的select列名
             string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_phone as '手机/电话',user_qq as 'QQ/MSN',"+
-                "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线'";
+                "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线'," +
+                "soft_version as '软件版本' ";
 
             DataTable tb = lms.conn("select " + displaySqlSelect + " from " + Global.sqlUserTable + " " + where);
 

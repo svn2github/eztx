@@ -43,20 +43,9 @@ namespace _3d.Others
 
         private void loadVersion()
         {
-            XmlDocument doc = new XmlDocument();
-            string exePath = System.Environment.CurrentDirectory;
-            doc.Load(exePath + "\\UpdateList.xml");
-            XmlNode xn = doc.SelectSingleNode("//Files/File");
-
-            WebConnect wc = new WebConnect();
-            string pageXML = wc.getOnlineXML(Global.soft_server_url + "\\UpdateList.xml");
-            XmlDocument doc2 = new XmlDocument();
-            doc2.LoadXml(pageXML);
-            XmlNode xn2 = doc2.SelectSingleNode("//Files/File");
-
-            string localVersion = xn.Attributes["Ver"].InnerText;
-            string serverVersion = xn2.Attributes["Ver"].InnerText;
-
+            ServerVersion sv = new ServerVersion();
+            string localVersion = Global.version;
+            string serverVersion = sv.GetServerVersion();
 
             int verCha = Convert.ToInt32(serverVersion.Replace(".", "")) - Convert.ToInt32(localVersion.Replace(".", ""));
 

@@ -287,7 +287,8 @@ namespace _3d
             string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_id as '身份证号',user_phone as '手机/电话',user_qq as 'QQ/MSN',user_province as '所在地区',"+
             "CASE user_vali when '1' then'总代理' when '3' then '省级代理' when '4' then '市级代理' when '5' then '区域代理' ELSE '普通用户' end AS '用户权限',"+
             "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',machinecode as '机器码',lastloginplace as '上次登录地点',lastlogintime as '上次登录时间',"+
-            "registplace as '注册地点',registtime as '注册时间',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_name as '区域领导'";
+            "registplace as '注册地点',registtime as '注册时间',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_name as '区域领导',"+
+            "soft_version as '软件版本' ";
 
             DataTable tb = lms.conn("select " + displaySqlSelect + " from "+Global.sqlUserTable+" " + where + "");
 
