@@ -22,7 +22,7 @@ namespace _3d
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            if (!Global.user_vali.Equals("2"))
+            if (!(Global.user_vali.Equals("2") || Global.user_vali.Equals("6") || Global.user_vali.Equals("7")))
             {
                 linkLabel3.Visible = true;
             }
@@ -249,41 +249,50 @@ namespace _3d
             }
         }
 
+        Thread tPassLB = null;
+        Thread tInfoLB = null;
+        Thread tAdminInfoLB = null;
+
         //“密码修改”链接标签
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Thread t = new Thread(new ThreadStart(ModifyPasswordPanel));
-            t.IsBackground = true;
-            t.Start();
+            tPassLB = new Thread(new ThreadStart(ModifyPasswordPanel));
+            tPassLB.IsBackground = true;
+            tPassLB.SetApartmentState(System.Threading.ApartmentState.STA);
+            tPassLB.Start();
         }
 
         private void ModifyPasswordPanel()
         {
             ModifyPass mp = new ModifyPass();
             mp.ShowDialog();
+            tPassLB.Abort();
         }
 
         //“信息修改”链接标签
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Thread t = new Thread(new ThreadStart(ModifyInfoPanel));
-            t.IsBackground = true;
-            t.Start();
+            tInfoLB = new Thread(new ThreadStart(ModifyInfoPanel));
+            tInfoLB.IsBackground = true;
+            tInfoLB.SetApartmentState(System.Threading.ApartmentState.STA);
+            tInfoLB.Start();
         }
 
         private void ModifyInfoPanel()
         {
             ModifyInfo mi = new ModifyInfo();
             mi.ShowDialog();
+            tInfoLB.Abort();
         }
 
         //“用户信息”链接标签
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Thread t = new Thread(new ThreadStart(adminPanel));
-            t.SetApartmentState(ApartmentState.STA);
-            t.IsBackground = true;
-            t.Start();
+            tAdminInfoLB = new Thread(new ThreadStart(adminPanel));
+            tAdminInfoLB.SetApartmentState(ApartmentState.STA);
+            tAdminInfoLB.IsBackground = true;
+            tAdminInfoLB.SetApartmentState(System.Threading.ApartmentState.STA);
+            tAdminInfoLB.Start();
         }
 
         private AdminCtrl ac = null;//超级管理员面板
@@ -324,6 +333,7 @@ namespace _3d
                     aarea.ShowDialog();
                 }
             }
+            tAdminInfoLB.Abort();
         }
 
         #endregion

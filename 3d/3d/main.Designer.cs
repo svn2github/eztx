@@ -491,7 +491,6 @@
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "main";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.main_FormClosing);
             this.Load += new System.EventHandler(this.main_Load);
             this.ResizeBegin += new System.EventHandler(this.main_ResizeBegin);
             this.ResizeEnd += new System.EventHandler(this.main_ResizeEnd);

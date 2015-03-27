@@ -65,8 +65,11 @@ namespace _3d
                 uv = "尊贵的" + ub + "代理：";
             if (Global.user_vali.Equals("5"))
                 uv = "尊贵的区域代理：";
-            if (un == null || un.Equals(""))
-                un = "您";
+            if (Global.user_vali.Equals("6"))
+                uv = "尊贵的市场专员：";
+            if (Global.user_vali.Equals("7"))
+                uv = "尊贵的业务员：";
+            //用户权限,1为总代理,2为普通用户,3为省级代理,4为市级代理,5为区域代理,6为市场专员,7为业务员
             setFormText("恩泽天下 - 辅助运算软件 - 欢迎" + uv + un + "，当前版本：" + Global.version + "，系统时间：" + DateTime.Now.ToString("yyyy年MM月dd日 HH时mm分ss秒"));
         }
 
@@ -148,40 +151,6 @@ namespace _3d
         public main()
         {
             InitializeComponent();
-
-            l.Close();
-
-            //设置时时彩及十一选五页面最上方的滚动文字
-            tLabelMove = new Timer();
-            tLabelMove.Interval = 100;
-            tLabelMove.Tick += new EventHandler(timer2_Tick);
-            tLabelMove.Enabled = true;
-            marqueeLabelMove = new Timer();
-            marqueeLabelMove.Interval = 100;
-            marqueeLabelMove.Tick += new EventHandler(marqueeTimer_Tick);
-            marqueeLabelMove.Enabled = true;
-
-            //启用标题栏计时
-            t.Tick += new EventHandler(time_Tick);
-            t.Interval = 1000;//设置是执行一次（false）还是一直执行(true)； 
-            t.Enabled = true;//是否执行System.Timers.Timer.Elapsed事件；
-
-            //启用内存回收
-            timer3.Interval = 5000;
-            timer3.Enabled = true;
-
-            //将tabpage隐藏
-            customTabControl1.TabPages[1].Parent = null;
-
-            //启动下线机制
-            //如30分钟 30 * 60 *1000=1800000
-            this.offlineUserTimer.Interval = 10 * 60 * 1000;
-            this.offlineUserTimer.Enabled = true;
-
-            //***刷新全员列表，谁离线过久就下线 30分钟一次
-            setUsersOffline.Tick += new EventHandler(setUsersOffline_Tick);
-            this.setUsersOffline.Interval = 30 * 10 * 1000;
-            this.setUsersOffline.Enabled = true;
         }
 
         //时时彩“生成”按钮点击
@@ -324,6 +293,39 @@ namespace _3d
 
         private void main_Load(object sender, EventArgs e)
         {
+
+            //设置时时彩及十一选五页面最上方的滚动文字
+            tLabelMove = new Timer();
+            tLabelMove.Interval = 100;
+            tLabelMove.Tick += new EventHandler(timer2_Tick);
+            tLabelMove.Enabled = true;
+            marqueeLabelMove = new Timer();
+            marqueeLabelMove.Interval = 100;
+            marqueeLabelMove.Tick += new EventHandler(marqueeTimer_Tick);
+            marqueeLabelMove.Enabled = true;
+
+            //启用标题栏计时
+            t.Tick += new EventHandler(time_Tick);
+            t.Interval = 1000;//设置是执行一次（false）还是一直执行(true)； 
+            t.Enabled = true;//是否执行System.Timers.Timer.Elapsed事件；
+
+            //启用内存回收
+            timer3.Interval = 5000;
+            timer3.Enabled = true;
+
+            //将tabpage隐藏
+            customTabControl1.TabPages[1].Parent = null;
+
+            //启动下线机制
+            //如30分钟 30 * 60 *1000=1800000
+            this.offlineUserTimer.Interval = 10 * 60 * 1000;
+            this.offlineUserTimer.Enabled = true;
+
+            //***刷新全员列表，谁离线过久就下线 30分钟一次
+            setUsersOffline.Tick += new EventHandler(setUsersOffline_Tick);
+            this.setUsersOffline.Interval = 30 * 10 * 1000;
+            this.setUsersOffline.Enabled = true;
+
             EnableDoubleBuffering();//启用双缓冲
             this.label8.Text = Global.main_msg;//获取时时彩界面跑马灯文字信息
             this.marqueeLabel.Text = Global.main_msg;//获取时时彩界面跑马灯文字信息
@@ -445,6 +447,9 @@ namespace _3d
         {
             try
             {
+                //刷新自己在线的时间状态
+                refreshMyOnlineTime_Tick();
+
                 DataTable tb = lms.conn("select allowlogin,`online`,isdel from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
                 if (tb != null && tb.Rows.Count > 0)
                 {
@@ -467,12 +472,12 @@ namespace _3d
                         ||
                         online.Equals("0"))
                     {
+                        this.offlineUserTimer.Enabled = false;
                         MessageBox.Show("软件即将关闭，请联系管理员。");
                         this.Dispose();
                         this.Close();
                     }
                 }
-                refreshMyOnlineTime_Tick();
             }
             catch
             {
@@ -516,28 +521,6 @@ namespace _3d
             catch
             {
 
-            }
-        }
-
-        private void main_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //offline_User(sender,e);
-        }
-
-        /// <summary>
-        /// 下线的时候写入数据库
-        /// </summary>
-        private void offline_User(object sender, FormClosingEventArgs e)
-        {
-            try
-            {
-                WebConnect wc = new WebConnect();
-                string result = wc.sendStringMessage("http://eztx.cn/eztx/eztx_offline.php?username=" + Global.user_name + "");
-                Application.Exit();
-            }
-            catch
-            {
-                MessageBox.Show("程序关闭时遇到问题，如果无法再次登录软件，请联系售后", "温馨提示");
             }
         }
     }

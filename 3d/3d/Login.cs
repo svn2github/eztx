@@ -54,13 +54,6 @@ namespace _3d
         public Login()
         {
             InitializeComponent();
-
-            findUpdate();
-
-            tLabelMove = new System.Timers.Timer();
-            tLabelMove.Interval = 100;
-            tLabelMove.Elapsed += new System.Timers.ElapsedEventHandler(time1_Tick);
-            tLabelMove.Enabled = true;
         }
 
         /// <summary>
@@ -88,6 +81,11 @@ namespace _3d
 
         private void Login_Load(object sender, EventArgs e)
         {
+            tLabelMove = new System.Timers.Timer();
+            tLabelMove.Interval = 100;
+            tLabelMove.Elapsed += new System.Timers.ElapsedEventHandler(time1_Tick);
+            tLabelMove.Enabled = true;
+
             this.label3.Text = "";
             this.label4.Text = "";
             this.pictureBox1.Width = this.Width;
@@ -97,6 +95,9 @@ namespace _3d
             this.textBox1.Text = "";
             this.textBox2.Text = "";
             savePass.Checked = false;
+
+            //检测是否有更新
+            findUpdate();
         }
 
         /// <summary>
@@ -187,33 +188,34 @@ namespace _3d
 
         private void loginStart()
         {
-            setLoginResult("正在登录中...请稍后");
 
-            string user_name = textBox1.Text.Trim();//textBox1.Text.Trim();
-            string user_pass = textBox2.Text.Trim();
-
-            // try
-            //{
-            if (loginValidate(user_name, user_pass) == true)
+            try
             {
-                lms.conn("UPDATE " + Global.sqlUserTable +
-                    " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
-                    " where user_name='" + user_name + "'");
+                setLoginResult("正在登录中...请稍后");
+                disabledControls();
 
-                writeToUserXML(user_name, user_pass);//写入到用户配置文件
-
-                while (Global.main_msg.Length > 0)//确保main界面上方滚动条的文字已经读入
+                string user_name = textBox1.Text.Trim();//textBox1.Text.Trim();
+                string user_pass = textBox2.Text.Trim();
+                if (loginValidate(user_name, user_pass) == true)
                 {
-                    loginToMain();
-                    break;
-                }
-            }
+                    lms.conn("UPDATE " + Global.sqlUserTable +
+                        " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
+                        " where user_name='" + user_name + "'");
 
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("登录失败，请检查网络连接或者稍后重试，如果还不可以请联系管理员。", "友情提示");
-            // }
+                    writeToUserXML(user_name, user_pass);//写入到用户配置文件
+                    loginToMain();
+                    return;
+                }
+                enabledControls();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("登录失败，请检查网络连接或者稍后重试，如果还不可以请联系管理员。", "友情提示");
+                throw err;
+            }
+            finally {
+                threadLogin.Abort();
+            }
         }
 
         /// <summary>
@@ -327,49 +329,59 @@ namespace _3d
 
         private void machineLoginStart()
         {
-            setLoginResult("正在登录中...请稍后");
-            string d = mc.GetCpuID();
-            string g = mc.GetMacAddress();
-            string machinecode = d + g;
-            for (int i = 4; i < machinecode.Length; i += 5)
+            try
             {
-                machinecode = machinecode.Insert(i, "-");
-            }
-
-            DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where machinecode='" + machinecode + "' and registtime=(select min(registtime) from " + Global.sqlUserTable + " where machinecode='" + machinecode + "') and isdel='1'");
-
-            if (dt1 != null && dt1.Rows.Count > 0)
-            {
-                DataRow dr1 = dt1.Rows[0];
-                Global.user_name = dr1["user_name"].ToString();
-                Global.user_realname = dr1["user_realname"].ToString();
-                Global.user_province = dr1["user_province"].ToString();
-                Global.user_vali = dr1["user_vali"].ToString();
-                Global.allowlogin = dr1["allowlogin"].ToString();
-                Global.loginType = "2";
-
-                if (dr1["allowlogin"].ToString().Equals("1"))
+                setLoginResult("正在登录中...请稍后");
+                disabledControls();
+                string d = mc.GetCpuID();
+                string g = mc.GetMacAddress();
+                string machinecode = d + g;
+                for (int i = 4; i < machinecode.Length; i += 5)
                 {
-                    string mysql = "UPDATE " + Global.sqlUserTable +
-                        " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
-                        " where user_name='" + Global.user_name + "'";
-                    lms.conn(mysql);
-                    clearUserProfile();
+                    machinecode = machinecode.Insert(i, "-");
+                }
 
-                    while (Global.main_msg.Length > 0)//确保main界面上方滚动条的文字已经读入
+                DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where machinecode='" + machinecode + "' and registtime=(select min(registtime) from " + Global.sqlUserTable + " where machinecode='" + machinecode + "') and isdel='1'");
+
+                if (dt1 != null && dt1.Rows.Count > 0)
+                {
+                    DataRow dr1 = dt1.Rows[0];
+                    Global.user_name = dr1["user_name"].ToString();
+                    Global.user_realname = dr1["user_realname"].ToString();
+                    Global.user_province = dr1["user_province"].ToString();
+                    Global.user_vali = dr1["user_vali"].ToString();
+                    Global.allowlogin = dr1["allowlogin"].ToString();
+                    Global.loginType = "2";
+
+                    if (dr1["allowlogin"].ToString().Equals("1"))
                     {
+                        string mysql = "UPDATE " + Global.sqlUserTable +
+                            " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
+                            " where user_name='" + Global.user_name + "'";
+                        lms.conn(mysql);
+                        //clearUserProfile();//清空用户配置文档
                         loginToMain();
-                        break;
+                        return;
+                    }
+                    else
+                    {
+                        setLoginResult("您没有使用权限！");
                     }
                 }
                 else
                 {
-                    setLoginResult("您没有使用权限！");
+                    setLoginResult("请您进行申请，并由管理员为您开通以后再进行此项操作。");
                 }
+
+                enabledControls();
             }
-            else
+            catch (Exception err)
             {
-                setLoginResult("请您进行申请，并由管理员为您开通以后再进行此项操作。");
+                throw err;
+            }
+            finally
+            {
+                threadLogin.Abort();
             }
         }
 
@@ -440,7 +452,6 @@ namespace _3d
         //关闭按钮
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            //this.DialogResult = DialogResult.Cancel;
             Application.Exit();
         }
 
@@ -494,9 +505,7 @@ namespace _3d
             clearUserProfile();
 
             //清空下拉列表
-            this.textBox1.DataSource = null;//数据源为刚建好的表
-            this.textBox1.DisplayMember = "";//设置显示名称为Name
-            this.textBox1.ValueMember = "";//设置属性值为Code
+            this.textBox1.DataSource = null;//数据源为空
         }
 
         /// <summary>
@@ -542,13 +551,14 @@ namespace _3d
 
         System.Timers.Timer tLabelMove = null;//跑马灯文字
 
+        Thread tPMD = null;
         //跑马灯线程
         private void getLoadMsgT()
         {
-            Thread t = new Thread(new ThreadStart(getLoadMsg));
-            t.Name = "getLoadMsgThread";
-            t.IsBackground = true;
-            t.Start();
+            tPMD = new Thread(new ThreadStart(getLoadMsg));
+            tPMD.Name = "getLoadMsgThread";
+            tPMD.IsBackground = true;
+            tPMD.Start();
         }
 
         //得到跑马灯文字信息
@@ -563,7 +573,165 @@ namespace _3d
             }
             catch
             {
-                setLabel5Text("无法连接到服务器，请检查网络或者稍后重试，如果还不可以请联系管理员。");
+                setLabel5Text("无法连接到服务器，请重新打开软件或者检查网络。");
+            }
+            finally {
+                //启用相关控件
+                enabledControls();
+                tPMD.Abort();
+            }
+        }
+
+        private delegate void EnabledControls();
+
+        private void enabledControls()
+        {
+            _ec(this.button1, new EnabledControls(_enabledLoginButton));
+            _ec(this.button3, new EnabledControls(_enabledMachineLoginButton));
+            _ec(this.button2, new EnabledControls(_enabledRegistButton));
+            _ec(this.textBox1, new EnabledControls(_enabledUsernameTextbox));
+            _ec(this.textBox2, new EnabledControls(_enabledPasswordTextbox));
+            _ec(this.savePass, new EnabledControls(_enabledSavepassTextbox));
+        }
+
+        private void _ec(Control ctr,Delegate de)
+        {
+            if (ctr.IsHandleCreated)
+            {
+                ctr.Invoke(de);
+            }
+        }
+
+        /// <summary>
+        /// 登录按钮
+        /// </summary>
+        private void _enabledLoginButton()
+        {
+            _checkEnabled(this.button1);
+        }
+
+        /// <summary>
+        /// 机器码登录按钮
+        /// </summary>
+        private void _enabledMachineLoginButton() {
+            _checkEnabled(this.button3);
+        }
+
+        /// <summary>
+        /// 申请按钮
+        /// </summary>
+        private void _enabledRegistButton()
+        {
+            _checkEnabled(this.button2);
+        }
+
+        /// <summary>
+        /// 用户名输入框
+        /// </summary>
+        private void _enabledUsernameTextbox()
+        {
+            _checkEnabled(this.textBox1);
+        }
+
+        /// <summary>
+        /// 密码输入框
+        /// </summary>
+        private void _enabledPasswordTextbox()
+        {
+            _checkEnabled(this.textBox2);
+        }
+
+        /// <summary>
+        /// 保存密码选择框
+        /// </summary>
+        private void _enabledSavepassTextbox()
+        {
+            _checkEnabled(this.savePass);
+        }
+
+        private void _checkEnabled(Control ctr)
+        {
+            //启用登录和机器码登录按钮
+            if (Global.main_msg.Length != 0)
+            {
+                ctr.Enabled = true;
+            }
+        }
+
+        private delegate void DisabledControls();
+
+        private void disabledControls()
+        {
+            _dc(this.button1, new DisabledControls(_disabledLoginButton));
+            _dc(this.button3, new DisabledControls(_disabledMachineLoginButton));
+            _dc(this.button2, new DisabledControls(_disabledRegistButton));
+            _dc(this.textBox1, new DisabledControls(_disabledUsernameTextbox));
+            _dc(this.textBox2, new DisabledControls(_disabledPasswordTextbox));
+            _dc(this.savePass, new DisabledControls(_disabledSavepassTextbox));
+        }
+
+        private void _dc(Control ctr, Delegate de)
+        {
+            if (ctr.IsHandleCreated)
+            {
+                ctr.Invoke(de);
+            }
+        }
+
+        /// <summary>
+        /// 登录按钮
+        /// </summary>
+        private void _disabledLoginButton()
+        {
+            _checkDisabled(this.button1);
+        }
+
+        /// <summary>
+        /// 机器码登录按钮
+        /// </summary>
+        private void _disabledMachineLoginButton()
+        {
+            _checkDisabled(this.button3);
+        }
+
+        /// <summary>
+        /// 申请按钮
+        /// </summary>
+        private void _disabledRegistButton()
+        {
+            _checkDisabled(this.button2);
+        }
+
+        /// <summary>
+        /// 用户名输入框
+        /// </summary>
+        private void _disabledUsernameTextbox()
+        {
+            _checkDisabled(this.textBox1);
+        }
+
+        /// <summary>
+        /// 密码输入框
+        /// </summary>
+        private void _disabledPasswordTextbox()
+        {
+            _checkDisabled(this.textBox2);
+        }
+
+        /// <summary>
+        /// 保存密码选择框
+        /// </summary>
+        private void _disabledSavepassTextbox()
+        {
+            _checkDisabled(this.savePass);
+        }
+
+        private void _checkDisabled(Control ctr)
+        {
+            //启用登录和机器码登录按钮
+            if (Global.main_msg.Length != 0)
+            {
+                ctr.Enabled = false;
             }
         }
 
@@ -638,8 +806,7 @@ namespace _3d
         #region 验证成功以后用来打开main界面  委托
         private void loginToMain()
         {
-            //setLoginToMain();
-            this.DialogResult = DialogResult.OK;
+            setLoginToMain();
         }
 
         private delegate void WriteLoginToMainDelegate();
@@ -654,9 +821,9 @@ namespace _3d
 
         private void writeLoginToMain()
         {
-            this.Hide();
-            main ma = new main();
-            ma.Show(this);
+            tLabelMove.Close();//关闭跑马灯文字线程
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
         #endregion
 

@@ -54,10 +54,10 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.ComboBox();
-            this.savePass = new _3d.CusCheckBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.用户名登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePass = new _3d.CusCheckBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,6 +81,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.ImeMode = System.Windows.Forms.ImeMode.Hangul;
             this.textBox2.Location = new System.Drawing.Point(250, 235);
             this.textBox2.Name = "textBox2";
@@ -106,6 +107,7 @@
             this.button1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -122,6 +124,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.AntiqueWhite;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.Location = new System.Drawing.Point(345, 278);
@@ -159,6 +162,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.AntiqueWhite;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Enabled = false;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.Location = new System.Drawing.Point(253, 278);
@@ -319,6 +323,7 @@
             // 
             this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.textBox1.Enabled = false;
             this.textBox1.FormattingEnabled = true;
             this.textBox1.Items.AddRange(new object[] {
             ""});
@@ -329,20 +334,6 @@
             this.toolTip1.SetToolTip(this.textBox1, "输入您的用户名");
             this.textBox1.SelectedIndexChanged += new System.EventHandler(this.textBox1_SelectedIndexChanged);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
-            // 
-            // savePass
-            // 
-            this.savePass.AutoSize = true;
-            this.savePass.BackColor = System.Drawing.Color.Transparent;
-            this.savePass.checkBgColor = System.Drawing.Color.Empty;
-            this.savePass.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.savePass.Location = new System.Drawing.Point(355, 237);
-            this.savePass.Name = "savePass";
-            this.savePass.Size = new System.Drawing.Size(72, 16);
-            this.savePass.TabIndex = 10;
-            this.savePass.Text = "记住密码";
-            this.toolTip1.SetToolTip(this.savePass, "免去您每次输入用户名密码带来的不便");
-            this.savePass.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
             // 
@@ -368,6 +359,21 @@
             this.用户名登录ToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.用户名登录ToolStripMenuItem.Text = "用户名登录";
             this.用户名登录ToolStripMenuItem.Click += new System.EventHandler(this.用户名登录ToolStripMenuItem_Click);
+            // 
+            // savePass
+            // 
+            this.savePass.AutoSize = true;
+            this.savePass.BackColor = System.Drawing.Color.Transparent;
+            this.savePass.checkBgColor = System.Drawing.Color.Empty;
+            this.savePass.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.savePass.Enabled = false;
+            this.savePass.Location = new System.Drawing.Point(355, 237);
+            this.savePass.Name = "savePass";
+            this.savePass.Size = new System.Drawing.Size(72, 16);
+            this.savePass.TabIndex = 10;
+            this.savePass.Text = "记住密码";
+            this.toolTip1.SetToolTip(this.savePass, "免去您每次输入用户名密码带来的不便");
+            this.savePass.UseVisualStyleBackColor = false;
             // 
             // Login
             // 

@@ -38,6 +38,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchInput = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.qyButton = new System.Windows.Forms.Button();
             this.qyCbx = new System.Windows.Forms.ComboBox();
@@ -98,8 +100,8 @@
             this.label25 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.searchInput = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
+            this.marketButton = new System.Windows.Forms.Button();
+            this.yewuButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -236,10 +238,30 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // searchButton
+            // 
+            this.searchButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.searchButton.Location = new System.Drawing.Point(145, 6);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(80, 29);
+            this.searchButton.TabIndex = 31;
+            this.searchButton.Text = "搜索";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // searchInput
+            // 
+            this.searchInput.Location = new System.Drawing.Point(8, 10);
+            this.searchInput.Name = "searchInput";
+            this.searchInput.Size = new System.Drawing.Size(132, 21);
+            this.searchInput.TabIndex = 33;
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.yewuButton);
+            this.panel1.Controls.Add(this.marketButton);
             this.panel1.Controls.Add(this.qyButton);
             this.panel1.Controls.Add(this.qyCbx);
             this.panel1.Controls.Add(this.qySetButton);
@@ -312,11 +334,11 @@
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button11.Location = new System.Drawing.Point(547, 76);
+            this.button11.Location = new System.Drawing.Point(511, 76);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(110, 29);
+            this.button11.Size = new System.Drawing.Size(50, 29);
             this.button11.TabIndex = 27;
-            this.button11.Text = "设为区域代理";
+            this.button11.Text = "区代";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Visible = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
@@ -326,11 +348,11 @@
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button10.Location = new System.Drawing.Point(431, 76);
+            this.button10.Location = new System.Drawing.Point(455, 76);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(110, 29);
+            this.button10.Size = new System.Drawing.Size(50, 29);
             this.button10.TabIndex = 26;
-            this.button10.Text = "设为市级代理";
+            this.button10.Text = "市代";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Visible = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -388,11 +410,11 @@
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button9.Location = new System.Drawing.Point(663, 76);
+            this.button9.Location = new System.Drawing.Point(723, 76);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(110, 29);
+            this.button9.Size = new System.Drawing.Size(50, 29);
             this.button9.TabIndex = 21;
-            this.button9.Text = "设为普通用户";
+            this.button9.Text = "普通";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Visible = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
@@ -402,11 +424,11 @@
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Location = new System.Drawing.Point(315, 76);
+            this.button8.Location = new System.Drawing.Point(398, 76);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(110, 29);
+            this.button8.Size = new System.Drawing.Size(50, 29);
             this.button8.TabIndex = 20;
-            this.button8.Text = "设为省级代理";
+            this.button8.Text = "省代";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Visible = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -898,7 +920,7 @@
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(393, 217);
+            this.button6.Location = new System.Drawing.Point(397, 427);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(117, 31);
             this.button6.TabIndex = 5;
@@ -910,7 +932,7 @@
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(270, 217);
+            this.button5.Location = new System.Drawing.Point(274, 427);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(117, 31);
             this.button5.TabIndex = 4;
@@ -920,16 +942,17 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(158, 162);
+            this.textBox11.Location = new System.Drawing.Point(161, 250);
+            this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(588, 21);
+            this.textBox11.Size = new System.Drawing.Size(524, 100);
             this.textBox11.TabIndex = 3;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label25.Location = new System.Drawing.Point(45, 162);
+            this.label25.Location = new System.Drawing.Point(35, 250);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(107, 20);
             this.label25.TabIndex = 2;
@@ -937,38 +960,49 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(158, 108);
+            this.textBox8.Location = new System.Drawing.Point(161, 33);
+            this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(588, 21);
+            this.textBox8.Size = new System.Drawing.Size(524, 100);
             this.textBox8.TabIndex = 1;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label24.Location = new System.Drawing.Point(45, 109);
+            this.label24.Location = new System.Drawing.Point(35, 33);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(93, 20);
             this.label24.TabIndex = 0;
             this.label24.Text = "登录界面公告";
             // 
-            // searchInput
+            // marketButton
             // 
-            this.searchInput.Location = new System.Drawing.Point(8, 10);
-            this.searchInput.Name = "searchInput";
-            this.searchInput.Size = new System.Drawing.Size(132, 21);
-            this.searchInput.TabIndex = 33;
+            this.marketButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.marketButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.marketButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.marketButton.Location = new System.Drawing.Point(567, 76);
+            this.marketButton.Name = "marketButton";
+            this.marketButton.Size = new System.Drawing.Size(81, 29);
+            this.marketButton.TabIndex = 31;
+            this.marketButton.Text = "市场专员";
+            this.marketButton.UseVisualStyleBackColor = true;
+            this.marketButton.Visible = false;
+            this.marketButton.Click += new System.EventHandler(this.marketButton_Click);
             // 
-            // searchButton
+            // yewuButton
             // 
-            this.searchButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.searchButton.Location = new System.Drawing.Point(145, 6);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(80, 29);
-            this.searchButton.TabIndex = 31;
-            this.searchButton.Text = "搜索";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            this.yewuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.yewuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yewuButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.yewuButton.Location = new System.Drawing.Point(654, 76);
+            this.yewuButton.Name = "yewuButton";
+            this.yewuButton.Size = new System.Drawing.Size(63, 29);
+            this.yewuButton.TabIndex = 32;
+            this.yewuButton.Text = "业务员";
+            this.yewuButton.UseVisualStyleBackColor = true;
+            this.yewuButton.Visible = false;
+            this.yewuButton.Click += new System.EventHandler(this.yewuButton_Click);
             // 
             // AdminCtrl
             // 
@@ -1073,5 +1107,7 @@
         private System.Windows.Forms.Button qyButton;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.TextBox searchInput;
+        private System.Windows.Forms.Button yewuButton;
+        private System.Windows.Forms.Button marketButton;
     }
 }

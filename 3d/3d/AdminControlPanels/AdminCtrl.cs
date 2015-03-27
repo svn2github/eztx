@@ -34,11 +34,12 @@ namespace _3d
         private void bindQuYuCbx()
         {
             qyCbx.DataSource = null;
-            DataTable tb = lms.conn("select user_name from "+Global.sqlUserTable+" where user_vali='5' and isdel='1'");
+            DataTable tb = lms.conn("select user_name,user_realname from " + Global.sqlUserTable + " where user_vali='5' and isdel='1'");
             qyCbx.DataSource = tb;
-            qyCbx.DisplayMember = "user_name";
+            qyCbx.DisplayMember = "user_realname";
+            qyCbx.ValueMember = "user_name";
         }
-        
+
         /// <summary>
         /// 关闭的时候释放窗口
         /// </summary>
@@ -108,7 +109,7 @@ namespace _3d
             {
                 onlineCbx.Visible = true;
                 onlineCbx.DataSource = null;
-                DataTable tb = lms.conn("select user_province from "+Global.sqlUserTable+" group by user_province");
+                DataTable tb = lms.conn("select user_province from " + Global.sqlUserTable + " group by user_province");
                 onlineCbx.DataSource = tb;
                 onlineCbx.DisplayMember = "user_province";
             }
@@ -124,7 +125,7 @@ namespace _3d
             {
                 onlineCbx.Visible = true;
                 onlineCbx.DataSource = null;
-                DataTable tb = lms.conn("select user_name from "+Global.sqlUserTable+" where user_vali='5' and isdel='1'");
+                DataTable tb = lms.conn("select user_name from " + Global.sqlUserTable + " where user_vali='5' and isdel='1'");
                 onlineCbx.DataSource = tb;
                 onlineCbx.DisplayMember = "user_name";
             }
@@ -146,7 +147,7 @@ namespace _3d
         private void CellClickRefresh()
         {
             enableKongJian();
-            string a = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string a = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
             string b = dataGridView1.CurrentRow.Cells["当前是否在线"].Value.ToString();
             string c = dataGridView1.CurrentRow.Cells["允许登录"].Value.ToString();
             string d = dataGridView1.CurrentRow.Cells["用户权限"].Value.ToString();
@@ -166,7 +167,7 @@ namespace _3d
                 this.radioButton4.Checked = false;
                 this.radioButton3.Checked = true;
             }
-            this.label28.Text = "当前用户 " + a + " 权限属于[" + d + "]";
+            this.label28.Text = "当前用户 " + a + " 权限隶属于[" + d + "]";
 
             if (d.Equals("普通用户"))
             {
@@ -174,7 +175,8 @@ namespace _3d
                 this.qyButton.Visible = true;
                 this.qySetButton.Visible = true;
             }
-            else {
+            else
+            {
                 this.qyCbx.Visible = false;
                 this.qyButton.Visible = false;
                 this.qySetButton.Visible = false;
@@ -204,6 +206,8 @@ namespace _3d
             this.setCtntLbl.Visible = true;
             this.setCtntTbx.Visible = true;
             this.setCtntBtn.Visible = true;
+            this.yewuButton.Visible = true;
+            this.marketButton.Visible = true;
         }
 
         //禁用第一个选项卡下面的选项控件
@@ -227,6 +231,8 @@ namespace _3d
             this.setCtntLbl.Visible = false;
             this.setCtntTbx.Visible = false;
             this.setCtntBtn.Visible = false;
+            this.yewuButton.Visible = false;
+            this.marketButton.Visible = false;
         }
 
         //第一个选项卡中的“修改”按钮事件
@@ -284,18 +290,18 @@ namespace _3d
         private void dgvGetInfoSqlExecute(string where)
         {
             //设定给datagridview的select列名
-            string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_id as '身份证号',user_phone as '手机/电话',user_qq as 'QQ/MSN',user_province as '所在地区',"+
-            "CASE user_vali when '1' then'总代理' when '3' then '省级代理' when '4' then '市级代理' when '5' then '区域代理' ELSE '普通用户' end AS '用户权限',"+
-            "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',machinecode as '机器码',lastloginplace as '上次登录地点',lastlogintime as '上次登录时间',"+
-            "registplace as '注册地点',registtime as '注册时间',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_name as '区域领导',"+
+            string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_id as '身份证号',user_phone as '手机/电话',user_qq as 'QQ/MSN',user_province as '所在地区'," +
+            "CASE user_vali when '1' then'总代理' when '3' then '省级代理' when '4' then '市级代理' when '5' then '区域代理' when '6' then '市场专员' when '7' then '业务员' ELSE '普通用户' end AS '用户权限'," +
+            "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',machinecode as '机器码',lastloginplace as '上次登录地点',lastlogintime as '上次登录时间'," +
+            "registplace as '注册地点',registtime as '注册时间',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_realname as '区域领导'," +
             "soft_version as '软件版本' ";
 
-            DataTable tb = lms.conn("select " + displaySqlSelect + " from "+Global.sqlUserTable+" " + where + "");
+            DataTable tb = lms.conn("select " + displaySqlSelect + " from " + Global.sqlUserTable + " " + where + "");
 
             dataGridView1.DataSource = tb;
             dataGridView1.DataMember = tb.TableName;
 
-            DataTable cu = lms.conn("select count(user_id) as 总计 from "+Global.sqlUserTable+" " + where + "");
+            DataTable cu = lms.conn("select count(user_id) as 总计 from " + Global.sqlUserTable + " " + where + "");
             DataRow dr = cu.Rows[0];
             this.sumUserLabel.Text = "共有 " + dr[0].ToString() + " 位用户";
         }
@@ -331,7 +337,7 @@ namespace _3d
                 radioValue = "0";
             try
             {
-                lms.conn("update "+Global.sqlUserTable+" set allowlogin='" + radioValue + "' where user_name='" + user_name + "'");
+                lms.conn("update " + Global.sqlUserTable + " set allowlogin='" + radioValue + "' where user_name='" + user_name + "'");
                 MessageBox.Show("修改用户权限成功！", "恭喜");
             }
             catch
@@ -346,10 +352,11 @@ namespace _3d
         private void button7_Click(object sender, EventArgs e)
         {
             string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
             try
             {
-                lms.conn("update "+Global.sqlUserTable+" set online='0' where user_name='" + user_name + "'");
-                MessageBox.Show("手动设置用户: " + user_name + " 下线成功！", "恭喜");
+                lms.conn("update " + Global.sqlUserTable + " set online='0' where user_name='" + user_name + "'");
+                MessageBox.Show("手动设置用户: " + user_realname + " 下线成功！", "恭喜");
             }
             catch
             {
@@ -360,91 +367,166 @@ namespace _3d
             CellClickRefresh();
         }
 
+        /// <summary>
+        /// 设置代理
+        /// </summary>
+        private void setProxy(string msgAsk, string msgSuccess, string sql, int user_vali)
+        {
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            try
+            {
+                DialogResult dr = MessageBox.Show(msgAsk, "提示", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes)
+                {
+                    lms.conn(sql);
+                    if(user_vali!=5)
+                        lms.conn("update " + Global.sqlUserTable + " set `parent_name`='',parent_realname='' where `parent_name`='" + user_name + "'");
+                    MessageBox.Show(msgSuccess, "设置成功");
+                    dgvGetInfo();
+                    CellClickRefresh();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("设置失败，请稍后再试！\r\n 错误信息：" + e.Message, "友情提示");
+            }
+        }
+
         //第一个选项卡中“提升省代”的按钮点击
         private void button8_Click(object sender, EventArgs e)
         {
-            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            try
-            {
-                DialogResult dr = MessageBox.Show("您确定将用户: " + user_name + " 提升为省级代理？", "提示", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes)
-                {
-                    lms.conn("update "+Global.sqlUserTable+" set user_vali='3' where user_name='" + user_name + "'");
-                    MessageBox.Show("提示用户: " + user_name + " 权限至[省级代理]成功！", "恭喜");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("设置失败，请稍后再试！", "友情提示");
-            }
+            int user_vali = 3;
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();
 
-            dgvGetInfo();
-            CellClickRefresh();
+            string msgAsk = "您确定将用户: " + user_realname + " 设置为省级代理？";
+            string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
+            string msgSuccess = "提示用户: " + user_realname + " 权限至[省级代理]成功！";
 
+            setProxy(msgAsk, msgSuccess, sql, user_vali);
         }
 
         //第一个选项卡中“提升为区域代理”的按钮点击
         private void button11_Click(object sender, EventArgs e)
         {
-            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            try
-            {
-                DialogResult dr = MessageBox.Show("您确定将用户: " + user_name + " 提升为区域代理？", "提示", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes)
-                {
-                    lms.conn("update "+Global.sqlUserTable+" set user_vali='5' where user_name='" + user_name + "'");
-                    MessageBox.Show("提示用户: " + user_name + " 权限至[区域代理]成功！", "恭喜");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("设置失败，请稍后再试！", "友情提示");
-            }
+            int user_vali = 5;
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();
 
-            dgvGetInfo();
-            CellClickRefresh();
+            string msgAsk = "您确定将用户: " + user_realname + " 设置为区域代理？";
+            string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
+            string msgSuccess = "提示用户: " + user_realname + " 权限至[区域代理]成功！";
+
+            setProxy(msgAsk, msgSuccess, sql, user_vali);
         }
 
         //第一个选项卡中“提升为市级代理”的按钮点击
         private void button10_Click(object sender, EventArgs e)
         {
-            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            try
-            {
-                DialogResult dr = MessageBox.Show("您确定将用户: " + user_name + " 提升为市级代理？", "提示", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes)
-                {
-                    lms.conn("update "+Global.sqlUserTable+" set user_vali='4' where user_name='" + user_name + "'");
-                    MessageBox.Show("提示用户: " + user_name + " 权限至[市级代理]成功！", "恭喜");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("设置失败，请稍后再试！", "友情提示");
-            }
+            int user_vali = 4;
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();
 
-            dgvGetInfo();
-            CellClickRefresh();
+            string msgAsk = "您确定将用户: " + user_realname + " 设置为市级代理？";
+            string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
+            string msgSuccess = "提示用户: " + user_realname + " 权限至[市级代理]成功！";
+
+            setProxy(msgAsk, msgSuccess, sql, user_vali);
         }
 
         //第一个选项卡中“降级为普通用户”的按钮点击
         private void button9_Click(object sender, EventArgs e)
         {
+            int user_vali = 2;
             string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+
+            string msgAsk = "您确定将用户: " + user_realname + " 降级为普通用户？";
+            string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
+            string msgSuccess = "设置用户: " + user_realname + " 权限至[普通用户]成功！";
+
+            setProxy(msgAsk, msgSuccess, sql, user_vali);
+        }
+
+        /// <summary>
+        /// 设为市场专员
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void marketButton_Click(object sender, EventArgs e)
+        {
+            int user_vali = 6;
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+
+            string msgAsk = "您确定将用户: " + user_realname + " 设置为市场专员？";
+            string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
+            string msgSuccess = "设置用户: " + user_realname + " 权限至[市场专员]成功！";
+
+            setProxy(msgAsk, msgSuccess, sql, user_vali);
+        }
+
+        /// <summary>
+        /// 设为业务员
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void yewuButton_Click(object sender, EventArgs e)
+        {
+            int user_vali = 7;
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+
+            string msgAsk = "您确定将用户: " + user_realname + " 设置为业务员？";
+            string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
+            string msgSuccess = "设置用户: " + user_realname + " 权限至[业务员]成功！";
+
+            setProxy(msgAsk, msgSuccess, sql, user_vali);
+        }
+
+        /// <summary>
+        /// 第一页给当前选中用户属于区域代理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void qySetButton_Click(object sender, EventArgs e)
+        {
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string parent_name = qyCbx.SelectedValue.ToString();//用户名
+            string parent_realname = qyCbx.Text;//姓名
             try
             {
-                DialogResult dr = MessageBox.Show("您确定将用户: " + user_name + " 降级为普通用户？", "提示", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes)
-                {
-                    lms.conn("update "+Global.sqlUserTable+" set user_vali='2' where user_name='" + user_name + "'");
-                    MessageBox.Show("设置用户: " + user_name + " 权限至[普通用户]成功！", "恭喜");
-                }
+                lms.conn("update " + Global.sqlUserTable + " set `parent_name`='" + parent_name + "',parent_realname='" + parent_realname + "' where user_name='" + user_name + "'");
+                MessageBox.Show("设置成功，成功将用户 " + user_realname + " 添加至 " + parent_realname + " 旗下！", "恭喜");
             }
             catch
             {
                 MessageBox.Show("设置失败，请稍后再试！", "友情提示");
             }
+            dgvGetInfo();
+            CellClickRefresh();
+        }
 
+        /// <summary>
+        /// 第一页给当前选中用户取消属于区域代理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void qyButton_Click(object sender, EventArgs e)
+        {
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            try
+            {
+                lms.conn("update " + Global.sqlUserTable + " set `parent_name`='',`parent_realname`='' where user_name='" + user_name + "'");
+                MessageBox.Show("设置成功，成功将用户 " + user_realname + " 取消归属！", "恭喜");
+            }
+            catch
+            {
+                MessageBox.Show("设置失败，请稍后再试！", "友情提示");
+            }
             dgvGetInfo();
             CellClickRefresh();
         }
@@ -458,7 +540,7 @@ namespace _3d
             {
                 try
                 {
-                    lms.conn("update "+Global.sqlUserTable+" set isdel='-1' where user_name='" + user_name + "'");
+                    lms.conn("update " + Global.sqlUserTable + " set isdel='-1' where user_name='" + user_name + "'");
 
                     MessageBox.Show("删除成功！", "提示");
 
@@ -492,7 +574,7 @@ namespace _3d
             string contentValue = this.setCtntTbx.Text;
             try
             {
-                lms.conn("update "+Global.sqlUserTable+" set `content`='" + contentValue + "' where user_name='" + user_name + "'");
+                lms.conn("update " + Global.sqlUserTable + " set `content`='" + contentValue + "' where user_name='" + user_name + "'");
                 MessageBox.Show("设置用户备注成功！", "恭喜");
             }
             catch
@@ -503,51 +585,6 @@ namespace _3d
             dgvGetInfo();
             CellClickRefresh();
         }
-
-        /// <summary>
-        /// 第一页给当前选中用户属于区域代理
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void qySetButton_Click(object sender, EventArgs e)
-        {
-            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            string parent_name = qyCbx.Text;
-            try
-            {
-                lms.conn("update "+Global.sqlUserTable+" set `parent_name`='" + parent_name + "' where user_name='" + user_name + "'");
-                MessageBox.Show("设置成功，成功将用户 "+user_name+" 添加至 "+parent_name+" 旗下！", "恭喜");
-            }
-            catch
-            {
-                MessageBox.Show("设置失败，请稍后再试！", "友情提示");
-            }
-            dgvGetInfo();
-            CellClickRefresh();
-        }
-
-        /// <summary>
-        /// 第一页给当前选中用户取消属于区域代理
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void qyButton_Click(object sender, EventArgs e)
-        {
-            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            string parent_name = qyCbx.Text;
-            try
-            {
-                lms.conn("update "+Global.sqlUserTable+" set `parent_name`='' where user_name='" + user_name + "'");
-                MessageBox.Show("设置成功，成功将用户 " + user_name + " 取消旗下归属！", "恭喜");
-            }
-            catch
-            {
-                MessageBox.Show("设置失败，请稍后再试！", "友情提示");
-            }
-            dgvGetInfo();
-            CellClickRefresh();
-        }
-
         #endregion
 
         #region 第二个选项卡
@@ -621,12 +658,12 @@ namespace _3d
 
             try
             {
-                DataTable dtMCode = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
+                DataTable dtMCode = lms.conn("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "'");
                 if (dtMCode.Rows.Count == 0)
                 {
                     try
                     {
-                        lms.conn("insert into "+Global.sqlUserTable+"(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,allowlogin,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + allowlogin + "','" + machinecode + "','" + registtime + "','" + registplace + "')");
+                        lms.conn("insert into " + Global.sqlUserTable + "(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,allowlogin,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + allowlogin + "','" + machinecode + "','" + registtime + "','" + registplace + "')");
                         MessageBox.Show("添加成功", "温馨提示");
                         clrTbx();
                     }
@@ -843,6 +880,7 @@ namespace _3d
         }
 
         #endregion
+
 
     }
 }

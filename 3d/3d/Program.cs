@@ -41,12 +41,6 @@ namespace _3d
                     }
                 }
             }
-            else
-            {
-                l.Dispose();
-                l.Close();
-                Application.Exit();
-            }
         }
 
         //关闭程序时写注册表离线
@@ -67,7 +61,7 @@ namespace _3d
                 }
                 if (drr == DialogResult.Cancel)
                 {
-                    Application.Run(new main());
+                    return;
                 }
             }
 

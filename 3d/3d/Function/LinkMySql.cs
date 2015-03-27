@@ -89,7 +89,7 @@ namespace _3d.Function
             }
             catch (Exception e)
             {
-                MessageBox.Show("连接数据库失败，请稍后重试！", "失败！", MessageBoxButtons.OK);
+                MessageBox.Show("连接数据库失败，请稍后重试！"+e.Message, "失败！", MessageBoxButtons.OK);
                 Application.Exit();
                 throw e;
             }
