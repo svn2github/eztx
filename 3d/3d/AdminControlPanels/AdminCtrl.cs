@@ -293,7 +293,7 @@ namespace _3d
             string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_id as '身份证号',user_phone as '手机/电话',user_qq as 'QQ/MSN',user_province as '所在地区'," +
             "CASE user_vali when '1' then'总代理' when '3' then '省级代理' when '4' then '市级代理' when '5' then '区域代理' when '6' then '市场专员' when '7' then '业务员' ELSE '普通用户' end AS '用户权限'," +
             "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',machinecode as '机器码',lastloginplace as '上次登录地点',lastlogintime as '上次登录时间'," +
-            "registplace as '注册地点',registtime as '注册时间',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_realname as '区域领导'," +
+            "registplace as '注册地点',registtime as '注册时间',case online when '1' then '用户在线' when '2' then '机器在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_realname as '区域领导'," +
             "soft_version as '软件版本' ";
 
             DataTable tb = lms.conn("select " + displaySqlSelect + " from " + Global.sqlUserTable + " " + where + "");
@@ -804,21 +804,28 @@ namespace _3d
         #region 第三个选项卡
 
         //第三个选项卡中获取现有的公告信息
+
+        Thread msgT = null;
         private void getGgT()
         {
-            Thread t = new Thread(new ThreadStart(getGg));
-            t.IsBackground = true;
-            t.Start();
+            msgT = new Thread(new ThreadStart(getGg));
+            msgT.IsBackground = true;
+            msgT.Start();
         }
 
         private void getGg()
         {
             DataTable dt = lms.conn("select * from msg");
-            if (dt.Rows.Count > 0)
+            if (dt != null && dt.Rows.Count > 0)
             {
                 DataRow dr = dt.Rows[0];
                 SetMsgText8Box(dr["msg_login"].ToString());
                 SetMsgText11Box(dr["msg_main"].ToString());
+            }
+
+            if (string.IsNullOrEmpty(textBox8.Text) == false && string.IsNullOrEmpty(textBox11.Text) == false)
+            {
+                msgT.Abort();
             }
         }
 

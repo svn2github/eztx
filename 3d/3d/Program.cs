@@ -46,6 +46,9 @@ namespace _3d
         //关闭程序时写注册表离线
         static void quitWriteSql()
         {
+            if (Global.isNormalStatus == false)
+                return;
+
             LinkMySql lms = new LinkMySql();
             try
             {

@@ -73,9 +73,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\MEZboy.CustomTabControl.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Documents and Settings\Administrator\桌面\MySql.Data.dll</HintPath>
+      <HintPath>.\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -117,6 +117,11 @@
     </Compile>
     <Compile Include="CustomControls\CusCheckBox.Designer.cs">
       <DependentUpon>CusCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="ShiShiCai\page2.cs">
       <SubType>Form</SubType>
@@ -256,14 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,10 +300,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\MEZboy.CustomTabControl.dll" />
+    <Content Include="Resources\MySql.Data.dll" />
+    <None Include="bin\Debug\MEZboy.CustomTabControl.dll" />
+    <None Include="bin\Debug\MySql.Data.dll" />
     <Content Include="DB_backup\msg.sql" />
+    <Content Include="DB_backup\user_eztx.sql" />
     <Content Include="DB_backup\user_login.sql" />
     <Content Include="eztx.ico" />
-    <Content Include="MySql.Data.dll" />
     <None Include="Resources\11xuan5.txt" />
   </ItemGroup>
   <ItemGroup />

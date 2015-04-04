@@ -17,6 +17,12 @@ namespace _3d
         //loginType为登录方式，等于1是通过用户名密码登录，等于2为通过机器码登录
         public static string user_name, user_realname, user_province, user_vali, allowlogin, main_msg, splitRegex, loginType;
 
+        /// <summary>
+        /// 判断是否是正常关闭，如果是异地登录，那么就不是正常关闭，就不用写入数据库下线的信息
+        /// 默认为正常true
+        /// </summary>
+        public static bool isNormalStatus = true;
+
         public static string soft_server_url = "http://eztx.eztx.cn/other_soft";
         public static string version = string.Empty;//当前软件版本
         public static string sqlAddress = string.Empty;//数据库地址

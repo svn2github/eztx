@@ -88,7 +88,6 @@ D:\svn_c#\3d\3d\obj\x86\Debug\3d.exe
 D:\svn_c#\3d\3d\obj\x86\Debug\3d.pdb
 D:\svn_c#\3d\3d\bin\Debug\3d.exe
 D:\svn_c#\3d\3d\bin\Debug\3d.pdb
-D:\svn_c#\3d\3d\bin\Debug\MySql.Data.dll
 D:\svn_c#\3d\3d\obj\x86\Debug\3d.csprojResolveAssemblyReference.cache
 D:\svn_c#\3d\3d\obj\x86\Debug\_3d.AdminCtrl.resources
 D:\svn_c#\3d\3d\obj\x86\Debug\_3d.Others.AboutSoft.resources
@@ -111,3 +110,5 @@ D:\svn_c#\3d\3d\obj\x86\Debug\_3d.AdminCtrlArea.resources
 D:\svn_c#\3d\3d\obj\x86\Debug\_3d.test.resources
 D:\svn_c#\3d\3d\obj\x86\Debug\_3d.OutputFormZuXuan.resources
 D:\svn_c#\3d\3d\obj\x86\Debug\3d.csproj.GenerateResource.Cache
+D:\svn_c#\3d\3d\bin\Debug\MEZboy.CustomTabControl.dll
+D:\svn_c#\3d\3d\bin\Debug\MySql.Data.dll

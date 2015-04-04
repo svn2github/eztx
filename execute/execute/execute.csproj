@@ -77,9 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="eztx.ico" />
-    <None Include="MySql.Data.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <EmbeddedResource Include="Resources\3d.exe" />
   </ItemGroup>
   <ItemGroup />

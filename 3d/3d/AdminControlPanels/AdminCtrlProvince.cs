@@ -103,11 +103,12 @@ namespace _3d
             CellClickRefresh();
         }
 
+        Thread dgvT = null;
         private void dgvGetInfoT()
         {
-            Thread t = new Thread(new ThreadStart(dgvGetInfo));
-            t.IsBackground=true;
-            t.Start();
+            dgvT = new Thread(new ThreadStart(dgvGetInfo));
+            dgvT.IsBackground = true;
+            dgvT.Start();
         }
 
         //第一个选项卡中Datagridview窗体的信息获取
@@ -128,7 +129,7 @@ namespace _3d
                 string ol = onlineCbx.Text;
                 if (prov.Equals("显示全部"))
                 {
-                    dgvGetInfoSqlExecute("where user_province like '%" + us + "%' and user_vali='2'");
+                    dgvGetInfoTSqlExecute("where user_province like '%" + us + "%' and user_vali='2'");
                 }
                 if (prov.Equals("在线状态"))
                 {
@@ -136,12 +137,15 @@ namespace _3d
                         ol = "(online='1' or online='2')";
                     else
                         ol = "online='0'";
-                    dgvGetInfoSqlExecute("where " + ol + " and user_province like '%" + us + "%' and user_vali='2'");
+                    dgvGetInfoTSqlExecute("where " + ol + " and user_province like '%" + us + "%' and user_vali='2'");
                 }
             }
-            catch
+            catch(Exception e)
             {
-
+                throw e;
+            }
+            finally {
+                dgvT.Abort();
             }
         }
 
@@ -149,7 +153,7 @@ namespace _3d
         /// 刷新datagridview时执行的sql
         /// 参数where是查询条件
         /// </summary>
-        private void dgvGetInfoSqlExecute(string where)
+        private void dgvGetInfoTSqlExecute(string where)
         {
             //设定给datagridview的select列名
             string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_phone as '手机/电话',user_qq as 'QQ/MSN',"+
@@ -185,7 +189,7 @@ namespace _3d
             }
 
             string where = "where (user_realname LIKE '%" + searchTag + "%' or user_name LIKE '%" + searchTag + "%')  and isdel='1' and user_province like '%" + us + "%' and user_vali='2'";
-            dgvGetInfoSqlExecute(where);
+            dgvGetInfoTSqlExecute(where);
         }
 
         private void searchButton_Click(object sender, EventArgs e)
@@ -212,7 +216,7 @@ namespace _3d
                 MessageBox.Show("修改用户权限失败，请稍后再试！", "友情提示");
             }
 
-            dgvGetInfo();
+            dgvGetInfoT();
         }
 
         //第一个选项卡中“手动下线”的按钮点击
@@ -229,7 +233,7 @@ namespace _3d
                 MessageBox.Show("手动设置用户下线失败，请稍后再试！", "友情提示");
             }
 
-            dgvGetInfo();
+            dgvGetInfoT();
             CellClickRefresh();
         }
 
@@ -266,7 +270,7 @@ namespace _3d
 
                     MessageBox.Show("删除成功！", "提示");
 
-                    dgvGetInfo();
+                    dgvGetInfoT();
 
                 }
                 catch { MessageBox.Show("删除失败，请稍后重试！", "提示"); }
@@ -281,7 +285,7 @@ namespace _3d
             {
                 onlineCbx.Visible = false;
 
-                dgvGetInfo();
+                dgvGetInfoT();
             }
             if (provinceCbx.Text.Equals("在线状态"))
             {
@@ -298,7 +302,7 @@ namespace _3d
         private void onlineCbx_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            dgvGetInfo();
+            dgvGetInfoT();
         }
 
         #region 防止页面过多变卡

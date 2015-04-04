@@ -16,6 +16,7 @@ namespace _3d
         Timer tLabelMove = null;
         Timer marqueeLabelMove = null;
         Timer setUsersOffline = new Timer();
+
         private Form1 f1 = new Form1();
         private Form3 f3 = new Form3();
         private Form4 f4 = new Form4();
@@ -318,12 +319,12 @@ namespace _3d
 
             //启动下线机制
             //如30分钟 30 * 60 *1000=1800000
-            this.offlineUserTimer.Interval = 10 * 60 * 1000;
+            this.offlineUserTimer.Interval = 5 * 60000;
             this.offlineUserTimer.Enabled = true;
 
-            //***刷新全员列表，谁离线过久就下线 30分钟一次
+            //***刷新全员列表，谁离线过久就下线 15分钟一次
             setUsersOffline.Tick += new EventHandler(setUsersOffline_Tick);
-            this.setUsersOffline.Interval = 30 * 10 * 1000;
+            this.setUsersOffline.Interval = 15 * 60000;
             this.setUsersOffline.Enabled = true;
 
             EnableDoubleBuffering();//启用双缓冲
@@ -447,9 +448,6 @@ namespace _3d
         {
             try
             {
-                //刷新自己在线的时间状态
-                refreshMyOnlineTime_Tick();
-
                 DataTable tb = lms.conn("select allowlogin,`online`,isdel from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
                 if (tb != null && tb.Rows.Count > 0)
                 {
@@ -470,10 +468,13 @@ namespace _3d
                         ||
                         isdel.Equals("-1")
                         ||
-                        online.Equals("0"))
+                        online.Equals("0")
+                        ||
+                        (online.Equals("2") && Global.loginType.Equals("1")))
                     {
+                        Global.isNormalStatus = false;// 设置为非正常关闭
                         this.offlineUserTimer.Enabled = false;
-                        MessageBox.Show("软件即将关闭，请联系管理员。");
+                        MessageBox.Show("账号与服务器失去连接或者异地登录，软件即将关闭\r\n请重新登录或者检查账号安全");
                         this.Dispose();
                         this.Close();
                     }
@@ -482,6 +483,11 @@ namespace _3d
             catch
             {
 
+            }
+            finally
+            {
+                //刷新自己在线的时间状态
+                refreshMyOnlineTime_Tick();
             }
         }
 
@@ -494,12 +500,13 @@ namespace _3d
         {
             try
             {
-                DataTable tb = lms.conn("select user_name,`onlinetime` from " + Global.sqlUserTable + " where `online`!='0' and isdel!='-1' and allowlogin!='0' and user_name!='" + Global.user_name + "'");
+                DataTable tb = lms.conn("select user_name,`onlinetime`,user_realname from " + Global.sqlUserTable + " where `online`!='0' and isdel!='-1' and allowlogin!='0' and user_name!='" + Global.user_name + "'");
                 if (tb != null && tb.Rows.Count > 0)
                 {
                     foreach (DataRow dr in tb.Rows)
                     {
                         string user_name = dr["user_name"].ToString();
+                        string user_realname = dr["user_realname"].ToString();
                         string onlinetime = dr["onlinetime"].ToString();
                         if (string.IsNullOrEmpty(onlinetime))
                         {
@@ -509,10 +516,11 @@ namespace _3d
                         TimeSpan ts1 = new TimeSpan(Convert.ToDateTime(onlinetime).Ticks);//服务器最后更新时间
                         TimeSpan ts2 = new TimeSpan(DateTime.Now.Ticks);//现在时间
                         TimeSpan ts = ts1.Subtract(ts2).Duration();//绝对值
-                        double diffHours = ts.TotalMinutes;
-                        //如果相差时间超过60分钟，那么就把该用户下线
-                        if (diffHours >= 60)
+                        int diffHours = Convert.ToInt32(ts.TotalMinutes);
+                        //如果相差时间超过10分钟，那么就把该用户下线
+                        if (diffHours >= 10)
                         {
+                            //MessageBox.Show(diffHours + ":::" + user_realname + "");
                             lms.conn("update " + Global.sqlUserTable + " set `online`='0' where user_name='" + user_name + "' ");
                         }
                     }

@@ -76,8 +76,8 @@ namespace _3d.Function
                 "Server=" + Global.sqlAddress 
                 + ";User Id=" + Global.sqlUsername 
                 + ";Password=" + Global.sqlPwd 
-                + ";Persist Security Info=True;Database=" + Global.sqlDB 
-                + ";Port=" + Global.sqlPort 
+                + ";Persist Security Info=True;Database=" + Global.sqlDB
+                + ";Port=" + Global.sqlPort
                 + ";CharSet=" + Global.sqlCharset + "");
             command = conn.CreateCommand();
             command.CommandText = sql;
@@ -90,8 +90,8 @@ namespace _3d.Function
             catch (Exception e)
             {
                 MessageBox.Show("连接数据库失败，请稍后重试！"+e.Message, "失败！", MessageBoxButtons.OK);
-                Application.Exit();
-                throw e;
+                //Application.Exit();
+                //throw e;
             }
             finally
             {

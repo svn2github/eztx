@@ -17,7 +17,6 @@ D:\c#\execute\execute\obj\x86\Debug\execute.csprojResolveAssemblyReference.cache
 D:\c#\execute\execute\obj\x86\Debug\execute.csproj.GenerateResource.Cache
 D:\svn_c#\execute\execute\obj\x86\Debug\数字游戏.exe
 D:\svn_c#\execute\execute\obj\x86\Debug\数字游戏.pdb
-D:\svn_c#\execute\execute\bin\Debug\MySql.Data.dll
 D:\svn_c#\execute\execute\bin\Debug\数字游戏.exe
 D:\svn_c#\execute\execute\bin\Debug\数字游戏.pdb
 D:\svn_c#\execute\execute\obj\x86\Debug\execute.csprojResolveAssemblyReference.cache

@@ -210,8 +210,8 @@ namespace _3d
             }
             catch (Exception err)
             {
-                MessageBox.Show("登录失败，请检查网络连接或者稍后重试，如果还不可以请联系管理员。", "友情提示");
-                throw err;
+                MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
+                //throw err;
             }
             finally {
                 threadLogin.Abort();
@@ -299,7 +299,7 @@ namespace _3d
                 return false;
             }
 
-            if (dr1["online"].Equals("1"))
+            if (dr1["online"].Equals("1") || dr1["online"].Equals("2"))
             {
                 setLabel3Text("该账号已在别处登录！");
                 setLoginResult("该账号已在别处登录！");
@@ -377,7 +377,8 @@ namespace _3d
             }
             catch (Exception err)
             {
-                throw err;
+                MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
+                //throw err;
             }
             finally
             {
