@@ -1,0 +1,30 @@
+img{border:none;}
+body{background-color:#ffffff;color:#000000;text-align:center;font:78%/normal Verdana,Simsun,Arial,Helvetica,sans-serif;margin:0px;}
+table{margin:0px auto;}
+td{font-size:12px;font-family:"宋体";text-align:center;height:25px;}
+.head{background-color:#fff094;}
+.headblue{background-color:#fff094;color:#0000ff;cursor:pointer;}
+
+.white{background-color:#FEFAEB;}
+.yellow{background-color:#FFFFFF;}
+.purple{background-color:#DBA4C8;}
+.redback{background-color:#ff0000;}
+.blueback{background-color:#4661F4;}
+.yellowback{background-color:#F5C850;}
+.poter{cursor:pointer;}
+.whiteWord{color:#cccccc;}
+.blueWord{color:#0000ff;}
+.red{color:#ff0000;}
+.blackword{color:#000000;font-family:Arial;font-weight:900;}
+.bold{font-weight:bold;}
+.enfont{font-family:Arial;}
+.ch_background_white{background:#FFFFFF url(../images/ch_back.gif) no-repeat center;color:#333333;font-family:Arial;}
+.ch_background_yellow{background:#FEFAEB url(../images/ch_back.gif) no-repeat center;color:#333333;font-family:Arial;}
+.ch_background_black{background:#FFFFFF url(../images/ch_back.gif) no-repeat center;font-family:Arial;color:#000000;}
+.ch_background_red{background:#FFFFFF url(../images/ch_back_red.gif) no-repeat center;font-family:Arial;color:#ff0000;}
+.ch_background_blue{background:#FFFFFF url(../images/ch_back_blue.gif) no-repeat center;font-family:Arial;color:#0000ff;}
+.hz_background_white{background:#FEFAEB url(../images/hzback.gif) no-repeat center;color:#ffffff;font-family:Arial;font-weight:bold;}
+.hz_background_yellow{background:#FFFFFF url(../images/hzback.gif) no-repeat center;color:#ffffff;font-family:Arial;font-weight:bold;}
+.background_white{background:#FEFAEB url(../images/zst4.gif) no-repeat center;color:#ffffff;font-family:Arial;font-weight:bold;}
+.background_yellow{background:#FFFFFF url(../images/zst3.gif) no-repeat center;color:#ffffff;font-family:Arial;font-weight:bold;}
+.redback_white{background:#FFFFFF url(../images/redback.gif) no-repeat center;color:#ffffff;font-family:Arial;}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AutoUpdater>
+  <description>Application autoUpdate</description>
+  <Updater>
+	<Url>http://eztx.cn/soft/</Url><!-- http://localhost:8080/WebTest/ http://mezboy.w168.mc-test.com/soft/ -->
+	<LastUpdateTime>2012-09-01</LastUpdateTime>
+  </Updater>
+  <Application applicationId="ItemSoft">
+    <EntryPoint>3d.exe</EntryPoint>
+    <Location>.</Location>
+	<Version>1.0.0.0</Version>
+  </Application>
+  <Files>
+	   <File Ver="3.9" Name="3d.exe.png" />
+  </Files>
+</AutoUpdater>

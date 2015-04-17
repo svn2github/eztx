@@ -1,1 +1,0 @@
-INSERT INTO `msg` (`id`, `msg_login`, `msg_main`) VALUES (1, '欢迎使用本软件，本软件能帮您省下算号的时间来专心看好走势！', '欢迎大家');
