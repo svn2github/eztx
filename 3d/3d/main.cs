@@ -20,6 +20,7 @@ namespace _3d
         private Form1 f1 = new Form1();
         private Form3 f3 = new Form3();
         private Form4 f4 = new Form4();
+        private Page4Form pf4 = new Page4Form();
 
         private one11xuan5 o11 = new one11xuan5();
 
@@ -196,6 +197,7 @@ namespace _3d
             f1.clearCheckbox();
             f3.clearCheckBox();
             f4.clearCheckBox();
+            pf4.clearCheckBox(pf4.Controls);
         }
 
         //十一选五“生成”按钮点击
@@ -228,48 +230,6 @@ namespace _3d
             f2.Show();
         }
 
-        //选取form页面的改变事件
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBox1.SelectedIndex == 0)
-            {
-                if (f1 != null)
-                {
-                    f1.FormBorderStyle = FormBorderStyle.None; // 无边框
-                    f1.TopLevel = false; // 不是最顶层窗体
-                    panel1.Controls.Add(f1);  // 添加到 Panel中
-                    f3.Hide();
-                    f4.Hide();
-                    f1.Show();
-                }
-            }
-            if (comboBox1.SelectedIndex == 1)
-            {
-                if (f3 != null)
-                {
-                    f3.FormBorderStyle = FormBorderStyle.None; // 无边框
-                    f3.TopLevel = false; // 不是最顶层窗体
-                    panel1.Controls.Add(f3);  // 添加到 Panel中
-                    f1.Hide();
-                    f4.Hide();
-                    f3.Show();
-                }
-            }
-            if (comboBox1.SelectedIndex == 2)
-            {
-                if (f4 != null)
-                {
-                    f4.FormBorderStyle = FormBorderStyle.None; // 无边框
-                    f4.TopLevel = false; // 不是最顶层窗体
-                    panel1.Controls.Add(f4);  // 添加到 Panel中
-                    f1.Hide();
-                    f3.Hide();
-                    f4.Show();
-                }
-            }
-            this.button1.Focus();
-        }
-
         private void changeMainPanelCbx_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (changeMainPanelCbx.SelectedIndex == 0)
@@ -291,6 +251,14 @@ namespace _3d
         {
             ClearMemory.Clear();
         }
+
+        ToolTip changeButtonToolTip = new ToolTip();
+        private string changeButtonText = "";
+        private string changeButton1Text = "杀码,出号,分解式,临码,组合,凹凸,密码修改,信息修改";
+        private string changeButton2Text = "两码和,两码差,和值";
+        private string changeButton3Text = "合值,杀合值,跨距(跨度),差合,龙头凤尾,号码属性,平衡指数";
+        private string changeButton4Text = "东北专供：两码差、两位数组胆、走势图";
+        Font changeButtonFont = new Font("微软雅黑", 13.0F, FontStyle.Regular);
 
         private void main_Load(object sender, EventArgs e)
         {
@@ -322,16 +290,60 @@ namespace _3d
             this.offlineUserTimer.Interval = 5 * 60000;
             this.offlineUserTimer.Enabled = true;
 
-            //***刷新全员列表，谁离线过久就下线 15分钟一次
+            //***刷新全员列表，谁离线过久就下线 10分钟一次
             setUsersOffline.Tick += new EventHandler(setUsersOffline_Tick);
-            this.setUsersOffline.Interval = 15 * 60000;
+            this.setUsersOffline.Interval = 10 * 60000;
             this.setUsersOffline.Enabled = true;
 
             EnableDoubleBuffering();//启用双缓冲
             this.label8.Text = Global.main_msg;//获取时时彩界面跑马灯文字信息
             this.marqueeLabel.Text = Global.main_msg;//获取时时彩界面跑马灯文字信息
-            this.comboBox1.SelectedIndex = 0;//将时时彩选项卡切到第一个页面
+            this.changeButton1_Click(null, null);
             this.changeMainPanelCbx.SelectedIndex = 0;//将十一选五选项卡切到第一个页面
+
+            // Set up the delays for the ToolTip.   
+            changeButtonToolTip.OwnerDraw = true;
+            changeButtonToolTip.Draw += new DrawToolTipEventHandler(changeButtonToolTip_Draw);
+            changeButtonToolTip.Popup += new PopupEventHandler(changeButtonToolTip_Popup);
+            changeButtonToolTip.AutoPopDelay = 0;   //tooltip的显示时间(无用)
+            changeButtonToolTip.ReshowDelay = 0;  //出现tooltip的延迟显示时间(无用)
+            changeButtonToolTip.SetToolTip(this.changeButton1, changeButton1Text);  //绑定tooltip到控件
+            changeButtonToolTip.SetToolTip(this.changeButton2, changeButton2Text);  //绑定tooltip到控件
+            changeButtonToolTip.SetToolTip(this.changeButton3, changeButton3Text);  //绑定tooltip到控件
+            changeButtonToolTip.SetToolTip(this.changeButton4, changeButton4Text);  //绑定tooltip到控件
+        }
+
+        private void changeButton1_MouseMove(object sender, MouseEventArgs e)
+        {
+            changeButtonText = changeButton1Text;
+        }
+
+        private void changeButton2_MouseMove(object sender, MouseEventArgs e)
+        {
+            changeButtonText = changeButton2Text;
+        }
+
+        private void changeButton3_MouseMove(object sender, MouseEventArgs e)
+        {
+            changeButtonText = changeButton3Text;
+        }
+
+        private void changeButton4_MouseMove(object sender, MouseEventArgs e)
+        {
+            changeButtonText = changeButton4Text;
+        }
+
+        private void changeButtonToolTip_Popup(object sender, PopupEventArgs e)
+        {
+            // on popip set the size of tool tip
+            e.ToolTipSize = TextRenderer.MeasureText(changeButtonText, changeButtonFont);
+        }
+
+        private void changeButtonToolTip_Draw(object sender, DrawToolTipEventArgs e)
+        {
+            e.DrawBackground();
+            e.DrawBorder();
+            e.Graphics.DrawString(e.ToolTipText, changeButtonFont, Brushes.Black, new PointF(0, 0));
         }
 
         #region 防止控件或图像过多卡
@@ -448,6 +460,8 @@ namespace _3d
         {
             try
             {
+                //刷新自己在线的时间状态
+                refreshMyOnlineTime_Tick();
                 DataTable tb = lms.conn("select allowlogin,`online`,isdel from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
                 if (tb != null && tb.Rows.Count > 0)
                 {
@@ -470,7 +484,7 @@ namespace _3d
                         ||
                         online.Equals("0")
                         ||
-                        (online.Equals("2") && Global.loginType.Equals("1")))
+                        (online.Equals("2") && Global.loginType.Equals("1")))//机器码登录下线机制
                     {
                         Global.isNormalStatus = false;// 设置为非正常关闭
                         this.offlineUserTimer.Enabled = false;
@@ -480,18 +494,18 @@ namespace _3d
                     }
                 }
             }
-            catch
+            catch (Exception err)
             {
-
+                //throw err;
             }
             finally
             {
-                //刷新自己在线的时间状态
-                refreshMyOnlineTime_Tick();
+
             }
         }
 
-        private void refreshMyOnlineTime_Tick() {
+        private void refreshMyOnlineTime_Tick()
+        {
             lms.conn("update " + Global.sqlUserTable + " set onlinetime=now() where user_name='" + Global.user_name + "' ");
         }
 
@@ -518,7 +532,7 @@ namespace _3d
                         TimeSpan ts = ts1.Subtract(ts2).Duration();//绝对值
                         int diffHours = Convert.ToInt32(ts.TotalMinutes);
                         //如果相差时间超过10分钟，那么就把该用户下线
-                        if (diffHours >= 10)
+                        if (diffHours > 10)
                         {
                             //MessageBox.Show(diffHours + ":::" + user_realname + "");
                             lms.conn("update " + Global.sqlUserTable + " set `online`='0' where user_name='" + user_name + "' ");
@@ -529,6 +543,119 @@ namespace _3d
             catch
             {
 
+            }
+        }
+
+        /// <summary>
+        /// 选中按钮颜色
+        /// </summary>
+        Color _changeButtonColorFocus = Color.FromArgb(122, 185, 0);//122,185,0
+
+        /// <summary>
+        /// 未选中按钮颜色，默认背景色
+        /// </summary>
+        Color _changeButtonColor = Color.GreenYellow;
+
+
+        /// <summary>
+        /// 页面一
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void changeButton1_Click(object sender, EventArgs e)
+        {
+            if (f1 != null)
+            {
+                f1.FormBorderStyle = FormBorderStyle.None; // 无边框
+                f1.TopLevel = false; // 不是最顶层窗体
+                panel1.Controls.Add(f1);  // 添加到 Panel中
+                pageHideOrShow(f1, changeButton1);
+            }
+
+            panel1.Focus();
+        }
+
+        /// <summary>
+        /// 页面二
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void changeButton2_Click(object sender, EventArgs e)
+        {
+            if (f3 != null)
+            {
+                f3.FormBorderStyle = FormBorderStyle.None; // 无边框
+                f3.TopLevel = false; // 不是最顶层窗体
+                panel1.Controls.Add(f3);  // 添加到 Panel中
+                pageHideOrShow(f3, changeButton2);
+            }
+
+            panel1.Focus();
+        }
+
+        /// <summary>
+        /// 页面三
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void changeButton3_Click(object sender, EventArgs e)
+        {
+            if (f4 != null)
+            {
+                f4.FormBorderStyle = FormBorderStyle.None; // 无边框
+                f4.TopLevel = false; // 不是最顶层窗体
+                panel1.Controls.Add(f4);  // 添加到 Panel中
+                pageHideOrShow(f4, changeButton3);
+            }
+
+            panel1.Focus();
+        }
+
+        /// <summary>
+        /// 页面四
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void changeButton4_Click(object sender, EventArgs e)
+        {
+            if (pf4 != null)
+            {
+                pf4.FormBorderStyle = FormBorderStyle.None; // 无边框
+                pf4.TopLevel = false; // 不是最顶层窗体
+                panel1.Controls.Add(pf4);  // 添加到 Panel中
+                pageHideOrShow(pf4, changeButton4);
+            }
+
+            panel1.Focus();
+        }
+
+        /// <summary>
+        /// 进行隐藏或者显示form
+        /// </summary>
+        /// <param name="f"></param>
+        private void pageHideOrShow(Form f, Button btn)
+        {
+            //切换Form
+            Form[] forms = { f1, f3, f4, pf4 };
+            foreach (Form _f in forms)
+            {
+                if (_f.Equals(f))
+                {
+                    _f.Show();
+                    continue;
+                }
+                _f.Hide();
+            }
+
+            //给切换Form的按钮换色
+            Button[] btns = { changeButton1, changeButton2, changeButton3, changeButton4 };
+            foreach(Button _btn in btns){
+                if (_btn.Equals(btn))
+                {
+                    _btn.BackColor = _changeButtonColorFocus;
+                    continue;
+                }
+                _btn.BackColor = _changeButtonColor;
             }
         }
     }

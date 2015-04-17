@@ -96,8 +96,24 @@ namespace _3d
             this.textBox2.Text = "";
             savePass.Checked = false;
 
+            this.textBox1.SelectedIndexChanged += new System.EventHandler(this.textBox1_SelectedIndexChanged);
+
             //检测是否有更新
             findUpdate();
+        }
+
+        private void textBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string valueMember = textBox1.SelectedValue.ToString().Trim();
+            this.textBox2.Text = valueMember;
+            if (valueMember.Length > 0)
+            {
+                savePass.Checked = true;
+            }
+            else
+            {
+                savePass.Checked = false;
+            }
         }
 
         /// <summary>
@@ -146,20 +162,8 @@ namespace _3d
                 d.Save(url + "\\UserProfile.xml");
                 return;
             }
-
-            //如果没有找到，那么创建一个xml文件
-
-            XmlDocument doc = new XmlDocument();
-            XmlDeclaration dec = doc.CreateXmlDeclaration("1.0", "utf-8", null);
-
-            //创建一个根识别<?xml version="1.0" encoding="utf-8"?>
-            doc.AppendChild(dec);
-
-            //创建节点（一级）
-            XmlNode node = doc.CreateElement("UserProfile");
-            doc.AppendChild(node);
-
-            doc.Save(url + "\\UserProfile.xml");
+            //如果没有文件那么创建
+            Tools.writeFile(url + "\\UserProfile.xml", _3d.Properties.Resources.UserProfile);
         }
 
         #region 页面所有控件点击事件
@@ -199,7 +203,7 @@ namespace _3d
                 if (loginValidate(user_name, user_pass) == true)
                 {
                     lms.conn("UPDATE " + Global.sqlUserTable +
-                        " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
+                        " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
                         " where user_name='" + user_name + "'");
 
                     writeToUserXML(user_name, user_pass);//写入到用户配置文件
@@ -356,7 +360,7 @@ namespace _3d
                     if (dr1["allowlogin"].ToString().Equals("1"))
                     {
                         string mysql = "UPDATE " + Global.sqlUserTable +
-                            " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "'" +
+                            " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
                             " where user_name='" + Global.user_name + "'";
                         lms.conn(mysql);
                         //clearUserProfile();//清空用户配置文档
@@ -975,19 +979,6 @@ namespace _3d
 
         #endregion
 
-        private void textBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string valueMember = textBox1.SelectedValue.ToString().Trim();
-            this.textBox2.Text = valueMember;
-            if (valueMember.Length > 0)
-            {
-                savePass.Checked = true;
-            }
-            else
-            {
-                savePass.Checked = false;
-            }
-        }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {

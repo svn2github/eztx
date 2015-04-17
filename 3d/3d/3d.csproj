@@ -69,13 +69,20 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HtmlAgilityPack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="MEZboy.CustomTabControl, Version=1.0.1.7, Culture=neutral, PublicKeyToken=53c237210c7e462d, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\MEZboy.CustomTabControl.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\MySql.Data.dll</HintPath>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -97,7 +104,9 @@
       <DependentUpon>AdminCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="Function\ClearMemory.cs" />
+    <Compile Include="Function\LinkMyMDB.cs" />
     <Compile Include="Function\LinkMySql.cs" />
+    <Compile Include="Function\Tools.cs" />
     <Compile Include="Function\WebConnect.cs" />
     <Compile Include="Function\ServerVersion.cs" />
     <Compile Include="Others\AboutSoft.cs">
@@ -169,6 +178,18 @@
     <Compile Include="ModifyPass.Designer.cs">
       <DependentUpon>ModifyPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShiShiCai\page4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiShiCai\page4.designer.cs">
+      <DependentUpon>page4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zst.designer.cs">
+      <DependentUpon>zst.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShiYiXuanWu\one11xuan5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +247,18 @@
     <Compile Include="OutputFormZuXuan.Designer.cs">
       <DependentUpon>OutputFormZuXuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="OutputFormForEast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputFormForEast.Designer.cs">
+      <DependentUpon>OutputFormForEast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputFormZhiXuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputFormZhiXuan.Designer.cs">
+      <DependentUpon>OutputFormZhiXuan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminControlPanels\AdminCtrl.resx">
       <DependentUpon>AdminCtrl.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +288,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModifyPass.resx">
       <DependentUpon>ModifyPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiShiCai\page4.resx">
+      <DependentUpon>page4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zst.resx">
+      <DependentUpon>zst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShiYiXuanWu\one11xuan5.resx">
       <DependentUpon>one11xuan5.cs</DependentUpon>
@@ -288,6 +327,12 @@
     <EmbeddedResource Include="OutputFormZuXuan.resx">
       <DependentUpon>OutputFormZuXuan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OutputFormForEast.resx">
+      <DependentUpon>OutputFormForEast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputFormZhiXuan.resx">
+      <DependentUpon>OutputFormZhiXuan.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -300,8 +345,33 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\MEZboy.CustomTabControl.dll" />
-    <Content Include="Resources\MySql.Data.dll" />
+    <None Include="Resources\UserProfile.xml" />
+    <None Include="Resources\UpdateList.xml" />
+    <EmbeddedResource Include="Resources\zst\images\震.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\阴.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\阳.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\巽.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\乾.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\离.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\坤.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\坎.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\艮.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\兑.jpg" />
+    <EmbeddedResource Include="Resources\zst\images\redback.gif" />
+    <EmbeddedResource Include="Resources\zst\images\hzback.gif" />
+    <EmbeddedResource Include="Resources\zst\images\ch_back2.gif" />
+    <EmbeddedResource Include="Resources\zst\images\ch_back_red.gif" />
+    <EmbeddedResource Include="Resources\zst\images\ch_back.gif" />
+    <EmbeddedResource Include="Resources\zst\images\blueback.gif" />
+    <EmbeddedResource Include="Resources\zst\images\6.gif" />
+    <EmbeddedResource Include="Resources\zst\images\5.gif" />
+    <EmbeddedResource Include="Resources\zst\images\4.gif" />
+    <EmbeddedResource Include="Resources\zst\images\3.gif" />
+    <EmbeddedResource Include="Resources\zst\images\2.gif" />
+    <EmbeddedResource Include="Resources\zst\images\1.gif" />
+    <None Include="Resources\zst\css\style.css" />
+    <None Include="bin\Debug\UpdateList.xml" />
+    <Content Include="Resources\liangmacha.xml" />
     <None Include="bin\Debug\MEZboy.CustomTabControl.dll" />
     <None Include="bin\Debug\MySql.Data.dll" />
     <Content Include="DB_backup\msg.sql" />
@@ -310,7 +380,6 @@
     <Content Include="eztx.ico" />
     <None Include="Resources\11xuan5.txt" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
       <Visible>False</Visible>

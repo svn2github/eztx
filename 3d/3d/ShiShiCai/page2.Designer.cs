@@ -244,7 +244,6 @@
             this.noLocGpb.TabIndex = 20;
             this.noLocGpb.TabStop = false;
             this.noLocGpb.Text = "不定位两码和";
-            this.noLocGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.noLocGpb_Paint);
             // 
             // button3
             // 
@@ -286,7 +285,6 @@
             this.noLoc2He1.TabIndex = 12;
             this.noLoc2He1.TabStop = false;
             this.noLoc2He1.Text = "两码和1";
-            this.noLoc2He1.Paint += new System.Windows.Forms.PaintEventHandler(this.noLoc2He1_Paint);
             // 
             // noLoc2He1AllCh
             // 
@@ -441,7 +439,6 @@
             this.noLoc2He2.TabIndex = 13;
             this.noLoc2He2.TabStop = false;
             this.noLoc2He2.Text = "两码和2";
-            this.noLoc2He2.Paint += new System.Windows.Forms.PaintEventHandler(this.noLoc2He2_Paint);
             // 
             // noLoc2He2AllCh
             // 
@@ -631,7 +628,6 @@
             this.noLocGpb2.TabIndex = 21;
             this.noLocGpb2.TabStop = false;
             this.noLocGpb2.Text = "不定位两码差";
-            this.noLocGpb2.Paint += new System.Windows.Forms.PaintEventHandler(this.noLocGpb2_Paint);
             // 
             // button1
             // 
@@ -673,7 +669,6 @@
             this.noLoc2Cha1.TabIndex = 12;
             this.noLoc2Cha1.TabStop = false;
             this.noLoc2Cha1.Text = "两码差1";
-            this.noLoc2Cha1.Paint += new System.Windows.Forms.PaintEventHandler(this.noLoc2Cha1_Paint);
             // 
             // noLoc2Cha1AllCh
             // 
@@ -828,7 +823,6 @@
             this.noLoc2Cha2.TabIndex = 13;
             this.noLoc2Cha2.TabStop = false;
             this.noLoc2Cha2.Text = "两码差2";
-            this.noLoc2Cha2.Paint += new System.Windows.Forms.PaintEventHandler(this.noLoc2Cha2_Paint);
             // 
             // noLoc2Cha2AllCh
             // 
@@ -1020,7 +1014,6 @@
             this.loc2HeGpb.TabIndex = 23;
             this.loc2HeGpb.TabStop = false;
             this.loc2HeGpb.Text = "定位两码和";
-            this.loc2HeGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.loc2HeGpb_Paint);
             // 
             // loc2HeCh3
             // 
@@ -1055,7 +1048,6 @@
             this.locShiGe.TabIndex = 14;
             this.locShiGe.TabStop = false;
             this.locShiGe.Text = "十、个";
-            this.locShiGe.Paint += new System.Windows.Forms.PaintEventHandler(this.locShiGe_Paint);
             // 
             // locShiGeChAll
             // 
@@ -1230,7 +1222,6 @@
             this.locBaiShi.TabIndex = 12;
             this.locBaiShi.TabStop = false;
             this.locBaiShi.Text = "百、十";
-            this.locBaiShi.Paint += new System.Windows.Forms.PaintEventHandler(this.locBaiShi_Paint);
             // 
             // locBaiShiChAll
             // 
@@ -1385,7 +1376,6 @@
             this.locBaiGe.TabIndex = 13;
             this.locBaiGe.TabStop = false;
             this.locBaiGe.Text = "百、个";
-            this.locBaiGe.Paint += new System.Windows.Forms.PaintEventHandler(this.locBaiGe_Paint);
             // 
             // locBaiGeChAll
             // 
@@ -1577,7 +1567,6 @@
             this.loc2ChaGpb.TabIndex = 24;
             this.loc2ChaGpb.TabStop = false;
             this.loc2ChaGpb.Text = "定位两码差";
-            this.loc2ChaGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.loc2ChaGpb_Paint);
             // 
             // loc2ChaCh3
             // 
@@ -1612,7 +1601,6 @@
             this.locGeShiCha.TabIndex = 14;
             this.locGeShiCha.TabStop = false;
             this.locGeShiCha.Text = "个、十";
-            this.locGeShiCha.Paint += new System.Windows.Forms.PaintEventHandler(this.locGeShiCha_Paint);
             // 
             // locGeShiChaChAll
             // 
@@ -1787,7 +1775,6 @@
             this.locBaiShiCha.TabIndex = 12;
             this.locBaiShiCha.TabStop = false;
             this.locBaiShiCha.Text = "百、十";
-            this.locBaiShiCha.Paint += new System.Windows.Forms.PaintEventHandler(this.locBaiShiCha_Paint);
             // 
             // locBaiShiChaChAll
             // 
@@ -1942,7 +1929,6 @@
             this.locBaiGeCha.TabIndex = 13;
             this.locBaiGeCha.TabStop = false;
             this.locBaiGeCha.Text = "百、个";
-            this.locBaiGeCha.Paint += new System.Windows.Forms.PaintEventHandler(this.locBaiGeCha_Paint);
             // 
             // locBaiGeChaChAll
             // 
@@ -2153,7 +2139,6 @@
             this.sumZhiGbp.TabIndex = 13;
             this.sumZhiGbp.TabStop = false;
             this.sumZhiGbp.Text = "和值";
-            this.sumZhiGbp.Paint += new System.Windows.Forms.PaintEventHandler(this.sumZhiGbp_Paint);
             // 
             // checkBox116
             // 
@@ -2572,7 +2557,6 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "和值便捷条件";
-            this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox2_Paint);
             // 
             // killHeZhi
             // 
@@ -2601,6 +2585,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.noLocGpb.ResumeLayout(false);
             this.noLocGpb.PerformLayout();
             this.noLoc2He1.ResumeLayout(false);

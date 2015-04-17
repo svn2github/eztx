@@ -41,6 +41,8 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.searchInput = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.yewuButton = new System.Windows.Forms.Button();
+            this.marketButton = new System.Windows.Forms.Button();
             this.qyButton = new System.Windows.Forms.Button();
             this.qyCbx = new System.Windows.Forms.ComboBox();
             this.qySetButton = new System.Windows.Forms.Button();
@@ -100,8 +102,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.marketButton = new System.Windows.Forms.Button();
-            this.yewuButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -287,6 +287,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(780, 176);
             this.panel1.TabIndex = 23;
+            // 
+            // yewuButton
+            // 
+            this.yewuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.yewuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yewuButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.yewuButton.Location = new System.Drawing.Point(654, 76);
+            this.yewuButton.Name = "yewuButton";
+            this.yewuButton.Size = new System.Drawing.Size(63, 29);
+            this.yewuButton.TabIndex = 32;
+            this.yewuButton.Text = "业务员";
+            this.yewuButton.UseVisualStyleBackColor = true;
+            this.yewuButton.Visible = false;
+            this.yewuButton.Click += new System.EventHandler(this.yewuButton_Click);
+            // 
+            // marketButton
+            // 
+            this.marketButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.marketButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.marketButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.marketButton.Location = new System.Drawing.Point(567, 76);
+            this.marketButton.Name = "marketButton";
+            this.marketButton.Size = new System.Drawing.Size(81, 29);
+            this.marketButton.TabIndex = 31;
+            this.marketButton.Text = "市场专员";
+            this.marketButton.UseVisualStyleBackColor = true;
+            this.marketButton.Visible = false;
+            this.marketButton.Click += new System.EventHandler(this.marketButton_Click);
             // 
             // qyButton
             // 
@@ -975,34 +1003,6 @@
             this.label24.Size = new System.Drawing.Size(93, 20);
             this.label24.TabIndex = 0;
             this.label24.Text = "登录界面公告";
-            // 
-            // marketButton
-            // 
-            this.marketButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.marketButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.marketButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.marketButton.Location = new System.Drawing.Point(567, 76);
-            this.marketButton.Name = "marketButton";
-            this.marketButton.Size = new System.Drawing.Size(81, 29);
-            this.marketButton.TabIndex = 31;
-            this.marketButton.Text = "市场专员";
-            this.marketButton.UseVisualStyleBackColor = true;
-            this.marketButton.Visible = false;
-            this.marketButton.Click += new System.EventHandler(this.marketButton_Click);
-            // 
-            // yewuButton
-            // 
-            this.yewuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.yewuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yewuButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.yewuButton.Location = new System.Drawing.Point(654, 76);
-            this.yewuButton.Name = "yewuButton";
-            this.yewuButton.Size = new System.Drawing.Size(63, 29);
-            this.yewuButton.TabIndex = 32;
-            this.yewuButton.Text = "业务员";
-            this.yewuButton.UseVisualStyleBackColor = true;
-            this.yewuButton.Visible = false;
-            this.yewuButton.Click += new System.EventHandler(this.yewuButton_Click);
             // 
             // AdminCtrl
             // 

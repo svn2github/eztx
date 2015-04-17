@@ -41,6 +41,7 @@
             this.checkBox97 = new _3d.CusCheckBox();
             this.checkBox98 = new _3d.CusCheckBox();
             this.kuaJuGpb = new System.Windows.Forms.GroupBox();
+            this.killKuaDu = new _3d.CusCheckBox();
             this.checkBox1 = new _3d.CusCheckBox();
             this.checkBox2 = new _3d.CusCheckBox();
             this.checkBox3 = new _3d.CusCheckBox();
@@ -229,7 +230,6 @@
             this.bianLinHe_15 = new _3d.CusCheckBox();
             this.label59 = new System.Windows.Forms.Label();
             this.bianLinHe_14 = new _3d.CusCheckBox();
-            this.killKuaDu = new _3d.CusCheckBox();
             this.heZhiGpb.SuspendLayout();
             this.kuaJuGpb.SuspendLayout();
             this.shaHeZhiGpb.SuspendLayout();
@@ -269,7 +269,6 @@
             this.heZhiGpb.TabIndex = 13;
             this.heZhiGpb.TabStop = false;
             this.heZhiGpb.Text = "合值";
-            this.heZhiGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.heZhiGpb_Paint);
             // 
             // locBaiShiChaChAll
             // 
@@ -425,7 +424,18 @@
             this.kuaJuGpb.TabIndex = 14;
             this.kuaJuGpb.TabStop = false;
             this.kuaJuGpb.Text = "跨度";
-            this.kuaJuGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.kuaJuGpb_Paint);
+            // 
+            // killKuaDu
+            // 
+            this.killKuaDu.AutoSize = true;
+            this.killKuaDu.checkBgColor = System.Drawing.Color.Empty;
+            this.killKuaDu.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.killKuaDu.Location = new System.Drawing.Point(383, -2);
+            this.killKuaDu.Name = "killKuaDu";
+            this.killKuaDu.Size = new System.Drawing.Size(42, 24);
+            this.killKuaDu.TabIndex = 12;
+            this.killKuaDu.Text = "杀";
+            this.killKuaDu.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -580,7 +590,6 @@
             this.shaHeZhiGpb.TabIndex = 14;
             this.shaHeZhiGpb.TabStop = false;
             this.shaHeZhiGpb.Text = "杀合值";
-            this.shaHeZhiGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.shaHeZhiGpb_Paint);
             // 
             // checkBox12
             // 
@@ -740,7 +749,6 @@
             this.chaHeGpb.TabIndex = 15;
             this.chaHeGpb.TabStop = false;
             this.chaHeGpb.Text = "差合";
-            this.chaHeGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.chaHeGpb_Paint);
             // 
             // checkBox23
             // 
@@ -826,7 +834,6 @@
             this.touDxGpb.TabIndex = 16;
             this.touDxGpb.TabStop = false;
             this.touDxGpb.Text = "龙头";
-            this.touDxGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.touDxGpb_Paint);
             // 
             // touSmallCkb
             // 
@@ -865,7 +872,6 @@
             this.touDsGpb.TabIndex = 17;
             this.touDsGpb.TabStop = false;
             this.touDsGpb.Text = "龙头";
-            this.touDsGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.touDsGpb_Paint);
             // 
             // touShuangCkb
             // 
@@ -904,7 +910,6 @@
             this.touZhGpb.TabIndex = 18;
             this.touZhGpb.TabStop = false;
             this.touZhGpb.Text = "龙头";
-            this.touZhGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.touZhGpb_Paint);
             // 
             // touHeCkb
             // 
@@ -943,7 +948,6 @@
             this.weiDxGpb.TabIndex = 19;
             this.weiDxGpb.TabStop = false;
             this.weiDxGpb.Text = "凤尾";
-            this.weiDxGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.weiDxGpb_Paint);
             // 
             // weiSmallCkb
             // 
@@ -982,7 +986,6 @@
             this.weiDsGpb.TabIndex = 18;
             this.weiDsGpb.TabStop = false;
             this.weiDsGpb.Text = "凤尾";
-            this.weiDsGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.weiDsGpb_Paint);
             // 
             // weiShuangCkb
             // 
@@ -1021,7 +1024,6 @@
             this.weiZhGpb.TabIndex = 19;
             this.weiZhGpb.TabStop = false;
             this.weiZhGpb.Text = "凤尾";
-            this.weiZhGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.weiZhGpb_Paint);
             // 
             // weiHeCkb
             // 
@@ -1060,7 +1062,6 @@
             this.ltfwMustGpb.TabIndex = 20;
             this.ltfwMustGpb.TabStop = false;
             this.ltfwMustGpb.Text = "龙头凤尾条件设置";
-            this.ltfwMustGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.ltfwMustGpb_Paint);
             // 
             // shaQuCkb
             // 
@@ -1113,7 +1114,6 @@
             this.numberProGpb.TabIndex = 16;
             this.numberProGpb.TabStop = false;
             this.numberProGpb.Text = "号码属性";
-            this.numberProGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.numberProGpb_Paint);
             // 
             // label2
             // 
@@ -1301,7 +1301,6 @@
             this.pHZSGpb.TabIndex = 19;
             this.pHZSGpb.TabStop = false;
             this.pHZSGpb.Text = "平衡指数";
-            this.pHZSGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.pHZSGpb_Paint);
             // 
             // checkBox27
             // 
@@ -1397,7 +1396,6 @@
             this.quantaiGpb.TabIndex = 19;
             this.quantaiGpb.TabStop = false;
             this.quantaiGpb.Text = "号码全态";
-            this.quantaiGpb.Paint += new System.Windows.Forms.PaintEventHandler(this.quantaiGpb_Paint);
             // 
             // label12
             // 
@@ -1596,7 +1594,6 @@
             this.zuiDaLinMaKuaJu.TabIndex = 38;
             this.zuiDaLinMaKuaJu.TabStop = false;
             this.zuiDaLinMaKuaJu.Text = "最大邻码跨距";
-            this.zuiDaLinMaKuaJu.Paint += new System.Windows.Forms.PaintEventHandler(this.zuiDaLinMaKuaJu_Paint);
             // 
             // label26
             // 
@@ -1925,7 +1922,6 @@
             this.fanBianQiu.TabIndex = 39;
             this.fanBianQiu.TabStop = false;
             this.fanBianQiu.Text = "反边球距离";
-            this.fanBianQiu.Paint += new System.Windows.Forms.PaintEventHandler(this.fanBianQiu_Paint);
             // 
             // fanBianQiu_0
             // 
@@ -2344,7 +2340,6 @@
             this.bianLinHe.TabIndex = 39;
             this.bianLinHe.TabStop = false;
             this.bianLinHe.Text = "边邻和";
-            this.bianLinHe.Paint += new System.Windows.Forms.PaintEventHandler(this.bianLinHe_Paint);
             // 
             // label46
             // 
@@ -2626,18 +2621,6 @@
             this.bianLinHe_14.TabIndex = 1;
             this.bianLinHe_14.UseVisualStyleBackColor = true;
             // 
-            // killKuaDu
-            // 
-            this.killKuaDu.AutoSize = true;
-            this.killKuaDu.checkBgColor = System.Drawing.Color.Empty;
-            this.killKuaDu.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.killKuaDu.Location = new System.Drawing.Point(383, -2);
-            this.killKuaDu.Name = "killKuaDu";
-            this.killKuaDu.Size = new System.Drawing.Size(42, 24);
-            this.killKuaDu.TabIndex = 12;
-            this.killKuaDu.Text = "杀";
-            this.killKuaDu.UseVisualStyleBackColor = true;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2664,6 +2647,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.heZhiGpb.ResumeLayout(false);
             this.heZhiGpb.PerformLayout();
             this.kuaJuGpb.ResumeLayout(false);

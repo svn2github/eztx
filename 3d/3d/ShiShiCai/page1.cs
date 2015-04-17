@@ -21,6 +21,7 @@ namespace _3d
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Tools.SetGroupBoxPaintAll(this.Controls);
 
             if (!(Global.user_vali.Equals("2") || Global.user_vali.Equals("6") || Global.user_vali.Equals("7")))
             {
@@ -189,23 +190,6 @@ namespace _3d
             }
         }
 
-        /// <summary>
-        /// 计算字符串中子串出现的次数
-        /// </summary>
-        /// <param name="str">字符串</param>
-        /// <param name="substring">子串</param>
-        /// <returns>出现的次数</returns>
-        static int SubstringCount(string str, string substring)
-        {
-            if (str.Contains(substring))
-            {
-                string strReplaced = str.Replace(substring, "");
-                return (str.Length - strReplaced.Length) / substring.Length;
-            }
-
-            return 0;
-        }
-
         #region 按钮点击、标签
 
         //出组合“清”按钮点击
@@ -342,7 +326,7 @@ namespace _3d
 
         #region 基础1000底
 
-        string[] ttt()//1000注大底
+        public string[] ttt()//1000注大底
         {
             string txt = Global.splitRegex;
             System.Collections.Generic.List<string> result = new System.Collections.Generic.List<string>();
@@ -636,7 +620,7 @@ namespace _3d
                     {
                         for (int k = 0; k < allNum.Count(); k++)
                         {
-                            if (SubstringCount(allNum[k], pingMianBiChu[i]) == Convert.ToInt16(pingMianBiChuGeShu[j]))
+                            if (Tools.SubstringCount(allNum[k], pingMianBiChu[i]) == Convert.ToInt16(pingMianBiChuGeShu[j]))
                             {
                                 result.Add(allNum[k]);
                             }
@@ -2072,7 +2056,7 @@ namespace _3d
         {
             System.Collections.Generic.List<string> result = new System.Collections.Generic.List<string>();
             string fenJieShi = "";
-            foreach (Control ctl in this.groupBox3.Controls) //this可以根据实际情况修改为this.groupBreakFast,this.groupLunch,this.groupDinner
+            foreach (Control ctl in this.fjsGpb.Controls) //this可以根据实际情况修改为this.groupBreakFast,this.groupLunch,this.groupDinner
             {
                 if (ctl is CheckBox)
                 {
@@ -3119,184 +3103,17 @@ namespace _3d
 
         #region Groupbox重绘
 
-        private void groupBox18_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(lmGpb.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(lmGpb.Text, lmGpb.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(lmGpb.Text, lmGpb.Font).Width + 8, 7, lmGpb.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, lmGpb.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, lmGpb.Height - 2, lmGpb.Width - 2, lmGpb.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, lmGpb.Width - 2, 7, lmGpb.Width - 2, lmGpb.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox19_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox19.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox19.Text, groupBox19.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox19.Text, groupBox19.Font).Width + 8, 7, groupBox19.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox19.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox19.Height - 2, groupBox19.Width - 2, groupBox19.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox19.Width - 2, 7, groupBox19.Width - 2, groupBox19.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox2_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox2.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox2.Text, groupBox2.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox2.Text, groupBox2.Font).Width + 8, 7, groupBox2.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox2.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox2.Height - 2, groupBox2.Width - 2, groupBox2.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox2.Width - 2, 7, groupBox2.Width - 2, groupBox2.Height - 2);//右边那条竖线 
-        }
-
-        private void groupBox1_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox1.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox1.Text, groupBox1.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox1.Text, groupBox1.Font).Width + 8, 7, groupBox1.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox1.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox1.Height - 2, groupBox1.Width - 2, groupBox1.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox1.Width - 2, 7, groupBox1.Width - 2, groupBox1.Height - 2);//右边那条竖线 
-        }
-
-        private void groupBox9_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox9.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox9.Text, groupBox9.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox9.Text, groupBox9.Font).Width + 8, 7, groupBox9.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox9.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox9.Height - 2, groupBox9.Width - 2, groupBox9.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox9.Width - 2, 7, groupBox9.Width - 2, groupBox9.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox7_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox7.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox7.Text, groupBox7.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox7.Text, groupBox7.Font).Width + 8, 7, groupBox7.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox7.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox7.Height - 2, groupBox7.Width - 2, groupBox7.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox7.Width - 2, 7, groupBox7.Width - 2, groupBox7.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox10_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox10.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox10.Text, groupBox10.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox10.Text, groupBox10.Font).Width + 8, 7, groupBox10.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox10.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox10.Height - 2, groupBox10.Width - 2, groupBox10.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox10.Width - 2, 7, groupBox10.Width - 2, groupBox10.Height - 2);//右边那条竖线 
-        }
-
-        private void groupBox11_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox11.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox11.Text, groupBox11.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox11.Text, groupBox11.Font).Width + 8, 7, groupBox11.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox11.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox11.Height - 2, groupBox11.Width - 2, groupBox11.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox11.Width - 2, 7, groupBox11.Width - 2, groupBox11.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox8_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox8.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox8.Text, groupBox8.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox8.Text, groupBox8.Font).Width + 8, 7, groupBox8.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox8.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox8.Height - 2, groupBox8.Width - 2, groupBox8.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox8.Width - 2, 7, groupBox8.Width - 2, groupBox8.Height - 2);//右边那条竖线
-        }
 
         private void groupBox3_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.Clear(groupBox3.BackColor);
+            e.Graphics.Clear(fjsGpb.BackColor);
             //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox3.Text, groupBox3.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
+            e.Graphics.DrawString(fjsGpb.Text, fjsGpb.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
             e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox3.Text, groupBox3.Font).Width + 8, 7, groupBox3.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox3.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox3.Height - 2, groupBox3.Width - 2, groupBox3.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox3.Width - 2, 7, groupBox3.Width - 2, groupBox3.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox16_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox16.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox16.Text, groupBox16.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox16.Text, groupBox16.Font).Width + 8, 7, groupBox16.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox16.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox16.Height - 2, groupBox16.Width - 2, groupBox16.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox16.Width - 2, 7, groupBox16.Width - 2, groupBox16.Height - 2);//右边那条竖线 
-        }
-
-        private void groupBox4_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox4.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox4.Text, groupBox4.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox4.Text, groupBox4.Font).Width + 8, 7, groupBox4.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox4.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox4.Height - 2, groupBox4.Width - 2, groupBox4.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox4.Width - 2, 7, groupBox4.Width - 2, groupBox4.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox6_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox6.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox6.Text, groupBox6.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox6.Text, groupBox6.Font).Width + 8, 7, groupBox6.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox6.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox6.Height - 2, groupBox6.Width - 2, groupBox6.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox6.Width - 2, 7, groupBox6.Width - 2, groupBox6.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox5_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox5.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox5.Text, groupBox5.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox5.Text, groupBox5.Font).Width + 8, 7, groupBox5.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox5.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox5.Height - 2, groupBox5.Width - 2, groupBox5.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox5.Width - 2, 7, groupBox5.Width - 2, groupBox5.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox17_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox17.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox17.Text, groupBox17.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox17.Text, groupBox17.Font).Width + 8, 7, groupBox17.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox17.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox17.Height - 2, groupBox17.Width - 2, groupBox17.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox17.Width - 2, 7, groupBox17.Width - 2, groupBox17.Height - 2);//右边那条竖线
+            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(fjsGpb.Text, fjsGpb.Font).Width + 8, 7, fjsGpb.Width - 2, 7);//设置文字后面那条线
+            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, fjsGpb.Height - 2);//左边那条线
+            e.Graphics.DrawLine(Pens.DarkGray, 1, fjsGpb.Height - 2, fjsGpb.Width - 2, fjsGpb.Height - 2);//下面那条线
+            e.Graphics.DrawLine(Pens.DarkGray, fjsGpb.Width - 2, 7, fjsGpb.Width - 2, fjsGpb.Height - 2);//右边那条竖线
         }
 
         #endregion
@@ -3338,99 +3155,8 @@ namespace _3d
             }
         }
 
-        #region 平面胆组中标签实现清空功能
 
-        #region 一号组标签实现清空功能
-        private void oneZuChu_MouseEnter(object sender, EventArgs e)
-        {
-            this.oneZuChu.Text = "清";
-        }
 
-        private void oneZuChu_MouseLeave(object sender, EventArgs e)
-        {
-            this.oneZuChu.Text = "出:";
-        }
-
-        private void oneZuChu_Click(object sender, EventArgs e)
-        {
-            foreach (Control ctl in this.groupBox2.Controls)
-            {                
-                if (ctl is CheckBox&&(ctl as CheckBox).Checked)
-                {
-                    (ctl as CheckBox).Checked = false;
-                }
-            }
-        }
-        #endregion
-
-        #region 二号组标签实现清空功能
-        private void twoZuChu_MouseEnter(object sender, EventArgs e)
-        {
-            this.twoZuChu.Text = "清";
-        }
-
-        private void twoZuChu_MouseLeave(object sender, EventArgs e)
-        {
-            this.twoZuChu.Text = "出:";
-        }
-
-        private void twoZuChu_Click(object sender, EventArgs e)
-        {
-            foreach (Control ctl in this.groupBox9.Controls)
-            {
-                if (ctl is CheckBox && (ctl as CheckBox).Checked)
-                {
-                    (ctl as CheckBox).Checked = false;
-                }
-            }
-        }
-        #endregion
-
-        #region 三号组标签实现清空功能
-        private void threeZuChu_MouseEnter(object sender, EventArgs e)
-        {
-            this.threeZuChu.Text = "清";
-        }
-
-        private void threeZuChu_MouseLeave(object sender, EventArgs e)
-        {
-            this.threeZuChu.Text = "出:";
-        }
-
-        private void threeZuChu_Click(object sender, EventArgs e)
-        {
-            foreach (Control ctl in this.groupBox10.Controls)
-            {
-                if (ctl is CheckBox && (ctl as CheckBox).Checked)
-                {
-                    (ctl as CheckBox).Checked = false;
-                }
-            }
-        }
-        #endregion
-
-        #region 四号组标签实现清空功能
-        private void fourZuChu_MouseEnter(object sender, EventArgs e)
-        {
-            this.fourZuChu.Text = "清";
-        }
-
-        private void fourZuChu_MouseLeave(object sender, EventArgs e)
-        {
-            this.fourZuChu.Text = "出:";
-        }
-
-        private void fourZuChu_Click(object sender, EventArgs e)
-        {
-            foreach (Control ctl in this.groupBox11.Controls)
-            {
-                if (ctl is CheckBox && (ctl as CheckBox).Checked)
-                {
-                    (ctl as CheckBox).Checked = false;
-                }
-            }
-        }
-        #endregion
 
         //设置全局每组数之间使用的分隔符
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -3459,7 +3185,6 @@ namespace _3d
             Global.splitRegex = txt;
         }
 
-        #endregion
 
         //百位杀号：杀单留双
         private void shaDanLiuShuang1_CheckedChanged(object sender, EventArgs e)
@@ -3537,6 +3262,42 @@ namespace _3d
                 if (nums.Contains(num))
                 {
                     (ctls as CheckBox).Checked = false;
+                }
+            }
+        }
+
+        private void clear1HaoMaZubtn_Click(object sender, EventArgs e)
+        {
+            cancelSelectButton(groupBox2);
+        }
+
+        private void clear2HaoMaZubtn_Click(object sender, EventArgs e)
+        {
+            cancelSelectButton(groupBox9);
+        }
+
+        private void clear3HaoMaZubtn_Click(object sender, EventArgs e)
+        {
+            cancelSelectButton(groupBox10);
+        }
+
+        private void clear4HaoMaZubtn_Click(object sender, EventArgs e)
+        {
+            cancelSelectButton(groupBox11);
+        }
+
+        private void clearShaHaoBtn_Click(object sender, EventArgs e)
+        {
+            cancelSelectButton(groupBox1);
+        }
+
+        private void cancelSelectButton(Control ctls)
+        {
+            foreach (Control ctl in ctls.Controls)
+            {
+                if (ctl is CheckBox && (ctl as CheckBox).Checked)
+                {
+                    (ctl as CheckBox).Checked = false;
                 }
             }
         }

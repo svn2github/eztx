@@ -17,6 +17,11 @@ namespace _3d
             InitializeComponent();
         }
 
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            Tools.SetGroupBoxPaintAll(this.Controls);
+        }
+
         #region 主数据组
 
         private string[] f1Data;
@@ -6731,202 +6736,6 @@ namespace _3d
 
         #endregion
 
-        #region f3重绘事件
-
-        private void noLocGpb_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(noLocGpb.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(noLocGpb.Text, noLocGpb.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(noLocGpb.Text, noLocGpb.Font).Width + 8, 7, noLocGpb.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, noLocGpb.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, noLocGpb.Height - 2, noLocGpb.Width - 2, noLocGpb.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, noLocGpb.Width - 2, 7, noLocGpb.Width - 2, noLocGpb.Height - 2);//右边那条竖线
-        }
-
-        private void noLocGpb2_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(noLocGpb2.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(noLocGpb2.Text, noLocGpb2.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(noLocGpb2.Text, noLocGpb2.Font).Width + 8, 7, noLocGpb2.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, noLocGpb2.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, noLocGpb2.Height - 2, noLocGpb2.Width - 2, noLocGpb2.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, noLocGpb2.Width - 2, 7, noLocGpb2.Width - 2, noLocGpb2.Height - 2);//右边那条竖线
-        }
-
-        private void noLoc2He1_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(noLoc2He1.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(noLoc2He1.Text, noLoc2He1.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(noLoc2He1.Text, noLoc2He1.Font).Width + 8, 7, noLoc2He1.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, noLoc2He1.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, noLoc2He1.Height - 2, noLoc2He1.Width - 2, noLoc2He1.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, noLoc2He1.Width - 2, 7, noLoc2He1.Width - 2, noLoc2He1.Height - 2);//右边那条竖线
-        }
-
-        private void noLoc2He2_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(noLoc2He2.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(noLoc2He2.Text, noLoc2He2.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(noLoc2He2.Text, noLoc2He2.Font).Width + 8, 7, noLoc2He2.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, noLoc2He2.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, noLoc2He2.Height - 2, noLoc2He2.Width - 2, noLoc2He2.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, noLoc2He2.Width - 2, 7, noLoc2He2.Width - 2, noLoc2He2.Height - 2);//右边那条竖线
-        }
-
-        private void noLoc2Cha1_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(noLoc2Cha1.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(noLoc2Cha1.Text, noLoc2Cha1.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(noLoc2Cha1.Text, noLoc2Cha1.Font).Width + 8, 7, noLoc2Cha1.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, noLoc2Cha1.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, noLoc2Cha1.Height - 2, noLoc2Cha1.Width - 2, noLoc2Cha1.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, noLoc2Cha1.Width - 2, 7, noLoc2Cha1.Width - 2, noLoc2Cha1.Height - 2);//右边那条竖线
-        }
-
-        private void noLoc2Cha2_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(noLoc2Cha2.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(noLoc2Cha2.Text, noLoc2Cha2.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(noLoc2Cha2.Text, noLoc2Cha2.Font).Width + 8, 7, noLoc2Cha2.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, noLoc2Cha2.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, noLoc2Cha2.Height - 2, noLoc2Cha2.Width - 2, noLoc2Cha2.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, noLoc2Cha2.Width - 2, 7, noLoc2Cha2.Width - 2, noLoc2Cha2.Height - 2);//右边那条竖线
-        }
-
-        private void loc2HeGpb_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(loc2HeGpb.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(loc2HeGpb.Text, loc2HeGpb.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(loc2HeGpb.Text, loc2HeGpb.Font).Width + 8, 7, loc2HeGpb.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, loc2HeGpb.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, loc2HeGpb.Height - 2, loc2HeGpb.Width - 2, loc2HeGpb.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, loc2HeGpb.Width - 2, 7, loc2HeGpb.Width - 2, loc2HeGpb.Height - 2);//右边那条竖线
-        }
-
-        private void loc2ChaGpb_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(loc2ChaGpb.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(loc2ChaGpb.Text, loc2ChaGpb.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(loc2ChaGpb.Text, loc2ChaGpb.Font).Width + 8, 7, loc2ChaGpb.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, loc2ChaGpb.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, loc2ChaGpb.Height - 2, loc2ChaGpb.Width - 2, loc2ChaGpb.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, loc2ChaGpb.Width - 2, 7, loc2ChaGpb.Width - 2, loc2ChaGpb.Height - 2);//右边那条竖线
-        }
-
-        private void locBaiShi_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(locBaiShi.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(locBaiShi.Text, locBaiShi.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(locBaiShi.Text, locBaiShi.Font).Width + 8, 7, locBaiShi.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, locBaiShi.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, locBaiShi.Height - 2, locBaiShi.Width - 2, locBaiShi.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, locBaiShi.Width - 2, 7, locBaiShi.Width - 2, locBaiShi.Height - 2);//右边那条竖线
-        }
-
-        private void locBaiGe_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(locBaiGe.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(locBaiGe.Text, locBaiGe.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(locBaiGe.Text, locBaiGe.Font).Width + 8, 7, locBaiGe.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, locBaiGe.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, locBaiGe.Height - 2, locBaiGe.Width - 2, locBaiGe.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, locBaiGe.Width - 2, 7, locBaiGe.Width - 2, locBaiGe.Height - 2);//右边那条竖线
-        }
-
-        private void locShiGe_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(locShiGe.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(locShiGe.Text, locShiGe.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(locShiGe.Text, locShiGe.Font).Width + 8, 7, locShiGe.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, locShiGe.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, locShiGe.Height - 2, locShiGe.Width - 2, locShiGe.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, locShiGe.Width - 2, 7, locShiGe.Width - 2, locShiGe.Height - 2);//右边那条竖线
-        }
-
-        private void locBaiShiCha_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(locBaiShiCha.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(locBaiShiCha.Text, locBaiShiCha.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(locBaiShiCha.Text, locBaiShiCha.Font).Width + 8, 7, locBaiShiCha.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, locBaiShiCha.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, locBaiShiCha.Height - 2, locBaiShiCha.Width - 2, locBaiShiCha.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, locBaiShiCha.Width - 2, 7, locBaiShiCha.Width - 2, locBaiShiCha.Height - 2);//右边那条竖线
-        }
-
-        private void locBaiGeCha_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(locBaiGeCha.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(locBaiGeCha.Text, locBaiGeCha.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(locBaiGeCha.Text, locBaiGeCha.Font).Width + 8, 7, locBaiGeCha.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, locBaiGeCha.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, locBaiGeCha.Height - 2, locBaiGeCha.Width - 2, locBaiGeCha.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, locBaiGeCha.Width - 2, 7, locBaiGeCha.Width - 2, locBaiGeCha.Height - 2);//右边那条竖线
-        }
-
-        private void locGeShiCha_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(locGeShiCha.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(locGeShiCha.Text, locGeShiCha.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(locGeShiCha.Text, locGeShiCha.Font).Width + 8, 7, locGeShiCha.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, locGeShiCha.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, locGeShiCha.Height - 2, locGeShiCha.Width - 2, locGeShiCha.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, locGeShiCha.Width - 2, 7, locGeShiCha.Width - 2, locGeShiCha.Height - 2);//右边那条竖线
-        }
-
-        private void sumZhiGbp_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(sumZhiGbp.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(sumZhiGbp.Text, sumZhiGbp.Font, new SolidBrush(Color.DarkBlue), 10, 0);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(sumZhiGbp.Text, sumZhiGbp.Font).Width + 8, 7, sumZhiGbp.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, sumZhiGbp.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, sumZhiGbp.Height - 2, sumZhiGbp.Width - 2, sumZhiGbp.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, sumZhiGbp.Width - 2, 7, sumZhiGbp.Width - 2, sumZhiGbp.Height - 2);//右边那条竖线
-        }
-
-        private void groupBox2_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox2.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox2.Text, groupBox2.Font, new SolidBrush(Color.DarkBlue), 10, 0);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox2.Text, groupBox2.Font).Width + 8, 7, groupBox2.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox2.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox2.Height - 2, groupBox2.Width - 2, groupBox2.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox2.Width - 2, 7, groupBox2.Width - 2, groupBox2.Height - 2);//右边那条竖线
-        }
-
-        #endregion
-
         #region 全选勾选功能、清空区域功能、检查是否勾选出几个
 
         //清空全部CheckBox
@@ -7535,7 +7344,6 @@ namespace _3d
         }
 
         #endregion
-        
-    }
 
+    }
 }

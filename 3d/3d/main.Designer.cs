@@ -34,11 +34,14 @@
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.customTabControl1 = new System.Windows.Forms.CustomTabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.changeButton4 = new System.Windows.Forms.Button();
+            this.changeButton3 = new System.Windows.Forms.Button();
+            this.changeButton2 = new System.Windows.Forms.Button();
+            this.changeButton1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.marqueePanel = new System.Windows.Forms.Panel();
@@ -119,10 +122,13 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage2.Controls.Add(this.changeButton4);
+            this.tabPage2.Controls.Add(this.changeButton3);
+            this.tabPage2.Controls.Add(this.changeButton2);
+            this.tabPage2.Controls.Add(this.changeButton1);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
@@ -130,6 +136,66 @@
             this.tabPage2.Size = new System.Drawing.Size(904, 540);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "时时彩 - 3D - 排列三 - 快乐3 - 时时乐";
+            // 
+            // changeButton4
+            // 
+            this.changeButton4.BackColor = System.Drawing.Color.GreenYellow;
+            this.changeButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.changeButton4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.changeButton4.ForeColor = System.Drawing.Color.DarkBlue;
+            this.changeButton4.Location = new System.Drawing.Point(360, 56);
+            this.changeButton4.Name = "changeButton4";
+            this.changeButton4.Size = new System.Drawing.Size(112, 25);
+            this.changeButton4.TabIndex = 27;
+            this.changeButton4.Text = "东北专供";
+            this.changeButton4.UseVisualStyleBackColor = false;
+            this.changeButton4.Click += new System.EventHandler(this.changeButton4_Click);
+            this.changeButton4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.changeButton4_MouseMove);
+            // 
+            // changeButton3
+            // 
+            this.changeButton3.BackColor = System.Drawing.Color.GreenYellow;
+            this.changeButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.changeButton3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.changeButton3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.changeButton3.Location = new System.Drawing.Point(242, 56);
+            this.changeButton3.Name = "changeButton3";
+            this.changeButton3.Size = new System.Drawing.Size(112, 25);
+            this.changeButton3.TabIndex = 26;
+            this.changeButton3.Text = "三、其他选项";
+            this.changeButton3.UseVisualStyleBackColor = false;
+            this.changeButton3.Click += new System.EventHandler(this.changeButton3_Click);
+            this.changeButton3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.changeButton3_MouseMove);
+            // 
+            // changeButton2
+            // 
+            this.changeButton2.BackColor = System.Drawing.Color.GreenYellow;
+            this.changeButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.changeButton2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.changeButton2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.changeButton2.Location = new System.Drawing.Point(124, 56);
+            this.changeButton2.Name = "changeButton2";
+            this.changeButton2.Size = new System.Drawing.Size(112, 25);
+            this.changeButton2.TabIndex = 25;
+            this.changeButton2.Text = "二、其他选项";
+            this.changeButton2.UseVisualStyleBackColor = false;
+            this.changeButton2.Click += new System.EventHandler(this.changeButton2_Click);
+            this.changeButton2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.changeButton2_MouseMove);
+            // 
+            // changeButton1
+            // 
+            this.changeButton1.BackColor = System.Drawing.Color.GreenYellow;
+            this.changeButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.changeButton1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.changeButton1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.changeButton1.Location = new System.Drawing.Point(6, 56);
+            this.changeButton1.Name = "changeButton1";
+            this.changeButton1.Size = new System.Drawing.Size(112, 25);
+            this.changeButton1.TabIndex = 24;
+            this.changeButton1.Text = "一、基础选项";
+            this.changeButton1.UseVisualStyleBackColor = false;
+            this.changeButton1.Click += new System.EventHandler(this.changeButton1_Click);
+            this.changeButton1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.changeButton1_MouseMove);
             // 
             // panel2
             // 
@@ -175,24 +241,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(906, 459);
             this.panel1.TabIndex = 2;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.YellowGreen;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "页面一   -   基础选项    -   杀码,出号,分解式,临码,组合,凹凸,密码修改,信息修改",
-            "页面二   -   其他选项1  -   两码和,两码差,和值",
-            "页面三   -   其他选项2  -   合值,杀合值,跨距(跨度),差合,龙头凤尾,号码属性,平衡指数"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(895, 25);
-            this.comboBox1.TabIndex = 22;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -514,7 +562,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
@@ -544,5 +591,9 @@
         private System.Windows.Forms.Timer marqueeTimer;
         private System.Windows.Forms.Timer offlineUserTimer;
         private System.Windows.Forms.LinkLabel linkLabel10;
+        private System.Windows.Forms.Button changeButton3;
+        private System.Windows.Forms.Button changeButton2;
+        private System.Windows.Forms.Button changeButton1;
+        private System.Windows.Forms.Button changeButton4;
     }
 }

@@ -15,7 +15,7 @@ namespace _3d.Function
     {
         public string GetServerVersion() {
 
-            WebConnect wc = new WebConnect();
+            Tools wc = new Tools();
             string pageXML = wc.getOnlineXML(Global.soft_server_url + "\\UpdateList.xml");
             XmlDocument doc2 = new XmlDocument();
             doc2.LoadXml(pageXML);

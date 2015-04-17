@@ -110,5 +110,7 @@ D:\svn_c#\3d\3d\obj\x86\Debug\_3d.AdminCtrlArea.resources
 D:\svn_c#\3d\3d\obj\x86\Debug\_3d.test.resources
 D:\svn_c#\3d\3d\obj\x86\Debug\_3d.OutputFormZuXuan.resources
 D:\svn_c#\3d\3d\obj\x86\Debug\3d.csproj.GenerateResource.Cache
-D:\svn_c#\3d\3d\bin\Debug\MEZboy.CustomTabControl.dll
-D:\svn_c#\3d\3d\bin\Debug\MySql.Data.dll
+D:\svn_c#\3d\3d\obj\x86\Debug\_3d.Page4Form.resources
+D:\svn_c#\3d\3d\obj\x86\Debug\_3d.zst.resources
+D:\svn_c#\3d\3d\obj\x86\Debug\_3d.OutputFormForEast.resources
+D:\svn_c#\3d\3d\obj\x86\Debug\_3d.OutputFormZhiXuan.resources

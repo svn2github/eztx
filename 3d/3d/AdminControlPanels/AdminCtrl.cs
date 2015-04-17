@@ -243,9 +243,25 @@ namespace _3d
 
         private void dgvGetInfoT()
         {
-            Thread dgv = new Thread(new ThreadStart(dgvGetInfo));
+            Thread dgv = new Thread(new ThreadStart(SetDGV));
             dgv.IsBackground = true;
             dgv.Start();
+        }
+
+
+        private delegate void DGVDelegate();
+
+        private void SetDGV()
+        {
+            if (this.dataGridView1.IsHandleCreated)
+            {
+                this.dataGridView1.Invoke(new DGVDelegate(_setDGV));
+            }
+        }
+
+        private void _setDGV()
+        {
+            dgvGetInfo();
         }
 
         //第一个选项卡中Datagridview窗体的信息获取  开始

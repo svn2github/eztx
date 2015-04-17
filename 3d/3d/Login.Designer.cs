@@ -332,7 +332,6 @@
             this.textBox1.Size = new System.Drawing.Size(99, 20);
             this.textBox1.TabIndex = 1;
             this.toolTip1.SetToolTip(this.textBox1, "输入您的用户名");
-            this.textBox1.SelectedIndexChanged += new System.EventHandler(this.textBox1_SelectedIndexChanged);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // pictureBox5

@@ -61,6 +61,16 @@ namespace _3d.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 01 02 03 04 05
         ///01 02 03 04 06
         ///01 02 03 04 07
@@ -98,6 +108,297 @@ namespace _3d.Properties {
         internal static string _11xuan5 {
             get {
                 return ResourceManager.GetString("_11xuan5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _3 {
+            get {
+                object obj = ResourceManager.GetObject("_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _4 {
+            get {
+                object obj = ResourceManager.GetObject("_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _5 {
+            get {
+                object obj = ResourceManager.GetObject("_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _6 {
+            get {
+                object obj = ResourceManager.GetObject("_6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap blueback {
+            get {
+                object obj = ResourceManager.GetObject("blueback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ch_back {
+            get {
+                object obj = ResourceManager.GetObject("ch_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ch_back_red {
+            get {
+                object obj = ResourceManager.GetObject("ch_back_red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ch_back2 {
+            get {
+                object obj = ResourceManager.GetObject("ch_back2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap hzback {
+            get {
+                object obj = ResourceManager.GetObject("hzback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 &lt;?xml   version=&quot;1.0&quot;   encoding=&quot;utf-8&quot;?&gt;       
+        ///&lt;liangMaCha createuser=&quot;false&quot;&gt;   
+        ///	&lt;numbers id=&quot;lmcCbx_001&quot;&gt;
+        ///		001,011,112,122,233,223,334,344,455,445,556,566,667,677,778,788,889,899
+        ///	&lt;/numbers&gt; 
+        ///
+        ///	&lt;numbers id=&quot;lmcCbx_022&quot;&gt;
+        ///		002,022,113,133,224,244,335,355,446,466,557,577,668,688,779,799
+        ///	&lt;/numbers&gt;
+        ///	
+        ///	&lt;numbers id=&quot;lmcCbx_112&quot;&gt;
+        ///		012,123,234,345,456,567,678,789
+        ///	&lt;/numbers&gt;
+        ///	
+        ///	&lt;numbers id=&quot;lmcCbx_033&quot;&gt;
+        ///		003,033,114,144,225,255,336,366,447,477,558,588,669,699
+        ///	&lt;/numbers&gt;
+        ///	
+        ///	&lt;numbers id= [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string liangmacha {
+            get {
+                return ResourceManager.GetString("liangmacha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap redback {
+            get {
+                object obj = ResourceManager.GetObject("redback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 img{border:none;}
+        ///body{background-color:#ffffff;color:#000000;text-align:center;font:78%/normal Verdana,Simsun,Arial,Helvetica,sans-serif;margin:0px;}
+        ///table{margin:0px auto;}
+        ///td{font-size:12px;font-family:&quot;宋体&quot;;text-align:center;height:25px;}
+        ///.head{background-color:#fff094;}
+        ///.headblue{background-color:#fff094;color:#0000ff;cursor:pointer;}
+        ///
+        ///.white{background-color:#FEFAEB;}
+        ///.yellow{background-color:#FFFFFF;}
+        ///.purple{background-color:#DBA4C8;}
+        ///.redback{background-color:#ff0000;}
+        ///.blueback{backgroun [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string style {
+            get {
+                return ResourceManager.GetString("style", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;gb2312&quot;?&gt;
+        ///&lt;AutoUpdater&gt;
+        ///  &lt;description&gt;Application autoUpdate&lt;/description&gt;
+        ///  &lt;Updater&gt;
+        ///	&lt;Url&gt;http://eztx.cn/soft/&lt;/Url&gt;&lt;!-- http://localhost:8080/WebTest/ http://mezboy.w168.mc-test.com/soft/ --&gt;
+        ///	&lt;LastUpdateTime&gt;2012-09-01&lt;/LastUpdateTime&gt;
+        ///  &lt;/Updater&gt;
+        ///  &lt;Application applicationId=&quot;ItemSoft&quot;&gt;
+        ///    &lt;EntryPoint&gt;3d.exe&lt;/EntryPoint&gt;
+        ///    &lt;Location&gt;.&lt;/Location&gt;
+        ///	&lt;Version&gt;1.0.0.0&lt;/Version&gt;
+        ///  &lt;/Application&gt;
+        ///  &lt;Files&gt;
+        ///	   &lt;File Ver=&quot;3.9&quot; Name=&quot;3d.exe.png&quot; /&gt;
+        ///  &lt;/Files&gt;
+        ///&lt; [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string UpdateList {
+            get {
+                return ResourceManager.GetString("UpdateList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;UserProfile /&gt; 的本地化字符串。
+        /// </summary>
+        internal static string UserProfile {
+            get {
+                return ResourceManager.GetString("UserProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 乾 {
+            get {
+                object obj = ResourceManager.GetObject("乾", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 兑 {
+            get {
+                object obj = ResourceManager.GetObject("兑", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 坎 {
+            get {
+                object obj = ResourceManager.GetObject("坎", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 坤 {
+            get {
+                object obj = ResourceManager.GetObject("坤", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 巽 {
+            get {
+                object obj = ResourceManager.GetObject("巽", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 离 {
+            get {
+                object obj = ResourceManager.GetObject("离", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 艮 {
+            get {
+                object obj = ResourceManager.GetObject("艮", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 阳 {
+            get {
+                object obj = ResourceManager.GetObject("阳", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 阴 {
+            get {
+                object obj = ResourceManager.GetObject("阴", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 震 {
+            get {
+                object obj = ResourceManager.GetObject("震", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

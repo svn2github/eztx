@@ -24,7 +24,7 @@ namespace _3d.Function
         {
             string serverXmlFile = serverAddress;
 
-            WebConnect wc = new WebConnect();
+            Tools wc = new Tools();
             string pageXML = wc.getOnlineXML(serverXmlFile);
 
             //读取数据库信息
@@ -50,6 +50,9 @@ namespace _3d.Function
             //读取当前软件版本
             string localXmlFile = Application.StartupPath + "\\UpdateList.xml";
             xml = new XmlDocument();
+            if (!File.Exists(localXmlFile)) {
+                Tools.writeFile(localXmlFile, _3d.Properties.Resources.UpdateList);
+            }
             xml.Load(localXmlFile);
             XmlNode xn = xml.SelectSingleNode("//Files/File");
             Global.version = xn.Attributes["Ver"].InnerText;
