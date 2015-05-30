@@ -16,7 +16,8 @@ namespace _3d
         /// </summary>
         /// <param name="_answer"></param>
         /// <returns></returns>
-        public static string sort3D(string _answer) {
+        public static string sort3D(string _answer)
+        {
             int a = Int32.Parse(_answer.Substring(0, 1));
             int b = Int32.Parse(_answer.Substring(1, 1));
             int c = Int32.Parse(_answer.Substring(2, 1));
@@ -183,8 +184,13 @@ namespace _3d
         {
             WebClient MyWebClient = new WebClient();
             MyWebClient.Credentials = CredentialCache.DefaultCredentials;//获取或设置用于向Internet资源的请求进行身份验证的网络凭据
-            Byte[] pageData = MyWebClient.DownloadData(url); //从指定网站下载数据
-            string pageHtml = Encoding.Default.GetString(pageData);
+            string pageHtml = null;
+            try
+            {
+                Byte[] pageData = MyWebClient.DownloadData(url); //从指定网站下载数据
+                pageHtml = Encoding.Default.GetString(pageData);
+            }
+            catch { MessageBox.Show("连接服务器失败，请检查网络"); Environment.Exit(0); }
             return pageHtml;
         }
     }

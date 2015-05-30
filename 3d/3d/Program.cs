@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using _3d.Function;
 using _3d.Others;
+using System.Threading;
 
 namespace _3d
 {
@@ -19,10 +20,7 @@ namespace _3d
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
 
-            // 读取数据库配置 start
-            LinkMySql lms = new LinkMySql();
-            lms.getSQLcfg("" + Global.soft_server_url + "\\MySQLConfig.xml");
-            // 读取数据库配置 end
+            loadMySQLCfg();
 
             Global.user_name = "";
             Login l = new Login();
@@ -43,29 +41,25 @@ namespace _3d
             }
         }
 
+        // 读取数据库配置
+        static void loadMySQLCfg()
+        {
+            LinkMySql.getSQLcfg(Global.soft_server_url + "\\MySQLConfig.xml");
+        }
+
         //关闭程序时写注册表离线
         static void quitWriteSql()
         {
             if (Global.isNormalStatus == false)
                 return;
 
-            LinkMySql lms = new LinkMySql();
-            try
+            int res = LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set `online`='0' where user_name='" + Global.user_name + "'");
+            if (res == 0)
             {
-                lms.conn("update "+Global.sqlUserTable+" set `online`='0' where user_name='" + Global.user_name + "'");
+                MessageBox.Show("程序关闭时遇到问题，如果无法再次登录软件，请联系售后", "温馨提示", MessageBoxButtons.OKCancel);
             }
-            catch
-            {
-                DialogResult drr = MessageBox.Show("程序关闭时遇到问题，如果无法再次登录软件，请联系售后", "温馨提示", MessageBoxButtons.OKCancel);
-                if (drr == DialogResult.OK)
-                {
-                    Global.user_name = "";
-                    Environment.Exit(0);
-                }
-                if (drr == DialogResult.Cancel)
-                {
-                    return;
-                }
+            else {
+                Environment.Exit(0);
             }
 
             //try

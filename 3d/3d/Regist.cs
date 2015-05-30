@@ -13,7 +13,7 @@ namespace _3d
 {
     public partial class Regist : Form
     {
-        LinkMySql lms = new LinkMySql();
+        
 
         public Regist()
         {
@@ -290,11 +290,11 @@ namespace _3d
 
             try
             {
-                DataTable dtMCode = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
+                DataTable dtMCode = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "'");
 
                 if (dtMCode.Rows.Count == 0)
                 {
-                    lms.conn("insert into "+Global.sqlUserTable+"(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + machinecode + "','" + registtime + "','" + getIP.GetWebCity() + "')");
+                    LinkMySql.MySqlExcute("insert into "+Global.sqlUserTable+"(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + machinecode + "','" + registtime + "','" + getIP.GetWebCity() + "')");
                     MessageBox.Show("申请成功，请联系管理等待开通。", "恭喜");
                     this.Close();
                 }

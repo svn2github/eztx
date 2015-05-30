@@ -54,17 +54,15 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.ComboBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.savePass = new _3d.CusCheckBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.用户名登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePass = new _3d.CusCheckBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -334,31 +332,6 @@
             this.toolTip1.SetToolTip(this.textBox1, "输入您的用户名");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(479, 235);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox5_MouseDoubleClick);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.用户名登录ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(112, 26);
-            // 
-            // 用户名登录ToolStripMenuItem
-            // 
-            this.用户名登录ToolStripMenuItem.Name = "用户名登录ToolStripMenuItem";
-            this.用户名登录ToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.用户名登录ToolStripMenuItem.Text = "用户名登录";
-            this.用户名登录ToolStripMenuItem.Click += new System.EventHandler(this.用户名登录ToolStripMenuItem_Click);
-            // 
             // savePass
             // 
             this.savePass.AutoSize = true;
@@ -374,6 +347,20 @@
             this.toolTip1.SetToolTip(this.savePass, "免去您每次输入用户名密码带来的不便");
             this.savePass.UseVisualStyleBackColor = false;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.用户名登录ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.ShowImageMargin = false;
+            this.contextMenuStrip1.Size = new System.Drawing.Size(112, 26);
+            // 
+            // 用户名登录ToolStripMenuItem
+            // 
+            this.用户名登录ToolStripMenuItem.Name = "用户名登录ToolStripMenuItem";
+            this.用户名登录ToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.用户名登录ToolStripMenuItem.Text = "用户名登录";
+            // 
             // Login
             // 
             this.AcceptButton = this.button1;
@@ -383,7 +370,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(500, 350);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -418,7 +404,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -449,7 +434,6 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 用户名登录ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 常见问题解答ToolStripMenuItem;

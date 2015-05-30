@@ -25,7 +25,7 @@ namespace _3d.Others
 
         private void loadPage()
         {
-            string url = "http://eztx.cn/soft/answer.html?t=" + DateTime.Now.Ticks;//用随机数防止IE缓存
+            string url = Global.soft_server_url+"/answer.html?t=" + DateTime.Now.Ticks;//用随机数防止IE缓存
             this.webBrowser1.Navigate(new System.Uri(url, System.UriKind.Absolute));
         }
     }

@@ -13,7 +13,6 @@ namespace _3d
     public partial class ModifyInfoByAdmin : Form
     {
         Login login = new Login();
-        LinkMySql lms = new LinkMySql();
         private string un = "";
         public ModifyInfoByAdmin(string user_name)
         {
@@ -24,7 +23,7 @@ namespace _3d
 
         private void ModifyInfoByAdmin_Load(object sender, EventArgs e)
         {
-            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + un + "'");
+            DataTable dt1 = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where user_name='" + un + "'");
             DataRow dr1 = dt1.Rows[0];
             string user_realname = dr1["user_realname"].ToString();
             if (user_realname == null || user_realname.Equals(""))
@@ -142,7 +141,7 @@ namespace _3d
             {
                 if (!user_pass.Equals(""))
                 {
-                    lms.conn("update "+Global.sqlUserTable+" set user_name='" + user_name + "',user_pass='" + user_pass + "',user_realname='" + user_realname + "',user_province='" + user_province + "',allowlogin='" + allowlogin + "',user_id='" + user_id + "',user_phone='" + user_phone + "',user_qq='" + user_qq + "' where user_name='" + un + "'");
+                    LinkMySql.MySqlExcute("update "+Global.sqlUserTable+" set user_name='" + user_name + "',user_pass='" + user_pass + "',user_realname='" + user_realname + "',user_province='" + user_province + "',allowlogin='" + allowlogin + "',user_id='" + user_id + "',user_phone='" + user_phone + "',user_qq='" + user_qq + "' where user_name='" + un + "'");
                     MessageBox.Show("修改成功", "恭喜");
                     this.DialogResult = DialogResult.OK;
                     this.Close();
@@ -150,7 +149,7 @@ namespace _3d
 
                 if (user_pass.Equals(""))
                 {
-                    lms.conn("update "+Global.sqlUserTable+" set user_name='" + user_name + "',user_realname='" + user_realname + "',user_province='" + user_province + "',allowlogin='" + allowlogin + "',user_id='" + user_id + "',user_phone='" + user_phone + "',user_qq='" + user_qq + "' where user_name='" + un + "'");
+                    LinkMySql.MySqlExcute("update "+Global.sqlUserTable+" set user_name='" + user_name + "',user_realname='" + user_realname + "',user_province='" + user_province + "',allowlogin='" + allowlogin + "',user_id='" + user_id + "',user_phone='" + user_phone + "',user_qq='" + user_qq + "' where user_name='" + un + "'");
                     MessageBox.Show("修改成功", "恭喜");
                     this.DialogResult = DialogResult.OK;
                     this.Close();

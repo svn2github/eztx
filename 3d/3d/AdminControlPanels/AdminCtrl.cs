@@ -14,7 +14,7 @@ namespace _3d
 {
     public partial class AdminCtrl : Form
     {
-        LinkMySql lms = new LinkMySql();
+
 
         public AdminCtrl()
         {
@@ -34,7 +34,7 @@ namespace _3d
         private void bindQuYuCbx()
         {
             qyCbx.DataSource = null;
-            DataTable tb = lms.conn("select user_name,user_realname from " + Global.sqlUserTable + " where user_vali='5' and isdel='1'");
+            DataTable tb = LinkMySql.MySqlQuery("select user_name,user_realname from " + Global.sqlUserTable + " where user_vali='5' and isdel='1'");
             qyCbx.DataSource = tb;
             qyCbx.DisplayMember = "user_realname";
             qyCbx.ValueMember = "user_name";
@@ -109,7 +109,7 @@ namespace _3d
             {
                 onlineCbx.Visible = true;
                 onlineCbx.DataSource = null;
-                DataTable tb = lms.conn("select user_province from " + Global.sqlUserTable + " group by user_province");
+                DataTable tb = LinkMySql.MySqlQuery("select user_province from " + Global.sqlUserTable + " group by user_province");
                 onlineCbx.DataSource = tb;
                 onlineCbx.DisplayMember = "user_province";
             }
@@ -125,7 +125,7 @@ namespace _3d
             {
                 onlineCbx.Visible = true;
                 onlineCbx.DataSource = null;
-                DataTable tb = lms.conn("select user_name from " + Global.sqlUserTable + " where user_vali='5' and isdel='1'");
+                DataTable tb = LinkMySql.MySqlQuery("select user_name from " + Global.sqlUserTable + " where user_vali='5' and isdel='1'");
                 onlineCbx.DataSource = tb;
                 onlineCbx.DisplayMember = "user_name";
             }
@@ -312,12 +312,12 @@ namespace _3d
             "registplace as '注册地点',registtime as '注册时间',case online when '1' then '用户在线' when '2' then '机器在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_realname as '区域领导'," +
             "soft_version as '软件版本' ";
 
-            DataTable tb = lms.conn("select " + displaySqlSelect + " from " + Global.sqlUserTable + " " + where + "");
+            DataTable tb = LinkMySql.MySqlQuery("select " + displaySqlSelect + " from " + Global.sqlUserTable + " " + where + "");
 
             dataGridView1.DataSource = tb;
             dataGridView1.DataMember = tb.TableName;
 
-            DataTable cu = lms.conn("select count(user_id) as 总计 from " + Global.sqlUserTable + " " + where + "");
+            DataTable cu = LinkMySql.MySqlQuery("select count(user_id) as 总计 from " + Global.sqlUserTable + " " + where + "");
             DataRow dr = cu.Rows[0];
             this.sumUserLabel.Text = "共有 " + dr[0].ToString() + " 位用户";
         }
@@ -351,15 +351,13 @@ namespace _3d
                 radioValue = "1";
             if (this.radioButton3.Checked)
                 radioValue = "0";
-            try
-            {
-                lms.conn("update " + Global.sqlUserTable + " set allowlogin='" + radioValue + "' where user_name='" + user_name + "'");
-                MessageBox.Show("修改用户权限成功！", "恭喜");
-            }
-            catch
+            int res = LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set allowlogin='" + radioValue + "' where user_name='" + user_name + "'");
+            if (res == 0)
             {
                 MessageBox.Show("修改用户权限失败，请稍后再试！", "友情提示");
+                return;
             }
+            MessageBox.Show("修改用户权限成功！", "恭喜");
             dgvGetInfo();
             CellClickRefresh();
         }
@@ -369,16 +367,10 @@ namespace _3d
         {
             string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
             string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            try
-            {
-                lms.conn("update " + Global.sqlUserTable + " set online='0' where user_name='" + user_name + "'");
-                MessageBox.Show("手动设置用户: " + user_realname + " 下线成功！", "恭喜");
-            }
-            catch
-            {
-                MessageBox.Show("手动设置用户下线失败，请稍后再试！", "友情提示");
-            }
-
+            int res = LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set online='0' where user_name='" + user_name + "'");
+            if (res == 0)
+            { MessageBox.Show("手动设置用户下线失败，请稍后再试！", "友情提示"); return; }
+            MessageBox.Show("手动设置用户: " + user_realname + " 下线成功！", "恭喜");
             dgvGetInfo();
             CellClickRefresh();
         }
@@ -390,22 +382,20 @@ namespace _3d
         {
             string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
             string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            try
+            DialogResult dr = MessageBox.Show(msgAsk, "提示", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
             {
-                DialogResult dr = MessageBox.Show(msgAsk, "提示", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes)
+                int res = LinkMySql.MySqlExcute(sql);
+                if (res == 1)
                 {
-                    lms.conn(sql);
-                    if(user_vali!=5)
-                        lms.conn("update " + Global.sqlUserTable + " set `parent_name`='',parent_realname='' where `parent_name`='" + user_name + "'");
-                    MessageBox.Show(msgSuccess, "设置成功");
-                    dgvGetInfo();
-                    CellClickRefresh();
+                    if (user_vali != 5)
+                    {
+                        LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set `parent_name`='',parent_realname='' where `parent_name`='" + user_name + "'");
+                        MessageBox.Show(msgSuccess, "设置成功");
+                        dgvGetInfo();
+                        CellClickRefresh();
+                    }
                 }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("设置失败，请稍后再试！\r\n 错误信息：" + e.Message, "友情提示");
             }
         }
 
@@ -512,15 +502,15 @@ namespace _3d
             string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
             string parent_name = qyCbx.SelectedValue.ToString();//用户名
             string parent_realname = qyCbx.Text;//姓名
-            try
-            {
-                lms.conn("update " + Global.sqlUserTable + " set `parent_name`='" + parent_name + "',parent_realname='" + parent_realname + "' where user_name='" + user_name + "'");
-                MessageBox.Show("设置成功，成功将用户 " + user_realname + " 添加至 " + parent_realname + " 旗下！", "恭喜");
-            }
-            catch
+            int res = LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set `parent_name`='" + parent_name + "',parent_realname='" + parent_realname + "' where user_name='" + user_name + "'");
+            if (res == 0)
             {
                 MessageBox.Show("设置失败，请稍后再试！", "友情提示");
+                return;
             }
+
+            MessageBox.Show("设置成功，成功将用户 " + user_realname + " 添加至 " + parent_realname + " 旗下！", "恭喜");
+
             dgvGetInfo();
             CellClickRefresh();
         }
@@ -534,15 +524,13 @@ namespace _3d
         {
             string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
             string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            try
-            {
-                lms.conn("update " + Global.sqlUserTable + " set `parent_name`='',`parent_realname`='' where user_name='" + user_name + "'");
-                MessageBox.Show("设置成功，成功将用户 " + user_realname + " 取消归属！", "恭喜");
-            }
-            catch
+            int res = LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set `parent_name`='',`parent_realname`='' where user_name='" + user_name + "'");
+            if (res == 0)
             {
                 MessageBox.Show("设置失败，请稍后再试！", "友情提示");
+                return;
             }
+            MessageBox.Show("设置成功，成功将用户 " + user_realname + " 取消归属！", "恭喜");
             dgvGetInfo();
             CellClickRefresh();
         }
@@ -554,16 +542,16 @@ namespace _3d
             DialogResult dr = MessageBox.Show("确定要删除用户:" + user_name, "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             if (dr == DialogResult.OK)
             {
-                try
+                int res = LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set isdel='-1' where user_name='" + user_name + "'");
+                if (res == 0)
                 {
-                    lms.conn("update " + Global.sqlUserTable + " set isdel='-1' where user_name='" + user_name + "'");
-
-                    MessageBox.Show("删除成功！", "提示");
-
-                    dgvGetInfo();
-                    CellClickRefresh();
+                    MessageBox.Show("删除失败，请稍后重试！", "提示");
+                    return;
                 }
-                catch { MessageBox.Show("删除失败，请稍后重试！", "提示"); }
+                MessageBox.Show("删除成功！", "提示");
+
+                dgvGetInfo();
+                CellClickRefresh();
             }
         }
 
@@ -588,18 +576,17 @@ namespace _3d
         {
             string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
             string contentValue = this.setCtntTbx.Text;
-            try
-            {
-                lms.conn("update " + Global.sqlUserTable + " set `content`='" + contentValue + "' where user_name='" + user_name + "'");
-                MessageBox.Show("设置用户备注成功！", "恭喜");
-            }
-            catch
+
+            int res = LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set `content`='" + contentValue + "' where user_name='" + user_name + "'");
+            if (res == 0)
             {
                 MessageBox.Show("设置用户备注失败，请稍后再试！", "友情提示");
+                return;
             }
-
+            MessageBox.Show("设置用户备注成功！", "恭喜");
             dgvGetInfo();
             CellClickRefresh();
+
         }
         #endregion
 
@@ -674,19 +661,17 @@ namespace _3d
 
             try
             {
-                DataTable dtMCode = lms.conn("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "'");
+                DataTable dtMCode = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "'");
                 if (dtMCode.Rows.Count == 0)
                 {
-                    try
-                    {
-                        lms.conn("insert into " + Global.sqlUserTable + "(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,allowlogin,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + allowlogin + "','" + machinecode + "','" + registtime + "','" + registplace + "')");
-                        MessageBox.Show("添加成功", "温馨提示");
-                        clrTbx();
-                    }
-                    catch
+                    int res = LinkMySql.MySqlExcute("insert into " + Global.sqlUserTable + "(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,allowlogin,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + allowlogin + "','" + machinecode + "','" + registtime + "','" + registplace + "')");
+                    if (res == 0)
                     {
                         MessageBox.Show("添加失败，请检查输入然后重试此操作。", "提示");
+                        return;
                     }
+                    MessageBox.Show("添加成功", "温馨提示");
+                    clrTbx();
                 }
                 else
                     MessageBox.Show("用户名已存在，请换一个用户名再试", "温馨提示");
@@ -831,7 +816,7 @@ namespace _3d
 
         private void getGg()
         {
-            DataTable dt = lms.conn("select * from msg");
+            DataTable dt = LinkMySql.MySqlQuery("select * from msg");
             if (dt != null && dt.Rows.Count > 0)
             {
                 DataRow dr = dt.Rows[0];
@@ -878,15 +863,13 @@ namespace _3d
         {
             string msg_login = this.textBox8.Text;
             string msg_main = this.textBox11.Text;
-            try
-            {
-                lms.conn("update msg set msg_login='" + msg_login + "',msg_main='" + msg_main + "'");
-                MessageBox.Show("修改成功", "温馨提示");
-            }
-            catch
+            int res = LinkMySql.MySqlExcute("update msg set msg_login='" + msg_login + "',msg_main='" + msg_main + "'");
+            if (res == 0)
             {
                 MessageBox.Show("修改失败，请稍后再试！", "温馨提示");
+                return;
             }
+            MessageBox.Show("修改成功", "温馨提示");
         }
 
         //第三个选项卡中“修改并提交”公告按钮点击

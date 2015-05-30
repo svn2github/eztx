@@ -20,7 +20,7 @@ namespace _3d.Function
         /// <summary>
         /// 数据库配置
         /// </summary>
-        public void getSQLcfg(string serverAddress)
+        public static void getSQLcfg(string serverAddress)
         {
             string serverXmlFile = serverAddress;
 
@@ -67,13 +67,15 @@ namespace _3d.Function
         /// </summary>
         /// <param name="sql">String SQL</param>
         /// <returns>DataTable</returns>
-        public DataTable conn(string sql)
+        public DataTable conns(string sql)
         {
             DataTable t = new DataTable();
             MySqlConnection conn = null;
             MySqlCommand command = null;
             //conn = new MySqlConnection("Server=svn.breadth.cn;User Id=root;Password=breadth2009;Persist Security Info=True;Database=mez;Port=3307;CharSet=utf8");
+            //双线
             //conn = new MySqlConnection("Server=mysql.sql73.cdncenter.net;User Id=sq_mezboy;Password=mez199023;Persist Security Info=True;Database=sq_mezboy;Port=3306;CharSet=utf8");
+            //电信
             //conn = new MySqlConnection("Server=mysql.sql47.cdncenter.net;User Id=sq_maenze;Password=mez199023;Persist Security Info=True;Database=sq_maenze;Port=3306;CharSet=utf8");
             conn = new MySqlConnection(
                 "Server=" + Global.sqlAddress 
@@ -102,6 +104,87 @@ namespace _3d.Function
             }
             return t;
         }
+
         #endregion
+
+        /// <summary>
+        /// 建立数据库连接路径
+        /// </summary>
+        /// <returns></returns>
+        private static string connStr() {
+            StringBuilder conn = new StringBuilder();
+            //conn = new MySqlConnection("Server=svn.breadth.cn;User Id=root;Password=breadth2009;Persist Security Info=True;Database=mez;Port=3307;CharSet=utf8");
+            //双线
+            //conn = new MySqlConnection("Server=mysql.sql73.cdncenter.net;User Id=sq_mezboy;Password=mez199023;Persist Security Info=True;Database=sq_mezboy;Port=3306;CharSet=utf8");
+            //电信
+            //conn = new MySqlConnection("Server=mysql.sql47.cdncenter.net;User Id=sq_maenze;Password=mez199023;Persist Security Info=True;Database=sq_maenze;Port=3306;CharSet=utf8");
+            //万网免费两年
+            //conn = new MySqlConnection("Server=qdm137219194.my3w.com;User Id=qdm137219194;Password=mez199023;Persist Security Info=True;Database=qdm137219194_db;Port=3306;CharSet=utf8");
+            
+            conn.Append("Server=" + Global.sqlAddress);
+            conn.Append(";User Id=" + Global.sqlUsername);
+            conn.Append(";Password=" + Global.sqlPwd);
+            conn.Append(";Persist Security Info=True;Database=" + Global.sqlDB);
+            conn.Append(";Port=" + Global.sqlPort);
+            conn.Append(";CharSet=" + Global.sqlCharset);
+            return conn.ToString();
+        }
+
+        /// <summary>
+        /// 增删改方法调用
+        /// </summary>
+        /// <param name="SQLString"></param>
+        /// <returns>成功返回1，失败返回0</returns>
+        public static int MySqlExcute(string SQLString)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connStr()))
+            {
+                using (MySqlCommand cmd = new MySqlCommand(SQLString, connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        //object obj = cmd.ExecuteScalar();
+                        return cmd.ExecuteNonQuery();
+                    }
+                    catch (MySql.Data.MySqlClient.MySqlException e)
+                    {
+                        connection.Close();
+                        throw e;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 查询的方法调用
+        /// </summary>
+        /// <param name="SQLString"></param>
+        /// <returns></returns>
+        public static DataTable MySqlQuery(string SQLString)
+        {
+            MySqlConnection conn = new MySqlConnection(connStr());
+            MySqlCommand comm = new MySqlCommand();
+            comm.Connection = conn;
+            conn.Open();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            try
+            {
+                comm.CommandType = CommandType.Text;
+                comm.CommandText = SQLString;
+                da.SelectCommand = comm;
+                da.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
     }
 }

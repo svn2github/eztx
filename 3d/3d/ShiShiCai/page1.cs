@@ -234,13 +234,18 @@ namespace _3d
         }
 
         Thread tPassLB = null;
+        bool startTPassLB = true;
         Thread tInfoLB = null;
+        bool startTInfoLB = true;
         Thread tAdminInfoLB = null;
+        bool startTAdminInfoLB = true;
 
         //“密码修改”链接标签
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            startTPassLB = true;
             tPassLB = new Thread(new ThreadStart(ModifyPasswordPanel));
+            tPassLB.Name = "密码修改";
             tPassLB.IsBackground = true;
             tPassLB.SetApartmentState(System.Threading.ApartmentState.STA);
             tPassLB.Start();
@@ -248,15 +253,21 @@ namespace _3d
 
         private void ModifyPasswordPanel()
         {
-            ModifyPass mp = new ModifyPass();
-            mp.ShowDialog();
-            tPassLB.Abort();
+            while (startTPassLB)
+            {
+                ModifyPass mp = new ModifyPass();
+                mp.ShowDialog();
+                tPassLB.Abort();
+                startTPassLB = false;
+            }
         }
 
         //“信息修改”链接标签
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            startTInfoLB = true;
             tInfoLB = new Thread(new ThreadStart(ModifyInfoPanel));
+            tInfoLB.Name = "信息修改";
             tInfoLB.IsBackground = true;
             tInfoLB.SetApartmentState(System.Threading.ApartmentState.STA);
             tInfoLB.Start();
@@ -264,15 +275,21 @@ namespace _3d
 
         private void ModifyInfoPanel()
         {
-            ModifyInfo mi = new ModifyInfo();
-            mi.ShowDialog();
-            tInfoLB.Abort();
+            while (startTInfoLB)
+            {
+                ModifyInfo mi = new ModifyInfo();
+                mi.ShowDialog();
+                tInfoLB.Abort();
+                startTInfoLB = false;
+            }
         }
 
         //“用户信息”链接标签
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            startTAdminInfoLB = true;
             tAdminInfoLB = new Thread(new ThreadStart(adminPanel));
+            tAdminInfoLB.Name = "管理员面板";
             tAdminInfoLB.SetApartmentState(ApartmentState.STA);
             tAdminInfoLB.IsBackground = true;
             tAdminInfoLB.SetApartmentState(System.Threading.ApartmentState.STA);
@@ -285,39 +302,42 @@ namespace _3d
         private AdminCtrlArea aarea = null;//区域代理面板
         private void adminPanel()
         {
-            if (Global.user_vali.Equals("1"))
+            while (startTAdminInfoLB)
             {
-                if (ac == null || ac.IsDisposed)
+                if (Global.user_vali.Equals("1"))
                 {
-                    ac = new AdminCtrl();
-                    ac.ShowDialog();
+                    if (ac == null || ac.IsDisposed)
+                    {
+                        ac = new AdminCtrl();
+                        ac.ShowDialog();
+                    }
                 }
-            }
-            if (Global.user_vali.Equals("3"))
-            {
-                if (acer == null || acer.IsDisposed)
+                if (Global.user_vali.Equals("3"))
                 {
-                    acer = new AdminCtrlProvince();
-                    acer.ShowDialog();
+                    if (acer == null || acer.IsDisposed)
+                    {
+                        acer = new AdminCtrlProvince();
+                        acer.ShowDialog();
+                    }
                 }
-            }
-            if (Global.user_vali.Equals("4"))
-            {
-                if (acera == null || acera.IsDisposed)
+                if (Global.user_vali.Equals("4"))
                 {
-                    acera = new AdminCtrlCity();
-                    acera.ShowDialog();
+                    if (acera == null || acera.IsDisposed)
+                    {
+                        acera = new AdminCtrlCity();
+                        acera.ShowDialog();
+                    }
                 }
-            }
-            if (Global.user_vali.Equals("5"))
-            {
-                if (aarea == null || aarea.IsDisposed)
+                if (Global.user_vali.Equals("5"))
                 {
-                    aarea = new AdminCtrlArea();
-                    aarea.ShowDialog();
+                    if (aarea == null || aarea.IsDisposed)
+                    {
+                        aarea = new AdminCtrlArea();
+                        aarea.ShowDialog();
+                    }
                 }
+                startTAdminInfoLB = false;
             }
-            tAdminInfoLB.Abort();
         }
 
         #endregion

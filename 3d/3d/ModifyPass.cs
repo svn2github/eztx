@@ -13,9 +13,7 @@ namespace _3d
     public partial class ModifyPass : Form
     {
         Login login = new Login();
-
-        LinkMySql lms = new LinkMySql();
-
+        
         public ModifyPass()
         {
             InitializeComponent();
@@ -42,7 +40,7 @@ namespace _3d
         private Boolean userPassVali()
         {
             bool tf = false;
-            DataTable dt1 = lms.conn("select * from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
+            DataTable dt1 = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
             DataRow dr1=dt1.Rows[0];
             string oldPass=textBox2.Text;
             string newPass = textBox3.Text;
@@ -54,7 +52,7 @@ namespace _3d
                 label5.Text = "";
                 if (label5.Text.Equals("") && label6.Text.Equals("") && label7.Text.Equals(""))
                 {
-                    lms.conn("update "+Global.sqlUserTable+" set user_pass='" + newPass + "' where user_name='" + Global.user_name + "'");
+                    LinkMySql.MySqlExcute("update "+Global.sqlUserTable+" set user_pass='" + newPass + "' where user_name='" + Global.user_name + "'");
                     tf = true;
                 }
             }

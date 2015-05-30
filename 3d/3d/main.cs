@@ -16,6 +16,7 @@ namespace _3d
         Timer tLabelMove = null;
         Timer marqueeLabelMove = null;
         Timer setUsersOffline = new Timer();
+        Timer refreshMyOnlineTime = new Timer();
 
         private Form1 f1 = new Form1();
         private Form3 f3 = new Form3();
@@ -25,7 +26,7 @@ namespace _3d
         private one11xuan5 o11 = new one11xuan5();
 
         private OutputForm f2 = null;
-        LinkMySql lms = new LinkMySql();
+        
 
         Login l = new Login();
 
@@ -279,7 +280,7 @@ namespace _3d
             t.Enabled = true;//是否执行System.Timers.Timer.Elapsed事件；
 
             //启用内存回收
-            timer3.Interval = 5000;
+            timer3.Interval = 60000;
             timer3.Enabled = true;
 
             //将tabpage隐藏
@@ -291,9 +292,14 @@ namespace _3d
             this.offlineUserTimer.Enabled = true;
 
             //***刷新全员列表，谁离线过久就下线 10分钟一次
-            setUsersOffline.Tick += new EventHandler(setUsersOffline_Tick);
-            this.setUsersOffline.Interval = 10 * 60000;
-            this.setUsersOffline.Enabled = true;
+            //setUsersOffline.Tick += new EventHandler(setUsersOffline_Tick);
+            //this.setUsersOffline.Interval = 10 * 60000;
+            //this.setUsersOffline.Enabled = true;
+
+            //刷新在线时间
+            refreshMyOnlineTime.Tick += new EventHandler(refreshMyOnlineTime_Tick);
+            refreshMyOnlineTime.Interval = 6 * 60000;
+            refreshMyOnlineTime.Enabled = true;
 
             EnableDoubleBuffering();//启用双缓冲
             this.label8.Text = Global.main_msg;//获取时时彩界面跑马灯文字信息
@@ -311,6 +317,10 @@ namespace _3d
             changeButtonToolTip.SetToolTip(this.changeButton2, changeButton2Text);  //绑定tooltip到控件
             changeButtonToolTip.SetToolTip(this.changeButton3, changeButton3Text);  //绑定tooltip到控件
             changeButtonToolTip.SetToolTip(this.changeButton4, changeButton4Text);  //绑定tooltip到控件
+
+            //走势图页面WebBrowser
+            string url = Global.soft_server_url + "/ZstNavigate.html?t=" + DateTime.Now.Ticks;//用随机数防止IE缓存
+            this.zstWebBrowser.Navigate(new System.Uri(url, System.UriKind.Absolute));
         }
 
         private void changeButton1_MouseMove(object sender, MouseEventArgs e)
@@ -371,18 +381,6 @@ namespace _3d
             this.UpdateStyles();
         }
         #endregion
-
-        private void groupBox1_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(groupBox1.BackColor);
-            //颜色可以使用new SolidBrush(Color.FromArgb(51, 94, 168))来达到自定义，也可以直接Brushes.DarkBlue，字体可以使用new Font()来定义
-            e.Graphics.DrawString(groupBox1.Text, groupBox1.Font, new SolidBrush(Color.DarkBlue), 10, -3);//设置文字(内容，字体，颜色，X坐标，Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 8, 7);//设置文字左边的线条(起点X坐标，起点Y坐标，终点X坐标，终点Y坐标)
-            e.Graphics.DrawLine(Pens.DarkGray, e.Graphics.MeasureString(groupBox1.Text, groupBox1.Font).Width + 8, 7, groupBox1.Width - 2, 7);//设置文字后面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, 7, 1, groupBox1.Height - 2);//左边那条线
-            e.Graphics.DrawLine(Pens.DarkGray, 1, groupBox1.Height - 2, groupBox1.Width - 2, groupBox1.Height - 2);//下面那条线
-            e.Graphics.DrawLine(Pens.DarkGray, groupBox1.Width - 2, 7, groupBox1.Width - 2, groupBox1.Height - 2);//右边那条竖线
-        }
 
         #region Tab2页面的LinkLabel点击
 
@@ -458,55 +456,50 @@ namespace _3d
         //启动下线机制
         private void offlineUserTimer_Tick(object sender, EventArgs e)
         {
-            try
+            DataTable tb = LinkMySql.MySqlQuery("select allowlogin,`online`,isdel from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
+            if (tb != null && tb.Rows.Count > 0)
             {
-                //刷新自己在线的时间状态
-                refreshMyOnlineTime_Tick();
-                DataTable tb = lms.conn("select allowlogin,`online`,isdel from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
-                if (tb != null && tb.Rows.Count > 0)
+                DataRow dr = tb.Rows[0];
+                string allowlogin = dr["allowlogin"].ToString();
+                string online = dr["online"].ToString();
+                string isdel = dr["isdel"].ToString();
+
+                if (allowlogin.Equals("0"))
                 {
-                    DataRow dr = tb.Rows[0];
-                    string allowlogin = dr["allowlogin"].ToString();
-                    string online = dr["online"].ToString();
-                    string isdel = dr["isdel"].ToString();
-
-                    //如果是用户名密码登录但是发现数据库有机器码登录史，则下线
-                    /*if ((online.Equals("2") && Global.loginType.Equals("1")))
-                    {
-                        MessageBox.Show("已使用机器码登录，软件即将关闭。");
-                        this.DialogResult = DialogResult.Cancel;
-                        return;
-                    }*/
-
-                    if (allowlogin.Equals("0")
-                        ||
-                        isdel.Equals("-1")
-                        ||
-                        online.Equals("0")
-                        ||
-                        (online.Equals("2") && Global.loginType.Equals("1")))//机器码登录下线机制
-                    {
-                        Global.isNormalStatus = false;// 设置为非正常关闭
-                        this.offlineUserTimer.Enabled = false;
-                        MessageBox.Show("账号与服务器失去连接或者异地登录，软件即将关闭\r\n请重新登录或者检查账号安全");
-                        this.Dispose();
-                        this.Close();
-                    }
+                    MessageBox.Show("账号已被禁止登录，软件即将关闭\r\n请重新登录或者检查账号安全");
                 }
-            }
-            catch (Exception err)
-            {
-                //throw err;
-            }
-            finally
-            {
+                else if (isdel.Equals("-1"))
+                {
+                    MessageBox.Show("账号已被删除，软件即将关闭\r\n请重新登录或者检查账号安全");
+                }
+                else if (online.Equals("0"))
+                {
+                    MessageBox.Show("账号已被下线，软件即将关闭\r\n请重新登录或者检查账号安全");
+                }
+                else if (online.Equals("2") && Global.loginType.Equals("1"))//机器码登录下线机制
+                {
+                    MessageBox.Show("账号已从机器码登录，软件即将关闭\r\n请重新登录或者检查账号安全");
+                }
+                else
+                {
+                    return;
+                }
 
+                Global.isNormalStatus = false;// 设置为非正常关闭
+                this.offlineUserTimer.Enabled = false;
+                this.Dispose();
+                this.Close();
             }
         }
 
-        private void refreshMyOnlineTime_Tick()
+        /// <summary>
+        /// 刷新自己的在线时间
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void refreshMyOnlineTime_Tick(object sender, EventArgs e)
         {
-            lms.conn("update " + Global.sqlUserTable + " set onlinetime=now() where user_name='" + Global.user_name + "' ");
+            LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set onlinetime=now() where user_name='" + Global.user_name + "' ");
         }
 
         //启动全员下线机制
@@ -514,7 +507,7 @@ namespace _3d
         {
             try
             {
-                DataTable tb = lms.conn("select user_name,`onlinetime`,user_realname from " + Global.sqlUserTable + " where `online`!='0' and isdel!='-1' and allowlogin!='0' and user_name!='" + Global.user_name + "'");
+                DataTable tb = LinkMySql.MySqlQuery("select user_name,`onlinetime`,user_realname from " + Global.sqlUserTable + " where `online`!='0' and isdel!='-1' and allowlogin!='0' and user_name!='" + Global.user_name + "'");
                 if (tb != null && tb.Rows.Count > 0)
                 {
                     foreach (DataRow dr in tb.Rows)
@@ -535,7 +528,7 @@ namespace _3d
                         if (diffHours > 10)
                         {
                             //MessageBox.Show(diffHours + ":::" + user_realname + "");
-                            lms.conn("update " + Global.sqlUserTable + " set `online`='0' where user_name='" + user_name + "' ");
+                            LinkMySql.MySqlExcute("update " + Global.sqlUserTable + " set `online`='0' where user_name='" + user_name + "' ");
                         }
                     }
                 }
@@ -649,7 +642,8 @@ namespace _3d
 
             //给切换Form的按钮换色
             Button[] btns = { changeButton1, changeButton2, changeButton3, changeButton4 };
-            foreach(Button _btn in btns){
+            foreach (Button _btn in btns)
+            {
                 if (_btn.Equals(btn))
                 {
                     _btn.BackColor = _changeButtonColorFocus;
@@ -657,6 +651,18 @@ namespace _3d
                 }
                 _btn.BackColor = _changeButtonColor;
             }
+        }
+
+        /// <summary>
+        /// 点击webbrowser链接后，会调用系统默认浏览器打开网页
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void zstWebBrowser_NewWindow(object sender, CancelEventArgs e)
+        {
+            e.Cancel = true;
+            string currentUri = ((WebBrowser)sender).Document.ActiveElement.GetAttribute("href");
+            System.Diagnostics.Process.Start(currentUri);
         }
     }
 }

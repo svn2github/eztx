@@ -19,10 +19,9 @@ namespace _3d
     public partial class Login : Form
     {
         MachineCode mc = new MachineCode();
-
-        LinkMySql lms = new LinkMySql();
-
-        Thread threadLogin;
+        
+        Thread threadLogin = null;
+        bool startThreadLogin = true;
 
         #region 防止控件或图像过多卡
         [DllImport("user32.dll")]
@@ -81,6 +80,7 @@ namespace _3d
 
         private void Login_Load(object sender, EventArgs e)
         {
+
             tLabelMove = new System.Timers.Timer();
             tLabelMove.Interval = 100;
             tLabelMove.Elapsed += new System.Timers.ElapsedEventHandler(time1_Tick);
@@ -97,8 +97,6 @@ namespace _3d
             savePass.Checked = false;
 
             this.textBox1.SelectedIndexChanged += new System.EventHandler(this.textBox1_SelectedIndexChanged);
-
-            //检测是否有更新
             findUpdate();
         }
 
@@ -177,6 +175,7 @@ namespace _3d
         private void button1_Click(object sender, EventArgs e)
         {
             threadLogin = new Thread(new ThreadStart(loginStartThreadSet));
+            threadLogin.Name = "用户名登录中";
             threadLogin.Start();
         }
 
@@ -192,33 +191,39 @@ namespace _3d
 
         private void loginStart()
         {
-
             try
             {
-                setLoginResult("正在登录中...请稍后");
-                disabledControls();
-
-                string user_name = textBox1.Text.Trim();//textBox1.Text.Trim();
-                string user_pass = textBox2.Text.Trim();
-                if (loginValidate(user_name, user_pass) == true)
+                //用来终止登录线程
+                while (startThreadLogin)
                 {
-                    lms.conn("UPDATE " + Global.sqlUserTable +
-                        " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
-                        " where user_name='" + user_name + "'");
+                    setLoginResult("正在登录中...请稍后");
+                    disabledControls();
 
-                    writeToUserXML(user_name, user_pass);//写入到用户配置文件
-                    loginToMain();
-                    return;
+                    string user_name = textBox1.Text.Trim();//textBox1.Text.Trim();
+                    string user_pass = textBox2.Text.Trim();
+                    if (loginValidate(user_name, user_pass) == true)
+                    {
+                        int res = LinkMySql.MySqlExcute("UPDATE " + Global.sqlUserTable +
+                            " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
+                            " where user_name='" + user_name + "'");
+
+                        if (res == 0)
+                        {
+                            MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
+                            return;
+                        }
+
+                        writeToUserXML(user_name, user_pass);//写入到用户配置文件
+                        loginToMain();
+                    }
+                    enabledControls();
+                    startThreadLogin = false;
                 }
-                enabledControls();
             }
             catch (Exception err)
             {
                 MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
-                //throw err;
-            }
-            finally {
-                threadLogin.Abort();
+                throw err;
             }
         }
 
@@ -276,7 +281,7 @@ namespace _3d
             }
             user_pass = md5.Encrypt(user_pass);
 
-            DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "' and isdel='1'");
+            DataTable dt1 = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "' and isdel='1'");
 
             if (dt1 == null || dt1.Rows.Count == 0)//如果没有返回来数据，证明用户名错了
             {
@@ -327,7 +332,7 @@ namespace _3d
         private void button3_Click(object sender, EventArgs e)
         {
             threadLogin = new Thread(new ThreadStart(machineLoginStart));
-            threadLogin.Name = "machineLoginStartThread";
+            threadLogin.Name = "机器码登录";
             threadLogin.Start();
         }
 
@@ -335,58 +340,62 @@ namespace _3d
         {
             try
             {
-                setLoginResult("正在登录中...请稍后");
-                disabledControls();
-                string d = mc.GetCpuID();
-                string g = mc.GetMacAddress();
-                string machinecode = d + g;
-                for (int i = 4; i < machinecode.Length; i += 5)
+                //用来终止登录线程
+                while (startThreadLogin)
                 {
-                    machinecode = machinecode.Insert(i, "-");
-                }
-
-                DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where machinecode='" + machinecode + "' and registtime=(select min(registtime) from " + Global.sqlUserTable + " where machinecode='" + machinecode + "') and isdel='1'");
-
-                if (dt1 != null && dt1.Rows.Count > 0)
-                {
-                    DataRow dr1 = dt1.Rows[0];
-                    Global.user_name = dr1["user_name"].ToString();
-                    Global.user_realname = dr1["user_realname"].ToString();
-                    Global.user_province = dr1["user_province"].ToString();
-                    Global.user_vali = dr1["user_vali"].ToString();
-                    Global.allowlogin = dr1["allowlogin"].ToString();
-                    Global.loginType = "2";
-
-                    if (dr1["allowlogin"].ToString().Equals("1"))
+                    setLoginResult("正在登录中...请稍后");
+                    disabledControls();
+                    string d = mc.GetCpuID();
+                    string g = mc.GetMacAddress();
+                    string machinecode = d + g;
+                    for (int i = 4; i < machinecode.Length; i += 5)
                     {
-                        string mysql = "UPDATE " + Global.sqlUserTable +
-                            " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
-                            " where user_name='" + Global.user_name + "'";
-                        lms.conn(mysql);
-                        //clearUserProfile();//清空用户配置文档
-                        loginToMain();
-                        return;
+                        machinecode = machinecode.Insert(i, "-");
+                    }
+
+                    DataTable dt1 = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where machinecode='" + machinecode + "' and registtime=(select min(registtime) from " + Global.sqlUserTable + " where machinecode='" + machinecode + "') and isdel='1'");
+
+                    if (dt1 != null && dt1.Rows.Count > 0)
+                    {
+                        DataRow dr1 = dt1.Rows[0];
+                        Global.user_name = dr1["user_name"].ToString();
+                        Global.user_realname = dr1["user_realname"].ToString();
+                        Global.user_province = dr1["user_province"].ToString();
+                        Global.user_vali = dr1["user_vali"].ToString();
+                        Global.allowlogin = dr1["allowlogin"].ToString();
+                        Global.loginType = "2";
+
+                        if (dr1["allowlogin"].ToString().Equals("1"))
+                        {
+                            string mysql = "UPDATE " + Global.sqlUserTable +
+                                " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
+                                " where user_name='" + Global.user_name + "'";
+                            int res = LinkMySql.MySqlExcute(mysql);
+                            if (res == 0) {
+                                setLoginResult("登录失败，请稍后重试！");
+                                return;
+                            }
+                            //clearUserProfile();//清空用户配置文档
+                            loginToMain();
+                        }
+                        else
+                        {
+                            setLoginResult("您没有使用权限！");
+                        }
                     }
                     else
                     {
-                        setLoginResult("您没有使用权限！");
+                        setLoginResult("请您进行申请，并由管理员为您开通以后再进行此项操作。");
                     }
-                }
-                else
-                {
-                    setLoginResult("请您进行申请，并由管理员为您开通以后再进行此项操作。");
-                }
 
-                enabledControls();
+                    enabledControls();
+                    startThreadLogin = false;
+                }
             }
             catch (Exception err)
             {
                 MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
-                //throw err;
-            }
-            finally
-            {
-                threadLogin.Abort();
+                throw err;
             }
         }
 
@@ -557,11 +566,13 @@ namespace _3d
         System.Timers.Timer tLabelMove = null;//跑马灯文字
 
         Thread tPMD = null;
+        bool startTPMD = true;
+
         //跑马灯线程
         private void getLoadMsgT()
         {
             tPMD = new Thread(new ThreadStart(getLoadMsg));
-            tPMD.Name = "getLoadMsgThread";
+            tPMD.Name = "跑马灯文字获取";
             tPMD.IsBackground = true;
             tPMD.Start();
         }
@@ -571,10 +582,15 @@ namespace _3d
         {
             try
             {
-                DataTable dt1 = lms.conn("select * from msg");
-                DataRow dr1 = dt1.Rows[0];
-                setLabel5Text(dr1["msg_login"].ToString());
-                Global.main_msg = dr1["msg_main"].ToString();
+                //用来外部终止跑马灯线程
+                while (startTPMD)
+                {
+                    DataTable dt1 = LinkMySql.MySqlQuery("select * from msg");
+                    DataRow dr1 = dt1.Rows[0];
+                    setLabel5Text(dr1["msg_login"].ToString());
+                    Global.main_msg = dr1["msg_main"].ToString();
+                    startTPMD = false;
+                }
             }
             catch
             {
@@ -583,7 +599,6 @@ namespace _3d
             finally {
                 //启用相关控件
                 enabledControls();
-                tPMD.Abort();
             }
         }
 
@@ -657,7 +672,7 @@ namespace _3d
         private void _checkEnabled(Control ctr)
         {
             //启用登录和机器码登录按钮
-            if (Global.main_msg.Length != 0)
+            if (!string.IsNullOrEmpty(Global.main_msg))
             {
                 ctr.Enabled = true;
             }
@@ -868,117 +883,6 @@ namespace _3d
             }
         }
         #endregion
-
-        #region 附加隐藏功能
-
-        //隐藏按钮
-        private void pictureBox5_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            contextMenuStrip1.Show(pictureBox5, 0, pictureBox5.Height);
-        }
-
-        //隐藏登录
-        private void 用户名登录ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            threadLogin = new Thread(new ThreadStart(hideLoginStartThreadSet));
-            threadLogin.Start();
-        }
-
-        /// <summary>
-        /// 跨线程异步调用
-        /// </summary>
-        private void hideLoginStartThreadSet()
-        {
-            GetLoginNameDelegate fc = new GetLoginNameDelegate(hideLoginStart);
-            //fc.BeginInvoke(null,null); //通过代理调用刷新方法
-            this.Invoke(fc);
-        }
-
-        private void hideLoginStart()
-        {
-            setLoginResult("正在登录中...请稍后");
-            string user_name = textBox1.Text.Trim();
-            string user_pass = textBox2.Text.Trim();
-
-            //try
-            //{
-            if (lValidate(user_name, user_pass) == true)
-            {
-                lms.conn("UPDATE " + Global.sqlUserTable + " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "' where user_name='" + user_name + "'");
-
-                writeToUserXML(user_name, user_pass);//写入到用户配置文件
-
-                while (Global.main_msg.Length > 0)//确保main界面上方滚动条的文字已经读入
-                {
-                    loginToMain();
-                    break;
-                }
-            }
-
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("登录失败，请检查网络连接以后重试。", "友情提示");
-            //}
-        }
-
-        //点击“用户名登录”按钮以后的文本框输入验证操作
-        private Boolean lValidate(string user_name, string user_pass)
-        {
-            ToMD5 md5 = new ToMD5();
-
-            if (string.IsNullOrEmpty(user_name))
-            {
-                setLabel3Text("请输入用户名！");
-                setLoginResult("请输入用户名！");
-                return false;
-            }
-
-
-            if (string.IsNullOrEmpty(user_pass))
-            {
-                setLabel4Text("请输入密码！");
-                setLoginResult("请输入密码！");
-                return false;
-            }
-
-            DataTable dt1 = lms.conn("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "' and isdel='1'");
-
-            if (dt1 == null || dt1.Rows.Count == 0)
-            {
-                setLabel3Text("用户名不正确，请检查！");
-                setLoginResult("用户名不正确，请检查！");
-                return false;
-            }
-
-            setLabel3Text("");
-            DataRow dr1 = dt1.Rows[0];
-            user_pass = md5.Encrypt(user_pass);
-            if (!dr1["user_pass"].Equals(user_pass))
-            {
-                setLabel4Text("密码不正确，请检查！");
-                setLoginResult("密码不正确，请检查！");
-                return false;
-            }
-
-            setLabel4Text("");
-            if (dr1["allowlogin"].Equals("0"))
-            {
-                MessageBox.Show("您没有使用权限！");
-                setLoginResult("您没有使用权限！");
-                return false;
-            }
-
-            Global.user_name = dr1["user_name"].ToString();
-            Global.user_realname = dr1["user_realname"].ToString();
-            Global.user_province = dr1["user_province"].ToString();
-            Global.user_vali = dr1["user_vali"].ToString();
-            Global.allowlogin = dr1["allowlogin"].ToString();
-            return true;
-        }
-
-        #endregion
-
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {

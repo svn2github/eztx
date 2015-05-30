@@ -14,9 +14,6 @@ namespace _3d
     public partial class ModifyInfo : Form
     {
         Login login = new Login();
-
-        LinkMySql lms = new LinkMySql();
-
         public ModifyInfo()
         {
             InitializeComponent();
@@ -176,7 +173,7 @@ namespace _3d
             }
             try
             {
-                lms.conn("update "+Global.sqlUserTable+" set user_realname='" + user_realname + "',user_province='" + user_province + "',user_id='" + user_id + "',user_phone='" + user_phone + "',user_qq='" + user_qq + "' where user_name='" + Global.user_name + "'");
+                LinkMySql.MySqlQuery("update " + Global.sqlUserTable + " set user_realname='" + user_realname + "',user_province='" + user_province + "',user_id='" + user_id + "',user_phone='" + user_phone + "',user_qq='" + user_qq + "' where user_name='" + Global.user_name + "'");
                 MessageBox.Show("修改成功", "恭喜");
                 this.Close();
             }
@@ -189,7 +186,7 @@ namespace _3d
         {
             this.textBox1.Text = Global.user_name;
 
-            DataTable dt1 = lms.conn("select user_realname,user_id,user_phone,user_qq,user_province from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
+            DataTable dt1 = LinkMySql.MySqlQuery("select user_realname,user_id,user_phone,user_qq,user_province from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
             DataRow dr1 = dt1.Rows[0];
             string user_realname = dr1["user_realname"].ToString();
             if (user_realname == null || user_realname.Equals(""))

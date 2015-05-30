@@ -14,8 +14,6 @@ namespace _3d
 {
     public partial class AdminCtrlCity : Form
     {
-        LinkMySql lms = new LinkMySql();
-
         public AdminCtrlCity()
         {
             InitializeComponent();
@@ -153,12 +151,12 @@ namespace _3d
                 "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',case online when '1' then '在线' when '2' then '在线' else '离线' end as '当前是否在线'," +
             "soft_version as '软件版本' ";
 
-            DataTable tb = lms.conn("select " + displaySqlSelect + " from "+Global.sqlUserTable+" " + where + "");
+            DataTable tb = LinkMySql.MySqlQuery("select " + displaySqlSelect + " from " + Global.sqlUserTable + " " + where + "");
 
             dataGridView1.DataSource = tb;
             dataGridView1.DataMember = tb.TableName;
 
-            DataTable cu = lms.conn("select count(user_id) as 总计 from "+Global.sqlUserTable+" " + where + "");
+            DataTable cu = LinkMySql.MySqlQuery("select count(user_id) as 总计 from " + Global.sqlUserTable + " " + where + "");
             DataRow dr = cu.Rows[0];
             this.sumUserLabel.Text = "共有 " + dr[0].ToString() + " 位用户";
         }
@@ -195,16 +193,13 @@ namespace _3d
                 radioValue = "1";
             if (this.radioButton3.Checked)
                 radioValue = "0";
-            try
-            {
-                lms.conn("update "+Global.sqlUserTable+" set allowlogin='" + radioValue + "' where user_name='" + user_name + "'");
-                MessageBox.Show("修改用户权限成功！", "恭喜");
-            }
-            catch
+            int res = LinkMySql.MySqlExcute("update "+Global.sqlUserTable+" set allowlogin='" + radioValue + "' where user_name='" + user_name + "'");
+            if (res == 0)
             {
                 MessageBox.Show("修改用户权限失败，请稍后再试！", "友情提示");
+                return;
             }
-
+            MessageBox.Show("修改用户权限成功！", "恭喜");
             dgvGetInfo();
         }
 
@@ -212,15 +207,12 @@ namespace _3d
         private void button7_Click(object sender, EventArgs e)
         {
             string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
-            try
-            {
-                lms.conn("update "+Global.sqlUserTable+" set online='0' where user_name='" + user_name + "'");
-                MessageBox.Show("手动设置用户: " + user_name + " 下线成功！", "恭喜");
-            }
-            catch
-            {
+            int res = LinkMySql.MySqlExcute("update "+Global.sqlUserTable+" set online='0' where user_name='" + user_name + "'");
+            if (res == 0) {
                 MessageBox.Show("手动设置用户下线失败，请稍后再试！", "友情提示");
+                return;
             }
+            MessageBox.Show("手动设置用户: " + user_name + " 下线成功！", "恭喜");
 
             dgvGetInfo();
             CellClickRefresh();
@@ -255,13 +247,15 @@ namespace _3d
             {
                 try
                 {
-                    lms.conn("delete from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
-
+                    int res = LinkMySql.MySqlExcute("delete from "+Global.sqlUserTable+" where user_name='" + user_name + "'");
+                    if (res == 0) {
+                        MessageBox.Show("删除失败，请稍后重试！", "提示");
+                        return;
+                    }
                     MessageBox.Show("删除成功！", "提示");
-
                     dgvGetInfo();
                 }
-                catch { MessageBox.Show("删除失败，请稍后重试！", "提示"); }
+                catch {  }
             }
         }
 
