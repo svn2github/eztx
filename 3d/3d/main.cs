@@ -35,7 +35,7 @@ namespace _3d
         //标题栏时间
         private void time_Tick(object sender, EventArgs e)
         {
-            string us = "";//
+            string us = "";
             string ub = "";
             if (Global.user_province.IndexOf("省") >= 0)
             {
@@ -72,7 +72,9 @@ namespace _3d
                 uv = "尊贵的市场专员：";
             if (Global.user_vali.Equals("7"))
                 uv = "尊贵的业务员：";
-            //用户权限,1为总代理,2为普通用户,3为省级代理,4为市级代理,5为区域代理,6为市场专员,7为业务员
+            if (Global.user_vali.Equals("8"))
+                uv = "尊贵的" + us + "代理：";
+            //用户权限,1为总代理,2为普通用户,3为省级代理,4为市级代理,5为区域代理,6为市场专员,7为业务员,8为省代（虚）
             setFormText("恩泽天下 - 辅助运算软件 - 欢迎" + uv + un + "，当前版本：" + Global.version + "，系统时间：" + DateTime.Now.ToString("yyyy年MM月dd日 HH时mm分ss秒"));
         }
 
@@ -284,7 +286,7 @@ namespace _3d
             timer3.Enabled = true;
 
             //将tabpage隐藏
-            customTabControl1.TabPages[1].Parent = null;
+            //customTabControl1.TabPages[1].Parent = null;
 
             //启动下线机制
             //如30分钟 30 * 60 *1000=1800000

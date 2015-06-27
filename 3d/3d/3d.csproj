@@ -234,7 +234,6 @@
     <Compile Include="AdminControlPanels\AdminCtrlArea.Designer.cs">
       <DependentUpon>AdminCtrlArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShiYiXuanWu\one11xuan5computing.cs" />
     <Compile Include="test.cs">
       <SubType>Form</SubType>
     </Compile>

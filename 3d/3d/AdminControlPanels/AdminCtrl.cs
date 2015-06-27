@@ -208,6 +208,7 @@ namespace _3d
             this.setCtntBtn.Visible = true;
             this.yewuButton.Visible = true;
             this.marketButton.Visible = true;
+            this.sdXuButton.Visible = true;
         }
 
         //禁用第一个选项卡下面的选项控件
@@ -233,6 +234,7 @@ namespace _3d
             this.setCtntBtn.Visible = false;
             this.yewuButton.Visible = false;
             this.marketButton.Visible = false;
+            this.sdXuButton.Visible = false;
         }
 
         //第一个选项卡中的“修改”按钮事件
@@ -307,7 +309,7 @@ namespace _3d
         {
             //设定给datagridview的select列名
             string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_id as '身份证号',user_phone as '手机/电话',user_qq as 'QQ/MSN',user_province as '所在地区'," +
-            "CASE user_vali when '1' then'总代理' when '3' then '省级代理' when '4' then '市级代理' when '5' then '区域代理' when '6' then '市场专员' when '7' then '业务员' ELSE '普通用户' end AS '用户权限'," +
+            "CASE user_vali when '1' then'总代理' when '3' then '省级代理' when '4' then '市级代理' when '5' then '区域代理' when '6' then '市场专员' when '7' then '业务员' when '8' then '省代（虚）' ELSE '普通用户' end AS '用户权限'," +
             "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',machinecode as '机器码',lastloginplace as '上次登录地点',lastlogintime as '上次登录时间'," +
             "registplace as '注册地点',registtime as '注册时间',case online when '1' then '用户在线' when '2' then '机器在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_realname as '区域领导'," +
             "soft_version as '软件版本' ";
@@ -487,6 +489,24 @@ namespace _3d
             string msgAsk = "您确定将用户: " + user_realname + " 设置为业务员？";
             string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
             string msgSuccess = "设置用户: " + user_realname + " 权限至[业务员]成功！";
+
+            setProxy(msgAsk, msgSuccess, sql, user_vali);
+        }
+
+        /// <summary>
+        /// 设为省代(虚)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void sdXuButton_Click(object sender, EventArgs e)
+        {
+            int user_vali = 8;
+            string user_name = dataGridView1.CurrentRow.Cells["用户名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+            string user_realname = dataGridView1.CurrentRow.Cells["姓名"].Value.ToString();//得到当前用户选中的那行的第一列的值
+
+            string msgAsk = "您确定将用户: " + user_realname + " 设置为省代（虚）？";
+            string sql = "update " + Global.sqlUserTable + " set user_vali='" + user_vali + "' where user_name='" + user_name + "'";
+            string msgSuccess = "设置用户: " + user_realname + " 权限至[省代（虚）]成功！";
 
             setProxy(msgAsk, msgSuccess, sql, user_vali);
         }

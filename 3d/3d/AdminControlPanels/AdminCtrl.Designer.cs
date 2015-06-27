@@ -102,6 +102,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.sdXuButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -260,6 +261,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.sdXuButton);
             this.panel1.Controls.Add(this.yewuButton);
             this.panel1.Controls.Add(this.marketButton);
             this.panel1.Controls.Add(this.qyButton);
@@ -293,7 +295,7 @@
             this.yewuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yewuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.yewuButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.yewuButton.Location = new System.Drawing.Point(654, 76);
+            this.yewuButton.Location = new System.Drawing.Point(571, 76);
             this.yewuButton.Name = "yewuButton";
             this.yewuButton.Size = new System.Drawing.Size(63, 29);
             this.yewuButton.TabIndex = 32;
@@ -307,7 +309,7 @@
             this.marketButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.marketButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.marketButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.marketButton.Location = new System.Drawing.Point(567, 76);
+            this.marketButton.Location = new System.Drawing.Point(484, 76);
             this.marketButton.Name = "marketButton";
             this.marketButton.Size = new System.Drawing.Size(81, 29);
             this.marketButton.TabIndex = 31;
@@ -362,7 +364,7 @@
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button11.Location = new System.Drawing.Point(511, 76);
+            this.button11.Location = new System.Drawing.Point(428, 76);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(50, 29);
             this.button11.TabIndex = 27;
@@ -376,7 +378,7 @@
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button10.Location = new System.Drawing.Point(455, 76);
+            this.button10.Location = new System.Drawing.Point(372, 76);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(50, 29);
             this.button10.TabIndex = 26;
@@ -438,7 +440,7 @@
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button9.Location = new System.Drawing.Point(723, 76);
+            this.button9.Location = new System.Drawing.Point(640, 76);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(50, 29);
             this.button9.TabIndex = 21;
@@ -452,7 +454,7 @@
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Location = new System.Drawing.Point(398, 76);
+            this.button8.Location = new System.Drawing.Point(315, 76);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(50, 29);
             this.button8.TabIndex = 20;
@@ -1004,6 +1006,20 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "登录界面公告";
             // 
+            // sdXuButton
+            // 
+            this.sdXuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sdXuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sdXuButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sdXuButton.Location = new System.Drawing.Point(696, 76);
+            this.sdXuButton.Name = "sdXuButton";
+            this.sdXuButton.Size = new System.Drawing.Size(77, 29);
+            this.sdXuButton.TabIndex = 33;
+            this.sdXuButton.Text = "省代(虚)";
+            this.sdXuButton.UseVisualStyleBackColor = true;
+            this.sdXuButton.Visible = false;
+            this.sdXuButton.Click += new System.EventHandler(this.sdXuButton_Click);
+            // 
             // AdminCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1109,5 +1125,6 @@
         private System.Windows.Forms.TextBox searchInput;
         private System.Windows.Forms.Button yewuButton;
         private System.Windows.Forms.Button marketButton;
+        private System.Windows.Forms.Button sdXuButton;
     }
 }

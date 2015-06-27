@@ -12,3 +12,4 @@ D:\svn_c#\AutoUpdate\bin\Debug\AutoUpdate.exe
 D:\svn_c#\AutoUpdate\bin\Debug\AutoUpdate.pdb
 D:\svn_c#\AutoUpdate\obj\Debug\AutoUpdate.FrmUpdate.resources
 D:\svn_c#\AutoUpdate\obj\Debug\AutoUpdate.csproj.GenerateResource.Cache
+D:\svn_c#\AutoUpdate\obj\Debug\AutoUpdate.csprojResolveAssemblyReference.cache

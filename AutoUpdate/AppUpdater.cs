@@ -110,7 +110,7 @@ namespace AutoUpdate
 					updateFileList.Add(k,fileList);
 					k++;
 				}
-				else if(pos > -1 && newVer.CompareTo(oldFileAl[pos+1].ToString())>0 )
+                else if (pos > -1 && Convert.ToSingle(newVer.Replace(".", ""))> Convert.ToSingle(oldFileAl[pos + 1].ToString().Replace(".", "")))
 				{
 					fileList[0] = newFileName;
 					fileList[1] = newVer;

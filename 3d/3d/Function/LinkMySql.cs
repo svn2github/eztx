@@ -150,7 +150,9 @@ namespace _3d.Function
                     catch (MySql.Data.MySqlClient.MySqlException e)
                     {
                         connection.Close();
-                        throw e;
+                        string path = Application.StartupPath + "\\ezLogs.log";
+                        Tools.writeFile(path, e.Message); 
+                        return 0;
                     }
                 }
             }
@@ -178,7 +180,8 @@ namespace _3d.Function
             }
             catch (Exception e)
             {
-                throw new Exception(e.Message);
+                string path = Application.StartupPath + "\\ezLogs.log";
+                Tools.writeFile(path,e.Message);
             }
             finally
             {

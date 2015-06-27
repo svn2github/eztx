@@ -23,7 +23,7 @@ namespace _3d
         {
             Tools.SetGroupBoxPaintAll(this.Controls);
 
-            if (!(Global.user_vali.Equals("2") || Global.user_vali.Equals("6") || Global.user_vali.Equals("7")))
+            if (!(Global.user_vali.Equals("2") || Global.user_vali.Equals("6") || Global.user_vali.Equals("7") || Global.user_vali.Equals("8")))
             {
                 linkLabel3.Visible = true;
             }
