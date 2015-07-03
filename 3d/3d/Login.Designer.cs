@@ -80,11 +80,12 @@
             // textBox2
             // 
             this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox2.ImeMode = System.Windows.Forms.ImeMode.Hangul;
             this.textBox2.Location = new System.Drawing.Point(250, 235);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(99, 21);
+            this.textBox2.Size = new System.Drawing.Size(99, 29);
             this.textBox2.TabIndex = 2;
             this.toolTip1.SetToolTip(this.textBox2, "输入您的密码");
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -139,7 +140,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(252, 214);
+            this.label3.Location = new System.Drawing.Point(252, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 3;
@@ -150,7 +151,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(252, 259);
+            this.label4.Location = new System.Drawing.Point(252, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 3;
@@ -255,11 +256,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(407, 161);
+            this.label5.Location = new System.Drawing.Point(407, 158);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 19);
+            this.label5.Size = new System.Drawing.Size(88, 26);
             this.label5.TabIndex = 8;
             this.label5.Text = "欢迎使用";
             this.label5.MouseLeave += new System.EventHandler(this.label5_MouseLeave);
@@ -322,12 +323,14 @@
             this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox1.FormattingEnabled = true;
+            this.textBox1.ItemHeight = 21;
             this.textBox1.Items.AddRange(new object[] {
             ""});
             this.textBox1.Location = new System.Drawing.Point(250, 190);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(99, 20);
+            this.textBox1.Size = new System.Drawing.Size(99, 29);
             this.textBox1.TabIndex = 1;
             this.toolTip1.SetToolTip(this.textBox1, "输入您的用户名");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
@@ -339,9 +342,10 @@
             this.savePass.checkBgColor = System.Drawing.Color.Empty;
             this.savePass.CheckColor = System.Drawing.SystemColors.ControlText;
             this.savePass.Enabled = false;
+            this.savePass.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.savePass.Location = new System.Drawing.Point(355, 237);
             this.savePass.Name = "savePass";
-            this.savePass.Size = new System.Drawing.Size(72, 16);
+            this.savePass.Size = new System.Drawing.Size(93, 25);
             this.savePass.TabIndex = 10;
             this.savePass.Text = "记住密码";
             this.toolTip1.SetToolTip(this.savePass, "免去您每次输入用户名密码带来的不便");

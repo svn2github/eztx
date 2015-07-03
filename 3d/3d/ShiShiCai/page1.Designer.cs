@@ -31,8 +31,32 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.clearShaHaoBtn = new System.Windows.Forms.Button();
+            this.checkBox6 = new _3d.CusCheckBox();
+            this.checkBox10 = new _3d.CusCheckBox();
+            this.checkBox7 = new _3d.CusCheckBox();
+            this.checkBox8 = new _3d.CusCheckBox();
+            this.checkBox9 = new _3d.CusCheckBox();
+            this.checkBox5 = new _3d.CusCheckBox();
+            this.checkBox4 = new _3d.CusCheckBox();
+            this.checkBox3 = new _3d.CusCheckBox();
+            this.checkBox2 = new _3d.CusCheckBox();
+            this.checkBox1 = new _3d.CusCheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.clear1HaoMaZubtn = new System.Windows.Forms.Button();
+            this.checkBox11 = new _3d.CusCheckBox();
+            this.checkBox12 = new _3d.CusCheckBox();
+            this.checkBox13 = new _3d.CusCheckBox();
+            this.checkBox14 = new _3d.CusCheckBox();
+            this.checkBox15 = new _3d.CusCheckBox();
+            this.checkBox16 = new _3d.CusCheckBox();
+            this.checkBox17 = new _3d.CusCheckBox();
+            this.checkBox18 = new _3d.CusCheckBox();
+            this.checkBox19 = new _3d.CusCheckBox();
+            this.checkBox20 = new _3d.CusCheckBox();
+            this.oneZu3 = new _3d.CusCheckBox();
+            this.oneZu2 = new _3d.CusCheckBox();
+            this.oneZu1 = new _3d.CusCheckBox();
+            this.oneZu0 = new _3d.CusCheckBox();
             this.oneZuChu = new System.Windows.Forms.Label();
             this.fjsGpb = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -41,18 +65,99 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cusFJTbx1Auto = new System.Windows.Forms.TextBox();
             this.cusFJTbx1 = new System.Windows.Forms.TextBox();
+            this.dxFJcbx = new _3d.CusCheckBox();
+            this.zhFJcbx = new _3d.CusCheckBox();
+            this.dsFJcbx = new _3d.CusCheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.shaDaLiuXiao1 = new _3d.CusCheckBox();
+            this.shaDanLiuShuang1 = new _3d.CusCheckBox();
+            this.checkBox24 = new _3d.CusCheckBox();
+            this.checkBox25 = new _3d.CusCheckBox();
+            this.checkBox26 = new _3d.CusCheckBox();
+            this.checkBox27 = new _3d.CusCheckBox();
+            this.checkBox28 = new _3d.CusCheckBox();
+            this.checkBox29 = new _3d.CusCheckBox();
+            this.checkBox30 = new _3d.CusCheckBox();
+            this.checkBox31 = new _3d.CusCheckBox();
+            this.checkBox32 = new _3d.CusCheckBox();
+            this.checkBox33 = new _3d.CusCheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.shaDaLiuXiao3 = new _3d.CusCheckBox();
+            this.checkBox34 = new _3d.CusCheckBox();
+            this.shaDanLiuShuang3 = new _3d.CusCheckBox();
+            this.checkBox35 = new _3d.CusCheckBox();
+            this.checkBox36 = new _3d.CusCheckBox();
+            this.checkBox37 = new _3d.CusCheckBox();
+            this.checkBox38 = new _3d.CusCheckBox();
+            this.checkBox39 = new _3d.CusCheckBox();
+            this.checkBox40 = new _3d.CusCheckBox();
+            this.checkBox41 = new _3d.CusCheckBox();
+            this.checkBox42 = new _3d.CusCheckBox();
+            this.checkBox43 = new _3d.CusCheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.shaDaLiuXiao2 = new _3d.CusCheckBox();
+            this.checkBox44 = new _3d.CusCheckBox();
+            this.shaDanLiuShuang2 = new _3d.CusCheckBox();
+            this.checkBox45 = new _3d.CusCheckBox();
+            this.checkBox46 = new _3d.CusCheckBox();
+            this.checkBox47 = new _3d.CusCheckBox();
+            this.checkBox48 = new _3d.CusCheckBox();
+            this.checkBox49 = new _3d.CusCheckBox();
+            this.checkBox50 = new _3d.CusCheckBox();
+            this.checkBox51 = new _3d.CusCheckBox();
+            this.checkBox52 = new _3d.CusCheckBox();
+            this.checkBox53 = new _3d.CusCheckBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.clear4HaoMaZubtn = new System.Windows.Forms.Button();
+            this.fourZu3 = new _3d.CusCheckBox();
+            this.fourZu2 = new _3d.CusCheckBox();
+            this.fourZu1 = new _3d.CusCheckBox();
+            this.fourZu0 = new _3d.CusCheckBox();
             this.fourZuChu = new System.Windows.Forms.Label();
+            this.checkBox74 = new _3d.CusCheckBox();
+            this.checkBox75 = new _3d.CusCheckBox();
+            this.checkBox76 = new _3d.CusCheckBox();
+            this.checkBox77 = new _3d.CusCheckBox();
+            this.checkBox78 = new _3d.CusCheckBox();
+            this.checkBox79 = new _3d.CusCheckBox();
+            this.checkBox80 = new _3d.CusCheckBox();
+            this.checkBox81 = new _3d.CusCheckBox();
+            this.checkBox82 = new _3d.CusCheckBox();
+            this.checkBox83 = new _3d.CusCheckBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.clear3HaoMaZubtn = new System.Windows.Forms.Button();
+            this.threeZu3 = new _3d.CusCheckBox();
+            this.checkBox64 = new _3d.CusCheckBox();
+            this.threeZu2 = new _3d.CusCheckBox();
+            this.checkBox65 = new _3d.CusCheckBox();
+            this.threeZu1 = new _3d.CusCheckBox();
+            this.checkBox66 = new _3d.CusCheckBox();
+            this.threeZu0 = new _3d.CusCheckBox();
+            this.checkBox67 = new _3d.CusCheckBox();
             this.threeZuChu = new System.Windows.Forms.Label();
+            this.checkBox68 = new _3d.CusCheckBox();
+            this.checkBox69 = new _3d.CusCheckBox();
+            this.checkBox70 = new _3d.CusCheckBox();
+            this.checkBox71 = new _3d.CusCheckBox();
+            this.checkBox72 = new _3d.CusCheckBox();
+            this.checkBox73 = new _3d.CusCheckBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.clear2HaoMaZubtn = new System.Windows.Forms.Button();
+            this.twoZu3 = new _3d.CusCheckBox();
+            this.checkBox54 = new _3d.CusCheckBox();
+            this.twoZu2 = new _3d.CusCheckBox();
+            this.checkBox55 = new _3d.CusCheckBox();
+            this.twoZu1 = new _3d.CusCheckBox();
+            this.checkBox56 = new _3d.CusCheckBox();
+            this.twoZu0 = new _3d.CusCheckBox();
+            this.checkBox57 = new _3d.CusCheckBox();
             this.twoZuChu = new System.Windows.Forms.Label();
+            this.checkBox58 = new _3d.CusCheckBox();
+            this.checkBox59 = new _3d.CusCheckBox();
+            this.checkBox60 = new _3d.CusCheckBox();
+            this.checkBox61 = new _3d.CusCheckBox();
+            this.checkBox62 = new _3d.CusCheckBox();
+            this.checkBox63 = new _3d.CusCheckBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -83,16 +188,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lmGpb = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.aotuAllCbx = new _3d.CusCheckBox();
-            this.pingCbx = new _3d.CusCheckBox();
-            this.jiangCbx = new _3d.CusCheckBox();
-            this.shengCbx = new _3d.CusCheckBox();
-            this.tuCbx = new _3d.CusCheckBox();
-            this.aoCbx = new _3d.CusCheckBox();
-            this.linMaShaQuCbx = new _3d.CusCheckBox();
-            this.linMaBaoHanCbx = new _3d.CusCheckBox();
             this.duanLinCbx = new _3d.CusCheckBox();
             this.zhiHeCbx = new _3d.CusCheckBox();
             this.heLinCbx = new _3d.CusCheckBox();
@@ -100,111 +195,16 @@
             this.daXiaoCbx = new _3d.CusCheckBox();
             this.xiaoLinCbx = new _3d.CusCheckBox();
             this.daLinCbx = new _3d.CusCheckBox();
-            this.shaDaLiuXiao1 = new _3d.CusCheckBox();
-            this.shaDanLiuShuang1 = new _3d.CusCheckBox();
-            this.checkBox24 = new _3d.CusCheckBox();
-            this.checkBox25 = new _3d.CusCheckBox();
-            this.checkBox26 = new _3d.CusCheckBox();
-            this.checkBox27 = new _3d.CusCheckBox();
-            this.checkBox28 = new _3d.CusCheckBox();
-            this.checkBox29 = new _3d.CusCheckBox();
-            this.checkBox30 = new _3d.CusCheckBox();
-            this.checkBox31 = new _3d.CusCheckBox();
-            this.checkBox32 = new _3d.CusCheckBox();
-            this.checkBox33 = new _3d.CusCheckBox();
-            this.shaDaLiuXiao2 = new _3d.CusCheckBox();
-            this.checkBox44 = new _3d.CusCheckBox();
-            this.shaDanLiuShuang2 = new _3d.CusCheckBox();
-            this.checkBox45 = new _3d.CusCheckBox();
-            this.checkBox46 = new _3d.CusCheckBox();
-            this.checkBox47 = new _3d.CusCheckBox();
-            this.checkBox48 = new _3d.CusCheckBox();
-            this.checkBox49 = new _3d.CusCheckBox();
-            this.checkBox50 = new _3d.CusCheckBox();
-            this.checkBox51 = new _3d.CusCheckBox();
-            this.checkBox52 = new _3d.CusCheckBox();
-            this.checkBox53 = new _3d.CusCheckBox();
-            this.shaDaLiuXiao3 = new _3d.CusCheckBox();
-            this.checkBox34 = new _3d.CusCheckBox();
-            this.shaDanLiuShuang3 = new _3d.CusCheckBox();
-            this.checkBox35 = new _3d.CusCheckBox();
-            this.checkBox36 = new _3d.CusCheckBox();
-            this.checkBox37 = new _3d.CusCheckBox();
-            this.checkBox38 = new _3d.CusCheckBox();
-            this.checkBox39 = new _3d.CusCheckBox();
-            this.checkBox40 = new _3d.CusCheckBox();
-            this.checkBox41 = new _3d.CusCheckBox();
-            this.checkBox42 = new _3d.CusCheckBox();
-            this.checkBox43 = new _3d.CusCheckBox();
-            this.checkBox11 = new _3d.CusCheckBox();
-            this.checkBox12 = new _3d.CusCheckBox();
-            this.checkBox13 = new _3d.CusCheckBox();
-            this.checkBox14 = new _3d.CusCheckBox();
-            this.checkBox15 = new _3d.CusCheckBox();
-            this.checkBox16 = new _3d.CusCheckBox();
-            this.checkBox17 = new _3d.CusCheckBox();
-            this.checkBox18 = new _3d.CusCheckBox();
-            this.checkBox19 = new _3d.CusCheckBox();
-            this.checkBox20 = new _3d.CusCheckBox();
-            this.oneZu3 = new _3d.CusCheckBox();
-            this.oneZu2 = new _3d.CusCheckBox();
-            this.oneZu1 = new _3d.CusCheckBox();
-            this.oneZu0 = new _3d.CusCheckBox();
-            this.twoZu3 = new _3d.CusCheckBox();
-            this.checkBox54 = new _3d.CusCheckBox();
-            this.twoZu2 = new _3d.CusCheckBox();
-            this.checkBox55 = new _3d.CusCheckBox();
-            this.twoZu1 = new _3d.CusCheckBox();
-            this.checkBox56 = new _3d.CusCheckBox();
-            this.twoZu0 = new _3d.CusCheckBox();
-            this.checkBox57 = new _3d.CusCheckBox();
-            this.checkBox58 = new _3d.CusCheckBox();
-            this.checkBox59 = new _3d.CusCheckBox();
-            this.checkBox60 = new _3d.CusCheckBox();
-            this.checkBox61 = new _3d.CusCheckBox();
-            this.checkBox62 = new _3d.CusCheckBox();
-            this.checkBox63 = new _3d.CusCheckBox();
-            this.threeZu3 = new _3d.CusCheckBox();
-            this.checkBox64 = new _3d.CusCheckBox();
-            this.threeZu2 = new _3d.CusCheckBox();
-            this.checkBox65 = new _3d.CusCheckBox();
-            this.threeZu1 = new _3d.CusCheckBox();
-            this.checkBox66 = new _3d.CusCheckBox();
-            this.threeZu0 = new _3d.CusCheckBox();
-            this.checkBox67 = new _3d.CusCheckBox();
-            this.checkBox68 = new _3d.CusCheckBox();
-            this.checkBox69 = new _3d.CusCheckBox();
-            this.checkBox70 = new _3d.CusCheckBox();
-            this.checkBox71 = new _3d.CusCheckBox();
-            this.checkBox72 = new _3d.CusCheckBox();
-            this.checkBox73 = new _3d.CusCheckBox();
-            this.fourZu3 = new _3d.CusCheckBox();
-            this.fourZu2 = new _3d.CusCheckBox();
-            this.fourZu1 = new _3d.CusCheckBox();
-            this.fourZu0 = new _3d.CusCheckBox();
-            this.checkBox74 = new _3d.CusCheckBox();
-            this.checkBox75 = new _3d.CusCheckBox();
-            this.checkBox76 = new _3d.CusCheckBox();
-            this.checkBox77 = new _3d.CusCheckBox();
-            this.checkBox78 = new _3d.CusCheckBox();
-            this.checkBox79 = new _3d.CusCheckBox();
-            this.checkBox80 = new _3d.CusCheckBox();
-            this.checkBox81 = new _3d.CusCheckBox();
-            this.checkBox82 = new _3d.CusCheckBox();
-            this.checkBox83 = new _3d.CusCheckBox();
-            this.checkBox6 = new _3d.CusCheckBox();
-            this.checkBox10 = new _3d.CusCheckBox();
-            this.checkBox7 = new _3d.CusCheckBox();
-            this.checkBox8 = new _3d.CusCheckBox();
-            this.checkBox9 = new _3d.CusCheckBox();
-            this.checkBox5 = new _3d.CusCheckBox();
-            this.checkBox4 = new _3d.CusCheckBox();
-            this.checkBox3 = new _3d.CusCheckBox();
-            this.checkBox2 = new _3d.CusCheckBox();
-            this.checkBox1 = new _3d.CusCheckBox();
-            this.dxFJcbx = new _3d.CusCheckBox();
-            this.zhFJcbx = new _3d.CusCheckBox();
-            this.dsFJcbx = new _3d.CusCheckBox();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.linMaShaQuCbx = new _3d.CusCheckBox();
+            this.linMaBaoHanCbx = new _3d.CusCheckBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.aotuAllCbx = new _3d.CusCheckBox();
+            this.pingCbx = new _3d.CusCheckBox();
+            this.jiangCbx = new _3d.CusCheckBox();
+            this.shengCbx = new _3d.CusCheckBox();
+            this.tuCbx = new _3d.CusCheckBox();
+            this.aoCbx = new _3d.CusCheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.fjsGpb.SuspendLayout();
@@ -255,6 +255,146 @@
             this.clearShaHaoBtn.UseVisualStyleBackColor = true;
             this.clearShaHaoBtn.Click += new System.EventHandler(this.clearShaHaoBtn_Click);
             // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox6.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox6.Location = new System.Drawing.Point(196, 22);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(36, 24);
+            this.checkBox6.TabIndex = 10;
+            this.checkBox6.Text = "5";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox10.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox10.Location = new System.Drawing.Point(340, 22);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(36, 24);
+            this.checkBox10.TabIndex = 6;
+            this.checkBox10.Text = "9";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox7.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox7.Location = new System.Drawing.Point(232, 22);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(36, 24);
+            this.checkBox7.TabIndex = 9;
+            this.checkBox7.Text = "6";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox8.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox8.Location = new System.Drawing.Point(268, 22);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(36, 24);
+            this.checkBox8.TabIndex = 8;
+            this.checkBox8.Text = "7";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox9.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox9.Location = new System.Drawing.Point(304, 22);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(36, 24);
+            this.checkBox9.TabIndex = 7;
+            this.checkBox9.Text = "8";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox5.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox5.Location = new System.Drawing.Point(160, 22);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(36, 24);
+            this.checkBox5.TabIndex = 5;
+            this.checkBox5.Text = "4";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox4.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox4.Location = new System.Drawing.Point(124, 22);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(36, 24);
+            this.checkBox4.TabIndex = 4;
+            this.checkBox4.Text = "3";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox3.Location = new System.Drawing.Point(88, 22);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(36, 24);
+            this.checkBox3.TabIndex = 3;
+            this.checkBox3.Text = "2";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox2.Location = new System.Drawing.Point(52, 22);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(36, 24);
+            this.checkBox2.TabIndex = 2;
+            this.checkBox2.Text = "1";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox1.Location = new System.Drawing.Point(16, 22);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(36, 24);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "0";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.clear1HaoMaZubtn);
@@ -291,6 +431,192 @@
             this.clear1HaoMaZubtn.Text = "清空";
             this.clear1HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear1HaoMaZubtn.Click += new System.EventHandler(this.clear1HaoMaZubtn_Click);
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox11.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox11.Location = new System.Drawing.Point(190, 23);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(34, 21);
+            this.checkBox11.TabIndex = 10;
+            this.checkBox11.Text = "5";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox12.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox12.Location = new System.Drawing.Point(334, 23);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(34, 21);
+            this.checkBox12.TabIndex = 6;
+            this.checkBox12.Text = "9";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox13.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox13.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox13.Location = new System.Drawing.Point(226, 23);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(34, 21);
+            this.checkBox13.TabIndex = 9;
+            this.checkBox13.Text = "6";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox14.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox14.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox14.Location = new System.Drawing.Point(262, 23);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(34, 21);
+            this.checkBox14.TabIndex = 8;
+            this.checkBox14.Text = "7";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox15.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox15.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox15.Location = new System.Drawing.Point(298, 23);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(34, 21);
+            this.checkBox15.TabIndex = 7;
+            this.checkBox15.Text = "8";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox16.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox16.Location = new System.Drawing.Point(154, 23);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(34, 21);
+            this.checkBox16.TabIndex = 5;
+            this.checkBox16.Text = "4";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox17.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox17.Location = new System.Drawing.Point(118, 23);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(34, 21);
+            this.checkBox17.TabIndex = 4;
+            this.checkBox17.Text = "3";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox18
+            // 
+            this.checkBox18.AutoSize = true;
+            this.checkBox18.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox18.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox18.Location = new System.Drawing.Point(82, 23);
+            this.checkBox18.Name = "checkBox18";
+            this.checkBox18.Size = new System.Drawing.Size(34, 21);
+            this.checkBox18.TabIndex = 3;
+            this.checkBox18.Text = "2";
+            this.checkBox18.UseVisualStyleBackColor = true;
+            // 
+            // checkBox19
+            // 
+            this.checkBox19.AutoSize = true;
+            this.checkBox19.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox19.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox19.Location = new System.Drawing.Point(46, 23);
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.Size = new System.Drawing.Size(34, 21);
+            this.checkBox19.TabIndex = 2;
+            this.checkBox19.Text = "1";
+            this.checkBox19.UseVisualStyleBackColor = true;
+            // 
+            // checkBox20
+            // 
+            this.checkBox20.AutoSize = true;
+            this.checkBox20.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox20.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox20.Location = new System.Drawing.Point(10, 23);
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.Size = new System.Drawing.Size(34, 21);
+            this.checkBox20.TabIndex = 1;
+            this.checkBox20.Text = "0";
+            this.checkBox20.UseVisualStyleBackColor = true;
+            // 
+            // oneZu3
+            // 
+            this.oneZu3.AutoSize = true;
+            this.oneZu3.checkBgColor = System.Drawing.Color.Empty;
+            this.oneZu3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.oneZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oneZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.oneZu3.Location = new System.Drawing.Point(475, 23);
+            this.oneZu3.Name = "oneZu3";
+            this.oneZu3.Size = new System.Drawing.Size(31, 21);
+            this.oneZu3.TabIndex = 23;
+            this.oneZu3.Text = "3";
+            this.oneZu3.UseVisualStyleBackColor = true;
+            // 
+            // oneZu2
+            // 
+            this.oneZu2.AutoSize = true;
+            this.oneZu2.checkBgColor = System.Drawing.Color.Empty;
+            this.oneZu2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.oneZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oneZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.oneZu2.Location = new System.Drawing.Point(447, 23);
+            this.oneZu2.Name = "oneZu2";
+            this.oneZu2.Size = new System.Drawing.Size(31, 21);
+            this.oneZu2.TabIndex = 22;
+            this.oneZu2.Text = "2";
+            this.oneZu2.UseVisualStyleBackColor = true;
+            // 
+            // oneZu1
+            // 
+            this.oneZu1.AutoSize = true;
+            this.oneZu1.checkBgColor = System.Drawing.Color.Empty;
+            this.oneZu1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.oneZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oneZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.oneZu1.Location = new System.Drawing.Point(419, 23);
+            this.oneZu1.Name = "oneZu1";
+            this.oneZu1.Size = new System.Drawing.Size(31, 21);
+            this.oneZu1.TabIndex = 21;
+            this.oneZu1.Text = "1";
+            this.oneZu1.UseVisualStyleBackColor = true;
+            // 
+            // oneZu0
+            // 
+            this.oneZu0.AutoSize = true;
+            this.oneZu0.checkBgColor = System.Drawing.Color.Empty;
+            this.oneZu0.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.oneZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oneZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.oneZu0.Location = new System.Drawing.Point(391, 23);
+            this.oneZu0.Name = "oneZu0";
+            this.oneZu0.Size = new System.Drawing.Size(31, 21);
+            this.oneZu0.TabIndex = 24;
+            this.oneZu0.Text = "0";
+            this.oneZu0.UseVisualStyleBackColor = true;
             // 
             // oneZuChu
             // 
@@ -377,6 +703,42 @@
             this.cusFJTbx1.TabIndex = 12;
             this.cusFJTbx1.TextChanged += new System.EventHandler(this.cusFJTbx1_TextChanged);
             // 
+            // dxFJcbx
+            // 
+            this.dxFJcbx.AutoSize = true;
+            this.dxFJcbx.checkBgColor = System.Drawing.Color.Empty;
+            this.dxFJcbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.dxFJcbx.Location = new System.Drawing.Point(193, 20);
+            this.dxFJcbx.Name = "dxFJcbx";
+            this.dxFJcbx.Size = new System.Drawing.Size(84, 24);
+            this.dxFJcbx.TabIndex = 2;
+            this.dxFJcbx.Text = "大小分解";
+            this.dxFJcbx.UseVisualStyleBackColor = true;
+            // 
+            // zhFJcbx
+            // 
+            this.zhFJcbx.AutoSize = true;
+            this.zhFJcbx.checkBgColor = System.Drawing.Color.Empty;
+            this.zhFJcbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.zhFJcbx.Location = new System.Drawing.Point(103, 20);
+            this.zhFJcbx.Name = "zhFJcbx";
+            this.zhFJcbx.Size = new System.Drawing.Size(84, 24);
+            this.zhFJcbx.TabIndex = 1;
+            this.zhFJcbx.Text = "质合分解";
+            this.zhFJcbx.UseVisualStyleBackColor = true;
+            // 
+            // dsFJcbx
+            // 
+            this.dsFJcbx.AutoSize = true;
+            this.dsFJcbx.checkBgColor = System.Drawing.Color.Empty;
+            this.dsFJcbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.dsFJcbx.Location = new System.Drawing.Point(13, 20);
+            this.dsFJcbx.Name = "dsFJcbx";
+            this.dsFJcbx.Size = new System.Drawing.Size(84, 24);
+            this.dsFJcbx.TabIndex = 0;
+            this.dsFJcbx.Text = "单双分解";
+            this.dsFJcbx.UseVisualStyleBackColor = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.shaDaLiuXiao1);
@@ -398,6 +760,152 @@
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "百位杀号";
+            // 
+            // shaDaLiuXiao1
+            // 
+            this.shaDaLiuXiao1.AutoSize = true;
+            this.shaDaLiuXiao1.checkBgColor = System.Drawing.Color.Empty;
+            this.shaDaLiuXiao1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.shaDaLiuXiao1.Location = new System.Drawing.Point(288, -1);
+            this.shaDaLiuXiao1.Name = "shaDaLiuXiao1";
+            this.shaDaLiuXiao1.Size = new System.Drawing.Size(75, 21);
+            this.shaDaLiuXiao1.TabIndex = 12;
+            this.shaDaLiuXiao1.Text = "杀大留小";
+            this.shaDaLiuXiao1.UseVisualStyleBackColor = true;
+            this.shaDaLiuXiao1.CheckedChanged += new System.EventHandler(this.shaDaLiuXiao1_CheckedChanged);
+            // 
+            // shaDanLiuShuang1
+            // 
+            this.shaDanLiuShuang1.AutoSize = true;
+            this.shaDanLiuShuang1.checkBgColor = System.Drawing.Color.Empty;
+            this.shaDanLiuShuang1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.shaDanLiuShuang1.Location = new System.Drawing.Point(207, -1);
+            this.shaDanLiuShuang1.Name = "shaDanLiuShuang1";
+            this.shaDanLiuShuang1.Size = new System.Drawing.Size(75, 21);
+            this.shaDanLiuShuang1.TabIndex = 11;
+            this.shaDanLiuShuang1.Text = "杀单留双";
+            this.shaDanLiuShuang1.UseVisualStyleBackColor = true;
+            this.shaDanLiuShuang1.CheckedChanged += new System.EventHandler(this.shaDanLiuShuang1_CheckedChanged);
+            // 
+            // checkBox24
+            // 
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox24.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox24.Location = new System.Drawing.Point(187, 22);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(34, 21);
+            this.checkBox24.TabIndex = 10;
+            this.checkBox24.Text = "5";
+            this.checkBox24.UseVisualStyleBackColor = true;
+            // 
+            // checkBox25
+            // 
+            this.checkBox25.AutoSize = true;
+            this.checkBox25.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox25.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox25.Location = new System.Drawing.Point(331, 22);
+            this.checkBox25.Name = "checkBox25";
+            this.checkBox25.Size = new System.Drawing.Size(34, 21);
+            this.checkBox25.TabIndex = 6;
+            this.checkBox25.Text = "9";
+            this.checkBox25.UseVisualStyleBackColor = true;
+            // 
+            // checkBox26
+            // 
+            this.checkBox26.AutoSize = true;
+            this.checkBox26.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox26.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox26.Location = new System.Drawing.Point(223, 22);
+            this.checkBox26.Name = "checkBox26";
+            this.checkBox26.Size = new System.Drawing.Size(34, 21);
+            this.checkBox26.TabIndex = 9;
+            this.checkBox26.Text = "6";
+            this.checkBox26.UseVisualStyleBackColor = true;
+            // 
+            // checkBox27
+            // 
+            this.checkBox27.AutoSize = true;
+            this.checkBox27.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox27.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox27.Location = new System.Drawing.Point(259, 22);
+            this.checkBox27.Name = "checkBox27";
+            this.checkBox27.Size = new System.Drawing.Size(34, 21);
+            this.checkBox27.TabIndex = 8;
+            this.checkBox27.Text = "7";
+            this.checkBox27.UseVisualStyleBackColor = true;
+            // 
+            // checkBox28
+            // 
+            this.checkBox28.AutoSize = true;
+            this.checkBox28.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox28.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox28.Location = new System.Drawing.Point(295, 22);
+            this.checkBox28.Name = "checkBox28";
+            this.checkBox28.Size = new System.Drawing.Size(34, 21);
+            this.checkBox28.TabIndex = 7;
+            this.checkBox28.Text = "8";
+            this.checkBox28.UseVisualStyleBackColor = true;
+            // 
+            // checkBox29
+            // 
+            this.checkBox29.AutoSize = true;
+            this.checkBox29.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox29.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox29.Location = new System.Drawing.Point(151, 22);
+            this.checkBox29.Name = "checkBox29";
+            this.checkBox29.Size = new System.Drawing.Size(34, 21);
+            this.checkBox29.TabIndex = 5;
+            this.checkBox29.Text = "4";
+            this.checkBox29.UseVisualStyleBackColor = true;
+            // 
+            // checkBox30
+            // 
+            this.checkBox30.AutoSize = true;
+            this.checkBox30.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox30.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox30.Location = new System.Drawing.Point(115, 22);
+            this.checkBox30.Name = "checkBox30";
+            this.checkBox30.Size = new System.Drawing.Size(34, 21);
+            this.checkBox30.TabIndex = 4;
+            this.checkBox30.Text = "3";
+            this.checkBox30.UseVisualStyleBackColor = true;
+            // 
+            // checkBox31
+            // 
+            this.checkBox31.AutoSize = true;
+            this.checkBox31.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox31.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox31.Location = new System.Drawing.Point(79, 22);
+            this.checkBox31.Name = "checkBox31";
+            this.checkBox31.Size = new System.Drawing.Size(34, 21);
+            this.checkBox31.TabIndex = 3;
+            this.checkBox31.Text = "2";
+            this.checkBox31.UseVisualStyleBackColor = true;
+            // 
+            // checkBox32
+            // 
+            this.checkBox32.AutoSize = true;
+            this.checkBox32.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox32.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox32.Location = new System.Drawing.Point(43, 22);
+            this.checkBox32.Name = "checkBox32";
+            this.checkBox32.Size = new System.Drawing.Size(34, 21);
+            this.checkBox32.TabIndex = 2;
+            this.checkBox32.Text = "1";
+            this.checkBox32.UseVisualStyleBackColor = true;
+            // 
+            // checkBox33
+            // 
+            this.checkBox33.AutoSize = true;
+            this.checkBox33.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox33.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox33.Location = new System.Drawing.Point(7, 22);
+            this.checkBox33.Name = "checkBox33";
+            this.checkBox33.Size = new System.Drawing.Size(34, 21);
+            this.checkBox33.TabIndex = 1;
+            this.checkBox33.Text = "0";
+            this.checkBox33.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -421,6 +929,152 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "个位杀号";
             // 
+            // shaDaLiuXiao3
+            // 
+            this.shaDaLiuXiao3.AutoSize = true;
+            this.shaDaLiuXiao3.checkBgColor = System.Drawing.Color.Empty;
+            this.shaDaLiuXiao3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.shaDaLiuXiao3.Location = new System.Drawing.Point(288, -1);
+            this.shaDaLiuXiao3.Name = "shaDaLiuXiao3";
+            this.shaDaLiuXiao3.Size = new System.Drawing.Size(75, 21);
+            this.shaDaLiuXiao3.TabIndex = 16;
+            this.shaDaLiuXiao3.Text = "杀大留小";
+            this.shaDaLiuXiao3.UseVisualStyleBackColor = true;
+            this.shaDaLiuXiao3.CheckedChanged += new System.EventHandler(this.shaDaLiuXiao3_CheckedChanged);
+            // 
+            // checkBox34
+            // 
+            this.checkBox34.AutoSize = true;
+            this.checkBox34.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox34.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox34.Location = new System.Drawing.Point(187, 23);
+            this.checkBox34.Name = "checkBox34";
+            this.checkBox34.Size = new System.Drawing.Size(34, 21);
+            this.checkBox34.TabIndex = 10;
+            this.checkBox34.Text = "5";
+            this.checkBox34.UseVisualStyleBackColor = true;
+            // 
+            // shaDanLiuShuang3
+            // 
+            this.shaDanLiuShuang3.AutoSize = true;
+            this.shaDanLiuShuang3.checkBgColor = System.Drawing.Color.Empty;
+            this.shaDanLiuShuang3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.shaDanLiuShuang3.Location = new System.Drawing.Point(207, -1);
+            this.shaDanLiuShuang3.Name = "shaDanLiuShuang3";
+            this.shaDanLiuShuang3.Size = new System.Drawing.Size(75, 21);
+            this.shaDanLiuShuang3.TabIndex = 15;
+            this.shaDanLiuShuang3.Text = "杀单留双";
+            this.shaDanLiuShuang3.UseVisualStyleBackColor = true;
+            this.shaDanLiuShuang3.CheckedChanged += new System.EventHandler(this.shaDanLiuShuang3_CheckedChanged);
+            // 
+            // checkBox35
+            // 
+            this.checkBox35.AutoSize = true;
+            this.checkBox35.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox35.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox35.Location = new System.Drawing.Point(331, 23);
+            this.checkBox35.Name = "checkBox35";
+            this.checkBox35.Size = new System.Drawing.Size(34, 21);
+            this.checkBox35.TabIndex = 6;
+            this.checkBox35.Text = "9";
+            this.checkBox35.UseVisualStyleBackColor = true;
+            // 
+            // checkBox36
+            // 
+            this.checkBox36.AutoSize = true;
+            this.checkBox36.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox36.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox36.Location = new System.Drawing.Point(223, 23);
+            this.checkBox36.Name = "checkBox36";
+            this.checkBox36.Size = new System.Drawing.Size(34, 21);
+            this.checkBox36.TabIndex = 9;
+            this.checkBox36.Text = "6";
+            this.checkBox36.UseVisualStyleBackColor = true;
+            // 
+            // checkBox37
+            // 
+            this.checkBox37.AutoSize = true;
+            this.checkBox37.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox37.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox37.Location = new System.Drawing.Point(259, 23);
+            this.checkBox37.Name = "checkBox37";
+            this.checkBox37.Size = new System.Drawing.Size(34, 21);
+            this.checkBox37.TabIndex = 8;
+            this.checkBox37.Text = "7";
+            this.checkBox37.UseVisualStyleBackColor = true;
+            // 
+            // checkBox38
+            // 
+            this.checkBox38.AutoSize = true;
+            this.checkBox38.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox38.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox38.Location = new System.Drawing.Point(295, 23);
+            this.checkBox38.Name = "checkBox38";
+            this.checkBox38.Size = new System.Drawing.Size(34, 21);
+            this.checkBox38.TabIndex = 7;
+            this.checkBox38.Text = "8";
+            this.checkBox38.UseVisualStyleBackColor = true;
+            // 
+            // checkBox39
+            // 
+            this.checkBox39.AutoSize = true;
+            this.checkBox39.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox39.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox39.Location = new System.Drawing.Point(151, 23);
+            this.checkBox39.Name = "checkBox39";
+            this.checkBox39.Size = new System.Drawing.Size(34, 21);
+            this.checkBox39.TabIndex = 5;
+            this.checkBox39.Text = "4";
+            this.checkBox39.UseVisualStyleBackColor = true;
+            // 
+            // checkBox40
+            // 
+            this.checkBox40.AutoSize = true;
+            this.checkBox40.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox40.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox40.Location = new System.Drawing.Point(115, 23);
+            this.checkBox40.Name = "checkBox40";
+            this.checkBox40.Size = new System.Drawing.Size(34, 21);
+            this.checkBox40.TabIndex = 4;
+            this.checkBox40.Text = "3";
+            this.checkBox40.UseVisualStyleBackColor = true;
+            // 
+            // checkBox41
+            // 
+            this.checkBox41.AutoSize = true;
+            this.checkBox41.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox41.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox41.Location = new System.Drawing.Point(79, 23);
+            this.checkBox41.Name = "checkBox41";
+            this.checkBox41.Size = new System.Drawing.Size(34, 21);
+            this.checkBox41.TabIndex = 3;
+            this.checkBox41.Text = "2";
+            this.checkBox41.UseVisualStyleBackColor = true;
+            // 
+            // checkBox42
+            // 
+            this.checkBox42.AutoSize = true;
+            this.checkBox42.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox42.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox42.Location = new System.Drawing.Point(43, 23);
+            this.checkBox42.Name = "checkBox42";
+            this.checkBox42.Size = new System.Drawing.Size(34, 21);
+            this.checkBox42.TabIndex = 2;
+            this.checkBox42.Text = "1";
+            this.checkBox42.UseVisualStyleBackColor = true;
+            // 
+            // checkBox43
+            // 
+            this.checkBox43.AutoSize = true;
+            this.checkBox43.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox43.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox43.Location = new System.Drawing.Point(7, 23);
+            this.checkBox43.Name = "checkBox43";
+            this.checkBox43.Size = new System.Drawing.Size(34, 21);
+            this.checkBox43.TabIndex = 1;
+            this.checkBox43.Text = "0";
+            this.checkBox43.UseVisualStyleBackColor = true;
+            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.shaDaLiuXiao2);
@@ -442,6 +1096,152 @@
             this.groupBox6.TabIndex = 13;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "十位杀号";
+            // 
+            // shaDaLiuXiao2
+            // 
+            this.shaDaLiuXiao2.AutoSize = true;
+            this.shaDaLiuXiao2.checkBgColor = System.Drawing.Color.Empty;
+            this.shaDaLiuXiao2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.shaDaLiuXiao2.Location = new System.Drawing.Point(288, -1);
+            this.shaDaLiuXiao2.Name = "shaDaLiuXiao2";
+            this.shaDaLiuXiao2.Size = new System.Drawing.Size(75, 21);
+            this.shaDaLiuXiao2.TabIndex = 14;
+            this.shaDaLiuXiao2.Text = "杀大留小";
+            this.shaDaLiuXiao2.UseVisualStyleBackColor = true;
+            this.shaDaLiuXiao2.CheckedChanged += new System.EventHandler(this.shaDaLiuXiao2_CheckedChanged);
+            // 
+            // checkBox44
+            // 
+            this.checkBox44.AutoSize = true;
+            this.checkBox44.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox44.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox44.Location = new System.Drawing.Point(187, 23);
+            this.checkBox44.Name = "checkBox44";
+            this.checkBox44.Size = new System.Drawing.Size(34, 21);
+            this.checkBox44.TabIndex = 10;
+            this.checkBox44.Text = "5";
+            this.checkBox44.UseVisualStyleBackColor = true;
+            // 
+            // shaDanLiuShuang2
+            // 
+            this.shaDanLiuShuang2.AutoSize = true;
+            this.shaDanLiuShuang2.checkBgColor = System.Drawing.Color.Empty;
+            this.shaDanLiuShuang2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.shaDanLiuShuang2.Location = new System.Drawing.Point(207, -1);
+            this.shaDanLiuShuang2.Name = "shaDanLiuShuang2";
+            this.shaDanLiuShuang2.Size = new System.Drawing.Size(75, 21);
+            this.shaDanLiuShuang2.TabIndex = 13;
+            this.shaDanLiuShuang2.Text = "杀单留双";
+            this.shaDanLiuShuang2.UseVisualStyleBackColor = true;
+            this.shaDanLiuShuang2.CheckedChanged += new System.EventHandler(this.shaDanLiuShuang2_CheckedChanged);
+            // 
+            // checkBox45
+            // 
+            this.checkBox45.AutoSize = true;
+            this.checkBox45.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox45.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox45.Location = new System.Drawing.Point(331, 23);
+            this.checkBox45.Name = "checkBox45";
+            this.checkBox45.Size = new System.Drawing.Size(34, 21);
+            this.checkBox45.TabIndex = 6;
+            this.checkBox45.Text = "9";
+            this.checkBox45.UseVisualStyleBackColor = true;
+            // 
+            // checkBox46
+            // 
+            this.checkBox46.AutoSize = true;
+            this.checkBox46.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox46.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox46.Location = new System.Drawing.Point(223, 23);
+            this.checkBox46.Name = "checkBox46";
+            this.checkBox46.Size = new System.Drawing.Size(34, 21);
+            this.checkBox46.TabIndex = 9;
+            this.checkBox46.Text = "6";
+            this.checkBox46.UseVisualStyleBackColor = true;
+            // 
+            // checkBox47
+            // 
+            this.checkBox47.AutoSize = true;
+            this.checkBox47.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox47.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox47.Location = new System.Drawing.Point(259, 23);
+            this.checkBox47.Name = "checkBox47";
+            this.checkBox47.Size = new System.Drawing.Size(34, 21);
+            this.checkBox47.TabIndex = 8;
+            this.checkBox47.Text = "7";
+            this.checkBox47.UseVisualStyleBackColor = true;
+            // 
+            // checkBox48
+            // 
+            this.checkBox48.AutoSize = true;
+            this.checkBox48.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox48.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox48.Location = new System.Drawing.Point(295, 23);
+            this.checkBox48.Name = "checkBox48";
+            this.checkBox48.Size = new System.Drawing.Size(34, 21);
+            this.checkBox48.TabIndex = 7;
+            this.checkBox48.Text = "8";
+            this.checkBox48.UseVisualStyleBackColor = true;
+            // 
+            // checkBox49
+            // 
+            this.checkBox49.AutoSize = true;
+            this.checkBox49.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox49.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox49.Location = new System.Drawing.Point(151, 23);
+            this.checkBox49.Name = "checkBox49";
+            this.checkBox49.Size = new System.Drawing.Size(34, 21);
+            this.checkBox49.TabIndex = 5;
+            this.checkBox49.Text = "4";
+            this.checkBox49.UseVisualStyleBackColor = true;
+            // 
+            // checkBox50
+            // 
+            this.checkBox50.AutoSize = true;
+            this.checkBox50.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox50.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox50.Location = new System.Drawing.Point(115, 23);
+            this.checkBox50.Name = "checkBox50";
+            this.checkBox50.Size = new System.Drawing.Size(34, 21);
+            this.checkBox50.TabIndex = 4;
+            this.checkBox50.Text = "3";
+            this.checkBox50.UseVisualStyleBackColor = true;
+            // 
+            // checkBox51
+            // 
+            this.checkBox51.AutoSize = true;
+            this.checkBox51.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox51.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox51.Location = new System.Drawing.Point(79, 23);
+            this.checkBox51.Name = "checkBox51";
+            this.checkBox51.Size = new System.Drawing.Size(34, 21);
+            this.checkBox51.TabIndex = 3;
+            this.checkBox51.Text = "2";
+            this.checkBox51.UseVisualStyleBackColor = true;
+            // 
+            // checkBox52
+            // 
+            this.checkBox52.AutoSize = true;
+            this.checkBox52.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox52.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox52.Location = new System.Drawing.Point(43, 23);
+            this.checkBox52.Name = "checkBox52";
+            this.checkBox52.Size = new System.Drawing.Size(34, 21);
+            this.checkBox52.TabIndex = 2;
+            this.checkBox52.Text = "1";
+            this.checkBox52.UseVisualStyleBackColor = true;
+            // 
+            // checkBox53
+            // 
+            this.checkBox53.AutoSize = true;
+            this.checkBox53.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox53.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox53.Location = new System.Drawing.Point(7, 23);
+            this.checkBox53.Name = "checkBox53";
+            this.checkBox53.Size = new System.Drawing.Size(34, 21);
+            this.checkBox53.TabIndex = 1;
+            this.checkBox53.Text = "0";
+            this.checkBox53.UseVisualStyleBackColor = true;
             // 
             // groupBox11
             // 
@@ -480,6 +1280,62 @@
             this.clear4HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear4HaoMaZubtn.Click += new System.EventHandler(this.clear4HaoMaZubtn_Click);
             // 
+            // fourZu3
+            // 
+            this.fourZu3.AutoSize = true;
+            this.fourZu3.checkBgColor = System.Drawing.Color.Empty;
+            this.fourZu3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.fourZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fourZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.fourZu3.Location = new System.Drawing.Point(475, 21);
+            this.fourZu3.Name = "fourZu3";
+            this.fourZu3.Size = new System.Drawing.Size(31, 21);
+            this.fourZu3.TabIndex = 28;
+            this.fourZu3.Text = "3";
+            this.fourZu3.UseVisualStyleBackColor = true;
+            // 
+            // fourZu2
+            // 
+            this.fourZu2.AutoSize = true;
+            this.fourZu2.checkBgColor = System.Drawing.Color.Empty;
+            this.fourZu2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.fourZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fourZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.fourZu2.Location = new System.Drawing.Point(447, 21);
+            this.fourZu2.Name = "fourZu2";
+            this.fourZu2.Size = new System.Drawing.Size(31, 21);
+            this.fourZu2.TabIndex = 27;
+            this.fourZu2.Text = "2";
+            this.fourZu2.UseVisualStyleBackColor = true;
+            // 
+            // fourZu1
+            // 
+            this.fourZu1.AutoSize = true;
+            this.fourZu1.checkBgColor = System.Drawing.Color.Empty;
+            this.fourZu1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.fourZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fourZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.fourZu1.Location = new System.Drawing.Point(419, 21);
+            this.fourZu1.Name = "fourZu1";
+            this.fourZu1.Size = new System.Drawing.Size(31, 21);
+            this.fourZu1.TabIndex = 26;
+            this.fourZu1.Text = "1";
+            this.fourZu1.UseVisualStyleBackColor = true;
+            // 
+            // fourZu0
+            // 
+            this.fourZu0.AutoSize = true;
+            this.fourZu0.checkBgColor = System.Drawing.Color.Empty;
+            this.fourZu0.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.fourZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fourZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.fourZu0.Location = new System.Drawing.Point(391, 21);
+            this.fourZu0.Name = "fourZu0";
+            this.fourZu0.Size = new System.Drawing.Size(31, 21);
+            this.fourZu0.TabIndex = 29;
+            this.fourZu0.Text = "0";
+            this.fourZu0.UseVisualStyleBackColor = true;
+            // 
             // fourZuChu
             // 
             this.fourZuChu.AutoSize = true;
@@ -488,6 +1344,136 @@
             this.fourZuChu.Size = new System.Drawing.Size(26, 20);
             this.fourZuChu.TabIndex = 25;
             this.fourZuChu.Text = "出:";
+            // 
+            // checkBox74
+            // 
+            this.checkBox74.AutoSize = true;
+            this.checkBox74.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox74.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox74.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox74.Location = new System.Drawing.Point(190, 22);
+            this.checkBox74.Name = "checkBox74";
+            this.checkBox74.Size = new System.Drawing.Size(34, 21);
+            this.checkBox74.TabIndex = 10;
+            this.checkBox74.Text = "5";
+            this.checkBox74.UseVisualStyleBackColor = true;
+            // 
+            // checkBox75
+            // 
+            this.checkBox75.AutoSize = true;
+            this.checkBox75.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox75.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox75.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox75.Location = new System.Drawing.Point(334, 22);
+            this.checkBox75.Name = "checkBox75";
+            this.checkBox75.Size = new System.Drawing.Size(34, 21);
+            this.checkBox75.TabIndex = 6;
+            this.checkBox75.Text = "9";
+            this.checkBox75.UseVisualStyleBackColor = true;
+            // 
+            // checkBox76
+            // 
+            this.checkBox76.AutoSize = true;
+            this.checkBox76.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox76.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox76.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox76.Location = new System.Drawing.Point(226, 22);
+            this.checkBox76.Name = "checkBox76";
+            this.checkBox76.Size = new System.Drawing.Size(34, 21);
+            this.checkBox76.TabIndex = 9;
+            this.checkBox76.Text = "6";
+            this.checkBox76.UseVisualStyleBackColor = true;
+            // 
+            // checkBox77
+            // 
+            this.checkBox77.AutoSize = true;
+            this.checkBox77.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox77.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox77.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox77.Location = new System.Drawing.Point(262, 22);
+            this.checkBox77.Name = "checkBox77";
+            this.checkBox77.Size = new System.Drawing.Size(34, 21);
+            this.checkBox77.TabIndex = 8;
+            this.checkBox77.Text = "7";
+            this.checkBox77.UseVisualStyleBackColor = true;
+            // 
+            // checkBox78
+            // 
+            this.checkBox78.AutoSize = true;
+            this.checkBox78.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox78.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox78.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox78.Location = new System.Drawing.Point(298, 22);
+            this.checkBox78.Name = "checkBox78";
+            this.checkBox78.Size = new System.Drawing.Size(34, 21);
+            this.checkBox78.TabIndex = 7;
+            this.checkBox78.Text = "8";
+            this.checkBox78.UseVisualStyleBackColor = true;
+            // 
+            // checkBox79
+            // 
+            this.checkBox79.AutoSize = true;
+            this.checkBox79.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox79.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox79.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox79.Location = new System.Drawing.Point(154, 22);
+            this.checkBox79.Name = "checkBox79";
+            this.checkBox79.Size = new System.Drawing.Size(34, 21);
+            this.checkBox79.TabIndex = 5;
+            this.checkBox79.Text = "4";
+            this.checkBox79.UseVisualStyleBackColor = true;
+            // 
+            // checkBox80
+            // 
+            this.checkBox80.AutoSize = true;
+            this.checkBox80.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox80.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox80.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox80.Location = new System.Drawing.Point(118, 22);
+            this.checkBox80.Name = "checkBox80";
+            this.checkBox80.Size = new System.Drawing.Size(34, 21);
+            this.checkBox80.TabIndex = 4;
+            this.checkBox80.Text = "3";
+            this.checkBox80.UseVisualStyleBackColor = true;
+            // 
+            // checkBox81
+            // 
+            this.checkBox81.AutoSize = true;
+            this.checkBox81.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox81.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox81.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox81.Location = new System.Drawing.Point(82, 22);
+            this.checkBox81.Name = "checkBox81";
+            this.checkBox81.Size = new System.Drawing.Size(34, 21);
+            this.checkBox81.TabIndex = 3;
+            this.checkBox81.Text = "2";
+            this.checkBox81.UseVisualStyleBackColor = true;
+            // 
+            // checkBox82
+            // 
+            this.checkBox82.AutoSize = true;
+            this.checkBox82.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox82.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox82.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox82.Location = new System.Drawing.Point(46, 22);
+            this.checkBox82.Name = "checkBox82";
+            this.checkBox82.Size = new System.Drawing.Size(34, 21);
+            this.checkBox82.TabIndex = 2;
+            this.checkBox82.Text = "1";
+            this.checkBox82.UseVisualStyleBackColor = true;
+            // 
+            // checkBox83
+            // 
+            this.checkBox83.AutoSize = true;
+            this.checkBox83.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox83.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox83.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox83.Location = new System.Drawing.Point(10, 22);
+            this.checkBox83.Name = "checkBox83";
+            this.checkBox83.Size = new System.Drawing.Size(34, 21);
+            this.checkBox83.TabIndex = 1;
+            this.checkBox83.Text = "0";
+            this.checkBox83.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -526,6 +1512,114 @@
             this.clear3HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear3HaoMaZubtn.Click += new System.EventHandler(this.clear3HaoMaZubtn_Click);
             // 
+            // threeZu3
+            // 
+            this.threeZu3.AutoSize = true;
+            this.threeZu3.checkBgColor = System.Drawing.Color.Empty;
+            this.threeZu3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.threeZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.threeZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.threeZu3.Location = new System.Drawing.Point(475, 22);
+            this.threeZu3.Name = "threeZu3";
+            this.threeZu3.Size = new System.Drawing.Size(31, 21);
+            this.threeZu3.TabIndex = 28;
+            this.threeZu3.Text = "3";
+            this.threeZu3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox64
+            // 
+            this.checkBox64.AutoSize = true;
+            this.checkBox64.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox64.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox64.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox64.Location = new System.Drawing.Point(190, 23);
+            this.checkBox64.Name = "checkBox64";
+            this.checkBox64.Size = new System.Drawing.Size(34, 21);
+            this.checkBox64.TabIndex = 10;
+            this.checkBox64.Text = "5";
+            this.checkBox64.UseVisualStyleBackColor = true;
+            // 
+            // threeZu2
+            // 
+            this.threeZu2.AutoSize = true;
+            this.threeZu2.checkBgColor = System.Drawing.Color.Empty;
+            this.threeZu2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.threeZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.threeZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.threeZu2.Location = new System.Drawing.Point(447, 22);
+            this.threeZu2.Name = "threeZu2";
+            this.threeZu2.Size = new System.Drawing.Size(31, 21);
+            this.threeZu2.TabIndex = 27;
+            this.threeZu2.Text = "2";
+            this.threeZu2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox65
+            // 
+            this.checkBox65.AutoSize = true;
+            this.checkBox65.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox65.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox65.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox65.Location = new System.Drawing.Point(334, 23);
+            this.checkBox65.Name = "checkBox65";
+            this.checkBox65.Size = new System.Drawing.Size(34, 21);
+            this.checkBox65.TabIndex = 6;
+            this.checkBox65.Text = "9";
+            this.checkBox65.UseVisualStyleBackColor = true;
+            // 
+            // threeZu1
+            // 
+            this.threeZu1.AutoSize = true;
+            this.threeZu1.checkBgColor = System.Drawing.Color.Empty;
+            this.threeZu1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.threeZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.threeZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.threeZu1.Location = new System.Drawing.Point(419, 22);
+            this.threeZu1.Name = "threeZu1";
+            this.threeZu1.Size = new System.Drawing.Size(31, 21);
+            this.threeZu1.TabIndex = 26;
+            this.threeZu1.Text = "1";
+            this.threeZu1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox66
+            // 
+            this.checkBox66.AutoSize = true;
+            this.checkBox66.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox66.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox66.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox66.Location = new System.Drawing.Point(226, 23);
+            this.checkBox66.Name = "checkBox66";
+            this.checkBox66.Size = new System.Drawing.Size(34, 21);
+            this.checkBox66.TabIndex = 9;
+            this.checkBox66.Text = "6";
+            this.checkBox66.UseVisualStyleBackColor = true;
+            // 
+            // threeZu0
+            // 
+            this.threeZu0.AutoSize = true;
+            this.threeZu0.checkBgColor = System.Drawing.Color.Empty;
+            this.threeZu0.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.threeZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.threeZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.threeZu0.Location = new System.Drawing.Point(391, 22);
+            this.threeZu0.Name = "threeZu0";
+            this.threeZu0.Size = new System.Drawing.Size(31, 21);
+            this.threeZu0.TabIndex = 29;
+            this.threeZu0.Text = "0";
+            this.threeZu0.UseVisualStyleBackColor = true;
+            // 
+            // checkBox67
+            // 
+            this.checkBox67.AutoSize = true;
+            this.checkBox67.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox67.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox67.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox67.Location = new System.Drawing.Point(262, 23);
+            this.checkBox67.Name = "checkBox67";
+            this.checkBox67.Size = new System.Drawing.Size(34, 21);
+            this.checkBox67.TabIndex = 8;
+            this.checkBox67.Text = "7";
+            this.checkBox67.UseVisualStyleBackColor = true;
+            // 
             // threeZuChu
             // 
             this.threeZuChu.AutoSize = true;
@@ -534,6 +1628,84 @@
             this.threeZuChu.Size = new System.Drawing.Size(26, 20);
             this.threeZuChu.TabIndex = 25;
             this.threeZuChu.Text = "出:";
+            // 
+            // checkBox68
+            // 
+            this.checkBox68.AutoSize = true;
+            this.checkBox68.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox68.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox68.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox68.Location = new System.Drawing.Point(298, 23);
+            this.checkBox68.Name = "checkBox68";
+            this.checkBox68.Size = new System.Drawing.Size(34, 21);
+            this.checkBox68.TabIndex = 7;
+            this.checkBox68.Text = "8";
+            this.checkBox68.UseVisualStyleBackColor = true;
+            // 
+            // checkBox69
+            // 
+            this.checkBox69.AutoSize = true;
+            this.checkBox69.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox69.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox69.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox69.Location = new System.Drawing.Point(154, 23);
+            this.checkBox69.Name = "checkBox69";
+            this.checkBox69.Size = new System.Drawing.Size(34, 21);
+            this.checkBox69.TabIndex = 5;
+            this.checkBox69.Text = "4";
+            this.checkBox69.UseVisualStyleBackColor = true;
+            // 
+            // checkBox70
+            // 
+            this.checkBox70.AutoSize = true;
+            this.checkBox70.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox70.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox70.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox70.Location = new System.Drawing.Point(118, 23);
+            this.checkBox70.Name = "checkBox70";
+            this.checkBox70.Size = new System.Drawing.Size(34, 21);
+            this.checkBox70.TabIndex = 4;
+            this.checkBox70.Text = "3";
+            this.checkBox70.UseVisualStyleBackColor = true;
+            // 
+            // checkBox71
+            // 
+            this.checkBox71.AutoSize = true;
+            this.checkBox71.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox71.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox71.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox71.Location = new System.Drawing.Point(82, 23);
+            this.checkBox71.Name = "checkBox71";
+            this.checkBox71.Size = new System.Drawing.Size(34, 21);
+            this.checkBox71.TabIndex = 3;
+            this.checkBox71.Text = "2";
+            this.checkBox71.UseVisualStyleBackColor = true;
+            // 
+            // checkBox72
+            // 
+            this.checkBox72.AutoSize = true;
+            this.checkBox72.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox72.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox72.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox72.Location = new System.Drawing.Point(46, 23);
+            this.checkBox72.Name = "checkBox72";
+            this.checkBox72.Size = new System.Drawing.Size(34, 21);
+            this.checkBox72.TabIndex = 2;
+            this.checkBox72.Text = "1";
+            this.checkBox72.UseVisualStyleBackColor = true;
+            // 
+            // checkBox73
+            // 
+            this.checkBox73.AutoSize = true;
+            this.checkBox73.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox73.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox73.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox73.Location = new System.Drawing.Point(10, 23);
+            this.checkBox73.Name = "checkBox73";
+            this.checkBox73.Size = new System.Drawing.Size(34, 21);
+            this.checkBox73.TabIndex = 1;
+            this.checkBox73.Text = "0";
+            this.checkBox73.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -572,6 +1744,114 @@
             this.clear2HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear2HaoMaZubtn.Click += new System.EventHandler(this.clear2HaoMaZubtn_Click);
             // 
+            // twoZu3
+            // 
+            this.twoZu3.AutoSize = true;
+            this.twoZu3.checkBgColor = System.Drawing.Color.Empty;
+            this.twoZu3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.twoZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.twoZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.twoZu3.Location = new System.Drawing.Point(475, 22);
+            this.twoZu3.Name = "twoZu3";
+            this.twoZu3.Size = new System.Drawing.Size(31, 21);
+            this.twoZu3.TabIndex = 28;
+            this.twoZu3.Text = "3";
+            this.twoZu3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox54
+            // 
+            this.checkBox54.AutoSize = true;
+            this.checkBox54.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox54.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox54.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox54.Location = new System.Drawing.Point(190, 23);
+            this.checkBox54.Name = "checkBox54";
+            this.checkBox54.Size = new System.Drawing.Size(34, 21);
+            this.checkBox54.TabIndex = 10;
+            this.checkBox54.Text = "5";
+            this.checkBox54.UseVisualStyleBackColor = true;
+            // 
+            // twoZu2
+            // 
+            this.twoZu2.AutoSize = true;
+            this.twoZu2.checkBgColor = System.Drawing.Color.Empty;
+            this.twoZu2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.twoZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.twoZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.twoZu2.Location = new System.Drawing.Point(447, 22);
+            this.twoZu2.Name = "twoZu2";
+            this.twoZu2.Size = new System.Drawing.Size(31, 21);
+            this.twoZu2.TabIndex = 27;
+            this.twoZu2.Text = "2";
+            this.twoZu2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox55
+            // 
+            this.checkBox55.AutoSize = true;
+            this.checkBox55.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox55.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox55.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox55.Location = new System.Drawing.Point(334, 23);
+            this.checkBox55.Name = "checkBox55";
+            this.checkBox55.Size = new System.Drawing.Size(34, 21);
+            this.checkBox55.TabIndex = 6;
+            this.checkBox55.Text = "9";
+            this.checkBox55.UseVisualStyleBackColor = true;
+            // 
+            // twoZu1
+            // 
+            this.twoZu1.AutoSize = true;
+            this.twoZu1.checkBgColor = System.Drawing.Color.Empty;
+            this.twoZu1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.twoZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.twoZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.twoZu1.Location = new System.Drawing.Point(419, 22);
+            this.twoZu1.Name = "twoZu1";
+            this.twoZu1.Size = new System.Drawing.Size(31, 21);
+            this.twoZu1.TabIndex = 26;
+            this.twoZu1.Text = "1";
+            this.twoZu1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox56
+            // 
+            this.checkBox56.AutoSize = true;
+            this.checkBox56.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox56.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox56.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox56.Location = new System.Drawing.Point(226, 23);
+            this.checkBox56.Name = "checkBox56";
+            this.checkBox56.Size = new System.Drawing.Size(34, 21);
+            this.checkBox56.TabIndex = 9;
+            this.checkBox56.Text = "6";
+            this.checkBox56.UseVisualStyleBackColor = true;
+            // 
+            // twoZu0
+            // 
+            this.twoZu0.AutoSize = true;
+            this.twoZu0.checkBgColor = System.Drawing.Color.Empty;
+            this.twoZu0.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.twoZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.twoZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.twoZu0.Location = new System.Drawing.Point(391, 22);
+            this.twoZu0.Name = "twoZu0";
+            this.twoZu0.Size = new System.Drawing.Size(31, 21);
+            this.twoZu0.TabIndex = 29;
+            this.twoZu0.Text = "0";
+            this.twoZu0.UseVisualStyleBackColor = true;
+            // 
+            // checkBox57
+            // 
+            this.checkBox57.AutoSize = true;
+            this.checkBox57.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox57.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox57.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox57.Location = new System.Drawing.Point(262, 23);
+            this.checkBox57.Name = "checkBox57";
+            this.checkBox57.Size = new System.Drawing.Size(34, 21);
+            this.checkBox57.TabIndex = 8;
+            this.checkBox57.Text = "7";
+            this.checkBox57.UseVisualStyleBackColor = true;
+            // 
             // twoZuChu
             // 
             this.twoZuChu.AutoSize = true;
@@ -580,6 +1860,84 @@
             this.twoZuChu.Size = new System.Drawing.Size(26, 20);
             this.twoZuChu.TabIndex = 25;
             this.twoZuChu.Text = "出:";
+            // 
+            // checkBox58
+            // 
+            this.checkBox58.AutoSize = true;
+            this.checkBox58.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox58.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox58.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox58.Location = new System.Drawing.Point(298, 23);
+            this.checkBox58.Name = "checkBox58";
+            this.checkBox58.Size = new System.Drawing.Size(34, 21);
+            this.checkBox58.TabIndex = 7;
+            this.checkBox58.Text = "8";
+            this.checkBox58.UseVisualStyleBackColor = true;
+            // 
+            // checkBox59
+            // 
+            this.checkBox59.AutoSize = true;
+            this.checkBox59.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox59.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox59.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox59.Location = new System.Drawing.Point(154, 23);
+            this.checkBox59.Name = "checkBox59";
+            this.checkBox59.Size = new System.Drawing.Size(34, 21);
+            this.checkBox59.TabIndex = 5;
+            this.checkBox59.Text = "4";
+            this.checkBox59.UseVisualStyleBackColor = true;
+            // 
+            // checkBox60
+            // 
+            this.checkBox60.AutoSize = true;
+            this.checkBox60.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox60.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox60.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox60.Location = new System.Drawing.Point(118, 23);
+            this.checkBox60.Name = "checkBox60";
+            this.checkBox60.Size = new System.Drawing.Size(34, 21);
+            this.checkBox60.TabIndex = 4;
+            this.checkBox60.Text = "3";
+            this.checkBox60.UseVisualStyleBackColor = true;
+            // 
+            // checkBox61
+            // 
+            this.checkBox61.AutoSize = true;
+            this.checkBox61.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox61.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox61.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox61.Location = new System.Drawing.Point(82, 23);
+            this.checkBox61.Name = "checkBox61";
+            this.checkBox61.Size = new System.Drawing.Size(34, 21);
+            this.checkBox61.TabIndex = 3;
+            this.checkBox61.Text = "2";
+            this.checkBox61.UseVisualStyleBackColor = true;
+            // 
+            // checkBox62
+            // 
+            this.checkBox62.AutoSize = true;
+            this.checkBox62.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox62.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox62.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox62.Location = new System.Drawing.Point(46, 23);
+            this.checkBox62.Name = "checkBox62";
+            this.checkBox62.Size = new System.Drawing.Size(34, 21);
+            this.checkBox62.TabIndex = 2;
+            this.checkBox62.Text = "1";
+            this.checkBox62.UseVisualStyleBackColor = true;
+            // 
+            // checkBox63
+            // 
+            this.checkBox63.AutoSize = true;
+            this.checkBox63.checkBgColor = System.Drawing.Color.Empty;
+            this.checkBox63.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox63.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox63.Location = new System.Drawing.Point(10, 23);
+            this.checkBox63.Name = "checkBox63";
+            this.checkBox63.Size = new System.Drawing.Size(34, 21);
+            this.checkBox63.TabIndex = 1;
+            this.checkBox63.Text = "0";
+            this.checkBox63.UseVisualStyleBackColor = true;
             // 
             // groupBox16
             // 
@@ -616,7 +1974,7 @@
             this.linkLabel2.Size = new System.Drawing.Size(65, 20);
             this.linkLabel2.TabIndex = 3;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "信息修改";
+            this.linkLabel2.Text = "个人信息";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
@@ -921,6 +2279,90 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // duanLinCbx
+            // 
+            this.duanLinCbx.AutoSize = true;
+            this.duanLinCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.duanLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.duanLinCbx.Location = new System.Drawing.Point(401, 20);
+            this.duanLinCbx.Name = "duanLinCbx";
+            this.duanLinCbx.Size = new System.Drawing.Size(56, 24);
+            this.duanLinCbx.TabIndex = 6;
+            this.duanLinCbx.Text = "邻码";
+            this.duanLinCbx.UseVisualStyleBackColor = true;
+            // 
+            // zhiHeCbx
+            // 
+            this.zhiHeCbx.AutoSize = true;
+            this.zhiHeCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.zhiHeCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.zhiHeCbx.Location = new System.Drawing.Point(327, 20);
+            this.zhiHeCbx.Name = "zhiHeCbx";
+            this.zhiHeCbx.Size = new System.Drawing.Size(70, 24);
+            this.zhiHeCbx.TabIndex = 5;
+            this.zhiHeCbx.Text = "质合邻";
+            this.zhiHeCbx.UseVisualStyleBackColor = true;
+            // 
+            // heLinCbx
+            // 
+            this.heLinCbx.AutoSize = true;
+            this.heLinCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.heLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.heLinCbx.Location = new System.Drawing.Point(267, 20);
+            this.heLinCbx.Name = "heLinCbx";
+            this.heLinCbx.Size = new System.Drawing.Size(56, 24);
+            this.heLinCbx.TabIndex = 4;
+            this.heLinCbx.Text = "合邻";
+            this.heLinCbx.UseVisualStyleBackColor = true;
+            // 
+            // zhiLinCbx
+            // 
+            this.zhiLinCbx.AutoSize = true;
+            this.zhiLinCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.zhiLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.zhiLinCbx.Location = new System.Drawing.Point(207, 20);
+            this.zhiLinCbx.Name = "zhiLinCbx";
+            this.zhiLinCbx.Size = new System.Drawing.Size(56, 24);
+            this.zhiLinCbx.TabIndex = 3;
+            this.zhiLinCbx.Text = "质邻";
+            this.zhiLinCbx.UseVisualStyleBackColor = true;
+            // 
+            // daXiaoCbx
+            // 
+            this.daXiaoCbx.AutoSize = true;
+            this.daXiaoCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.daXiaoCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.daXiaoCbx.Location = new System.Drawing.Point(133, 20);
+            this.daXiaoCbx.Name = "daXiaoCbx";
+            this.daXiaoCbx.Size = new System.Drawing.Size(70, 24);
+            this.daXiaoCbx.TabIndex = 2;
+            this.daXiaoCbx.Text = "大小邻";
+            this.daXiaoCbx.UseVisualStyleBackColor = true;
+            // 
+            // xiaoLinCbx
+            // 
+            this.xiaoLinCbx.AutoSize = true;
+            this.xiaoLinCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.xiaoLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.xiaoLinCbx.Location = new System.Drawing.Point(73, 20);
+            this.xiaoLinCbx.Name = "xiaoLinCbx";
+            this.xiaoLinCbx.Size = new System.Drawing.Size(56, 24);
+            this.xiaoLinCbx.TabIndex = 1;
+            this.xiaoLinCbx.Text = "小邻";
+            this.xiaoLinCbx.UseVisualStyleBackColor = true;
+            // 
+            // daLinCbx
+            // 
+            this.daLinCbx.AutoSize = true;
+            this.daLinCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.daLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.daLinCbx.Location = new System.Drawing.Point(13, 20);
+            this.daLinCbx.Name = "daLinCbx";
+            this.daLinCbx.Size = new System.Drawing.Size(56, 24);
+            this.daLinCbx.TabIndex = 0;
+            this.daLinCbx.Text = "大邻";
+            this.daLinCbx.UseVisualStyleBackColor = true;
+            // 
             // groupBox19
             // 
             this.groupBox19.Controls.Add(this.linMaShaQuCbx);
@@ -932,6 +2374,34 @@
             this.groupBox19.TabIndex = 14;
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "邻码计算方式";
+            // 
+            // linMaShaQuCbx
+            // 
+            this.linMaShaQuCbx.AutoSize = true;
+            this.linMaShaQuCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.linMaShaQuCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.linMaShaQuCbx.ForeColor = System.Drawing.Color.Red;
+            this.linMaShaQuCbx.Location = new System.Drawing.Point(88, 19);
+            this.linMaShaQuCbx.Name = "linMaShaQuCbx";
+            this.linMaShaQuCbx.Size = new System.Drawing.Size(56, 24);
+            this.linMaShaQuCbx.TabIndex = 8;
+            this.linMaShaQuCbx.Text = "杀邻";
+            this.linMaShaQuCbx.UseVisualStyleBackColor = true;
+            this.linMaShaQuCbx.CheckedChanged += new System.EventHandler(this.linMaShaQuCbx_CheckedChanged);
+            // 
+            // linMaBaoHanCbx
+            // 
+            this.linMaBaoHanCbx.AutoSize = true;
+            this.linMaBaoHanCbx.checkBgColor = System.Drawing.Color.Empty;
+            this.linMaBaoHanCbx.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.linMaBaoHanCbx.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.linMaBaoHanCbx.Location = new System.Drawing.Point(16, 20);
+            this.linMaBaoHanCbx.Name = "linMaBaoHanCbx";
+            this.linMaBaoHanCbx.Size = new System.Drawing.Size(56, 24);
+            this.linMaBaoHanCbx.TabIndex = 7;
+            this.linMaBaoHanCbx.Text = "含邻";
+            this.linMaBaoHanCbx.UseVisualStyleBackColor = true;
+            this.linMaBaoHanCbx.CheckedChanged += new System.EventHandler(this.linMaBaoHanCbx_CheckedChanged);
             // 
             // groupBox17
             // 
@@ -1021,1476 +2491,6 @@
             this.aoCbx.TabIndex = 3;
             this.aoCbx.Text = "凹";
             this.aoCbx.UseVisualStyleBackColor = true;
-            // 
-            // linMaShaQuCbx
-            // 
-            this.linMaShaQuCbx.AutoSize = true;
-            this.linMaShaQuCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.linMaShaQuCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.linMaShaQuCbx.ForeColor = System.Drawing.Color.Red;
-            this.linMaShaQuCbx.Location = new System.Drawing.Point(88, 19);
-            this.linMaShaQuCbx.Name = "linMaShaQuCbx";
-            this.linMaShaQuCbx.Size = new System.Drawing.Size(56, 24);
-            this.linMaShaQuCbx.TabIndex = 8;
-            this.linMaShaQuCbx.Text = "杀邻";
-            this.linMaShaQuCbx.UseVisualStyleBackColor = true;
-            this.linMaShaQuCbx.CheckedChanged += new System.EventHandler(this.linMaShaQuCbx_CheckedChanged);
-            // 
-            // linMaBaoHanCbx
-            // 
-            this.linMaBaoHanCbx.AutoSize = true;
-            this.linMaBaoHanCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.linMaBaoHanCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.linMaBaoHanCbx.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.linMaBaoHanCbx.Location = new System.Drawing.Point(16, 20);
-            this.linMaBaoHanCbx.Name = "linMaBaoHanCbx";
-            this.linMaBaoHanCbx.Size = new System.Drawing.Size(56, 24);
-            this.linMaBaoHanCbx.TabIndex = 7;
-            this.linMaBaoHanCbx.Text = "含邻";
-            this.linMaBaoHanCbx.UseVisualStyleBackColor = true;
-            this.linMaBaoHanCbx.CheckedChanged += new System.EventHandler(this.linMaBaoHanCbx_CheckedChanged);
-            // 
-            // duanLinCbx
-            // 
-            this.duanLinCbx.AutoSize = true;
-            this.duanLinCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.duanLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.duanLinCbx.Location = new System.Drawing.Point(401, 20);
-            this.duanLinCbx.Name = "duanLinCbx";
-            this.duanLinCbx.Size = new System.Drawing.Size(56, 24);
-            this.duanLinCbx.TabIndex = 6;
-            this.duanLinCbx.Text = "邻码";
-            this.duanLinCbx.UseVisualStyleBackColor = true;
-            // 
-            // zhiHeCbx
-            // 
-            this.zhiHeCbx.AutoSize = true;
-            this.zhiHeCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.zhiHeCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.zhiHeCbx.Location = new System.Drawing.Point(327, 20);
-            this.zhiHeCbx.Name = "zhiHeCbx";
-            this.zhiHeCbx.Size = new System.Drawing.Size(70, 24);
-            this.zhiHeCbx.TabIndex = 5;
-            this.zhiHeCbx.Text = "质合邻";
-            this.zhiHeCbx.UseVisualStyleBackColor = true;
-            // 
-            // heLinCbx
-            // 
-            this.heLinCbx.AutoSize = true;
-            this.heLinCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.heLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.heLinCbx.Location = new System.Drawing.Point(267, 20);
-            this.heLinCbx.Name = "heLinCbx";
-            this.heLinCbx.Size = new System.Drawing.Size(56, 24);
-            this.heLinCbx.TabIndex = 4;
-            this.heLinCbx.Text = "合邻";
-            this.heLinCbx.UseVisualStyleBackColor = true;
-            // 
-            // zhiLinCbx
-            // 
-            this.zhiLinCbx.AutoSize = true;
-            this.zhiLinCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.zhiLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.zhiLinCbx.Location = new System.Drawing.Point(207, 20);
-            this.zhiLinCbx.Name = "zhiLinCbx";
-            this.zhiLinCbx.Size = new System.Drawing.Size(56, 24);
-            this.zhiLinCbx.TabIndex = 3;
-            this.zhiLinCbx.Text = "质邻";
-            this.zhiLinCbx.UseVisualStyleBackColor = true;
-            // 
-            // daXiaoCbx
-            // 
-            this.daXiaoCbx.AutoSize = true;
-            this.daXiaoCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.daXiaoCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.daXiaoCbx.Location = new System.Drawing.Point(133, 20);
-            this.daXiaoCbx.Name = "daXiaoCbx";
-            this.daXiaoCbx.Size = new System.Drawing.Size(70, 24);
-            this.daXiaoCbx.TabIndex = 2;
-            this.daXiaoCbx.Text = "大小邻";
-            this.daXiaoCbx.UseVisualStyleBackColor = true;
-            // 
-            // xiaoLinCbx
-            // 
-            this.xiaoLinCbx.AutoSize = true;
-            this.xiaoLinCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.xiaoLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.xiaoLinCbx.Location = new System.Drawing.Point(73, 20);
-            this.xiaoLinCbx.Name = "xiaoLinCbx";
-            this.xiaoLinCbx.Size = new System.Drawing.Size(56, 24);
-            this.xiaoLinCbx.TabIndex = 1;
-            this.xiaoLinCbx.Text = "小邻";
-            this.xiaoLinCbx.UseVisualStyleBackColor = true;
-            // 
-            // daLinCbx
-            // 
-            this.daLinCbx.AutoSize = true;
-            this.daLinCbx.checkBgColor = System.Drawing.Color.Empty;
-            this.daLinCbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.daLinCbx.Location = new System.Drawing.Point(13, 20);
-            this.daLinCbx.Name = "daLinCbx";
-            this.daLinCbx.Size = new System.Drawing.Size(56, 24);
-            this.daLinCbx.TabIndex = 0;
-            this.daLinCbx.Text = "大邻";
-            this.daLinCbx.UseVisualStyleBackColor = true;
-            // 
-            // shaDaLiuXiao1
-            // 
-            this.shaDaLiuXiao1.AutoSize = true;
-            this.shaDaLiuXiao1.checkBgColor = System.Drawing.Color.Empty;
-            this.shaDaLiuXiao1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.shaDaLiuXiao1.Location = new System.Drawing.Point(288, -1);
-            this.shaDaLiuXiao1.Name = "shaDaLiuXiao1";
-            this.shaDaLiuXiao1.Size = new System.Drawing.Size(75, 21);
-            this.shaDaLiuXiao1.TabIndex = 12;
-            this.shaDaLiuXiao1.Text = "杀大留小";
-            this.shaDaLiuXiao1.UseVisualStyleBackColor = true;
-            this.shaDaLiuXiao1.CheckedChanged += new System.EventHandler(this.shaDaLiuXiao1_CheckedChanged);
-            // 
-            // shaDanLiuShuang1
-            // 
-            this.shaDanLiuShuang1.AutoSize = true;
-            this.shaDanLiuShuang1.checkBgColor = System.Drawing.Color.Empty;
-            this.shaDanLiuShuang1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.shaDanLiuShuang1.Location = new System.Drawing.Point(207, -1);
-            this.shaDanLiuShuang1.Name = "shaDanLiuShuang1";
-            this.shaDanLiuShuang1.Size = new System.Drawing.Size(75, 21);
-            this.shaDanLiuShuang1.TabIndex = 11;
-            this.shaDanLiuShuang1.Text = "杀单留双";
-            this.shaDanLiuShuang1.UseVisualStyleBackColor = true;
-            this.shaDanLiuShuang1.CheckedChanged += new System.EventHandler(this.shaDanLiuShuang1_CheckedChanged);
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox24.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox24.Location = new System.Drawing.Point(187, 22);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(34, 21);
-            this.checkBox24.TabIndex = 10;
-            this.checkBox24.Text = "5";
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox25
-            // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox25.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox25.Location = new System.Drawing.Point(331, 22);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(34, 21);
-            this.checkBox25.TabIndex = 6;
-            this.checkBox25.Text = "9";
-            this.checkBox25.UseVisualStyleBackColor = true;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox26.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox26.Location = new System.Drawing.Point(223, 22);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(34, 21);
-            this.checkBox26.TabIndex = 9;
-            this.checkBox26.Text = "6";
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // checkBox27
-            // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox27.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox27.Location = new System.Drawing.Point(259, 22);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(34, 21);
-            this.checkBox27.TabIndex = 8;
-            this.checkBox27.Text = "7";
-            this.checkBox27.UseVisualStyleBackColor = true;
-            // 
-            // checkBox28
-            // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox28.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox28.Location = new System.Drawing.Point(295, 22);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(34, 21);
-            this.checkBox28.TabIndex = 7;
-            this.checkBox28.Text = "8";
-            this.checkBox28.UseVisualStyleBackColor = true;
-            // 
-            // checkBox29
-            // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox29.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox29.Location = new System.Drawing.Point(151, 22);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(34, 21);
-            this.checkBox29.TabIndex = 5;
-            this.checkBox29.Text = "4";
-            this.checkBox29.UseVisualStyleBackColor = true;
-            // 
-            // checkBox30
-            // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox30.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox30.Location = new System.Drawing.Point(115, 22);
-            this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(34, 21);
-            this.checkBox30.TabIndex = 4;
-            this.checkBox30.Text = "3";
-            this.checkBox30.UseVisualStyleBackColor = true;
-            // 
-            // checkBox31
-            // 
-            this.checkBox31.AutoSize = true;
-            this.checkBox31.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox31.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox31.Location = new System.Drawing.Point(79, 22);
-            this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(34, 21);
-            this.checkBox31.TabIndex = 3;
-            this.checkBox31.Text = "2";
-            this.checkBox31.UseVisualStyleBackColor = true;
-            // 
-            // checkBox32
-            // 
-            this.checkBox32.AutoSize = true;
-            this.checkBox32.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox32.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox32.Location = new System.Drawing.Point(43, 22);
-            this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(34, 21);
-            this.checkBox32.TabIndex = 2;
-            this.checkBox32.Text = "1";
-            this.checkBox32.UseVisualStyleBackColor = true;
-            // 
-            // checkBox33
-            // 
-            this.checkBox33.AutoSize = true;
-            this.checkBox33.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox33.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox33.Location = new System.Drawing.Point(7, 22);
-            this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(34, 21);
-            this.checkBox33.TabIndex = 1;
-            this.checkBox33.Text = "0";
-            this.checkBox33.UseVisualStyleBackColor = true;
-            // 
-            // shaDaLiuXiao2
-            // 
-            this.shaDaLiuXiao2.AutoSize = true;
-            this.shaDaLiuXiao2.checkBgColor = System.Drawing.Color.Empty;
-            this.shaDaLiuXiao2.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.shaDaLiuXiao2.Location = new System.Drawing.Point(288, -1);
-            this.shaDaLiuXiao2.Name = "shaDaLiuXiao2";
-            this.shaDaLiuXiao2.Size = new System.Drawing.Size(75, 21);
-            this.shaDaLiuXiao2.TabIndex = 14;
-            this.shaDaLiuXiao2.Text = "杀大留小";
-            this.shaDaLiuXiao2.UseVisualStyleBackColor = true;
-            this.shaDaLiuXiao2.CheckedChanged += new System.EventHandler(this.shaDaLiuXiao2_CheckedChanged);
-            // 
-            // checkBox44
-            // 
-            this.checkBox44.AutoSize = true;
-            this.checkBox44.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox44.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox44.Location = new System.Drawing.Point(187, 23);
-            this.checkBox44.Name = "checkBox44";
-            this.checkBox44.Size = new System.Drawing.Size(34, 21);
-            this.checkBox44.TabIndex = 10;
-            this.checkBox44.Text = "5";
-            this.checkBox44.UseVisualStyleBackColor = true;
-            // 
-            // shaDanLiuShuang2
-            // 
-            this.shaDanLiuShuang2.AutoSize = true;
-            this.shaDanLiuShuang2.checkBgColor = System.Drawing.Color.Empty;
-            this.shaDanLiuShuang2.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.shaDanLiuShuang2.Location = new System.Drawing.Point(207, -1);
-            this.shaDanLiuShuang2.Name = "shaDanLiuShuang2";
-            this.shaDanLiuShuang2.Size = new System.Drawing.Size(75, 21);
-            this.shaDanLiuShuang2.TabIndex = 13;
-            this.shaDanLiuShuang2.Text = "杀单留双";
-            this.shaDanLiuShuang2.UseVisualStyleBackColor = true;
-            this.shaDanLiuShuang2.CheckedChanged += new System.EventHandler(this.shaDanLiuShuang2_CheckedChanged);
-            // 
-            // checkBox45
-            // 
-            this.checkBox45.AutoSize = true;
-            this.checkBox45.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox45.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox45.Location = new System.Drawing.Point(331, 23);
-            this.checkBox45.Name = "checkBox45";
-            this.checkBox45.Size = new System.Drawing.Size(34, 21);
-            this.checkBox45.TabIndex = 6;
-            this.checkBox45.Text = "9";
-            this.checkBox45.UseVisualStyleBackColor = true;
-            // 
-            // checkBox46
-            // 
-            this.checkBox46.AutoSize = true;
-            this.checkBox46.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox46.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox46.Location = new System.Drawing.Point(223, 23);
-            this.checkBox46.Name = "checkBox46";
-            this.checkBox46.Size = new System.Drawing.Size(34, 21);
-            this.checkBox46.TabIndex = 9;
-            this.checkBox46.Text = "6";
-            this.checkBox46.UseVisualStyleBackColor = true;
-            // 
-            // checkBox47
-            // 
-            this.checkBox47.AutoSize = true;
-            this.checkBox47.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox47.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox47.Location = new System.Drawing.Point(259, 23);
-            this.checkBox47.Name = "checkBox47";
-            this.checkBox47.Size = new System.Drawing.Size(34, 21);
-            this.checkBox47.TabIndex = 8;
-            this.checkBox47.Text = "7";
-            this.checkBox47.UseVisualStyleBackColor = true;
-            // 
-            // checkBox48
-            // 
-            this.checkBox48.AutoSize = true;
-            this.checkBox48.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox48.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox48.Location = new System.Drawing.Point(295, 23);
-            this.checkBox48.Name = "checkBox48";
-            this.checkBox48.Size = new System.Drawing.Size(34, 21);
-            this.checkBox48.TabIndex = 7;
-            this.checkBox48.Text = "8";
-            this.checkBox48.UseVisualStyleBackColor = true;
-            // 
-            // checkBox49
-            // 
-            this.checkBox49.AutoSize = true;
-            this.checkBox49.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox49.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox49.Location = new System.Drawing.Point(151, 23);
-            this.checkBox49.Name = "checkBox49";
-            this.checkBox49.Size = new System.Drawing.Size(34, 21);
-            this.checkBox49.TabIndex = 5;
-            this.checkBox49.Text = "4";
-            this.checkBox49.UseVisualStyleBackColor = true;
-            // 
-            // checkBox50
-            // 
-            this.checkBox50.AutoSize = true;
-            this.checkBox50.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox50.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox50.Location = new System.Drawing.Point(115, 23);
-            this.checkBox50.Name = "checkBox50";
-            this.checkBox50.Size = new System.Drawing.Size(34, 21);
-            this.checkBox50.TabIndex = 4;
-            this.checkBox50.Text = "3";
-            this.checkBox50.UseVisualStyleBackColor = true;
-            // 
-            // checkBox51
-            // 
-            this.checkBox51.AutoSize = true;
-            this.checkBox51.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox51.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox51.Location = new System.Drawing.Point(79, 23);
-            this.checkBox51.Name = "checkBox51";
-            this.checkBox51.Size = new System.Drawing.Size(34, 21);
-            this.checkBox51.TabIndex = 3;
-            this.checkBox51.Text = "2";
-            this.checkBox51.UseVisualStyleBackColor = true;
-            // 
-            // checkBox52
-            // 
-            this.checkBox52.AutoSize = true;
-            this.checkBox52.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox52.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox52.Location = new System.Drawing.Point(43, 23);
-            this.checkBox52.Name = "checkBox52";
-            this.checkBox52.Size = new System.Drawing.Size(34, 21);
-            this.checkBox52.TabIndex = 2;
-            this.checkBox52.Text = "1";
-            this.checkBox52.UseVisualStyleBackColor = true;
-            // 
-            // checkBox53
-            // 
-            this.checkBox53.AutoSize = true;
-            this.checkBox53.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox53.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox53.Location = new System.Drawing.Point(7, 23);
-            this.checkBox53.Name = "checkBox53";
-            this.checkBox53.Size = new System.Drawing.Size(34, 21);
-            this.checkBox53.TabIndex = 1;
-            this.checkBox53.Text = "0";
-            this.checkBox53.UseVisualStyleBackColor = true;
-            // 
-            // shaDaLiuXiao3
-            // 
-            this.shaDaLiuXiao3.AutoSize = true;
-            this.shaDaLiuXiao3.checkBgColor = System.Drawing.Color.Empty;
-            this.shaDaLiuXiao3.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.shaDaLiuXiao3.Location = new System.Drawing.Point(288, -1);
-            this.shaDaLiuXiao3.Name = "shaDaLiuXiao3";
-            this.shaDaLiuXiao3.Size = new System.Drawing.Size(75, 21);
-            this.shaDaLiuXiao3.TabIndex = 16;
-            this.shaDaLiuXiao3.Text = "杀大留小";
-            this.shaDaLiuXiao3.UseVisualStyleBackColor = true;
-            this.shaDaLiuXiao3.CheckedChanged += new System.EventHandler(this.shaDaLiuXiao3_CheckedChanged);
-            // 
-            // checkBox34
-            // 
-            this.checkBox34.AutoSize = true;
-            this.checkBox34.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox34.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox34.Location = new System.Drawing.Point(187, 23);
-            this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(34, 21);
-            this.checkBox34.TabIndex = 10;
-            this.checkBox34.Text = "5";
-            this.checkBox34.UseVisualStyleBackColor = true;
-            // 
-            // shaDanLiuShuang3
-            // 
-            this.shaDanLiuShuang3.AutoSize = true;
-            this.shaDanLiuShuang3.checkBgColor = System.Drawing.Color.Empty;
-            this.shaDanLiuShuang3.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.shaDanLiuShuang3.Location = new System.Drawing.Point(207, -1);
-            this.shaDanLiuShuang3.Name = "shaDanLiuShuang3";
-            this.shaDanLiuShuang3.Size = new System.Drawing.Size(75, 21);
-            this.shaDanLiuShuang3.TabIndex = 15;
-            this.shaDanLiuShuang3.Text = "杀单留双";
-            this.shaDanLiuShuang3.UseVisualStyleBackColor = true;
-            this.shaDanLiuShuang3.CheckedChanged += new System.EventHandler(this.shaDanLiuShuang3_CheckedChanged);
-            // 
-            // checkBox35
-            // 
-            this.checkBox35.AutoSize = true;
-            this.checkBox35.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox35.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox35.Location = new System.Drawing.Point(331, 23);
-            this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(34, 21);
-            this.checkBox35.TabIndex = 6;
-            this.checkBox35.Text = "9";
-            this.checkBox35.UseVisualStyleBackColor = true;
-            // 
-            // checkBox36
-            // 
-            this.checkBox36.AutoSize = true;
-            this.checkBox36.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox36.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox36.Location = new System.Drawing.Point(223, 23);
-            this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(34, 21);
-            this.checkBox36.TabIndex = 9;
-            this.checkBox36.Text = "6";
-            this.checkBox36.UseVisualStyleBackColor = true;
-            // 
-            // checkBox37
-            // 
-            this.checkBox37.AutoSize = true;
-            this.checkBox37.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox37.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox37.Location = new System.Drawing.Point(259, 23);
-            this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(34, 21);
-            this.checkBox37.TabIndex = 8;
-            this.checkBox37.Text = "7";
-            this.checkBox37.UseVisualStyleBackColor = true;
-            // 
-            // checkBox38
-            // 
-            this.checkBox38.AutoSize = true;
-            this.checkBox38.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox38.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox38.Location = new System.Drawing.Point(295, 23);
-            this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(34, 21);
-            this.checkBox38.TabIndex = 7;
-            this.checkBox38.Text = "8";
-            this.checkBox38.UseVisualStyleBackColor = true;
-            // 
-            // checkBox39
-            // 
-            this.checkBox39.AutoSize = true;
-            this.checkBox39.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox39.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox39.Location = new System.Drawing.Point(151, 23);
-            this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(34, 21);
-            this.checkBox39.TabIndex = 5;
-            this.checkBox39.Text = "4";
-            this.checkBox39.UseVisualStyleBackColor = true;
-            // 
-            // checkBox40
-            // 
-            this.checkBox40.AutoSize = true;
-            this.checkBox40.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox40.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox40.Location = new System.Drawing.Point(115, 23);
-            this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(34, 21);
-            this.checkBox40.TabIndex = 4;
-            this.checkBox40.Text = "3";
-            this.checkBox40.UseVisualStyleBackColor = true;
-            // 
-            // checkBox41
-            // 
-            this.checkBox41.AutoSize = true;
-            this.checkBox41.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox41.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox41.Location = new System.Drawing.Point(79, 23);
-            this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(34, 21);
-            this.checkBox41.TabIndex = 3;
-            this.checkBox41.Text = "2";
-            this.checkBox41.UseVisualStyleBackColor = true;
-            // 
-            // checkBox42
-            // 
-            this.checkBox42.AutoSize = true;
-            this.checkBox42.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox42.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox42.Location = new System.Drawing.Point(43, 23);
-            this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(34, 21);
-            this.checkBox42.TabIndex = 2;
-            this.checkBox42.Text = "1";
-            this.checkBox42.UseVisualStyleBackColor = true;
-            // 
-            // checkBox43
-            // 
-            this.checkBox43.AutoSize = true;
-            this.checkBox43.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox43.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox43.Location = new System.Drawing.Point(7, 23);
-            this.checkBox43.Name = "checkBox43";
-            this.checkBox43.Size = new System.Drawing.Size(34, 21);
-            this.checkBox43.TabIndex = 1;
-            this.checkBox43.Text = "0";
-            this.checkBox43.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox11.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox11.Location = new System.Drawing.Point(190, 23);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(34, 21);
-            this.checkBox11.TabIndex = 10;
-            this.checkBox11.Text = "5";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox12.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox12.Location = new System.Drawing.Point(334, 23);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(34, 21);
-            this.checkBox12.TabIndex = 6;
-            this.checkBox12.Text = "9";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox13.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox13.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox13.Location = new System.Drawing.Point(226, 23);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(34, 21);
-            this.checkBox13.TabIndex = 9;
-            this.checkBox13.Text = "6";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox14.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox14.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox14.Location = new System.Drawing.Point(262, 23);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(34, 21);
-            this.checkBox14.TabIndex = 8;
-            this.checkBox14.Text = "7";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox15.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox15.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox15.Location = new System.Drawing.Point(298, 23);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(34, 21);
-            this.checkBox15.TabIndex = 7;
-            this.checkBox15.Text = "8";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox16.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox16.Location = new System.Drawing.Point(154, 23);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(34, 21);
-            this.checkBox16.TabIndex = 5;
-            this.checkBox16.Text = "4";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox17.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox17.Location = new System.Drawing.Point(118, 23);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(34, 21);
-            this.checkBox17.TabIndex = 4;
-            this.checkBox17.Text = "3";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox18.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox18.Location = new System.Drawing.Point(82, 23);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(34, 21);
-            this.checkBox18.TabIndex = 3;
-            this.checkBox18.Text = "2";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox19.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox19.Location = new System.Drawing.Point(46, 23);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(34, 21);
-            this.checkBox19.TabIndex = 2;
-            this.checkBox19.Text = "1";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox20.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox20.Location = new System.Drawing.Point(10, 23);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(34, 21);
-            this.checkBox20.TabIndex = 1;
-            this.checkBox20.Text = "0";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // oneZu3
-            // 
-            this.oneZu3.AutoSize = true;
-            this.oneZu3.checkBgColor = System.Drawing.Color.Empty;
-            this.oneZu3.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.oneZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.oneZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.oneZu3.Location = new System.Drawing.Point(475, 23);
-            this.oneZu3.Name = "oneZu3";
-            this.oneZu3.Size = new System.Drawing.Size(31, 21);
-            this.oneZu3.TabIndex = 23;
-            this.oneZu3.Text = "3";
-            this.oneZu3.UseVisualStyleBackColor = true;
-            // 
-            // oneZu2
-            // 
-            this.oneZu2.AutoSize = true;
-            this.oneZu2.checkBgColor = System.Drawing.Color.Empty;
-            this.oneZu2.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.oneZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.oneZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.oneZu2.Location = new System.Drawing.Point(447, 23);
-            this.oneZu2.Name = "oneZu2";
-            this.oneZu2.Size = new System.Drawing.Size(31, 21);
-            this.oneZu2.TabIndex = 22;
-            this.oneZu2.Text = "2";
-            this.oneZu2.UseVisualStyleBackColor = true;
-            // 
-            // oneZu1
-            // 
-            this.oneZu1.AutoSize = true;
-            this.oneZu1.checkBgColor = System.Drawing.Color.Empty;
-            this.oneZu1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.oneZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.oneZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.oneZu1.Location = new System.Drawing.Point(419, 23);
-            this.oneZu1.Name = "oneZu1";
-            this.oneZu1.Size = new System.Drawing.Size(31, 21);
-            this.oneZu1.TabIndex = 21;
-            this.oneZu1.Text = "1";
-            this.oneZu1.UseVisualStyleBackColor = true;
-            // 
-            // oneZu0
-            // 
-            this.oneZu0.AutoSize = true;
-            this.oneZu0.checkBgColor = System.Drawing.Color.Empty;
-            this.oneZu0.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.oneZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.oneZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.oneZu0.Location = new System.Drawing.Point(391, 23);
-            this.oneZu0.Name = "oneZu0";
-            this.oneZu0.Size = new System.Drawing.Size(31, 21);
-            this.oneZu0.TabIndex = 24;
-            this.oneZu0.Text = "0";
-            this.oneZu0.UseVisualStyleBackColor = true;
-            // 
-            // twoZu3
-            // 
-            this.twoZu3.AutoSize = true;
-            this.twoZu3.checkBgColor = System.Drawing.Color.Empty;
-            this.twoZu3.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.twoZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.twoZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.twoZu3.Location = new System.Drawing.Point(475, 22);
-            this.twoZu3.Name = "twoZu3";
-            this.twoZu3.Size = new System.Drawing.Size(31, 21);
-            this.twoZu3.TabIndex = 28;
-            this.twoZu3.Text = "3";
-            this.twoZu3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox54
-            // 
-            this.checkBox54.AutoSize = true;
-            this.checkBox54.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox54.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox54.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox54.Location = new System.Drawing.Point(190, 23);
-            this.checkBox54.Name = "checkBox54";
-            this.checkBox54.Size = new System.Drawing.Size(34, 21);
-            this.checkBox54.TabIndex = 10;
-            this.checkBox54.Text = "5";
-            this.checkBox54.UseVisualStyleBackColor = true;
-            // 
-            // twoZu2
-            // 
-            this.twoZu2.AutoSize = true;
-            this.twoZu2.checkBgColor = System.Drawing.Color.Empty;
-            this.twoZu2.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.twoZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.twoZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.twoZu2.Location = new System.Drawing.Point(447, 22);
-            this.twoZu2.Name = "twoZu2";
-            this.twoZu2.Size = new System.Drawing.Size(31, 21);
-            this.twoZu2.TabIndex = 27;
-            this.twoZu2.Text = "2";
-            this.twoZu2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox55
-            // 
-            this.checkBox55.AutoSize = true;
-            this.checkBox55.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox55.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox55.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox55.Location = new System.Drawing.Point(334, 23);
-            this.checkBox55.Name = "checkBox55";
-            this.checkBox55.Size = new System.Drawing.Size(34, 21);
-            this.checkBox55.TabIndex = 6;
-            this.checkBox55.Text = "9";
-            this.checkBox55.UseVisualStyleBackColor = true;
-            // 
-            // twoZu1
-            // 
-            this.twoZu1.AutoSize = true;
-            this.twoZu1.checkBgColor = System.Drawing.Color.Empty;
-            this.twoZu1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.twoZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.twoZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.twoZu1.Location = new System.Drawing.Point(419, 22);
-            this.twoZu1.Name = "twoZu1";
-            this.twoZu1.Size = new System.Drawing.Size(31, 21);
-            this.twoZu1.TabIndex = 26;
-            this.twoZu1.Text = "1";
-            this.twoZu1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox56
-            // 
-            this.checkBox56.AutoSize = true;
-            this.checkBox56.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox56.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox56.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox56.Location = new System.Drawing.Point(226, 23);
-            this.checkBox56.Name = "checkBox56";
-            this.checkBox56.Size = new System.Drawing.Size(34, 21);
-            this.checkBox56.TabIndex = 9;
-            this.checkBox56.Text = "6";
-            this.checkBox56.UseVisualStyleBackColor = true;
-            // 
-            // twoZu0
-            // 
-            this.twoZu0.AutoSize = true;
-            this.twoZu0.checkBgColor = System.Drawing.Color.Empty;
-            this.twoZu0.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.twoZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.twoZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.twoZu0.Location = new System.Drawing.Point(391, 22);
-            this.twoZu0.Name = "twoZu0";
-            this.twoZu0.Size = new System.Drawing.Size(31, 21);
-            this.twoZu0.TabIndex = 29;
-            this.twoZu0.Text = "0";
-            this.twoZu0.UseVisualStyleBackColor = true;
-            // 
-            // checkBox57
-            // 
-            this.checkBox57.AutoSize = true;
-            this.checkBox57.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox57.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox57.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox57.Location = new System.Drawing.Point(262, 23);
-            this.checkBox57.Name = "checkBox57";
-            this.checkBox57.Size = new System.Drawing.Size(34, 21);
-            this.checkBox57.TabIndex = 8;
-            this.checkBox57.Text = "7";
-            this.checkBox57.UseVisualStyleBackColor = true;
-            // 
-            // checkBox58
-            // 
-            this.checkBox58.AutoSize = true;
-            this.checkBox58.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox58.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox58.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox58.Location = new System.Drawing.Point(298, 23);
-            this.checkBox58.Name = "checkBox58";
-            this.checkBox58.Size = new System.Drawing.Size(34, 21);
-            this.checkBox58.TabIndex = 7;
-            this.checkBox58.Text = "8";
-            this.checkBox58.UseVisualStyleBackColor = true;
-            // 
-            // checkBox59
-            // 
-            this.checkBox59.AutoSize = true;
-            this.checkBox59.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox59.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox59.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox59.Location = new System.Drawing.Point(154, 23);
-            this.checkBox59.Name = "checkBox59";
-            this.checkBox59.Size = new System.Drawing.Size(34, 21);
-            this.checkBox59.TabIndex = 5;
-            this.checkBox59.Text = "4";
-            this.checkBox59.UseVisualStyleBackColor = true;
-            // 
-            // checkBox60
-            // 
-            this.checkBox60.AutoSize = true;
-            this.checkBox60.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox60.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox60.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox60.Location = new System.Drawing.Point(118, 23);
-            this.checkBox60.Name = "checkBox60";
-            this.checkBox60.Size = new System.Drawing.Size(34, 21);
-            this.checkBox60.TabIndex = 4;
-            this.checkBox60.Text = "3";
-            this.checkBox60.UseVisualStyleBackColor = true;
-            // 
-            // checkBox61
-            // 
-            this.checkBox61.AutoSize = true;
-            this.checkBox61.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox61.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox61.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox61.Location = new System.Drawing.Point(82, 23);
-            this.checkBox61.Name = "checkBox61";
-            this.checkBox61.Size = new System.Drawing.Size(34, 21);
-            this.checkBox61.TabIndex = 3;
-            this.checkBox61.Text = "2";
-            this.checkBox61.UseVisualStyleBackColor = true;
-            // 
-            // checkBox62
-            // 
-            this.checkBox62.AutoSize = true;
-            this.checkBox62.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox62.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox62.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox62.Location = new System.Drawing.Point(46, 23);
-            this.checkBox62.Name = "checkBox62";
-            this.checkBox62.Size = new System.Drawing.Size(34, 21);
-            this.checkBox62.TabIndex = 2;
-            this.checkBox62.Text = "1";
-            this.checkBox62.UseVisualStyleBackColor = true;
-            // 
-            // checkBox63
-            // 
-            this.checkBox63.AutoSize = true;
-            this.checkBox63.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox63.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox63.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox63.Location = new System.Drawing.Point(10, 23);
-            this.checkBox63.Name = "checkBox63";
-            this.checkBox63.Size = new System.Drawing.Size(34, 21);
-            this.checkBox63.TabIndex = 1;
-            this.checkBox63.Text = "0";
-            this.checkBox63.UseVisualStyleBackColor = true;
-            // 
-            // threeZu3
-            // 
-            this.threeZu3.AutoSize = true;
-            this.threeZu3.checkBgColor = System.Drawing.Color.Empty;
-            this.threeZu3.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.threeZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.threeZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.threeZu3.Location = new System.Drawing.Point(475, 22);
-            this.threeZu3.Name = "threeZu3";
-            this.threeZu3.Size = new System.Drawing.Size(31, 21);
-            this.threeZu3.TabIndex = 28;
-            this.threeZu3.Text = "3";
-            this.threeZu3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox64
-            // 
-            this.checkBox64.AutoSize = true;
-            this.checkBox64.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox64.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox64.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox64.Location = new System.Drawing.Point(190, 23);
-            this.checkBox64.Name = "checkBox64";
-            this.checkBox64.Size = new System.Drawing.Size(34, 21);
-            this.checkBox64.TabIndex = 10;
-            this.checkBox64.Text = "5";
-            this.checkBox64.UseVisualStyleBackColor = true;
-            // 
-            // threeZu2
-            // 
-            this.threeZu2.AutoSize = true;
-            this.threeZu2.checkBgColor = System.Drawing.Color.Empty;
-            this.threeZu2.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.threeZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.threeZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.threeZu2.Location = new System.Drawing.Point(447, 22);
-            this.threeZu2.Name = "threeZu2";
-            this.threeZu2.Size = new System.Drawing.Size(31, 21);
-            this.threeZu2.TabIndex = 27;
-            this.threeZu2.Text = "2";
-            this.threeZu2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox65
-            // 
-            this.checkBox65.AutoSize = true;
-            this.checkBox65.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox65.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox65.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox65.Location = new System.Drawing.Point(334, 23);
-            this.checkBox65.Name = "checkBox65";
-            this.checkBox65.Size = new System.Drawing.Size(34, 21);
-            this.checkBox65.TabIndex = 6;
-            this.checkBox65.Text = "9";
-            this.checkBox65.UseVisualStyleBackColor = true;
-            // 
-            // threeZu1
-            // 
-            this.threeZu1.AutoSize = true;
-            this.threeZu1.checkBgColor = System.Drawing.Color.Empty;
-            this.threeZu1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.threeZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.threeZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.threeZu1.Location = new System.Drawing.Point(419, 22);
-            this.threeZu1.Name = "threeZu1";
-            this.threeZu1.Size = new System.Drawing.Size(31, 21);
-            this.threeZu1.TabIndex = 26;
-            this.threeZu1.Text = "1";
-            this.threeZu1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox66
-            // 
-            this.checkBox66.AutoSize = true;
-            this.checkBox66.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox66.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox66.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox66.Location = new System.Drawing.Point(226, 23);
-            this.checkBox66.Name = "checkBox66";
-            this.checkBox66.Size = new System.Drawing.Size(34, 21);
-            this.checkBox66.TabIndex = 9;
-            this.checkBox66.Text = "6";
-            this.checkBox66.UseVisualStyleBackColor = true;
-            // 
-            // threeZu0
-            // 
-            this.threeZu0.AutoSize = true;
-            this.threeZu0.checkBgColor = System.Drawing.Color.Empty;
-            this.threeZu0.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.threeZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.threeZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.threeZu0.Location = new System.Drawing.Point(391, 22);
-            this.threeZu0.Name = "threeZu0";
-            this.threeZu0.Size = new System.Drawing.Size(31, 21);
-            this.threeZu0.TabIndex = 29;
-            this.threeZu0.Text = "0";
-            this.threeZu0.UseVisualStyleBackColor = true;
-            // 
-            // checkBox67
-            // 
-            this.checkBox67.AutoSize = true;
-            this.checkBox67.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox67.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox67.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox67.Location = new System.Drawing.Point(262, 23);
-            this.checkBox67.Name = "checkBox67";
-            this.checkBox67.Size = new System.Drawing.Size(34, 21);
-            this.checkBox67.TabIndex = 8;
-            this.checkBox67.Text = "7";
-            this.checkBox67.UseVisualStyleBackColor = true;
-            // 
-            // checkBox68
-            // 
-            this.checkBox68.AutoSize = true;
-            this.checkBox68.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox68.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox68.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox68.Location = new System.Drawing.Point(298, 23);
-            this.checkBox68.Name = "checkBox68";
-            this.checkBox68.Size = new System.Drawing.Size(34, 21);
-            this.checkBox68.TabIndex = 7;
-            this.checkBox68.Text = "8";
-            this.checkBox68.UseVisualStyleBackColor = true;
-            // 
-            // checkBox69
-            // 
-            this.checkBox69.AutoSize = true;
-            this.checkBox69.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox69.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox69.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox69.Location = new System.Drawing.Point(154, 23);
-            this.checkBox69.Name = "checkBox69";
-            this.checkBox69.Size = new System.Drawing.Size(34, 21);
-            this.checkBox69.TabIndex = 5;
-            this.checkBox69.Text = "4";
-            this.checkBox69.UseVisualStyleBackColor = true;
-            // 
-            // checkBox70
-            // 
-            this.checkBox70.AutoSize = true;
-            this.checkBox70.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox70.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox70.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox70.Location = new System.Drawing.Point(118, 23);
-            this.checkBox70.Name = "checkBox70";
-            this.checkBox70.Size = new System.Drawing.Size(34, 21);
-            this.checkBox70.TabIndex = 4;
-            this.checkBox70.Text = "3";
-            this.checkBox70.UseVisualStyleBackColor = true;
-            // 
-            // checkBox71
-            // 
-            this.checkBox71.AutoSize = true;
-            this.checkBox71.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox71.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox71.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox71.Location = new System.Drawing.Point(82, 23);
-            this.checkBox71.Name = "checkBox71";
-            this.checkBox71.Size = new System.Drawing.Size(34, 21);
-            this.checkBox71.TabIndex = 3;
-            this.checkBox71.Text = "2";
-            this.checkBox71.UseVisualStyleBackColor = true;
-            // 
-            // checkBox72
-            // 
-            this.checkBox72.AutoSize = true;
-            this.checkBox72.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox72.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox72.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox72.Location = new System.Drawing.Point(46, 23);
-            this.checkBox72.Name = "checkBox72";
-            this.checkBox72.Size = new System.Drawing.Size(34, 21);
-            this.checkBox72.TabIndex = 2;
-            this.checkBox72.Text = "1";
-            this.checkBox72.UseVisualStyleBackColor = true;
-            // 
-            // checkBox73
-            // 
-            this.checkBox73.AutoSize = true;
-            this.checkBox73.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox73.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox73.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox73.Location = new System.Drawing.Point(10, 23);
-            this.checkBox73.Name = "checkBox73";
-            this.checkBox73.Size = new System.Drawing.Size(34, 21);
-            this.checkBox73.TabIndex = 1;
-            this.checkBox73.Text = "0";
-            this.checkBox73.UseVisualStyleBackColor = true;
-            // 
-            // fourZu3
-            // 
-            this.fourZu3.AutoSize = true;
-            this.fourZu3.checkBgColor = System.Drawing.Color.Empty;
-            this.fourZu3.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.fourZu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fourZu3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.fourZu3.Location = new System.Drawing.Point(475, 21);
-            this.fourZu3.Name = "fourZu3";
-            this.fourZu3.Size = new System.Drawing.Size(31, 21);
-            this.fourZu3.TabIndex = 28;
-            this.fourZu3.Text = "3";
-            this.fourZu3.UseVisualStyleBackColor = true;
-            // 
-            // fourZu2
-            // 
-            this.fourZu2.AutoSize = true;
-            this.fourZu2.checkBgColor = System.Drawing.Color.Empty;
-            this.fourZu2.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.fourZu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fourZu2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.fourZu2.Location = new System.Drawing.Point(447, 21);
-            this.fourZu2.Name = "fourZu2";
-            this.fourZu2.Size = new System.Drawing.Size(31, 21);
-            this.fourZu2.TabIndex = 27;
-            this.fourZu2.Text = "2";
-            this.fourZu2.UseVisualStyleBackColor = true;
-            // 
-            // fourZu1
-            // 
-            this.fourZu1.AutoSize = true;
-            this.fourZu1.checkBgColor = System.Drawing.Color.Empty;
-            this.fourZu1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.fourZu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fourZu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.fourZu1.Location = new System.Drawing.Point(419, 21);
-            this.fourZu1.Name = "fourZu1";
-            this.fourZu1.Size = new System.Drawing.Size(31, 21);
-            this.fourZu1.TabIndex = 26;
-            this.fourZu1.Text = "1";
-            this.fourZu1.UseVisualStyleBackColor = true;
-            // 
-            // fourZu0
-            // 
-            this.fourZu0.AutoSize = true;
-            this.fourZu0.checkBgColor = System.Drawing.Color.Empty;
-            this.fourZu0.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.fourZu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fourZu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.fourZu0.Location = new System.Drawing.Point(391, 21);
-            this.fourZu0.Name = "fourZu0";
-            this.fourZu0.Size = new System.Drawing.Size(31, 21);
-            this.fourZu0.TabIndex = 29;
-            this.fourZu0.Text = "0";
-            this.fourZu0.UseVisualStyleBackColor = true;
-            // 
-            // checkBox74
-            // 
-            this.checkBox74.AutoSize = true;
-            this.checkBox74.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox74.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox74.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox74.Location = new System.Drawing.Point(190, 22);
-            this.checkBox74.Name = "checkBox74";
-            this.checkBox74.Size = new System.Drawing.Size(34, 21);
-            this.checkBox74.TabIndex = 10;
-            this.checkBox74.Text = "5";
-            this.checkBox74.UseVisualStyleBackColor = true;
-            // 
-            // checkBox75
-            // 
-            this.checkBox75.AutoSize = true;
-            this.checkBox75.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox75.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox75.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox75.Location = new System.Drawing.Point(334, 22);
-            this.checkBox75.Name = "checkBox75";
-            this.checkBox75.Size = new System.Drawing.Size(34, 21);
-            this.checkBox75.TabIndex = 6;
-            this.checkBox75.Text = "9";
-            this.checkBox75.UseVisualStyleBackColor = true;
-            // 
-            // checkBox76
-            // 
-            this.checkBox76.AutoSize = true;
-            this.checkBox76.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox76.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox76.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox76.Location = new System.Drawing.Point(226, 22);
-            this.checkBox76.Name = "checkBox76";
-            this.checkBox76.Size = new System.Drawing.Size(34, 21);
-            this.checkBox76.TabIndex = 9;
-            this.checkBox76.Text = "6";
-            this.checkBox76.UseVisualStyleBackColor = true;
-            // 
-            // checkBox77
-            // 
-            this.checkBox77.AutoSize = true;
-            this.checkBox77.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox77.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox77.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox77.Location = new System.Drawing.Point(262, 22);
-            this.checkBox77.Name = "checkBox77";
-            this.checkBox77.Size = new System.Drawing.Size(34, 21);
-            this.checkBox77.TabIndex = 8;
-            this.checkBox77.Text = "7";
-            this.checkBox77.UseVisualStyleBackColor = true;
-            // 
-            // checkBox78
-            // 
-            this.checkBox78.AutoSize = true;
-            this.checkBox78.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox78.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox78.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox78.Location = new System.Drawing.Point(298, 22);
-            this.checkBox78.Name = "checkBox78";
-            this.checkBox78.Size = new System.Drawing.Size(34, 21);
-            this.checkBox78.TabIndex = 7;
-            this.checkBox78.Text = "8";
-            this.checkBox78.UseVisualStyleBackColor = true;
-            // 
-            // checkBox79
-            // 
-            this.checkBox79.AutoSize = true;
-            this.checkBox79.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox79.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox79.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox79.Location = new System.Drawing.Point(154, 22);
-            this.checkBox79.Name = "checkBox79";
-            this.checkBox79.Size = new System.Drawing.Size(34, 21);
-            this.checkBox79.TabIndex = 5;
-            this.checkBox79.Text = "4";
-            this.checkBox79.UseVisualStyleBackColor = true;
-            // 
-            // checkBox80
-            // 
-            this.checkBox80.AutoSize = true;
-            this.checkBox80.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox80.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox80.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox80.Location = new System.Drawing.Point(118, 22);
-            this.checkBox80.Name = "checkBox80";
-            this.checkBox80.Size = new System.Drawing.Size(34, 21);
-            this.checkBox80.TabIndex = 4;
-            this.checkBox80.Text = "3";
-            this.checkBox80.UseVisualStyleBackColor = true;
-            // 
-            // checkBox81
-            // 
-            this.checkBox81.AutoSize = true;
-            this.checkBox81.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox81.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox81.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox81.Location = new System.Drawing.Point(82, 22);
-            this.checkBox81.Name = "checkBox81";
-            this.checkBox81.Size = new System.Drawing.Size(34, 21);
-            this.checkBox81.TabIndex = 3;
-            this.checkBox81.Text = "2";
-            this.checkBox81.UseVisualStyleBackColor = true;
-            // 
-            // checkBox82
-            // 
-            this.checkBox82.AutoSize = true;
-            this.checkBox82.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox82.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox82.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox82.Location = new System.Drawing.Point(46, 22);
-            this.checkBox82.Name = "checkBox82";
-            this.checkBox82.Size = new System.Drawing.Size(34, 21);
-            this.checkBox82.TabIndex = 2;
-            this.checkBox82.Text = "1";
-            this.checkBox82.UseVisualStyleBackColor = true;
-            // 
-            // checkBox83
-            // 
-            this.checkBox83.AutoSize = true;
-            this.checkBox83.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox83.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox83.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox83.Location = new System.Drawing.Point(10, 22);
-            this.checkBox83.Name = "checkBox83";
-            this.checkBox83.Size = new System.Drawing.Size(34, 21);
-            this.checkBox83.TabIndex = 1;
-            this.checkBox83.Text = "0";
-            this.checkBox83.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox6.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox6.Location = new System.Drawing.Point(196, 22);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(36, 24);
-            this.checkBox6.TabIndex = 10;
-            this.checkBox6.Text = "5";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox10.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox10.Location = new System.Drawing.Point(340, 22);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(36, 24);
-            this.checkBox10.TabIndex = 6;
-            this.checkBox10.Text = "9";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox7.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox7.Location = new System.Drawing.Point(232, 22);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(36, 24);
-            this.checkBox7.TabIndex = 9;
-            this.checkBox7.Text = "6";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox8.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox8.Location = new System.Drawing.Point(268, 22);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(36, 24);
-            this.checkBox8.TabIndex = 8;
-            this.checkBox8.Text = "7";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox9.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox9.Location = new System.Drawing.Point(304, 22);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(36, 24);
-            this.checkBox9.TabIndex = 7;
-            this.checkBox9.Text = "8";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox5.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox5.Location = new System.Drawing.Point(160, 22);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(36, 24);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "4";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox4.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox4.Location = new System.Drawing.Point(124, 22);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(36, 24);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "3";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox3.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox3.Location = new System.Drawing.Point(88, 22);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(36, 24);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "2";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox2.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox2.Location = new System.Drawing.Point(52, 22);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(36, 24);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "1";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox1.Location = new System.Drawing.Point(16, 22);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(36, 24);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "0";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // dxFJcbx
-            // 
-            this.dxFJcbx.AutoSize = true;
-            this.dxFJcbx.checkBgColor = System.Drawing.Color.Empty;
-            this.dxFJcbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.dxFJcbx.Location = new System.Drawing.Point(193, 20);
-            this.dxFJcbx.Name = "dxFJcbx";
-            this.dxFJcbx.Size = new System.Drawing.Size(84, 24);
-            this.dxFJcbx.TabIndex = 2;
-            this.dxFJcbx.Text = "大小分解";
-            this.dxFJcbx.UseVisualStyleBackColor = true;
-            // 
-            // zhFJcbx
-            // 
-            this.zhFJcbx.AutoSize = true;
-            this.zhFJcbx.checkBgColor = System.Drawing.Color.Empty;
-            this.zhFJcbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.zhFJcbx.Location = new System.Drawing.Point(103, 20);
-            this.zhFJcbx.Name = "zhFJcbx";
-            this.zhFJcbx.Size = new System.Drawing.Size(84, 24);
-            this.zhFJcbx.TabIndex = 1;
-            this.zhFJcbx.Text = "质合分解";
-            this.zhFJcbx.UseVisualStyleBackColor = true;
-            // 
-            // dsFJcbx
-            // 
-            this.dsFJcbx.AutoSize = true;
-            this.dsFJcbx.checkBgColor = System.Drawing.Color.Empty;
-            this.dsFJcbx.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.dsFJcbx.Location = new System.Drawing.Point(13, 20);
-            this.dsFJcbx.Name = "dsFJcbx";
-            this.dsFJcbx.Size = new System.Drawing.Size(84, 24);
-            this.dsFJcbx.TabIndex = 0;
-            this.dsFJcbx.Text = "单双分解";
-            this.dsFJcbx.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

@@ -255,7 +255,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(904, 540);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "十一选五";
+            this.tabPage3.Text = "十一选五（测试阶段）";
             // 
             // marqueePanel
             // 
@@ -311,7 +311,7 @@
             this.changeMainPanelCbx.ForeColor = System.Drawing.Color.DarkBlue;
             this.changeMainPanelCbx.FormattingEnabled = true;
             this.changeMainPanelCbx.Items.AddRange(new object[] {
-            "页面一   -   基础选项    -   杀码,出号,分解式,临码,组合,凹凸,密码修改,信息修改"});
+            "页面一   -   基础选项    -   号码组出号"});
             this.changeMainPanelCbx.Location = new System.Drawing.Point(6, 56);
             this.changeMainPanelCbx.Name = "changeMainPanelCbx";
             this.changeMainPanelCbx.Size = new System.Drawing.Size(895, 25);
